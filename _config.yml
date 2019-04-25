@@ -1,2 +1,2 @@
 name: Sypalo.com
-permalink: pretty
+permalink: /:categories/:year/:month/:title
