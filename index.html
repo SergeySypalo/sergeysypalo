@@ -8,7 +8,7 @@ description: Sergey and Jane Sypalo blog about DevOp, photo, travel, health and 
     {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.excerpt }}
+        {{ post.content | strip_html | truncatewords:75 }}
       </li>
     {% endfor %}
   </ul>
