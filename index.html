@@ -4,11 +4,27 @@ title: Sergey and Jane Sypalo blog
 description: Sergey and Jane Sypalo blog about DevOp, photo, travel, health and more
 ---
 
-<ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.content | strip_html | truncatewords:75 }}
-      </li>
-    {% endfor %}
-  </ul>
+<article>
+  <header>
+      <h2>Welcome to Sypalo.com website about DevOps, photo, travel and heals</h2>
+  </header>
+  <hr>
+  {% for post in site.posts %}  
+    <section>
+        <header>
+            <h3 class="h6 float-left"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p class="float-right text-right">Dnipro, Ukraine | Aug 2013 – present</p>
+        </header>
+        <p class="clearfix mb-0">
+          {{ post.content | strip_html | truncatewords:75 }}
+        </p>
+        <footer>
+            <hr />
+        </footer>
+    </section>       
+  {% endfor %}
+  <footer class="text-center">
+    <a class="btn btn-secondary col-4" href="/devops/services" role="button">DevOps services I offer</a>
+    <a class="btn btn-secondary col-4" href="/devops" role="button">DevOps blog posts I wrote</a>            
+  </footer>
+</article>
