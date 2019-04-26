@@ -8,4 +8,54 @@ tags: [devops, virtualization, containers, docker]
 ---
 
 <h2 class="h5">{{ page.title }}</h2>
-<p>Recently I challenged myself with a simple task</p>
+<p>
+    The theme of launching PowerCLI with the necessary modules in the Docker container has long been brewing, and finally I have taken up this issue.
+    One of the reasons was that PowerShell “broke down” on my Windows 10 machine, or rather, it works, but the Get-Credential command returns an error.
+    The second reason is simply the desire to experiment on the topic.
+</p>
+<p>It turned out the truth is not so simple, details below.</p>
+<p>
+    To run PowerShell in a Docker container with pre-loaded modules, you need to perform the following steps:
+</p>
+<ol>
+<li>Enable Virtualization Support in BIOS</li>
+<li>Install Hyper-V, you can do it like this:</li>
+<li><kbd>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</kbd>
+    or so:
+    <kbd>DISM / Online / Enable-Feature / All / FeatureName: Microsoft-Hyper-V</kbd>
+</li>
+<li>Install Docker Desktop for Windows https://hub.docker.com/editions/community/docker-ce-desktop-windows</li>
+<li>Create an empty folder, say D:\pwsh-docker</li>
+<li>Add the required modules to the subfolder D:\pwsh-docker\Modules</li>
+<li>Create a Dockerfile in D: \ pwsh-docker as follows
+    <pre>
+    # Use an existing docker image as a base
+    FROM mcr.microsoft.com/powershell:preview
+
+    # Copy Cisco UCS Power Tools to the standard modules location
+    COPY ./Modules ./usr/local/share/powershell/Modules
+
+    # Create a path in advance, then add required path to the file
+    RUN mkdir -p /root/.config/powershell/
+    RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
+    </pre>
+</li>
+<li>Open CMD or PowerShell and go to D:\pwsh-docker</li>
+<li>Run the docker build -t pwsh-docker command</kbd></li>
+<li>Start our container <kbd>docker run -it pwsh-docker</kbd></li>
+</ol>
+<p>
+    The main problem was that when PowerShell Core started a container, it created a new session and importing modules via ENTRYPOINT or CMD did not lead to anything, the modules were accessible via Get-Module -ListAvailable, but they had to be imported manually, because autoloading does not work when using commands from available but not imported modules.
+</p>
+<p>
+    Another oddity / bug found is that the $ profile variable (if you just see the value of this variable in a container running PowerShell Core points to the path /root/.config/powershell/Microsoft.PowerShell_profile.ps1, but this file does not exist.
+</p>
+<p>
+    As I said above, it does not make sense to redefine a profile, since at the start of a new session, $ profile will again point to the same
+</p>
+<p>
+    Therefore, as an option to create this path and file and specify in it the list of modules to import, which was done above in the Dockerfile.
+</p>>
+<p>
+    I hope the information was useful, if you have any questions, ask in the comments, and send any code improvements in the form of a request pool to the github, where the source code is posted.
+</p>
