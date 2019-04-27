@@ -8,6 +8,35 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
     {{ page.title }}
 </h3>
 
+<div class="row pb-4 mb-4 border-bottom">
+    <div class="col-6">
+        <div class="card">
+            <section class="card-body">
+                <header>
+                    <h3 class="h5">DevOps Portfolio</h3>
+                </header>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <footer>
+                    <a href="/devops/portfolio" class="btn btn-primary mt-3">Check my portfolio</a>
+                </footer>
+            </section>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <section class="card-body">
+                <header>
+                    <h3 class="h5">DevOps Services</h3>
+                </header>
+                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                <footer>
+                    <a href="/devops/services" class="btn btn-success mt-3">Services I offer</a>
+                </footer>
+            </section>
+        </div>
+    </div>
+</div>
+
 {% for post in site.posts | where_exp: "post", "post.categories contains 'devops'" %}  
 <section>
     <header>
