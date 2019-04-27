@@ -8,7 +8,8 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
     {{ page.title }}
 </h3>
 
-{% for post in site.categories.last[devops] %}  
+{% for post in site.posts | where_exp: "post", "post.categories contains 'devops'" %}
+  <li>{{ post.title }}</li>
 <section>
     <header>
         <h2 class="h6"><a href="{{ post.url }}">{{ post.title }}</a></h2>
