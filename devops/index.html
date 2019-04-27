@@ -37,7 +37,8 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
     </div>
 </div>
 
-{% for post in site.posts | where_exp: "post", "post.categories contains 'devops'" %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'devops'" %}
+{% for post in posts %}
 <section>
     <header>
         <h2 class="h6"><a href="{{ post.url }}">{{ post.title }}</a></h2>
