@@ -4,16 +4,19 @@ title: Running PowerShell Core in Docker container
 description: How-to run a PowerShell Core in Docker container
 date: 2019-04-25
 categories: [devops]
-tags: [devops, virtualization, containers, docker]
+tags: [devops, virtualization, containers, docker, powershell]
 ---
 
 <h2 class="h5">{{ page.title }}</h2>
 <p>
-    The theme of launching PowerCLI with the necessary modules in the Docker container has long been brewing, and finally I have taken up this issue.<br />
-    One of the reasons was that PowerShell “broke down” on my Windows 10 machine, or rather, it works, but the Get-Credential command returns an error.<br />
-    The second reason is simply the desire to experiment on the topic.</br>
-    It turned out the truth is not so simple, details below.<br />
-    To run PowerShell in a Docker container with pre-loaded modules, you need to perform the following steps:
+    The idea of launching PowerCLI with the necessary modules in the Docker container has long been brewing, and finally I have taken up this issue.
+</p>
+<p>
+    One of the reasons was that PowerShell “broke down” on my Windows 10 machine, or rather, it works, but the Get-Credential command returns an error.
+    The second reason is simply the desire to experiment on the topic.
+</p>
+<p>
+    It turned out the truth is not so simple, details below. To run PowerShell in a Docker container with pre-loaded modules, you need to perform the following steps:
 </p>
 <ol>
 <li>Enable Virtualization Support in BIOS</li>
@@ -22,7 +25,7 @@ tags: [devops, virtualization, containers, docker]
     or so:<br />
     <kbd>DISM / Online / Enable-Feature / All / FeatureName: Microsoft-Hyper-V</kbd>
 </li>
-<li>Install Docker Desktop for Windows https://hub.docker.com/editions/community/docker-ce-desktop-windows</li>
+<li>Install Docker <a href ="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank">Desktop for Windows</a></li>
 <li>Create an empty folder, say D:\pwsh-docker</li>
 <li>Add the required modules to the subfolder D:\pwsh-docker\Modules</li>
 <li>Create a Dockerfile in D:\pwsh-docker as follows
@@ -43,9 +46,13 @@ tags: [devops, virtualization, containers, docker]
 <li>Start our container: <kbd>docker run -it pwsh-docker</kbd></li>
 </ol>
 <p>
-    The main problem was that when PowerShell Core started a container, it created a new session and importing modules via ENTRYPOINT or CMD did not lead to anything, the modules were accessible via Get-Module -ListAvailable, but they had to be imported manually, because autoloading does not work when using commands from available but not imported modules.<br />
-    Another oddity / bug found is that the $ profile variable (if you just see the value of this variable in a container running PowerShell Core points to the path /root/.config/powershell/Microsoft.PowerShell_profile.ps1, but this file does not exist.<br />
-    As I said above, it does not make sense to redefine a profile, since at the start of a new session, $ profile will again point to the same.<br />
+    The main problem was that when PowerShell Core started a container, it created a new session and importing modules via ENTRYPOINT or CMD did not lead to anything, the modules were accessible via Get-Module -ListAvailable, but they had to be imported manually, because autoloading does not work when using commands from available but not imported modules.
+</p>
+<p>
+    Another oddity / bug found is that the $profile variable (if you just see the value of this variable in a container running PowerShell Core points to the path /root/.config/powershell/Microsoft.PowerShell_profile.ps1, but this file does not exist.
+</p>
+<p>
+    As I said above, it does not make sense to redefine a profile, since at the start of a new session, $profile will again point to the same.
     Therefore, as an option to create this path and file and specify in it the list of modules to import, which was done above in the Dockerfile.<br />
     I hope the information was useful, if you have any questions, ask in the comments, and send any code improvements in the form of a request pool to the github, where the source code is posted.<br />
 </p>
