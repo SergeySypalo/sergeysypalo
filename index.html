@@ -16,7 +16,7 @@ description: Sergey and Jane Sypalo blog about DevOp, photo, travel, health and 
             <p><span class="author">Sergey Sypalo</span> posted on {{ post.date | date_to_long_string }}</p>
         </header>
         <p class="mb-0">
-          {{ post.content | strip_html | truncatewords:75 }}
+          {{ post.content }}
         </p>
         <footer>
             <hr />
