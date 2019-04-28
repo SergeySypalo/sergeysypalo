@@ -4,7 +4,8 @@ title: DevOps blog
 description: Sergey Sypalo DevOps blog posts
 ---
 
-<h1 class="h3 pb-4 mb-4 border-bottom">{{ page.title }}</h1>
+<h1 class="h3 pb-4 mb-4">{{ page.title }}</h1>
+<hr />
 
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'devops'" %}
 {% for post in posts %}
