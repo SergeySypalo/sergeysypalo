@@ -34,6 +34,7 @@ description: Sergey Sypalo and Jane Sypalo photo portfolio, services and blog po
         </div>
     </div>
 </div>
+<hr />
 
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'photo'" %}
 {% for post in posts %}
