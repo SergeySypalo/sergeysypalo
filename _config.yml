@@ -1,2 +1,3 @@
 name: Sypalo.com
 permalink: /:categories/blog/:year/:month/:title
+type: website
