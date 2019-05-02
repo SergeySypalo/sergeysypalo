@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Sergey and Jane Sypalo blog
-description: Sergey and Jane Sypalo blog about DevOp, photo, travel, health and more
+title: "DevOps" tag blog posts
+description: Sergey Sypalo "DevOps" blog posts
 ---
 
 {{ page.url }}
@@ -11,7 +11,7 @@ description: Sergey and Jane Sypalo blog about DevOp, photo, travel, health and 
       <h1 class="h3">{{ page.title }}</h1>
   </header>
   <hr />
-  {% assign posts = site.posts | where_exp: "post", "post.categories contains 'devops'" %}
+  {% assign posts = site.posts | where_exp: "post", "post.categories contains 'DevOps'" %}
   {% for post in site.posts %}  
     <section>
         <header>

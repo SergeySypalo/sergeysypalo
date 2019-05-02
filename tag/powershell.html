@@ -1,20 +1,22 @@
 ---
 layout: default
-title: Sergey and Jane Sypalo blog
-description: Sergey and Jane Sypalo blog about DevOp, photo, travel, health and more
-type: website
+title: "Cloud" tag blog posts
+description: Sergey Sypalo "PowerShell" tag blog posts
 ---
+
+{{ page.url }}
 
 <article>
   <header>
       <h1 class="h3">{{ page.title }}</h1>
   </header>
   <hr />
+  {% assign posts = site.posts | where_exp: "post", "post.categories contains 'PowerShell'" %}
   {% for post in site.posts %}  
     <section>
         <header>
             <h2 class="h5"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <p>{{ post.date | date_to_long_string }} by <span class="author" itemprop="name" itemscope itemtype="http://schema.org/Person">Sergey Sypalo</span></p>
+            <p>{{ post.date | date_to_long_string }} by <span class="author">Sergey Sypalo</span></p>
         </header>
         <p class="mb-0">
           {{ post.content | strip_html | truncatewords:75 }}
