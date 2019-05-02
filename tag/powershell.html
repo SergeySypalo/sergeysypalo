@@ -1,10 +1,8 @@
 ---
 layout: default
-title: PowerShell tag blog posts
-description: Sergey Sypalo PowerShell tag blog posts
+title: PowerShell blog posts
+description: PowerShell blog posts
 ---
-
-{{ page.url }}
 
 <article>
   <header>
@@ -12,7 +10,7 @@ description: Sergey Sypalo PowerShell tag blog posts
   </header>
   <hr />
   {% assign posts = site.posts | where_exp: "post", "post.tags contains 'PowerShell'" %}
-  {% for post in site.posts %}  
+  {% for post in posts %}  
     <section>
         <header>
             <h2 class="h5"><a href="{{ post.url }}">{{ post.title }}</a></h2>

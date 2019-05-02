@@ -1,11 +1,8 @@
 ---
 layout: default
-title: "DevOps" tag blog posts
-description: Sergey Sypalo "DevOps" blog posts
-permalink: /tag/:title
+title: DevOps blog posts
+description: DevOps blog posts
 ---
-
-{{ page.url }}
 
 <article>
   <header>
@@ -13,7 +10,7 @@ permalink: /tag/:title
   </header>
   <hr />
   {% assign posts = site.posts | where_exp: "post", "post.tags contains 'DevOps'" %}
-  {% for post in site.posts %}  
+  {% for post in posts %}  
     <section>
         <header>
             <h2 class="h5"><a href="{{ post.url }}">{{ post.title }}</a></h2>

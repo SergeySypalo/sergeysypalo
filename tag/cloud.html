@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Cloud" tag blog posts
-description: Sergey Sypalo "Cloud" tag blog posts
+title: Cloud blog posts
+description: Cloud blog posts
 ---
-
-{{ page.url }}
 
 <article>
   <header>
@@ -12,7 +10,7 @@ description: Sergey Sypalo "Cloud" tag blog posts
   </header>
   <hr />
   {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Cloud'" %}
-  {% for post in site.posts %}  
+  {% for post in posts %}  
     <section>
         <header>
             <h2 class="h5"><a href="{{ post.url }}">{{ post.title }}</a></h2>
