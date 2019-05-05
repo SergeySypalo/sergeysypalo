@@ -12,7 +12,7 @@ type: website
     <article itemid="https://sypalo.com{{ post.url }}" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
             <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            <p><date itemprop="datePublished" content="{{ post.date }}">{{ post.date | date_to_long_string }}</date> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span></p>
+            <p><date itemprop="datePublished" itemprop="dateModified" content="{{ post.date }}">{{ post.date | date_to_long_string }}</date> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span></p>
         </header>
         <p class="mb-0" itemprop="articleBody">
           {{ post.content | strip_html | truncatewords:75 }}
