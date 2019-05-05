@@ -38,7 +38,7 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
 
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'devops'" %}
 {% for post in posts %}
-<section>
+<article>
     <header>
         <h2 class="h5"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <p><span class="author">Sergey Sypalo</span> posted on {{ post.date | date_to_long_string }}</p>
@@ -49,5 +49,5 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
     <footer>
         <hr />
     </footer>
-</section>       
+</article>       
 {% endfor %}
