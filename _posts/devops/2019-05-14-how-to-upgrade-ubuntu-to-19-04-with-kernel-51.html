@@ -1,0 +1,95 @@
+---
+layout: default
+title: How to upgrade ubuntu to 19.04 with kernel 5.1
+description: 
+date: 2019-05-14
+categories: [devops]
+tags: [Linux, DevOps, Virtualization]
+type: article
+---
+
+<h2 class="h5">{{ page.title }}</h2>
+<p>
+    In this article I will tell you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade until 18.10. As a bonus, we will also upgrade the kernel to version 5.1, which contains the following improvements:
+</p>
+<ul>
+    <li>High-performance asynchronous I/O</li>
+    <li>Use persistent memory as RAM</li>
+    <li>Live patching: support cumulative patches</li>
+    <li>Intel HDCP 2.2 support</li>
+    <li>Better ptotection against Spectre vulnerability variations</li>
+</ul>
+<p>
+        And here is a short list of what's new added to Ubuntu 19.04:        
+</p>
+<ul>
+        <li>High-performance asynchronous I/O</li>
+        <li>Use persistent memory as RAM</li>
+        <li>Live patching: support cumulative patches</li>
+        <li>Intel HDCP 2.2 support</li>
+        <li>Better ptotection against Spectre vulnerability variations</li>
+    </ul>
+<p>
+        Perform the following steps to upgrade:
+</p>
+<pre>
+    # First of all upgrade existing software (reboot might be needed)
+    sudo apt update && sudo apt dist-upgrade
+
+    # Install update-manager-core package
+    sudo apt install update-manager-core
+
+    # Edit following configuration file...
+    sudo nano /etc/update-manager/release-upgrades
+
+    # ... and change Prompt to new value, like so
+    Prompt=normal
+
+    # Press Ctrl+X to save and exit from nano
+
+    # Change default distro from bionic, which is a
+    # codename for Ubuntu 18.04 to Disco (19.04 codename)
+    sudo sed -i 's/bionic/disco/g' /etc/apt/sources.list
+
+    # Disable 3rd-party repos
+    sudo sed -i 's/^/#/' /etc/apt/sources.list.d/*.list
+
+    # Run minimal upgrade
+    sudo apt update && sudo apt upgrade
+
+    # Run full upgrade
+    sudo apt dist-upgrade
+
+    # If any error run
+    sudo apt update && sudo apt dist-upgrade
+
+    # Run clueanup
+    sudo apt autoremove && sudo apt clean
+
+    # Reboot the system
+    sudo shutdown -r now
+
+    # Change current directory to /tmp
+    cd /tmp/
+
+    # Download new kernel
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1/linux-headers-5.1.0-050100_5.1.0-050100.201905052130_all.deb    
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1/linux-headers-5.1.0-050100-generic_5.1.0-050100.201905052130_amd64.deb    
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1/linux-image-unsigned-5.1.0-050100-generic_5.1.0-050100.201905052130_amd64.deb    
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1/linux-modules-5.1.0-050100-generic_5.1.0-050100.201905052130_amd64.deb
+    
+    # Install new kernel
+    sudo dpkg -i *.deb
+
+    # Reboot the system
+    sudo shutdown -r now
+
+    # Check and any new packages
+    sudo apt update && sudo apt upgrade
+
+    # Check the OS distro
+    lsb_release -a
+
+    # Check the kernel version
+    uname -r
+</pre>
