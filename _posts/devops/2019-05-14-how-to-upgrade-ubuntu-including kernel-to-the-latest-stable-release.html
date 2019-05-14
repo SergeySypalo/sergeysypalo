@@ -1,15 +1,19 @@
 ---
 layout: default
-title: How to upgrade Ubuntu to the latest distro and kernel version
-description: 
+title: How to upgrade Ubuntu including kernel to the latest stable release
+description: How to upgrade Ubuntu including kernel to the latest stable release
 date: 2019-05-14
 categories: [devops]
 tags: [Linux, Security, Upgrade]
+permalink: /:categories/blog/:title
 type: article
 comments: true
 ---
 
 <h2 class="h5">{{ page.title }}</h2>
+<p>
+    {{ page.url }}
+</p>
 <p>
     In this article I will tell you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade until 18.10. As a bonus, we will also upgrade the kernel to version 5.1.1, which contains the following improvements:
 </p>
@@ -105,7 +109,7 @@ comments: true
     
     var disqus_config = function () {
     this.page.url = '{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.identifier = '3'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     
     (function() { // DON'T EDIT BELOW THIS LINE
