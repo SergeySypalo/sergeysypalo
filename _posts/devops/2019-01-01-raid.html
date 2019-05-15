@@ -9,5 +9,38 @@ permalink: /:categories/blog/:title
 type: article
 ---
 
-<h2 class="h5">{{ page.title }}</h2>
-<p>This is a story about RAID levels</p>
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
+    <header>
+        <h2 class="h5" itemprop="headline">{{ page.title }}</h2>
+        <p>Posted on <date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> by 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span>
+        </p>
+    </header>
+    <section class="mb-0" itemprop="articleBody">
+        <p>In this article I want to summarize all </p>
+    </section>
+    
+    <footer>
+        <hr />
+    </footer>
+</article>
+{% if page.comments %}
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+            this.page.url = '{{ site.url }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = '{{ site.url }}{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://sypalo.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+{% endif %} 

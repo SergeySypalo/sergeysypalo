@@ -10,6 +10,7 @@ permalink: /:categories/blog/:title
 type: article
 comments: true
 ---
+
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
     <header>
         <h2 class="h5" itemprop="headline">{{ page.title }}</h2>
@@ -92,8 +93,11 @@ comments: true
             # Reboot the system
             sudo shutdown -r now
 
-            # Check and any new packages
+            # Check and update packages
             sudo apt update && sudo apt upgrade
+
+            # Reboot the system if needed
+            sudo shutdown -r now
 
             # Check the OS distro
             lsb_release -a
