@@ -12,7 +12,7 @@ comments: true
 
 <h2 class="h5">{{ page.title }}</h2>
 <p>
-    In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade until 18.10. As a bonus, we will also upgrade the kernel to version 5.1.1, which contains the following improvements:
+    In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade until 18.10. As a bonus, we will also upgrade the kernel to version 5.1.2, which contains the following improvements:
 </p>
 <ul>
     <li>High-performance asynchronous I/O</li>
@@ -73,12 +73,12 @@ comments: true
     # Change current directory to /tmp
     cd /tmp/
 
-    # Download new kernel
-    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.1/linux-headers-5.1.1-050101_5.1.1-050101.201905110631_all.deb
-    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.1/linux-headers-5.1.1-050101-generic_5.1.1-050101.201905110631_amd64.deb
-    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.1/linux-image-unsigned-5.1.1-050101-generic_5.1.1-050101.201905110631_amd64.deb
-    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.1/linux-modules-5.1.1-050101-generic_5.1.1-050101.201905110631_amd64.deb
-    
+    # Download new kernel  
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.2/linux-headers-5.1.2-050102_5.1.2-050102.201905141830_all.deb
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.2/linux-headers-5.1.2-050102-generic_5.1.2-050102.201905141830_amd64.deb
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.2/linux-image-unsigned-5.1.2-050102-generic_5.1.2-050102.201905141830_amd64.deb
+    wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.1.2/linux-modules-5.1.2-050102-generic_5.1.2-050102.201905141830_amd64.deb
+
     # Install new kernel
     sudo dpkg -i *.deb
 
@@ -95,25 +95,25 @@ comments: true
     uname -r
 </pre>
 <p>
-    That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.1.1 Linux Kernel.
+    That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.1.2 Linux Kernel.
 </p>
 {% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    
-    var disqus_config = function () {
-    this.page.url = '{{ site.url }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = '3'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://sypalo.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+            this.page.url = '{{ site.url }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = '{{ site.url }}{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://sypalo.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 {% endif %} 
