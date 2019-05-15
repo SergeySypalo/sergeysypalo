@@ -9,10 +9,10 @@ type: website
   <h1 class="h3">{{ page.title }}</h1>
   <hr />
   {% for post in site.posts %}  
-    <article itemid="https://sypalo.com{{ post.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
+    <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
         <header>
             <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-            <p>Posted/updated on <date itemprop="dateModified">{{ post.modified | date_to_long_string }}</date> by 
+            <p>Posted on <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> by 
               <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span>
             </p>
         </header>

@@ -3,16 +3,24 @@ layout: default
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 date: 2019-05-14
+modified: 2019-05-14
 categories: [devops]
 tags: [Linux, Security, Upgrade]
 permalink: /:categories/blog/:title
 type: article
 comments: true
 ---
-
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
+    <header>
+        <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+        <p>Posted on <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> by 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span>
+        </p>
+    </header>
+    <section class="mb-0" itemprop="articleBody">        
 <h2 class="h5">{{ page.title }}</h2>
 <p>
-    In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade until 18.10. As a bonus, we will also upgrade the kernel to version 5.1.2, which contains the following improvements:
+    In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.1.2, which contains the following improvements:
 </p>
 <ul>
     <li>High-performance asynchronous I/O</li>
@@ -97,6 +105,12 @@ comments: true
 <p>
     That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.1.2 Linux Kernel.
 </p>
+</section>
+    
+<footer>
+    <hr />
+</footer>
+</article>
 {% if page.comments %}
     <div id="disqus_thread"></div>
     <script>
