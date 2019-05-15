@@ -38,18 +38,5 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
 
 {% assign posts = site.posts | where_exp: "post", "post.categories contains 'devops'" %}
 {% for post in posts %}
-<article>
-    <header>
-        <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-        <p>Posted on <i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> by 
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person"><i class="fas fa-user-tie"></i> <span itemprop="name">Sergey Sypalo</span></span>
-        </p>
-    </header>
-    <p class="mb-0" itemprop="articleBody">
-        {{ post.content | strip_html | truncatewords:75 }}
-    </p>
-    <footer>
-        <hr />
-    </footer>
-</article>       
+    {% include post-snippet.html %}    
 {% endfor %}
