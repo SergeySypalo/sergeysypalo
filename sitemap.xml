@@ -7,32 +7,47 @@
 
   <url>
     <loc>https://sypalo.com/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://sypalo.com/devops</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sypalo.com/photo</loc>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://sypalo.com/movies</loc>
-    <lastmod>2019-04-29T10:16:26+00:00</lastmod>
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/contact</loc>
-    <lastmod>2019-04-29T10:16:26+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sypalo.com/photo/blog/choosing-a-mirroless-camera-in-2019</loc>
-    <lastmod>2019-04-29T10:16:26+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sypalo.com/devops/blog/2019/04/running-powershell-core-in-docker-container</loc>
-    <lastmod>2019-04-29T10:16:26+00:00</lastmod>
+    <lastmod>22019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/devops/blog/raid</loc>
-    <lastmod>2019-04-29T10:16:26+00:00</lastmod>
+    <lastmod>22019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://sypalo.com/devops/blog/how-to-upgrade-ubuntu-including-kernel-to-the-latest-stable-release</loc>
+    <lastmod>22019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sypalo.com/devops/blog/2019/04/how-to-run-powershell-core-in-docker-container-with-3rd-party-modules-preloaded</loc>
+    <lastmod>22019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>  
+    <url>
+    <loc>https://sypalo.com/photo/blog/choosing-a-mirroless-camera-in-2019</loc>
+    <lastmod>22019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
