@@ -20,7 +20,7 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.2.8, which contains the following improvements:
+            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.2.10, which contains the following improvements:
         </p>
         <ul>
             <li>High-performance asynchronous I/O</li>
@@ -82,10 +82,10 @@ comments: true
             cd /tmp/
 
             # Download new kernel  
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.8/linux-headers-5.2.8-050208_5.2.8-050208.201908091630_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.8/linux-headers-5.2.8-050208-generic_5.2.8-050208.201908091630_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.8/linux-image-unsigned-5.2.8-050208-generic_5.2.8-050208.201908091630_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.8/linux-modules-5.2.8-050208-generic_5.2.8-050208.201908091630_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.10/linux-headers-5.2.10-050210_5.2.10-050210.201908251538_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.10/linux-headers-5.2.10-050210-generic_5.2.10-050210.201908251538_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.10/linux-image-unsigned-5.2.10-050210-generic_5.2.10-050210.201908251538_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.2.10/linux-modules-5.2.10-050210-generic_5.2.10-050210.201908251538_amd64.deb
 
             # Install new kernel
             sudo dpkg -i *.deb
@@ -106,7 +106,7 @@ comments: true
             uname -r
         </pre>
         <p>
-            That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.2.8 Linux Kernel.
+            That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.2.10 Linux Kernel.
         </p>
     </section>
         
