@@ -8,7 +8,7 @@
             <picture class="float-left">
                 <img src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" width="200" >
             </picture>                 
-            <figcaption>{{ post.content | strip_html | truncatewords:75 }}</figcaption>
+            <figcaption class="clearfix">{{ post.content | strip_html | truncatewords:75 }}</figcaption>
         </figure>        
     </p>
     <footer>
