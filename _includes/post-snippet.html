@@ -6,7 +6,7 @@
     <p class="mb-0" itemprop="articleBody">
         <figure>
             <picture>                       
-                <img src="/assets/img/{{ post.url | split: '/' | last }}/title.png" >
+                <img src="/assets/img/articles/{{ post.year }}/{{ post.month }}/{{ post.url | split: '/' | last }}/title.png" >
             </picture>                 
             <figcaption>{{ post.content | strip_html | truncatewords:75 }}</figcaption>
         </figure>        
