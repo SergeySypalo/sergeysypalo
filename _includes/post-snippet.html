@@ -4,7 +4,12 @@
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>        
     </header>
     <p class="mb-0" itemprop="articleBody">
-        {{ post.content | strip_html | truncatewords:75 }}
+        <figure>
+            <picture>                       
+                <img src="assets/img/{{ post.url }}/title.png" >
+            </picture>                 
+            <figcaption>{{ post.content | strip_html | truncatewords:75 }}</figcaption>
+        </figure>        
     </p>
     <footer>
         <hr />
