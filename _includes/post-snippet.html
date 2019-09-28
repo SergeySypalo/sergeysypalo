@@ -4,8 +4,8 @@
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>        
     </header>
     <p class="mb-0" itemprop="articleBody">
-        <figure class="float-left">
-            <picture>                       
+        <figure>
+            <picture class="float-left">
                 <img src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" width="200" >
             </picture>                 
             <figcaption>{{ post.content | strip_html | truncatewords:75 }}</figcaption>
