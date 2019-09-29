@@ -1,6 +1,6 @@
 <article class="row">    
-    <img class="col-4 img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />    
-    <div class="col-8" itemprop="articleBody">
+    <img class="col-3 img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />    
+    <div class="col-9" itemprop="articleBody">
         <span class="badge badge-secondary">DevOps</span>
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
         <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>        
