@@ -2,8 +2,13 @@
     <header class="col-4">
         <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />
     </header>
-    <p class="col-8" itemprop="articleBody">        
-        {{ post.content | strip_html | truncatewords:75 }}
+    <p class="col-8" itemprop="articleBody">
+        <span class="label label-secondary">DevOps</span>
+        <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+        <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>
+        <p>
+            {{ post.content | strip_html | truncatewords:75 }}
+        </p>
     </p>
     <footer>
         <hr />
