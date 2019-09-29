@@ -4,11 +4,12 @@
     </div>    
     <div class="col-9" itemprop="articleBody">
         <span class="badge badge-secondary mb-2">DevOps</span>
-        <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+        <h2 class="h5" itemprop="headline">{{ post.title }}</h2>
         <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></small>
         <p class="mt-2">
             {{ post.content | split: '</header>' | last | strip_html | truncatewords:75 }}
         </p>
+        <a class="btn btn-primary btn-lg active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
     </div>
     <footer>
         <hr />
