@@ -3,9 +3,9 @@
         <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />    
     </div>    
     <div class="col-9" itemprop="articleBody">
-        <span class="badge badge-secondary">DevOps</span>
+        <span class="badge badge-secondary mb-2">DevOps</span>
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-        <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>        
+        <i class="far fa-calendar-alt"></i><small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></small>
         <p>
             {{ post.content | split: '</header>' | last | strip_html | truncatewords:75 }}
         </p>
