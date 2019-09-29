@@ -4,10 +4,10 @@
     </div>    
     <div class="col-9" itemprop="articleBody">
         <span class="badge badge-secondary mb-2">DevOps</span>
-        <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></small>
+        <p><small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></small></p>
         <h2 class="h5" itemprop="headline">{{ post.title }}</h2>        
         <p class="mt-2">
-            {{ post.content | split: '</header>' | last | strip_html | truncatewords:75 }}
+            {{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}
         </p>
         <a class="btn btn-primary btn-sm active mb-2" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
     </div>
