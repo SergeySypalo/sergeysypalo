@@ -1,5 +1,7 @@
-<article class="row">    
-    <img class="col-3 img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />    
+<article class="row">
+    <div class="col-3">
+        <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />    
+    </div>    
     <div class="col-9" itemprop="articleBody">
         <span class="badge badge-secondary">DevOps</span>
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
