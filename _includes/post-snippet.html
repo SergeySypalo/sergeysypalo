@@ -3,7 +3,10 @@
     <div class="col-8" itemprop="articleBody">
         <span class="badge badge-secondary">DevOps</span>
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-        <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>
+        <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>        
+        <p>
+            {{ post.content | strip_html | truncatewords:75 }}
+        </p>
     </div>
     <footer>
         <hr />
