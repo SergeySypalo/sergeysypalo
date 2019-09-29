@@ -4,8 +4,8 @@
     </div>    
     <div class="col-9" itemprop="articleBody">
         <span class="badge badge-secondary mb-2">DevOps</span>
-        <h2 class="h5" itemprop="headline">{{ post.title }}</h2>
         <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></small>
+        <h2 class="h5" itemprop="headline">{{ post.title }}</h2>        
         <p class="mt-2">
             {{ post.content | split: '</header>' | last | strip_html | truncatewords:75 }}
         </p>
