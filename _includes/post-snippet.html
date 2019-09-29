@@ -9,7 +9,7 @@
         <p class="mt-2">
             {{ post.content | split: '</header>' | last | strip_html | truncatewords:75 }}
         </p>
-        <a class="btn btn-primary active mb-2" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
+        <a class="btn btn-primary btn-sm active mb-2" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
     </div>
     <footer>
         <hr />
