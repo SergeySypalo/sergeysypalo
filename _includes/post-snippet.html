@@ -1,15 +1,11 @@
-<article>
-    <header>
-        <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>
-        <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>        
+<article class="row">
+    <header class="col-2">
+        <img src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" width="200" />        
     </header>
-    <p class="mb-0" itemprop="articleBody">
-        <figure>
-            <picture class="float-left mr-2">
-                <img src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" width="200" >
-            </picture>                 
-            <figcaption class="clearfix">{{ post.content | strip_html | truncatewords:75 }}</figcaption>
-        </figure>        
+    <p class="col-10" itemprop="articleBody">
+        <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>
+        <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>     
+        <p>{{ post.content | strip_html | truncatewords:75 }}</p>
     </p>
     <footer>
         <hr />
