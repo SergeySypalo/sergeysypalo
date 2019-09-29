@@ -1,8 +1,8 @@
 <article class="row">
-    <header class="col-2">
-        <img src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />
+    <header class="col-4">
+        <img class="img-thumbnail" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" />
     </header>
-    <p class="col-10" itemprop="articleBody">
+    <p class="col-8" itemprop="articleBody">
         <p><i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date></p>
         <h2 class="h5" itemprop="headline"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>     
         <p>{{ post.content | strip_html | truncatewords:75 }}</p>
