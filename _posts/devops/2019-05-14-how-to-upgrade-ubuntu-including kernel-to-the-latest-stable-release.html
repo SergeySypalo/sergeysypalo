@@ -14,9 +14,10 @@ comments: true
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
     <header>
         <h2 class="h5" itemprop="headline">{{ page.title }}</h2>
-        <p>Posted on <i class="far fa-calendar-alt"></i> <date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> by 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span>
-        </p>
+        <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
+        {% for category in post.categories %}      
+            <span class="badge badge-primary">{{ category }}</span>
+        {% endfor %}
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
