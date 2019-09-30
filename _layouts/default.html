@@ -1,119 +1,126 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="title" content="{{ site.name }} | {{ page.title }}" />
-    <meta name="description" content="{{ page.description }}" />    
-    <meta name="author" content="Sergey Sypalo">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:type" content="{{ page.type }}" />
-    <meta property="og:title" content="{{ site.name }} | {{ page.title }}" />
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-    <meta name="twitter:card" content="{{ page.description }}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">    
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <link rel="icon" href="/favicon.ico" />
-    <title>{{ site.name }} | {{ page.title }}</title>
-</head>
-<body class="mb-0">
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 shadow">
-            <div class="container">
-                <a class="navbar-brand ml-2" href="/">{{ site.name }}</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>            
-                <div class="collapse navbar-collapse" id="navbarsExample07">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/devops">DevOps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/photo">Photo</a>
-                        </li>                       
-                        <li class="nav-item">
-                            <a class="nav-link" href="/movies">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
-                    </ul>    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="title" content="{{ site.name }} | {{ page.title }}" />
+        <meta name="description" content="{{ page.description }}" />    
+        <meta name="author" content="Sergey Sypalo">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:type" content="{{ page.type }}" />
+        <meta property="og:title" content="{{ site.name }} | {{ page.title }}" />
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+        <meta name="twitter:card" content="{{ page.description }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">    
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>{{ site.name }} | {{ page.title }}</title>
+    </head>
+    <body class="mb-0">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 shadow">
+                <div class="container">
+                    <a class="navbar-brand ml-2" href="/">{{ site.name }}</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>            
+                    <div class="collapse navbar-collapse" id="navbarsExample07">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/devops">DevOps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/photo">Photo</a>
+                            </li>                       
+                            <li class="nav-item">
+                                <a class="nav-link" href="/movies">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>    
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main role="main" class="container my-sm-4 p-4 shadow-lg">
-        <div class="row">
-            <section class="col-12 col-xl-9">
-                {{ content }}
-            </section><!-- /.blog-main -->
+            </nav>
+        </header>
+        
+        <main role="main" class="container my-sm-4 p-4 shadow-lg">
+            <div class="row">
+                <section class="col-12 col-xl-9">
+                    {{ content }}
+                </section><!-- /.blog-main -->
+                <aside class="col-12 col-xl-3">
+                    <section>
+                        <h3 class="h5">About us</h3>
+                        <figure>
+                            <picture class="mb-3">
+                                <img class="img-fluid" src="/assets/img/Sergey-and-Jane-Sypalo.jpg" alt="Sergey and Jane Sypalo">
+                            </picture>
+                            <figcaption>
+                                <p>
+                                    Hello, we are Sergey and Jane, brother and sister, welcome to our site. We have both 15+ years of real-life experience and want to share it with you.
+                                </p>
+                                <p>
+                                    Sergey is a professional cloud engineer with 15+ years of experience, specializing on the Microsoft, VMWare and Cisco products and managing datacenters worldwide.
+                                </p>
+                                <p>
+                                    Jane is a professional artist, specializing in oil and acryl painting.
+                                </p>
+                                <p>
+                                    Also both are travelling and photographing nature and people for a last decade.
+                                </p>
+                            </figcaption>
+                        </figure>                    
+                    </section>
+                    <section>
+                        <h3>Tags</h3>
+                        <ol class="list-unstyled mb-0">
+                            <li><a href="/tag/devops">DevOps</a></li>
+                            <li><a href="/tag/cloud">Cloud</a></li>
+                            <li><a href="/tag/containers">Containers</a></li>
+                            <li><a href="/tag/docker">Docker</a></li>
+                            <li><a href="/tag/powershell">PowerShell</a></li>
+                        </ol>
+                    </section>
+                </aside><!-- /.blog-sidebar -->
+            </div><!-- /.row -->
+        </main><!-- /.container -->
+        
+        <footer class="p-2 bg-dark text-center text-muted">
+            <a class="text-muted" href="{{ site.url }}">{{ site.name }}</a> &copy; 2019
+        </footer>
 
-            <aside class="col-12 col-xl-3">
-                <section>
-                    <h3 class="h5">About us</h3>
-                    <figure>
-                        <picture class="mb-2">
-                            <img class="img-fluid" src="/assets/img/Sergey-and-Jane-Sypalo.jpg" alt="Sergey and Jane Sypalo">
-                        </picture>
-                        <figcaption>
-                            <p>
-                                Hello, we are Sergey and Jane, brother and sister, welcome to our site. We have both 15+ years of real-life experience and want to share it with you.
-                            </p>
-                            <p>
-                                Sergey is a professional cloud engineer with 15+ years of experience, specializing on the Microsoft, VMWare and Cisco products and managing datacenters worldwide.
-                            </p>
-                            <p>
-                                Jane is a professional artist, specializing in oil and acryl painting.
-                            </p>
-                            <p>
-                                Also both are travelling and photographing nature and people for a last decade.
-                            </p>
-                        </figcaption>
-                    </figure>                    
-                </section>
-
-            </aside><!-- /.blog-sidebar -->
-
-        </div><!-- /.row -->
-
-    </main><!-- /.container -->
-
-    <footer class="p-2 bg-dark text-center text-muted">
-        <a class="text-muted" href="{{ site.url }}">{{ site.name }}</a> &copy; 2019
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21825981-6"></script>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Sergey Sypalo",
-          "url": "https://sypalo.com",
-          "sameAs": [
-            "https://linkedin.com/in/SergeySypalo",
-            "https://facebook.com/SergeySypalo",           
-            "https://twitter.com/SergeySypalo",
-            "https://instagram.com/SergeySypalo",            
-            "https://youtube.com/channel/UC-0_wG-VYOEN3nUaweSXsnw",
-            "https://pinterest.com/SergeySypalo"
-          ]
-        }
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21825981-6"></script>
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Sergey Sypalo",
+            "url": "https://sypalo.com",
+            "sameAs": [
+                "https://linkedin.com/in/SergeySypalo",
+                "https://facebook.com/SergeySypalo",           
+                "https://twitter.com/SergeySypalo",
+                "https://instagram.com/SergeySypalo",            
+                "https://youtube.com/channel/UC-0_wG-VYOEN3nUaweSXsnw",
+                "https://pinterest.com/SergeySypalo"
+            ]
+            }
+            </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-21825981-6');
         </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-21825981-6');
-    </script>
-</body>
+    </body>
 </html>
