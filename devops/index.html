@@ -36,7 +36,7 @@ description: Sergey Sypalo DevOps portfolio, services and blog posts
 </div>
 <hr />
 
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'devops'" %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'DevOps'" %}
 {% for post in posts %}
     {% include post-snippet.html %}    
 {% endfor %}
