@@ -13,13 +13,12 @@
         Tags:
         {% for tag in post.tags %}      
             <span class="badge badge-secondary">{{ tag }}</span>
-        {% endfor %}
-        <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
+        {% endfor %}        
     </p>    
     <div class="col-3 order-1">
         <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" alt="{{ post.title }}" />
     </div> 
     <footer class="col-12 order-4">        
-        <hr />
+        <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
     </footer>
 </article>
