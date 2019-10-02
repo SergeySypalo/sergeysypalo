@@ -18,7 +18,7 @@
     <div class="col-3 order-1">
         <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" alt="{{ post.title }}" />
     </div> 
-    <footer>
+    <footer class="col-12 order-4">
         <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
         <hr />
     </footer>
