@@ -16,9 +16,9 @@
         {% endfor %}
     </p>
     <div class="col-3 order-1">
-            <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" alt="{{ post.title }}" />
-        </div> 
-    <footer class="col-9 offset-3 order-4">
+        <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" alt="{{ post.title }}" />
+    </div> 
+    <footer>
         <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
         <hr />
     </footer>
