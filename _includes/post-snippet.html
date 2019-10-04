@@ -15,9 +15,15 @@
             <span class="badge badge-secondary">{{ tag }}</span>
         {% endfor %}        
     </p>    
-    <div class="col-3 order-1">
-        <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.png" alt="{{ post.title }}" />
-    </div> 
+    <figure class="col-3 order-1">
+        <picture>            
+            <source media="(max-width: 575.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-small-phone.webp" alt="{{ post.title }}">
+            <source media="(max-width: 767.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-large-phone.webp" alt="{{ post.title }}">
+            <source media="(max-width: 991.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-tablet.webp" alt="{{ post.title }}">
+            <source media="(max-width: 1199.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-desktop.webp" alt="{{ post.title }}">
+            <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title.webp" alt="{{ post.title }}" />
+        </picture>
+    </figure> 
     <footer class="col-9 offset-3 order-4">        
         <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
     </footer>
