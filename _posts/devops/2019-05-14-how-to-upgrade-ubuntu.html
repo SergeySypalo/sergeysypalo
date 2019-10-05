@@ -21,7 +21,7 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.3.2, which contains the following improvements:
+            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.3.4, which contains the following improvements:
         </p>
         <ul>
             <li>High-performance asynchronous I/O</li>
@@ -83,10 +83,10 @@ comments: true
             cd /tmp/
 
             # Download new kernel  
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.2/linux-headers-5.3.2-050302_5.3.2-050302.201910010731_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.2/linux-headers-5.3.2-050302-generic_5.3.2-050302.201910010731_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.2/linux-image-unsigned-5.3.2-050302-generic_5.3.2-050302.201910010731_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.2/linux-modules-5.3.2-050302-generic_5.3.2-050302.201910010731_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.4/linux-headers-5.3.4-050304_5.3.4-050304.201910051526_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.4/linux-headers-5.3.4-050304-generic_5.3.4-050304.201910051526_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.4/linux-image-unsigned-5.3.4-050304-generic_5.3.4-050304.201910051526_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.4/linux-modules-5.3.4-050304-generic_5.3.4-050304.201910051526_amd64.deb
 
             # Install new kernel
             sudo dpkg -i *.deb
@@ -107,7 +107,7 @@ comments: true
             uname -r
         </pre>
         <p>
-            That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.3.2 Linux Kernel.
+            That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.3.4 Linux Kernel.
         </p>
     </section>
         
