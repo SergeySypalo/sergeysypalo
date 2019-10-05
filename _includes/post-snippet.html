@@ -1,4 +1,4 @@
-<article class="row shadow m-1 mb-4 p-3 pb-4">
+<article class="row shadow m-1 mb-4 p-1 p-lg-3 pb-4">
     <header class="col-12 col-lg-9 order-2">
             <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
             {% for category in post.categories %}      
@@ -9,7 +9,7 @@
                 {{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}
             </p>
     </header>      
-    <p class="col-12 col-lg-9 order-3 offset-3 mb-3" itemprop="articleBody">
+    <p class="col-12 col-lg-9 order-3 offset-lg-3 mb-3" itemprop="articleBody">
         Tags:
         {% for tag in post.tags %}      
             <span class="badge badge-secondary">{{ tag }}</span>
@@ -23,7 +23,7 @@
             <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-desktop.webp" alt="{{ post.title }}" />
         </picture>
     </figure> 
-    <footer class="col-12 col-lg-3 offset-3 order-4">        
+    <footer class="col-12 col-lg-3 offset-lg-3 order-4">        
         <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">Read more</a>
     </footer>
 </article>
