@@ -21,36 +21,31 @@
     </head>
     <body class="mb-0">
         <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 shadow">
+            <nav class="navbar navbar-dark bg-dark p-0 shadow">
                 <div class="container">
-                    <a class="navbar-brand ml-2" href="/">{{ site.name }}</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>            
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/devops">DevOps</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/photo">Photo</a>
-                            </li>                       
-                            <li class="nav-item">
-                                <a class="nav-link" href="/movies">Movies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
-                            </li>
-                        </ul>    
-                    </div>
+                    <a class="navbar-brand ml-2" href="/">{{ site.name }}</a>                                               
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/devops">DevOps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/photo">Photo</a>
+                        </li>                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="/movies">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>                        
                 </div>
             </nav>
         </header>
         
-        <main role="main" class="container my-sm-4 p-2 p-lg-4 shadow-lg">
+        <main role="main" class="container my-sm-4 p-2  p-lg-4 shadow-lg">
             <div class="row">
                 <section class="col-12 col-xl-9">
                     {{ content }}
