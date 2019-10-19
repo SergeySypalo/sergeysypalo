@@ -49,17 +49,16 @@ comments: true
             # Install update-manager-core package
             sudo apt install update-manager-core
 
-            # Edit following configuration file...
-            sudo nano /etc/update-manager/release-upgrades
-
-            # ... and change Prompt to new value, like so
-            Prompt=normal
-
-            # Press Ctrl+X to save and exit from nano
+            # Change default branch from lts to normal
+            sudo sed -i 's/lts/normal/g' /etc/update-manager/release-upgrades            
 
             # Change default distro from bionic, which is a
             # codename for Ubuntu 18.04 to Disco (19.04 codename)
             sudo sed -i 's/bionic/disco/g' /etc/apt/sources.list
+
+            # or to Eoan (19.10 codename)
+            sudo sed -i 's/bionic/eoan/g' /etc/apt/sources.list
+            sudo sed -i 's/disco/eoan/g' /etc/apt/sources.list
 
             # Disable 3rd-party repos
             sudo sed -i 's/^/#/' /etc/apt/sources.list.d/*.list
@@ -82,11 +81,13 @@ comments: true
             # Change current directory to /tmp
             cd /tmp/
 
-            # Download new kernel  
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-headers-5.3.7-050307_5.3.7-050307.201910171955_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-headers-5.3.7-050307-generic_5.3.7-050307.201910171955_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-image-unsigned-5.3.7-050307-generic_5.3.7-050307.201910171955_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-modules-5.3.7-050307-generic_5.3.7-050307.201910171955_amd64.deb
+            # Download new kernel
+            # if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7
+            # and get new ones for your system, typically amd64
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-headers-5.3.7-050307_5.3.7-050307.201910180652_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-headers-5.3.7-050307-generic_5.3.7-050307.201910180652_amd64.deb            
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-image-unsigned-5.3.7-050307-generic_5.3.7-050307.201910180652_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.3.7/linux-modules-5.3.7-050307-generic_5.3.7-050307.201910180652_amd64.deb
 
             # Install new kernel
             sudo dpkg -i *.deb
