@@ -21,7 +21,7 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.04 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.3.7, which contains the following improvements:
+            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.3.7, which contains the following improvements:
         </p>
         <ul>
             <li>High-performance asynchronous I/O</li>
@@ -31,7 +31,7 @@ comments: true
             <li>Better protection against Spectre vulnerability variations</li>
         </ul>
         <p>
-                And here is a short list of what's new added to Ubuntu 19.04:        
+                And here is a short list of what's new added to Ubuntu 19.10:        
         </p>
         <ul>        
                 <li>Better and faster GNOME 3.32 Desktop</li>
@@ -61,7 +61,7 @@ comments: true
        
         </pre>
         <p>
-            To upgrade Ubuntu to non-lts release (like 19.04 or 19.10) some additional steps required:
+            To upgrade Ubuntu to non-lts release (like 19.10 or 19.10) some additional steps required:
         </p>
         <pre>
             # Update packages list            
@@ -82,7 +82,7 @@ comments: true
             # Change default distro from your current
             # 18.04 - bionic            
             # to
-            # 19.04 - disco
+            # 19.10 - disco
             # 19.10 - eoan - latest
             # in the example below we are upgraing from ubuntu 18.04 (bionic) to 19.10 (eoan)
             sudo sed -i 's/bionic/eoan/g' /etc/apt/sources.list            
@@ -106,7 +106,11 @@ comments: true
            
             # Reboot the system
             sudo shutdown -r now
-
+        </pre>
+        <p>
+            To Upgrade Ubuntu kernel to the latest 5.3.7 build, follow the steps:
+        </p>        
+        <pre>
             # Change current directory to /tmp
             cd /tmp/
 
@@ -140,7 +144,7 @@ comments: true
             uname -r
         </pre>
         <p>
-            That's it, now you should be running on the latest best-looking Ubuntu 19.04 and most secure 5.3.7 Linux Kernel.
+            That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.3.7 Linux Kernel.
         </p>
     </section>
         
