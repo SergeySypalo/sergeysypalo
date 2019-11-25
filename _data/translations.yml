@@ -1,0 +1,19 @@
+menu:
+  en:
+    home: "Home"
+    devops: "DevOps"
+    photo: "Photo"
+    movies: "Movies"
+    contacts: "Contacts"
+  ru:
+    home: "Главная"
+    devops: "ДевОпс"
+    photo: "Фото"
+    movies: "Фильмы"
+    contacts: "Контакты"
+tags:
+  en: "Tags"
+  ru: "Теги"
+readmore:
+  en: "Read more"
+  ru: "Читать далее"
