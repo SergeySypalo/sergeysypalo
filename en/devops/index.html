@@ -1,0 +1,43 @@
+---
+layout: default
+lang: en
+title: DevOps portfolio, services and blog posts
+description: Sergey Sypalo DevOps portfolio, services and blog posts
+---
+
+<h1 class="h3">{{ page.title }}</h1>
+<hr />
+<div class="row">
+    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
+        <div class="card h-100">
+            <section class="card-body">
+                <header>
+                    <h2 class="h5">DevOps Portfolio</h2>
+                </header>
+                <p class="card-text mb-auto">If you are interested in projects I've done before, then just check...</p>
+                <footer>
+                    <a href="/devops/portfolio" class="btn btn-primary mt-3">My portfolio</a>
+                </footer>
+            </section>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="card h-100">
+            <section class="card-body">
+                <header>
+                    <h2 class="h5">DevOps Services</h2>
+                </header>
+                <p class="card-text mb-auto">If you are interested in how I can help you to save money on cloud infrastructure, then just check...</p>
+                <footer>
+                    <a href="/devops/services" class="btn btn-success mt-3">Services I offer</a>
+                </footer>
+            </section>
+        </div>
+    </div>
+</div>
+<hr />
+
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'DevOps'" %}
+{% for post in posts %}
+    {% include post-snippet.html %}    
+{% endfor %}
