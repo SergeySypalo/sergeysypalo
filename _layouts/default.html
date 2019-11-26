@@ -15,7 +15,7 @@
         <meta name="twitter:card" content="{{ page.description }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/css/fonts.css">
-        <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+        <link rel="canonical" href="{{ site.url }}/{{ page.lang }}/{{ page.url }}" />
         <link rel="icon" href="/favicon.ico" />
         <title>{{ site.name }} | {{ page.title }}</title>        
     </head>
@@ -26,26 +26,32 @@
                     <a class="navbar-brand" href="/">{{ site.name }}</a>
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item p-2">
+                            <a class="nav-link" href="/en/{{ page.url }}">en</a>
+                        </li>                        
+                        <li class="nav-item p-2">|</li>                        
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="/ru/{{ page.url }}">>ru</a>
+                        </li>                        
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item p-2">
                             <a class="nav-link" href="/en">en</a> | <a class="nav-link" href="/ru">ru</a>
                         </li>                        
                         <li class="nav-item active p-2">
-                            <a class="nav-link" href="/">{{ site.data.translations.menu[page.lang].home }}</a>
+                            <a class="nav-link" href="/{{ page.lang }}">{{ site.data.translations.menu[page.lang].home }}</a>
                         </li>                        
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="/devops">{{ site.data.translations.menu[page.lang].devops }}</a>
+                            <a class="nav-link" href="/{{ page.lang }}/devops">{{ site.data.translations.menu[page.lang].devops }}</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="/photo">{{ site.data.translations.menu[page.lang].photo }}</a>
+                            <a class="nav-link" href="/{{ page.lang }}/photo">{{ site.data.translations.menu[page.lang].photo }}</a>
                         </li>                       
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="/movies">{{ site.data.translations.menu[page.lang].movies }}</a>
+                            <a class="nav-link" href="/{{ page.lang }}/movies">{{ site.data.translations.menu[page.lang].movies }}</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="/contacts">{{ site.data.translations.menu[page.lang].contacts }}</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="/contacts">{{ page.test2 }}</a>
-                        </li>
+                            <a class="nav-link" href="/{{ page.lang }}/contacts">{{ site.data.translations.menu[page.lang].contacts }}</a>
+                        </li>                        
                     </ul>
                 </div>
             </nav>
