@@ -1,5 +1,9 @@
+{% assign lang = "en" %}
+{% if page.url contains "/ru" %}
+    {% assign lang = "ru" %}    
+{% endif %}
 <!doctype html>
-<html lang="{{ page.lang }}">
+<html lang="{{ lang }}">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,10 +16,13 @@
         <meta property="og:title" content="{{ site.name }} | {{ page.title }}" />
         <meta property="og:description" content="{{ page.description }}" />
         <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-        <meta name="twitter:card" content="{{ page.description }}">        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+        <meta name="twitter:card" content="{{ page.description }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/css/fonts.css">
-        <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+        <link rel="canonical" href="{{ site.url }}/{{ lang }}{{ page.url | replace: '/en', ''}}" />
+        <link rel="alternate" href="{{ site.url }}/en{{ page.url | replace: '/en', ''}}" hreflang="en" />
+        <link rel="alternate" href="{{ site.url }}/ru{{ page.url | replace: '/en', ''}}" hreflang="ru" />
+        <link rel="alternate" href="{{ site.url }}{{ page.url | replace: '/en', ''}}" hreflang="x-default" />
         <link rel="icon" href="/favicon.ico" />
         <title>{{ site.name }} | {{ page.title }}</title>
     </head>
