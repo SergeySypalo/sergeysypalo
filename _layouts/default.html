@@ -33,10 +33,10 @@
                     <a class="navbar-brand" href="/">{{ site.name }}</a>
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="/en{{ page.url }}">en</a>
+                            <a class="nav-link" href="/en{{ page.url | replace: '/en', '' | replace: '/ru', '' }}">en</a>
                         </li>                                                                    
                         <li class="nav-item p-2">
-                            <a class="nav-link" href="/ru{{ page.url }}">ru</a>
+                            <a class="nav-link" href="/ru{{ page.url | replace: '/en', '' | replace: '/ru', '' }}">ru</a>
                         </li>                        
                     </ul>
                     <ul class="navbar-nav flex-row">                        
