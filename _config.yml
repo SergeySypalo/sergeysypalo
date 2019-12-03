@@ -2,3 +2,9 @@ name: Sypalo.com
 url: https://sypalo.com
 permalink: /:categories/blog/:year/:month/:title
 type: website
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
