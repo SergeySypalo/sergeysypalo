@@ -1,0 +1,154 @@
+---
+title: How to upgrade Ubuntu including kernel to the latest stable release
+description: How to upgrade Ubuntu including kernel to the latest stable release
+date: 2019-05-14
+modified: 2019-05-18
+categories: [DevOps]
+tags: [Linux, Security, Upgrade]
+permalink: /:categories/blog/:title
+type: article
+comments: true
+---
+
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
+    <header class="mb-2">
+        <h2 class="h5" itemprop="headline">{{ page.title }}</h2>
+        <small class="text-muted"><date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> | </small>
+        {% for category in page.categories %}      
+            <span class="badge badge-primary">{{ category }}</span>
+        {% endfor %}
+    </header>
+    <section class="mb-0" itemprop="articleBody">
+        <p>
+            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.4.1, which contains the following improvements:
+        </p>
+        <ul>
+            <li>High-performance asynchronous I/O</li>
+            <li>Use persistent memory as RAM</li>
+            <li>Live patching: support cumulative patches</li>
+            <li>Intel HDCP 2.2 support</li>
+            <li>Better protection against Spectre vulnerability variations</li>
+        </ul>
+        <p>
+                And here is a short list of what's new added to Ubuntu 19.10:        
+        </p>
+        <ul>        
+                <li>Better and faster GNOME 3.32 Desktop</li>
+                <li>New Icons and Visual Tweaks</li>
+                <li>Night Light Improvements</li>
+                <li>Application Permission Controls</li>        
+            </ul>
+        <p>
+            It's not possible to upgrade Ubuntu 16.x or older directly to 19.x, you have to upgrade it to the latest available lts release, which is 18.04.    
+            Perform the following steps to upgrade Ubuntu from one lts release to another, for example from 16.04 to 18.04:
+        </p>
+        <pre>
+            # Update packages list            
+            sudo apt-get update
+            
+            # Upgrade packages
+            sudo apt-get upgrade
+
+            # Install update-manager-core package
+            sudo apt-get install update-manager-core
+
+            # Upgrade distro
+            sudo apt-get dist-upgrade
+
+            # Update Ubuntu
+            sudo do-release-upgrade
+       
+        </pre>
+        <p>
+            To upgrade Ubuntu to non-lts release (like 19.10 or 19.10) some additional steps required:
+        </p>
+        <pre>
+            # Update packages list            
+            sudo apt-get update
+            
+            # Upgrade packages
+            sudo apt-get upgrade
+
+            # Install update-manager-core package
+            sudo apt-get install update-manager-core
+
+            # Upgrade distro
+            sudo apt-get dist-upgrade
+
+            # Change default branch from lts to normal
+            sudo sed -i 's/lts/normal/g' /etc/update-manager/release-upgrades            
+            
+            # Change default distro from your current
+            # 18.04 - bionic            
+            # to
+            # 19.10 - disco
+            # 19.10 - eoan - latest
+            # in the example below we are upgraing from ubuntu 18.04 (bionic) to 19.10 (eoan)
+            sudo sed -i 's/bionic/eoan/g' /etc/apt/sources.list            
+
+            # Update packages list            
+            sudo apt-get update
+            
+            # Upgrade packages
+            sudo apt-get upgrade
+            
+            # Run full upgrade
+            sudo apt-get dist-upgrade
+
+            # If any error re-run
+            sudo apt-get update 
+            sudo apt-get dist-upgrade
+
+            # Run cleanup
+            sudo apt-get autoremove 
+            sudo apt-get clean
+           
+            # Reboot the system
+            sudo shutdown -r now
+        </pre>
+        <p>
+            To Upgrade Ubuntu kernel to the latest 5.4.1 build, follow the steps:
+        </p>        
+        <pre>
+            # Change current directory to /tmp
+            cd /tmp/
+
+            # Download new kernel
+            # if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.1
+            # and get new ones for your system, typically amd64
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.1.1/linux-headers-5.4.1.1-050401_5.4.1.1-050401.201911290555_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.1.1/linux-headers-5.4.1.1-050401-generic_5.4.1.1-050401.201911290555_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.1.1/linux-image-unsigned-5.4.1.1-050401-generic_5.4.1.1-050401.201911290555_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.1.1/linux-modules-5.4.1.1-050401-generic_5.4.1.1-050401.201911290555_amd64.deb
+
+            # Install new kernel
+            sudo dpkg -i *.deb
+
+            # Reboot the system
+            sudo shutdown -r now
+
+            # Update packages list            
+            sudo apt-get update
+            
+            # Upgrade packages
+            sudo apt-get upgrade
+
+            # Reboot the system if needed
+            sudo shutdown -r now
+
+            # Check the OS distro
+            lsb_release -a
+
+            # Check the kernel version
+            uname -r
+        </pre>
+        <p>
+            That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.4.1 Linux Kernel.
+        </p>
+    </section>
+        
+    <footer>
+        <hr />
+    </footer>
+</article>
+{% include comments.html %}
