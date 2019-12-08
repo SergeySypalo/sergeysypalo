@@ -13,5 +13,5 @@ redirect_from: "https://www.sypalo.com"
 <hr />
 {% assign posts=site.posts | where:"lang", page.lang %}
 {% for post in posts %}  
-  {% include post-snippet.html locale=lang %}
+  {% include post-snippet.html %}
 {% endfor %}
