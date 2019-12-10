@@ -7,61 +7,86 @@
 
   <url>
     <loc>https://sypalo.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
-  </url>
+  </url>  
   <url>
-    <loc>https://sypalo.com/devops</loc>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sypalo.com/photo</loc>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sypalo.com/movies</loc>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sypalo.com/contacts</loc>
+    <loc>https://sypalo.com/en/devops</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/devops"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/devops"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
-    <loc>https://sypalo.com/devops/blog/how-to-upgrade-ubuntu</loc>
-    <lastmod>2019-12-04T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://sypalo.com/devops/blog/2019/04/how-to-run-powershell-core-in-docker-container-with-3rd-party-modules-preloaded</loc>
+    <loc>https://sypalo.com/en/photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/photo"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
-  </url>    
+  </url>
   <url>
-    <loc>https://sypalo.com/tag/devops</loc>
+    <loc>https://sypalo.com/en/movies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/movies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/photo"/>    
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sypalo.com/en/contacts</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/contacts"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/contacts"/>    
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>  
+  <url>
+    <loc>https://sypalo.com/en/devops/blog/how-to-upgrade-ubuntu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/devops/blog/how-to-upgrade-ubuntu"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/devops/blog/how-to-upgrade-ubuntu"/>    
+    <lastmod>2019-12-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>  
+  <url>
+    <loc>https://sypalo.com/en/devops/blog/2019/04/how-to-run-powershell-core-in-docker</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/devops/blog/2019/04/how-to-run-powershell-core-in-docker"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/devops/blog/2019/04/how-to-run-powershell-core-in-docker"/>    
+    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>  
+  <url>
+    <loc>https://sypalo.com/en/tag/devops</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/tag/devops"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/tag/devops"/>    
     <lastmod>2019-05-02T19:52:22+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/tag/cloud</loc>
+    <loc>https://sypalo.com/en/tag/cloud</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/tag/cloud"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/tag/cloud"/>    
     <lastmod>2019-05-02T19:52:22+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/tag/containers</loc>
+    <loc>https://sypalo.com/en/tag/containers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/tag/containers"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/tag/containers"/>    
     <lastmod>2019-05-02T19:52:22+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/tag/docker</loc>
+    <loc>https://sypalo.com/en/tag/docker</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/tag/docker"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/tag/docker"/>
     <lastmod>2019-05-02T19:52:22+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/tag/powershell</loc>
+    <loc>https://sypalo.com/en/tag/powershell</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/en/tag/powershell"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru/tag/powershell"/>
     <lastmod>2019-05-02T19:52:22+00:00</lastmod>
     <priority>0.80</priority>
   </url>
