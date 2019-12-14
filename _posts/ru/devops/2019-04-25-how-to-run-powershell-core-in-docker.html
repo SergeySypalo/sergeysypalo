@@ -20,54 +20,52 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            The idea of launching PowerCLI with the necessary modules in the Docker container has long been brewing, and finally I have taken up this issue.
+            Идея запуска PowerCLI с необходимыми модулями в контейнере Docker у меня назревала уже давно, и, наконец, я решил эту проблему.
         </p>
         <p>
-            One of the reasons was that PowerShell “broke down” on my Windows 10 machine, or rather, it works, but the Get-Credential command returns an error.
-            The second reason is simply the desire to experiment on the topic.
+            Одной из причин было то, что PowerShell «сломался» на моем компьютере с Windows 10, точнее, он работает, но команда Get-Credential возвращает ошибку. Вторая причина - просто желание экспериментировать на тему.
         </p>
         <p>
-            It turned out the truth is not so simple, details below. To run PowerShell in a Docker container with pre-loaded modules, you need to perform the following steps:
+            Оказалось, правда не так просто, подробности ниже. Чтобы запустить PowerShell в контейнере Docker с предварительно загруженными модулями, необходимо выполнить следующие шаги:
         </p>
         <ol>
-        <li>Enable Virtualization Support in BIOS</li>
-        <li>Install Hyper-V, you can do it like this:</li>
+        <li>Включить поддержку виртуализации в BIOS</li>
+        <li>Установить Hyper-V, вы можете сделать это так:</li>
         <li><kbd>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</kbd><br />
-            or so:<br />
+            или так so:<br />
             <kbd>DISM / Online / Enable-Feature / All / FeatureName: Microsoft-Hyper-V</kbd>
         </li>
-        <li>Install Docker <a href ="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank">Desktop for Windows</a></li>
-        <li>Create an empty folder, say D:\powershell-docker</li>
-        <li>Add the required modules to the subfolder D:\powershell-docker\Modules</li>
-        <li>Create a Dockerfile in D:\powershell-docker as follows
+        <li>Установить <a href ="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank">Docker Desktop for Windows</a></li>
+        <li>Создайте пустую папку, скажем D:\powershell-docker</li>
+        <li>Добавьте необходимые модули в подпапку D:\powershell-docker\Modules</li>
+        <li>Создайте Dockerfile в D:\powershell-docker следующего содержания:
             <pre>
-                # Use an existing docker image as a base
-                FROM mcr.microsoft.com/powershell:preview
+                # Используем существующий Docker образ PowerShell в качестве основы
+                FROM mcr.microsoft.com/powershell
 
-                # Copy Cisco UCS Power Tools to the standard modules location
+                # Копировать инструменты управления Cisco UCS в стандартное расположение модулей
                 COPY ./Modules ./usr/local/share/powershell/Modules
 
-                # Create a path in advance, then add required path to the file
+                # Создаем всю структуру каталогов, после чего добавляем путь к модулям в сам файл конфигурации
                 RUN mkdir -p /root/.config/powershell/
                 RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
             </pre>
         </li>
-        <li>Open CMD or PowerShell and go to D:\powershell-docker</li>
-        <li>Run the <kbd>docker build -t powershell-docker</kbd> command</li>
-        <li>Start our container: <kbd>docker run -it powershell-docker</kbd></li>
+        <li>Откроем CMD или PowerShell и переходим в D:\powershell-docker</li>
+        <li>Собираем контейнер <kbd>docker build -t powershell-docker</kbd></li>
+        <li>Запускаем контейнер: <kbd>docker run -it powershell-docker</kbd></li>
         </ol>
         <p>
-            The main problem was that when PowerShell Core started a container, it created a new session and importing modules via ENTRYPOINT or CMD did not lead to anything, the modules were accessible via Get-Module -ListAvailable, but they had to be imported manually, because autoloading does not work when using commands from available but not imported modules.
+            Основная проблема заключалась в том, что когда PowerShell Core запускал контейнер, он создавал новый сеанс и импорт модулей через ENTRYPOINT или CMD ни к чему не приводил, модули были доступны через Get-Module -ListAvailable, но их приходилось импортировать вручную, потому что автозагрузка не работала при использовании команд из доступных, но не импортированных модулей.
         </p>
         <p>
-            Another oddity/bug found is that the $profile variable (if you just see the value of this variable in a container running PowerShell Core points to the path /root/.config/powershell/Microsoft.PowerShell_profile.ps1, but this file does not exist.
+            Другая найденная странность/ошибка заключается в том, что переменная $profile (если вы просто видите значение этой переменной в контейнере с PowerShell Core, указывает на путь /root/.config/powershell/Microsoft.PowerShell_profile.ps1, но этот файл не существует.
         </p>
         <p>
-            As I said above, it does not make sense to redefine a profile, since at the start of a new session, $profile will again point to the same.
-            Therefore, as an option to create this path and file and specify in it the list of modules to import, which was done above in the Dockerfile.
+            Как я уже говорил выше, нет смысла переопределять профиль, так как в начале нового сеанса $ profile снова будет указывать на то же самое. Поэтому в качестве опции можно создать этот путь и файл и указать в нем список импортируемых модулей, что было сделано выше в Dockerfile.
         </p>
         <p>
-            I hope the information was useful, if you have any questions, ask in the comments, and send any code improvements as a pull request to the github, where the source code is posted.<br />
+            Я надеюсь, что информация была полезной, если у вас есть какие-либо вопросы, задавайте их в комментариях и отправляйте какие-либо улучшения кода в виде push-запроса на github, где размещен исходный код.
         </p>
     </section>
         
