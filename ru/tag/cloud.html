@@ -8,7 +8,7 @@ description: Cloud blog posts
       <h1 class="h3">{{ page.title }}</h1>
   </header>
   <hr />
-  {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Cloud'" | where:"lang", page.lang %}
+  {% assign posts = site.posts | where:"lang", page.lang | where_exp: "post", "post.tags contains 'Cloud'" %}
   {% for post in posts %}  
     <section>
         <header>
