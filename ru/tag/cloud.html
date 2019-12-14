@@ -1,4 +1,5 @@
 ---
+lang: ru
 title: Cloud blog posts
 description: Cloud blog posts
 ---
@@ -8,7 +9,7 @@ description: Cloud blog posts
       <h1 class="h3">{{ page.title }}</h1>
   </header>
   <hr />
-  {% assign posts = site.posts | where:"lang", page.lang | where_exp: "post", "post.tags contains 'Cloud'" %}
+  {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Cloud' and post.lang == page.lang" %}
   {% for post in posts %}  
     <section>
         <header>
