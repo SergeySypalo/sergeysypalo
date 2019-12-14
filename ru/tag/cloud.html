@@ -10,6 +10,7 @@ description: Cloud blog posts
   </header>
   <hr />
   {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Cloud' and post.lang == page.lang" %}
+  {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Cloud' and post.lang == page.lang" %}
   {% for post in posts %}  
     <section>
         <header>
