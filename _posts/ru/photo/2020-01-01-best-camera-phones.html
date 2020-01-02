@@ -11,164 +11,163 @@ type: article
 comments: true
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
+
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
+    itemprop="datePublished" content="{{ post.date }}">
     <header class="mb-2">
         <h2 class="h5" itemprop="headline">{{ page.title }}</h2>
-        <small class="text-muted"><date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> | </small>
-        {% for category in page.categories %}      
-            <span class="badge badge-primary">{{ category }}</span>
+        <small class="text-muted">
+            <date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> |
+        </small>
+        {% for category in page.categories %}
+        <span class="badge badge-primary">{{ category }}</span>
         {% endfor %}
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.4.7, которая содержит следующие улучшения:
+            Лучшие камерафоны 2020 по версии DxOMark
         </p>
 
         <div class="table-responsive">
             <table class="table">
-                <thead class="thead-dark">
+                <thead class="thead-dark small">
                     <tr>
-                      <th scope="col">Производитель</th>
-                      <th scope="col">Модель</th>
-                      <th scope="col">5G</th>
-                      <th scope="col">DxOmark рейтинг</th>
-                      <th scope="col">DxOmark место</th>
-                      <th scope="col">DxOmark обзор</th>                      
+                        <th scope="col">Место</th>
+                        <th scope="col">Рейтинг</th>                        
+                        <th scope="col">Модель</th>
+                        <th scope="col">5G</th>                        
+                        <th scope="col">Обзор</th>
+                        <th scope="col">Купить на Amazon</th>
                     </tr>
-                  </thead>
-                  <tbody>
-                    <tr>                      
-                      <td>Huawei</td>
-                      <td>Mate 30 Pro 5G</td>
-                      <td>Yes</td>
-                      <td>123</td>
-                      <td>1</td>
-                      <td>https://www.dxomark.com/huawei-mate-30-pro-5g-camera-review</td>
-                    </tr>
-                    <tr>
-                        <td>Huawei</td>
-                        <td>Mate 30 Pro</td>
-                        <td>No</td>
-                        <td>121</td>
-                        <td>2</td>
-                        <td>https://www.dxomark.com/huawei-mate-30-pro-camera-review</td>
-                    </tr>
-                    <tr>
-                        <td>Xiaomi</td>
-                        <td>Mi Note 10</td>
-                        <td>No</td>
-                        <td>121</td>
-                        <td>2</td>
-                        <td>https://www.dxomark.com/xiaomi-mi-cc9-pro-premium-edition-camera-review</td>
-                    </tr>
-                    <tr>
-                        <td>Apple</td>
-                        <td>iPhone 11 Pro Max</td>
-                        <td>No</td>
-                        <td>117</td>
-                        <td>3</td>
-                        <td>https://www.dxomark.com/apple-iphone-11-pro-max-camera-review</td>
-                    </tr>
-                    <tr>
-                        <td>Samsung</td>
-                        <td>Note 10+ 5G</td>
+                </thead>
+                <tbody>
+                    <tr>                        
+                        <td>1</td>
+                        <td>123</td>
+                        <td>Huawei Mate 30 Pro 5G</td>
                         <td>Yes</td>
+                        <td><a href="https://www.dxomark.com/huawei-mate-30-pro-5g-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2ZKgyAp" target="_blank">Купить</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td>121</td>                        
+                        <td>Huawei Mate 30 Pro</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/huawei-mate-30-pro-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/37pN7X8" target="_blank">Купить</a></td>
+                    </tr>
+                    <tr>                        
+                        <td>121</td>                        
+                        <td>Xiaomi Mi Note 10</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/xiaomi-mi-cc9-pro-premium-edition-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2QGtBix" target="_blank">Купить</a></td>                        
+                    </tr>
+                    <tr>
+                        <td rowspan="3">3</td>
+                        <td>117</td>                        
+                        <td>Apple iPhone 11 Pro Max</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/apple-iphone-11-pro-max-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2SKqj0k" target="_blank">Купить</a></td>                        
+                    </tr>
+                    <tr>
+                        <td>117</td>                        
+                        <td>Samsung Note 10+ 5G</td>
+                        <td>Yes</td>                        
+                        <td><a href="https://www.dxomark.com/samsung-galaxy-note-10-5g-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2ZGO4Ys" target="_blank">Купить</a></td>
+                    </tr>
+                    <tr>
                         <td>117</td>
-                        <td>3</td>
-                        <td>https://www.dxomark.com/samsung-galaxy-note-10-5g-camera-review</td>
-                    </tr>
-                    <tr>                        <td>Samsung</td>
-                        <td>Note 10+</td>
+                        <td>Samsung Note 10+</td>                        
                         <td>No</td>
-                        <td>117</td>
-                        <td>3</td>
-                        <td>https://www.dxomark.com/samsung-galaxy-note-10-camera-review</td>
-                    </tr>                   
-                    <tr>
-                        <td>Huawei</td>
-                        <td>P30 Pro</td>
-                        <td>No</td>
-                        <td>116</td>
-                        <td>4</td>
-                        <td>https://www.dxomark.com/huawei-p30-pro-camera-review</td>
-                    </tr>
-                     <tr>
-                        <td>Oppo</td>
-                        <td>Reno 10x Zoom</td>
-                        <td>No</td>
-                        <td>116</td>
-                        <td>4</td>
-                        <td>https://www.dxomark.com/oppo-reno-10x-zoom-camera-review</td>
+                        <td><a href="https://www.dxomark.com/samsung-galaxy-note-10-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/39z5Tx1" target="_blank">Купить</a></td>
                     </tr>
                     <tr>
-                        <td>Samsung</td>
-                        <td>Galaxy S10 5G</td>
-                        <td>Yes</td>
+                        <td rowspan="3">4</td>
                         <td>116</td>
-                        <td>4</td>
-                        <td>https://www.dxomark.com/samsung-galaxy-s10-5g-camera-review</td>
+                        <td>Huawei P30 Pro</td>                        
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/huawei-p30-pro-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/39z6uif" target="_blank">Купить</a></td>
                     </tr>
                     <tr>
-                        <td>OnePlus</td>
-                        <td>7 Pro</td>
-                        <td>No</td>
-                        <td>114</td>
+                        <td>116</td>
+                        <td>Oppo Reno 10x Zoom</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/oppo-reno-10x-zoom-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2QPW7OP" target="_blank">Купить</a></td>
+                    </tr>
+                    <tr>
+                        <td>116</td>
+                        <td>Samsung Galaxy S10 5G</td>
+                        <td>Yes</td>                        
+                        <td><a href="https://www.dxomark.com/samsung-galaxy-s10-5g-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/39xRyRG" target="_blank">Купить</a></td>                        
+                    </tr>
+                    <tr>
                         <td>5</td>
-                        <td>https://www.dxomark.com/oneplus-7-pro-camera-review</td>
+                        <td>114</td>
+                        <td>OnePlus 7 Pro</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/oneplus-7-pro-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2QhNSeY" target="_blank">Купить</a></td>
                     </tr>
                     <tr>
-                        <td>Honor</td>
-                        <td>20 Pro</td>
-                        <td>No</td>
-                        <td>113</td>
                         <td>6</td>
-                        <td>https://www.dxomark.com/honor-20-pro-camera-review</td>
+                        <td>113</td>
+                        <td>Honor 20 Pro</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/honor-20-pro-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2SJqI2V" target="_blank">Купить</a></td>
                     </tr>
                     <tr>
-                        <td>Google</td>
-                        <td>Pixel 4</td>
-                        <td>No</td>
+                        <td rowspan="2">7</td>
                         <td>112</td>
-                        <td>7</td>
-                        <td>https://www.dxomark.com/google-pixel-4-camera-review</td>
-                    </tr>                    
-                    <tr>
-                        <td>Huawei</td>
-                        <td>Mate 20 Pro</td>
-                        <td>No</td>
-                        <td>112</td>
-                        <td>7</td>
-                        <td>https://www.dxomark.com/huawei-mate-20-pro-camera-review-triple-cam-juggernaut</td>
+                        <td>Google Pixel 4</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/google-pixel-4-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/36fonk5" target="_blank">Купить</a></td>
                     </tr>
                     <tr>
-                        <td>Xiaomi</td>
-                        <td>Mi 9</td>
-                        <td>No</td>
-                        <td>110</td>
+                        <td>112</td>
+                        <td>Huawei Mate 20 Pro</td>                        
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/huawei-mate-20-pro-camera-review-triple-cam-juggernaut" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2FcnXzd" target="_blank">Купить</a></td>
+                    </tr>
+                    <tr>
                         <td>8</td>
-                        <td>https://www.dxomark.com/xiaomi-mi-9-camera-review</td>
+                        <td>110</td>                        
+                        <td>Xiaomi Mi 9</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/xiaomi-mi-9-camera-review" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2QBc23f" target="_blank">Купить</a></td>                        
                     </tr>
                     <tr>
-                        <td>Huawei</td>
-                        <td>P20 Pro</td>
-                        <td>No</td>
-                        <td>109</td>
                         <td>9</td>
-                        <td>https://www.dxomark.com/huawei-p20-pro-camera-review-innovative-technologies-outstanding-results</td>
+                        <td>109</td>
+                        <td>Huawei P20 Pro</td>                        
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/huawei-p20-pro-camera-review-innovative-technologies-outstanding-results" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2F8IhBs" target="_blank">Купить</a></td>
                     </tr>
                     <tr>
-                        <td>Apple</td>
-                        <td>iPhone XS Max</td>
-                        <td>No</td>
-                        <td>106</td>
                         <td>10</td>
-                        <td>https://www.dxomark.com/apple-iphone-xs-max-review-flagship-imaging-power</td>
-                    </tr>           
-                  </tbody>
+                        <td>106</td>
+                        <td>Apple iPhone XS Max</td>
+                        <td>No</td>                        
+                        <td><a href="https://www.dxomark.com/apple-iphone-xs-max-review-flagship-imaging-power" target="_blank">Обзор</a></td>
+                        <td><a href="https://amzn.to/2QAqzw0" target="_blank">Купить</a></td>                        
+                    </tr>
+                </tbody>
             </table>
-          </div>
+        </div>
     </section>
-        
+
     <footer>
         <hr />
     </footer>
