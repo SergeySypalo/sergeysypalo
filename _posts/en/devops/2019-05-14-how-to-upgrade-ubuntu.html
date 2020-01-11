@@ -23,7 +23,7 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.4.7, which contains the following improvements:
+            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.4.10, which contains the following improvements:
         </p>
         <ul>
             <li>High-performance asynchronous I/O</li>
@@ -110,19 +110,19 @@ comments: true
             sudo shutdown -r now
         </pre>
         <p>
-            To Upgrade Ubuntu kernel to the latest 5.4.7 build, follow the steps:
+            To Upgrade Ubuntu kernel to the latest 5.4.10 build, follow the steps:
         </p>        
         <pre>
             # Change current directory to /tmp
             cd /tmp/
 
             # Download new kernel
-            # if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.7
+            # if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.10
             # and get new ones for your system, typically amd64
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.7/linux-headers-5.4.7-050407_5.4.7-050407.201912311234_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.7/linux-headers-5.4.7-050407-generic_5.4.7-050407.201912311234_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.7/linux-image-unsigned-5.4.7-050407-generic_5.4.7-050407.201912311234_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.7/linux-modules-5.4.7-050407-generic_5.4.7-050407.201912311234_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.10/linux-headers-5.4.10-050410_5.4.10-050410.202001091038_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.10/linux-headers-5.4.10-050410-generic_5.4.10-050410.202001091038_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.10/linux-image-unsigned-5.4.10-050410-generic_5.4.10-050410.202001091038_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.4.10/linux-modules-5.4.10-050410-generic_5.4.10-050410.202001091038_amd64.deb
 
             # Install new kernel
             sudo dpkg -i *.deb
@@ -146,7 +146,7 @@ comments: true
             uname -r
         </pre>
         <p>
-            That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.4.7 Linux Kernel.
+            That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.4.10 Linux Kernel.
         </p>
     </section>
         
