@@ -1,19 +1,14 @@
 menu: 
-  - 
-    en: Home
-    ru: Главная
-  -     
-    en: DevOps
-    ru: ДевОпс
-  -     
-    en: Photo
-    ru: Фото
-  -     
-    en: Movies
-    ru: Фильмы
-  -     
-    en: Contacts
-    ru: Контакты
+  - en: "Home"
+    ru: "Главная"
+  - en: "DevOps"
+    ru: "ДевОпс"
+  - en: "Photo"
+    ru: "Фото"
+  - en: "Movies"
+    ru: "Фильмы"
+  - en: "Contacts"
+    ru: "Контакты"
 tags:
   en: "Tags"
   ru: "Теги"
