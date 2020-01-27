@@ -38,6 +38,7 @@
                             <a class="nav-link" href="/ru{{ page.url | replace: '/en', '' | replace: '/ru', '' | replace: '.html', ''}}">ru</a>
                         </li>                        
                     </ul>
+                    {{ site.translations.menu }}
                     <ul class="navbar-nav flex-row">
                         {% for menuitem in site.translations.menu %}
                         <li class="nav-item p-2 active">
