@@ -38,22 +38,12 @@
                             <a class="nav-link" href="/ru{{ page.url | replace: '/en', '' | replace: '/ru', '' | replace: '.html', ''}}">ru</a>
                         </li>                        
                     </ul>
-                    <ul class="navbar-nav flex-row">                        
-                        <li class="nav-item active p-2">
-                            <a class="nav-link" href="/{{ lang }}">{{ site.data.translations.menu[lang].home }}</a>
+                    <ul class="navbar-nav flex-row">
+                        {% for menuitem in site.translations.menu %}
+                        <li class="nav-item p-2 active">
+                            <a class="nav-link" href="/{{ menuitem[lang] }}">{{ menuitem[lang] }}</a>
                         </li>                        
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="/{{ lang }}/devops">{{ site.data.translations.menu[lang].devops }}</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="/{{ lang }}/photo">{{ site.data.translations.menu[lang].photo }}</a>
-                        </li>                       
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="/{{ lang }}/movies">{{ site.data.translations.menu[lang].movies }}</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="/{{ lang }}/contacts">{{ site.data.translations.menu[lang].contacts }}</a>
-                        </li>                        
+                        {% endfor %}                        
                     </ul>
                 </div>
             </nav>
