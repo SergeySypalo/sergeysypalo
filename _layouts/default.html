@@ -41,7 +41,7 @@
                     <ul class="navbar-nav flex-row">
                         {% for menuitem in site.translations.menu %}
                         <li class="nav-item p-2 active">
-                            <a class="nav-link" href="/{{ menuitem[lang] }}">{{ menuitem[lang] }}</a>
+                            <a class="nav-link" href="/{{ menuitem['en'] }}">{{ menuitem[lang] }}</a>
                         </li>                        
                         {% endfor %}                        
                     </ul>
