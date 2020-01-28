@@ -25,7 +25,7 @@
         <header>
             <nav class="navbar navbar-dark bg-dark p-0 shadow">
                 <div class="container">                    
-                    <a class="navbar-brand" href="/">{{ site.name }}</a>
+                    <a class="navbar-brand" href="/{% if page.lang == ru %}ru{% endif %}">{{ site.name }}</a>
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item p-2">
                             <a class="nav-link" href="{{ page.enlink }}">en</a>
