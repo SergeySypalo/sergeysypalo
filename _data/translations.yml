@@ -1,6 +1,4 @@
-menu: 
-  - en: "Home"
-    ru: "Главная"
+menu:  
   - en: "DevOps"
     ru: "ДевОпс"
   - en: "Photo"
