@@ -57,58 +57,58 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/photo/portfolio</loc>    
+    <loc>https://sypalo.com/photo-portfolio</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио"/>
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/photo/portfolio/portrait</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio/portrait"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио/портрет"/>    
+    <loc>https://sypalo.com/portrait-photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/portrait-photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-портрет"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
     <url>
-    <loc>https://sypalo.com/en/photo/portfolio/landscape</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio/landscape"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио/пейзаж"/>    
+    <loc>https://sypalo.com/landscape-photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/landscape-photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-пейзаж"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/photo/portfolio/macro</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio/macro"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио/макро"/>    
+    <loc>https://sypalo.com/macro-photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/macro-photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/макро-фото"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/photo/portfolio/urban</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio/urban"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио/город"/>    
+    <loc>https://sypalo.com/urban-photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/urban-photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-города"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
-    <loc>https://sypalo.com/photo/portfolio/dance</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio/dance"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио/танцы"/>    
+    <loc>https://sypalo.com/dance-photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/dance-photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-танцы"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/photo/portfolio/animal</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/portfolio/animal"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/портфолио/животные"/>    
+    <loc>https://sypalo.com/animals-photo</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/animals-photo"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-животных"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
-    <loc>https://sypalo.com/photo/services</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo/services"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото/услуги"/>    
+    <loc>https://sypalo.com/photo-services</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo-services"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-услуги"/>    
     <lastmod>2019-05-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -120,23 +120,23 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/movies/dilogies</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/movies/dilogies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фильмы/дилогии"/>    
+    <loc>https://sypalo.com/dilogies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/dilogies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/дилогии"/>    
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/movies/trilogies</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/movies/trilogies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фильмы/трилогии"/>    
+    <loc>https://sypalo.com/trilogies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/trilogies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/трилогии"/>    
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/movies/quadrologies</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/movies/quadrologies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фильмы/квадрологии"/>    
+    <loc>https://sypalo.com/quadrologies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/quadrologies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/квадрологии"/>    
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
