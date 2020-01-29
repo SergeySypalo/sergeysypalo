@@ -17,13 +17,13 @@
     </p>    
     <figure class="col-12 col-lg-3 order-1">
         <picture>
-            <source media="(max-width: 575.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-phone.webp" alt="{{ post.title }}">
-            <source media="(max-width: 767.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-smartphone.webp" alt="{{ post.title }}">
-            <source media="(max-width: 991.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-tablet.webp" alt="{{ post.title }}">            
+            <source media="(max-width: 575.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.enlink | split: '/' | last }}/title-phone.webp" alt="{{ post.title }}">
+            <source media="(max-width: 767.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.enlink | split: '/' | last }}/title-smartphone.webp" alt="{{ post.title }}">
+            <source media="(max-width: 991.98px)" srcset="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.enlink | split: '/' | last }}/title-tablet.webp" alt="{{ post.title }}">            
             <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.url | split: '/' | last }}/title-desktop.webp" alt="{{ post.title }}" />
         </picture>
     </figure> 
     <footer class="col-12 col-lg-3 offset-lg-3 order-4">        
-        <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">{{ site.data.translations.readmore["en"] }}</a>
+        <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">{{ site.data.translations.readmore[page.lang] }}</a>
     </footer>
 </article>
