@@ -57,6 +57,13 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://sypalo.com/samsung-galaxy-s20</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/samsung-galaxy-s20"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/самсунг-галакси-s20"/>
+    <lastmod>2020-02-12T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://sypalo.com/photo-portfolio</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo-portfolio"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото-портфолио"/>
