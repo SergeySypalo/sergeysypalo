@@ -23,7 +23,7 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.5.4, которая содержит следующие улучшения:
+            В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.5.7, которая содержит следующие улучшения:
         </p>
         <ul>
             <li>Высокопроизводительный асинхронный ввод/вывод</li>
@@ -108,19 +108,19 @@ comments: true
             sudo shutdown -r now
         </pre>
         <p>
-            Чтобы обновить ядро ​​Ubuntu до последней версии 5.5.4, выполните следующие действия:
+            Чтобы обновить ядро ​​Ubuntu до последней версии 5.5.7, выполните следующие действия:
         </p>        
         <pre>
             # Переходим в директорию /tmp
             cd /tmp/
 
             # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.4
+            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.7
             # и получите новые для вашей системы, обычно amd64
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.4/linux-headers-5.5.4-050504_5.5.4-050504.202002150446_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.4/linux-headers-5.5.4-050504-generic_5.5.4-050504.202002150446_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.4/linux-image-unsigned-5.5.4-050504-generic_5.5.4-050504.202002150446_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.4/linux-modules-5.5.4-050504-generic_5.5.4-050504.202002150446_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.7/linux-headers-5.5.7-050507_5.5.7-050507.202002281805_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.7/linux-headers-5.5.7-050507-generic_5.5.7-050507.202002281805_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.7/linux-image-unsigned-5.5.7-050507-generic_5.5.7-050507.202002281805_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.5.7/linux-modules-5.5.7-050507-generic_5.5.7-050507.202002281805_amd64.deb
             
             # Устанавливаем новое ядро
             sudo dpkg -i *.deb
@@ -144,7 +144,7 @@ comments: true
             uname -r
         </pre>
         <p>
-            Вот и все, теперь ваша система обновлена до новейшей Ubuntu 19.10 и работает на наиболее защищенном ядре Linux 5.5.4.
+            Вот и все, теперь ваша система обновлена до новейшей Ubuntu 19.10 и работает на наиболее защищенном ядре Linux 5.5.7.
         </p>
     </section>
         
