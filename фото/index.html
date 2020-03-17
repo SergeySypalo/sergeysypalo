@@ -39,7 +39,7 @@ rulink: /фото
 </div>
 <hr />
 
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'Photo'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'Фото'" | where:"lang", page.lang %}
 {% for post in posts %}
     {% include post-snippet.html %}     
 {% endfor %}
