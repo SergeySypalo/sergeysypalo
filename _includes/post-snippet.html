@@ -1,5 +1,5 @@
 <article class="row m-0 mt-1 mb-3 p-0 py-3 shadow-sm">
-    <header class="col-12 col-md-9 order-2">
+    <header class="col-12 col-md-8 col-lg-9 order-2">
             <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
             {% for category in post.categories %}      
                 <span class="badge badge-primary">{{ category }}</span>
@@ -9,18 +9,18 @@
                 {{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}
             </p>
     </header>      
-    <p class="col-12 col-md-9 order-3 offset-md-3 mb-3" itemprop="articleBody">
+    <p class="col-12 col-md-8 col-lg-9 order-3 offset-md-4 offset-lg-3 mb-3" itemprop="articleBody">
         Tags:
         {% for tag in post.tags %}      
             <span class="badge badge-secondary">{{ tag }}</span>
         {% endfor %}        
     </p>    
-    <figure class="col-12 col-md-3 order-1 d-none d-sm-block">
+    <figure class="col-12 col-md-4 col-lg-3 order-1 d-none d-sm-block">
         <picture>            
             <img class="img" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.enlink  | split: '/' | last }}/title-mobile-250.png" alt="{{ post.title }}" />
         </picture>
     </figure> 
-    <footer class="col-12 col-md-3 offset-md-3 order-4">        
+    <footer class="col-12 col-md-4 col-lg-3 offset-md-4 offset-lg-3 order-4">        
         <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">{{ site.data.translations.readmore[page.lang] }}</a>
     </footer>
 </article>
