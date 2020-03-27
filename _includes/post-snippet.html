@@ -3,7 +3,7 @@
         <div class="col-md-3 pr-0">
             <img class="img-fluid p-3" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.enlink  | split: '/' | last }}/title-tablet.png" alt="{{ post.title }}" />
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 pl-0">
             <div class="card-body">
                 <h2 class="card-title h5">{{ post.title }}</h2>
                 <p class="card-text">{{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}</p>
