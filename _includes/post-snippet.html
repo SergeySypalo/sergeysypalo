@@ -15,7 +15,7 @@
                     </h2>
                     <p class="card-text">
                         <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
-                        <a href="/{{ post.category }}" class="badge badge-primary">{{ post.category }}</a>
+                        <a href="{{ post.category | downcase }}" class="badge badge-primary">{{ post.category }}</a>
                     </p>
                 </header>
                 <p class="card-text">{{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}</p>
