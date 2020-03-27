@@ -8,9 +8,9 @@
                 <header class="mb-2">                    
                     <h2 class="card-title h5 mb-0">
                         {% if post.lang == "ru" %}
-                        <a href="/{{ post.rulink }}">{{ post.title }}</a>
+                        <a href="/{{ post.rulink }}" class="text-decoration-none">{{ post.title }}</a>
                         {% else %}
-                        <a href="/{{ post.enlink }}">{{ post.title }}</a>
+                        <a href="/{{ post.enlink }}" class="text-decoration-none">{{ post.title }}</a>
                         {% endif %}                        
                     </h2>
                     <p class="card-text">
