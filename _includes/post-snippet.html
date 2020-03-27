@@ -5,8 +5,14 @@
         </picture>
         <figcaption class="col-12 col-sm-8 col-lg-9 pl-sm-0">
             <div class="card-body">
-                <h2 class="card-title h5">{{ post.title }}</h2>
-                <p class="card-text">{{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}</p>                
+                <header>
+                    <h2 class="card-title h5">{{ post.title }}</h2>
+                    <p class="card-text">
+                        <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
+                        <span class="badge badge-primary">{{ category }}</span>
+                    </p>
+                </header>
+                <p class="card-text">{{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}</p>
             </div>
         </figcaption>
     </figure>
