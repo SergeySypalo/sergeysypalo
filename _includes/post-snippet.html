@@ -7,7 +7,7 @@
             {% endfor %}        
             <h2 class="h5 mt-1" itemprop="headline">{{ post.title }}</h2>            
     </header>
-    <p class="col-12 col-md-8 col-lg-9 order-3 offset-md-4 offset-lg-3 mb-3">
+    <p class="col-12 col-md-8 col-lg-9 order-3 offset-md-4 offset-lg-3 mb-3 float-left">
         {{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}
     </p>
     <p class="col-12 col-md-8 col-lg-9 order-4 offset-md-4 offset-lg-3 mb-3" itemprop="articleBody">
@@ -16,7 +16,7 @@
             <span class="badge badge-secondary">{{ tag }}</span>
         {% endfor %}        
     </p>    
-    <figure class="col-12 col-md-4 col-lg-3 order-1 d-none d-sm-block float-left">
+    <figure class="col-12 col-md-4 col-lg-3 order-1 d-none d-sm-block">
         <picture>            
             <img class="img-fluid" src="/assets/img/articles/{{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.enlink  | split: '/' | last }}/title-tablet.png" alt="{{ post.title }}" />
         </picture>
