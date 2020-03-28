@@ -8,3 +8,14 @@ defaults:
     values:
       layout: "default"
       show: "true"
+  -
+    scope:
+      path: "content/en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "content/ru"      
+    values:
+      lang: "ru"
+      
