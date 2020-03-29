@@ -22,9 +22,10 @@
                 <p class="card-text" itemprop="articleBody">
                     Tags:
                     {% for tag in post.tags %}      
-                        <span class="badge badge-secondary">{{ tag }}</span>
+                        <a href="{{ tag | downcase }}" class="badge badge-secondary">{{ tag }}</span>
                     {% endfor %}        
-                </p> 
+                </p>
+                <a class="badge badge-primary active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">{{ site.data.translations.readmore[page.lang] }}</a>
             </div>
         </figcaption>
     </figure>
