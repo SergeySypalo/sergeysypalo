@@ -14,12 +14,7 @@ comments: true
 ---
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
-    <header>
-        <h1 class="h5" itemprop="headline">{{ page.title }}</h1>
-        <p>Posted on <date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> by 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sergey Sypalo</span></span>
-        </p>
-    </header>
+    {% include header.html %}
     <section class="mb-0" itemprop="articleBody">
         <p>
             The idea of launching PowerCLI with the necessary modules in the Docker container has long been brewing, and finally I have taken up this issue.
