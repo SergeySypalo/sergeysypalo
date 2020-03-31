@@ -52,7 +52,7 @@ comments: true
                     <tr>                        
                         <td>
                             {{ place }}
-                            {% place++ %}
+                            {% assign place = place | plus: 1 %}
                         </td>
                         <td>124</td>
                         <td>Oppo Find X2 Pro</td>
@@ -63,7 +63,7 @@ comments: true
                     <tr>                        
                         <td rowspan="2">
                             {{ place }}
-                            {% place++ %}
+                            {% assign place = place | plus: 1 %}
                         </td>
                         <td>124</td>
                         <td>Oppo Find X2 Pro</td>
