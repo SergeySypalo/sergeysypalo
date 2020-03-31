@@ -12,13 +12,13 @@ type: article
 comments: true
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.date }}">
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.date }}" itemprop="dateModified" content="{{ page.modified }}">
     <header class="mb-2">                    
         <h1 class="card-title h4 mb-0">
             {{ page.title }}
         </h1>
         <p class="card-text">
-            <small class="text-muted"><date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> | </small>
+            <small class="text-muted"><date itemprop="dateModified">{{ page.modified | date_to_long_string }}</date> | </small>
             <a class="badge badge-primary" href="{{ page.category | downcase }}">{{ page.category }}</a>
         </p>
     </header>
