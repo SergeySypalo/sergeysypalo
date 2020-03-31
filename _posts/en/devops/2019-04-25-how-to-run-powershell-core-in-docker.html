@@ -14,7 +14,19 @@ comments: true
 ---
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
-    {% include header.html %}
+    <header class="mb-2">                    
+        <h2 class="card-title h5 mb-0">
+            {% if post.lang == "ru" %}
+            <a class="text-dark text-decoration-none" href="{{ post.rulink }}">{{ post.title }}</a>
+            {% else %}
+            <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
+            {% endif %}                        
+        </h2>
+        <p class="card-text">
+            <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
+            <a class="badge badge-primary" href="{{ post.category | downcase }}">{{ post.category }}</a>
+        </p>
+    </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
             The idea of launching PowerCLI with the necessary modules in the Docker container has long been brewing, and finally I have taken up this issue.

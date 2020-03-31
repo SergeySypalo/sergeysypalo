@@ -13,16 +13,19 @@ type: article
 comments: true
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
-    itemprop="datePublished" content="{{ post.date }}">
-    <header class="mb-2">
-        <h1 class="h5" itemprop="headline">{{ page.title }}</h2>
-        <small class="text-muted">
-            <date itemprop="datePublished">{{ page.date | date_to_long_string }}</date> |
-        </small>
-        {% for category in page.categories %}
-        <span class="badge badge-primary">{{ category }}</span>
-        {% endfor %}
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ post.date }}">
+    <header class="mb-2">                    
+        <h2 class="card-title h5 mb-0">
+            {% if post.lang == "ru" %}
+            <a class="text-dark text-decoration-none" href="{{ post.rulink }}">{{ post.title }}</a>
+            {% else %}
+            <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
+            {% endif %}                        
+        </h2>
+        <p class="card-text">
+            <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
+            <a class="badge badge-primary" href="{{ post.category | downcase }}">{{ post.category }}</a>
+        </p>
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
