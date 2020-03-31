@@ -6,6 +6,7 @@ enlink: /containers
 rulink: /контейнеры
 ---
 
+{% include title.html %}
 {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Containers'" | where:"lang", page.lang %}
 {% for post in posts %}  
   {% include post-snippet.html %}

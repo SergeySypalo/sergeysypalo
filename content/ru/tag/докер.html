@@ -6,6 +6,7 @@ enlink: /docker
 rulink: /докер
 ---
 
+{% include title.html %}
 {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Docker'" | where:"lang", page.lang %}
 {% for post in posts %}  
   {% include post-snippet.html %}

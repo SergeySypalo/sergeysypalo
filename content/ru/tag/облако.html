@@ -6,6 +6,7 @@ enlink: /cloud
 rulink: /облако
 ---
 
+{% include title.html %}
 {% assign posts = site.posts | where_exp: "post", "post.tags contains 'Cloud'" | where:"lang", page.lang %}  
 {% for post in posts %}  
   {% include post-snippet.html %}
