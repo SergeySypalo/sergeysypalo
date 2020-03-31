@@ -18,4 +18,13 @@ defaults:
       path: "content/ru"      
     values:
       lang: "ru"
-      
+  -
+    scope:
+      path: "_posts/en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "_posts/ru"      
+    values:
+      lang: "ru"
