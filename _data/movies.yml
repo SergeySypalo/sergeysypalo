@@ -1,464 +1,544 @@
 - 
-  EnName: A Beautiful Mind
-  RuName: Игры Разума
+  TitleEn: A Beautiful Mind
+  TitleRu: Игры Разума
   Year: 2001
   Amazon: 2sXiiKk
   AmazonBundle:
   AmazonPrime: 35OnQFC
-  iTunesName: a-beautiful-mind
+  iTunesTitle: a-beautiful-mind
   iTunesId: 324270794
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: A_Beautiful_Mind
+  GoogleTitle: A_Beautiful_Mind
   GoogleId: vH_5rPGYHb0
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Catch Me If You Can
-  RuName: Поймай Меня, Если Сможешь
+  TitleEn: Catch Me If You Can
+  TitleRu: Поймай Меня, Если Сможешь
   Year: 2002
   Amazon: 2EPDEvO
   AmazonBundle:
   AmazonPrime: 2ZiZmSy
-  iTunesName: catch-me-if-you-can-2002
+  iTunesTitle: catch-me-if-you-can-2002
   iTunesId: 315299220
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Catch_Me_If_You_Can
+  GoogleTitle: Catch_Me_If_You_Can
   GoogleId: jE7-h7mwfPs
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: The Shawshank Redemption
-  RuName: Побег из Шоушенка
+  TitleEn: The Shawshank Redemption
+  TitleRu: Побег из Шоушенка
   Year: 1994
   Amazon: 2ZfJfoG
   AmazonBundle:
   AmazonPrime: 2Sm1Td8
-  iTunesName: the-shawshank-redemption
+  iTunesTitle: the-shawshank-redemption
   iTunesId: 282875479
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: The_Shawshank_Redemption
+  GoogleTitle: The_Shawshank_Redemption
   GoogleId: RLw6hBFJ8bk
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Green Mile
-  RuName: Зелёная миля
+  TitleEn: Green Mile
+  TitleRu: Зелёная миля
   Year: 1999
   Amazon: 34MyThq
   AmazonBundle:
   AmazonPrime: 2EIsBor
-  iTunesName: the-green-mile
+  iTunesTitle: the-green-mile
   iTunesId: 283270111
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: The_Green_Mile
+  GoogleTitle: The_Green_Mile
   GoogleId: _ahLXw78cbY
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Forrest Gump
-  RuName: Форрест Гамп
+  TitleEn: Forrest Gump
+  TitleRu: Форрест Гамп
   Year: 1994
   Amazon: 2MpQXHQ
   AmazonBundle: 
   AmazonPrime: 2MmMVA2
-  iTunesName: forrest-gump
+  iTunesTitle: forrest-gump
   iTunesId: 314029341
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Forrest_Gump
+  GoogleTitle: Forrest_Gump
   GoogleId: EtYNngO7eq4
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Schindler's List
-  RuName: Список Шиндлера
+  TitleEn: Schindler's List
+  TitleRu: Список Шиндлера
   Year: 1993
   Amazon: 2QfQatR
   AmazonBundle: 
   AmazonPrime: 2sdR56i
-  iTunesName: schindlers-list
+  iTunesTitle: schindlers-list
   iTunesId: 587742072
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Schindler_s_List
+  GoogleTitle: Schindler_s_List
   GoogleId: TEY0dQAF4k4
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Intouchables
-  RuName: 1+1
+  TitleEn: Intouchables
+  TitleRu: 1+1
   Year: 2011
   Amazon: 2QazsMJ
   AmazonBundle:
   AmazonPrime: 2Qf12s2
-  iTunesName: intouchables
+  iTunesTitle: intouchables
   iTunesId: 594122500
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Intouchables
+  GoogleTitle: Intouchables
   GoogleId: p-XroBCgOa8
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Léon The Professional
-  RuName: Леон
+  TitleEn: Léon The Professional
+  TitleRu: Леон
   Year: 1994
   Amazon: 2PQJtzJ
   AmazonBundle:
   AmazonPrime: 374RRkC
-  iTunesName: the-professional
+  iTunesTitle: the-professional
   iTunesId: 270815716
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: L%C3%A9on_The_Professional_Extended_Cut
+  GoogleTitle: L%C3%A9on_The_Professional_Extended_Cut
   GoogleId: mi5bFPnl-vo
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Inception
-  RuName: Начало
+  TitleEn: Inception
+  TitleRu: Начало
   Year: 2010
   Amazon: 2MnipGd
   AmazonBundle:
   AmazonPrime: 2SuRBrt
-  iTunesName: inception
+  iTunesTitle: inception
   iTunesId: 400763833
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Inception
+  GoogleTitle: Inception
   GoogleId: E1iqGiX0lSg
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: The Prestige
-  RuName: Престиж
+  TitleEn: The Prestige
+  TitleRu: Престиж
   Year: 2006
   Amazon: 3761i3E
   AmazonBundle:
   AmazonPrime: 2POOQiC
-  iTunesName: the-prestige
+  iTunesTitle: the-prestige
   iTunesId: 209960866
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: The_Prestige
+  GoogleTitle: The_Prestige
   GoogleId: ZjDbu44RFnU
   GoogleBundleName:
   GoogleBundleId:
   Type: Single  
 - 
-  EnName: Interstellar
-  RuName: Интерстеллар
+  TitleEn: Interstellar
+  TitleRu: Интерстеллар
   Year: 2014
   Amazon: 2SuT5lx
   AmazonBundle:
   AmazonPrime: 398zmO4
-  iTunesName: interstellar
+  iTunesTitle: interstellar
   iTunesId: 960891136
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Interstellar
+  GoogleTitle: Interstellar
   GoogleId: Df7IEKqimOY
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Gladiator
-  RuName: Гладиатор
+  TitleEn: Gladiator
+  TitleRu: Гладиатор
   Year: 2000
   Amazon: 35Ri2v8
   AmazonBundle:
   AmazonPrime: 34OrrCp
-  iTunesName: gladiator-extended-cut
+  iTunesTitle: gladiator-extended-cut
   iTunesId: 978530057
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Gladiator
+  GoogleTitle: Gladiator
   GoogleId: l-kV68xPVnM
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: The Departed
-  RuName: Отступники
+  TitleEn: The Departed
+  TitleRu: Отступники
   Year: 2006
   Amazon: 2POBtza
   AmazonBundle:
   AmazonPrime: 2TYmHYG
-  iTunesName: the-departed
+  iTunesTitle: the-departed
   iTunesId: 284563157
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: The_Departed
+  GoogleTitle: The_Departed
   GoogleId: loJGSgb9PUE
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Shutter Island
-  RuName: Остров Проклятых
+  TitleEn: Shutter Island
+  TitleRu: Остров Проклятых
   Year: 2009
   Amazon: 2ZgBWNA
   AmazonBundle:
   AmazonPrime: 2SqH2pj
-  iTunesName: shutter-island
+  iTunesTitle: shutter-island
   iTunesId: 365271041
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Shutter_Island
+  GoogleTitle: Shutter_Island
   GoogleId: 27Fkm7-mzDs
   GoogleBundleName:
   GoogleBundleId:
   Type: Single  
 - 
-  EnName: One Flew Over the Cuckoo's Nest
-  RuName: Пролетая Над Гнездом Кукушки
+  TitleEn: One Flew Over the Cuckoo's Nest
+  TitleRu: Пролетая Над Гнездом Кукушки
   Year: 1975
   Amazon: 2SlwjfM
   AmazonBundle:
   AmazonPrime: 2U1qMeE
-  iTunesName: one-flew-over-the-cuckoos-nest
+  iTunesTitle: one-flew-over-the-cuckoos-nest
   iTunesId: 278291787
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: One_Flew_Over_the_Cuckoo_s_Nest
+  GoogleTitle: One_Flew_Over_the_Cuckoo_s_Nest
   GoogleId: zMox95yKNkY
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Death Race
-  RuName: Смертельная Гонка
+  TitleEn: Death Race
+  TitleRu: Смертельная Гонка
   Year: 2008
   Amazon: 2UehH18
   AmazonBundle:
   AmazonPrime: 2WbiMcB
-  iTunesName: death-race
+  iTunesTitle: death-race
   iTunesId: 291147060
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Death_Race_Extended
+  GoogleTitle: Death_Race_Extended
   GoogleId: Dy-ntAe8_GU
   GoogleBundleName:
   GoogleBundleId:
   Type: Single
 - 
-  EnName: Ant-Man
-  RuName: Человек-муравей
+  TitleEn: Ant-Man
+  TitleRu: Человек-муравей
   Year: 2015
   Amazon: 2vndtvF
   AmazonBundle: 2vZp30m
   AmazonPrime: 2TR2cx6
-  iTunesName: ant-man
+  iTunesTitle: ant-man
   iTunesId: 1012788984
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Ant_Man
+  GoogleTitle: Ant_Man
   GoogleId: IkrfpsjTJzo
   GoogleBundleName: Ant_Man_2_Movie_Collection
   GoogleBundleId: CdOONyQleL8
   Type: Dilogy
 - 
-  EnName: Ant-Man and the Wasp
-  RuName: Человек-муравей и Оса
+  TitleEn: Ant-Man and the Wasp
+  TitleRu: Человек-муравей и Оса
   Year: 2018
   Amazon: 33gluz1
   AmazonBundle: 2vZp30m
   AmazonPrime: 2TTPH3X
-  iTunesName: ant-man-and-the-wasp
+  iTunesTitle: ant-man-and-the-wasp
   iTunesId: 1400637562  
   iTunesBundleName:
   iTunesBundleId:  
-  GoogleName: Ant_Man_and_the_Wasp
+  GoogleTitle: Ant_Man_and_the_Wasp
   GoogleId: RQn-Pqvnzc8
   GoogleBundleName: Ant_Man_2_Movie_Collection
   GoogleBundleId: CdOONyQleL8
   Type: Dilogy
 - 
-  EnName: Blade Runner
-  RuName: Бегущий по лезвию
+  TitleEn: Blade Runner
+  TitleRu: Бегущий по лезвию
   Year: 1982
   Amazon: 33kdcWO
   AmazonBundle: 2vZp30m
   AmazonPrime: 2U98qqK
-  iTunesName: blade-runner
+  iTunesTitle: blade-runner
   iTunesId: 594314564
   iTunesBundleName: blade-runner-3-film-bundle
   iTunesBundleId: 1396267809
-  GoogleName: Blade_Runner
+  GoogleTitle: Blade_Runner
   GoogleId: 73rx9W5Tmzg
   GoogleBundleName: Blade_Runner_3_Film_Collection
   GoogleBundleId: gf0d3ZxErFs
   Type: Dilogy
 - 
-  EnName: Blade Runner 2049
-  RuName: Бегущий по лезвию 2049
+  TitleEn: Blade Runner 2049
+  TitleRu: Бегущий по лезвию 2049
   Year: 2017
   Amazon: 2wT1KFB
   AmazonBundle: 2vZp30m
   AmazonPrime: 2TQ9CAF
-  iTunesName: blade-runner-2049
+  iTunesTitle: blade-runner-2049
   iTunesId: 1288813671
   iTunesBundleName: blade-runner-3-film-bundle
   iTunesBundleId: 1396267809
-  GoogleName: Blade_Runner_2049
+  GoogleTitle: Blade_Runner_2049
   GoogleId: mw3l3n-wv2A
   GoogleBundleName: Blade_Runner_3_Film_Collection
   GoogleBundleId: gf0d3ZxErFs
   Type: Dilogy
 - 
-  EnName: Crank
-  RuName: Адреналин
+  TitleEn: Crank
+  TitleRu: Адреналин
   Year: 2006
   Amazon: 2wZLRwN
   AmazonBundle: 33k7zIj
   AmazonPrime: 2x1zBvN
-  iTunesName: crank
+  iTunesTitle: crank
   iTunesId: 284827606
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Crank
+  GoogleTitle: Crank
   GoogleId: SkTjmkX9whI
   GoogleBundleName: 
   GoogleBundleId: 
   Type: Dilogy
 - 
-  EnName: "Crank: High Voltage"
-  RuName: "Адреналин 2: Высокое напряжение"
+  TitleEn: "Crank: High Voltage"
+  TitleRu: "Адреналин 2: Высокое напряжение"
   Year: 2009
   Amazon: 33k7zIj
   AmazonBundle: 33k7zIj
   AmazonPrime: 2x1zxw3
-  iTunesName: crank-2-high-voltage
+  iTunesTitle: crank-2-high-voltage
   iTunesId: 321111335
   iTunesBundleName:
   iTunesBundleId:
-  GoogleName: Crank_2_High_Voltage
+  GoogleTitle: Crank_2_High_Voltage
   GoogleId: YPNo9jtuh6E
   GoogleBundleName: 
   GoogleBundleId: 
   Type: Dilogy
 - 
-  EnName: Deadpool
-  RuName: Дэдпул
+  TitleEn: Deadpool
+  TitleRu: Дэдпул
   Year: 2013
   Amazon: 3aVgm5U
   AmazonBundle: 2QjFiMq
   AmazonPrime: 3cTZtKC
-  iTunesName: deadpool
+  iTunesTitle: deadpool
   iTunesId: 1078111961
   iTunesBundleName: deadpool-2-movie-collection
   iTunesBundleId: 1404489349
-  GoogleName: Deadpool
+  GoogleTitle: Deadpool
   GoogleId: AEIKS4IbfNk
   GoogleBundleName: Deadpool_2_Movie_Collection
   GoogleBundleId: l-68Es2RdD8
   Type: Dilogy
 - 
-  EnName: Deadpool 2
-  RuName: Дэдпул 2
+  TitleEn: Deadpool 2
+  TitleRu: Дэдпул 2
   Year: 2018
   Amazon: 2UfsAj4
   AmazonBundle: 2QjFiMq
   AmazonPrime: 391siSl
-  iTunesName: deadpool-2
+  iTunesTitle: deadpool-2
   iTunesId: 1382445641
   iTunesBundleName: deadpool-2-movie-collection
   iTunesBundleId: 1404489349
-  GoogleName: Deadpool_2
+  GoogleTitle: Deadpool_2
   GoogleId: bDJfhOhuUH8
   GoogleBundleName: Deadpool_2_Movie_Collection
   GoogleBundleId: l-68Es2RdD8
   Type: Dilogy
 - 
-  EnName: The Equalizer
-  RuName: Великий уравнитель
+  TitleEn: The Equalizer
+  TitleRu: Великий уравнитель
   Year: 2014
   Amazon: 3dfCkSY
   AmazonBundle: 394FplM
   AmazonPrime: 3a6ylGG
-  iTunesName: the-equalizer
+  iTunesTitle: the-equalizer
   iTunesId: 911884686
   iTunesBundleName: equalizer-2-movie-collection
   iTunesBundleId: 1439626161
-  GoogleName: The_Equalizer
+  GoogleTitle: The_Equalizer
   GoogleId: vTQIRJzKdJo
   GoogleBundleName: 
   GoogleBundleId: 
   Type: Dilogy
 - 
-  EnName: The Equalizer 2
-  RuName: Великий уравнитель 2
+  TitleEn: The Equalizer 2
+  TitleRu: Великий уравнитель 2
   Year: 2018
   Amazon: 2WocCpz
   AmazonBundle: 394FplM
   AmazonPrime: 2wcc37L
-  iTunesName: deadpool-2
+  iTunesTitle: deadpool-2
   iTunesId: 1382445641
   iTunesBundleName: equalizer-2-movie-collection
   iTunesBundleId: 1439626161
-  GoogleName: The_Equalizer_2
+  GoogleTitle: The_Equalizer_2
   GoogleId: S0j8KL1smn8
   GoogleBundleName: The_Equalizer_2_Movie_Collection
   GoogleBundleId: bh7CmFMSQ
   Type: Dilogy
 - 
-  EnName: Fantastic Beasts and Where to Find Them
-  RuName: Фантастические твари и где они обитают
+  TitleEn: Fantastic Beasts and Where to Find Them
+  TitleRu: Фантастические твари и где они обитают
   Year: 2016
   Amazon: 3a4op0i
   AmazonBundle: 
   AmazonPrime: 2J1ujmZ
-  iTunesName: fantastic-beasts-and-where-to-find-them
+  iTunesTitle: fantastic-beasts-and-where-to-find-them
   iTunesId: 1170244491
   iTunesBundleName: fantastic-beasts-2-film-collection
   iTunesBundleId: 1441838028  
-  GoogleName: The_Equalizer_2
+  GoogleTitle: The_Equalizer_2
   GoogleId: S0j8KL1smn8
   GoogleBundleName: The_Equalizer_2_Movie_Collection
   GoogleBundleId: bh7CmFMSQ
   Type: Dilogy
 - 
-  EnName: Fantastic Beasts and Where to Find Them
-  RuName: Фантастические твари и где они обитают
+  TitleEn: "Fantastic Beasts: The Crimes of Grindelwald"
+  TitleRu: "Фантастические твари: Преступления Грин-де-Вальда"
   Year: 2018
   Amazon: 2U1GOVI
-  AmazonBundle: 
-  AmazonPrime: 2QtwYdc
-  iTunesName: fantastic-beasts-the-crimes-of-grindelwald
+  AmazonBundle: 3aAKG5V
+  AmazonPrime: 2R0RsKE
+  iTunesTitle: fantastic-beasts-the-crimes-of-grindelwald
   iTunesId: 1440342126
   iTunesBundleName: fantastic-beasts-2-film-collection
   iTunesBundleId: 1441838028
-  GoogleName: The_Equalizer_2
-  GoogleId: S0j8KL1smn8
-  GoogleBundleName: The_Equalizer_2_Movie_Collection
-  GoogleBundleId: bh7CmFMSQ
+  GoogleTitle: Fantastic_Beasts_The_Crimes_Of_Grindelwald
+  GoogleId: eMstbGE9LUQ
+  GoogleBundleName: Fantastic_Beasts_2_Film_Collection
+  GoogleBundleId: RbxDdIsTK0c
   Type: Dilogy
 - 
-  EnName: Fantastic Beasts and Where to Find Them
-  RuName: Фантастические твари и где они обитают
+  TitleEn: Home Alone
+  TitleRu: Один Дома
+  Year: 1990
+  Amazon: 34bQrF7
+  AmazonBundle: 2UAu2y2
+  AmazonPrime: 2R350oT
+  iTunesTitle: home-alone
+  iTunesId: 344796733
+  iTunesBundleName: 2-movie-home-alone-collection
+  iTunesBundleId: 1312530811
+  GoogleTitle: Home_Alone
+  GoogleId: qCgpWtnSuJU
+  GoogleBundleName: Home_Alone_2_Movie_Collection
+  GoogleBundleId: FYxwLNY9W1Q
+  Type: Dilogy
+- 
+  TitleEn: "Home Alone 2: Lost In New York"
+  TitleRu: "Один дома 2: Затерянный в Нью-Йорке"
+  Year: 1992
+  Amazon: 341YVhZ
+  AmazonBundle: 2UAu2y2
+  AmazonPrime: 39CFcGt
+  iTunesTitle: home-alone-2-lost-in-new-york
+  iTunesId: 581019360
+  iTunesBundleName: 2-movie-home-alone-collection
+  iTunesBundleId: 1312530811
+  GoogleTitle: Home_Alone_2_Lost_In_New_York
+  GoogleId: VpoalrOCt70
+  GoogleBundleName: Home_Alone_2_Movie_Collection
+  GoogleBundleId: FYxwLNY9W1Q
+  Type: Dilogy
+- 
+  TitleEn: Jurassic World
+  TitleRu: Мир юрского периода
+  Year: 2015
+  Amazon: 3bHyhxe
+  AmazonBundle: 2WYRTcg
+  AmazonPrime: 2Uzmiwb
+  iTunesTitle: jurassic-world
+  iTunesId: 973589977
+  iTunesBundleName: jurassic-5-movie-collection
+  iTunesBundleId: 1434139287
+  GoogleTitle: Jurassic_World
+  GoogleId: XvEDQzWXS_s
+  GoogleBundleName: Jurassic_5_Movie_Collection
+  GoogleBundleId: KrY087w4Y24
+  Type: Dilogy
+- 
+  TitleEn: "Jurassic World: Fallen Kingdom"
+  TitleRu: Мир юрского периода 2
   Year: 2018
-  Amazon: 2U1GOVI
-  AmazonBundle: 
-  AmazonPrime: 2QtwYdc
-  iTunesName: fantastic-beasts-the-crimes-of-grindelwald
-  iTunesId: 1440342126
-  iTunesBundleName: fantastic-beasts-2-film-collection
-  iTunesBundleId: 1441838028
-  GoogleName: The_Equalizer_2
-  GoogleId: S0j8KL1smn8
-  GoogleBundleName: The_Equalizer_2_Movie_Collection
-  GoogleBundleId: bh7CmFMSQ
+  Amazon: 2WZwEa0
+  AmazonBundle: 2WYRTcg
+  AmazonPrime: 3dIBT3W
+  iTunesTitle: jurassic-world-fallen-kingdom
+  iTunesId: 1394664988
+  iTunesBundleName: jurassic-5-movie-collection
+  iTunesBundleId: 1434139287
+  GoogleTitle: Jurassic_World_Fallen_Kingdom
+  GoogleId: 0ETePG9F6Zk
+  GoogleBundleName: Jurassic_5_Movie_Collection
+  GoogleBundleId: KrY087w4Y24
+  Type: Dilogy
+- 
+  TitleEn: "Kill Bill: Volume 1"
+  TitleRu: Убить Билла. Фильм 1
+  Year: 2003
+  Amazon: 2ysjEQl
+  AmazonBundle: 2ypN5lX
+  AmazonPrime: 2R1B1Om
+  iTunesTitle: kill-bill-volume-1
+  iTunesId: 432516627
+  iTunesBundleName: tarantino-6-film-collection
+  iTunesBundleId: 1059563158
+  GoogleTitle: Kill_Bill_Volume_1
+  GoogleId: 7NcUZpBNGU0
+  GoogleBundleName: The_Tarantino_6_Film_Collection
+  GoogleBundleId: ROlf69WKdEE
+  Type: Dilogy
+- 
+  TitleEn: "Kill Bill: Volume 2"
+  TitleRu: Убить Билла. Фильм 2
+  Year: 2004
+  Amazon: 2wQQaLe
+  AmazonBundle: 2ypN5lX
+  AmazonPrime: 2R2tqyW
+  iTunesTitle: kill-bill-volume-2
+  iTunesId: 432516575
+  iTunesBundleName: tarantino-6-film-collection
+  iTunesBundleId: 1059563158
+  GoogleTitle: Kill_Bill_Volume_2
+  GoogleId: D25woVpisbA
+  GoogleBundleName: The_Tarantino_6_Film_Collection
+  GoogleBundleId: ROlf69WKdEE
   Type: Dilogy
