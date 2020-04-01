@@ -12,9 +12,9 @@ rulink: /дилогии
     Save on buying movies and other Internet purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
 </p>
 {% assign movies=site.data.movies | where:"Type", Dilogy %}
-
+<div class="row">
   {% for movie in movies %}
-  <div class="card mb-3">
+  <div class="col-12 col-md-6 card mb-3">
     <div class="row no-gutters">
       <div class="col-md-2">
         <img src="/assets/img/movies/Ant-Man.jpg" class="card-img img-fluid" alt="Ant-Man">
@@ -29,3 +29,4 @@ rulink: /дилогии
     </div>
   </div>
   {% endfor %}
+</div>
