@@ -13,14 +13,18 @@ rulink: /дилогии
 </p>
 {% assign movies=site.data.movies | where:"Type", Dilogy %}
 <div class="row">
-  {% for movie in movies %}  
-    <div class="card col-12 col-md-2">    
+  {% for movie in movies %}
+  <div class="col-12 col-md-2">
+    <div class="card">    
       <img src="/assets/img/movies/Ant-Man.jpg" class="card-img img-fluid" alt="Ant-Ma">
-    </div>  
-    <div class="card-body col-12 col-md-4">
-      <h5 class="card-title">{{ movie.TitleEn }}</h5>
-      <p class="card-text"><small class="text-muted">{{ movie.Year }}</small></p>
-      <p class="card-text">Watch in <a class="card-link" href="https://amzt.to/{{ movie.AmazonPrime }}">Amazon</a>, <a class="card-link" href="https://itunes.apple.com/us/movie/{{ movie.iTunesTitle }}/id{{ movie.iTunesId }}">iTunes</a>, <a class="card-link" href="https://play.google.com/store/movies/details/{{ movie.GoogleTitle }}?id={{ movie.GoogleId }}">Google</a> or buy it in <a class="card-link" href="https://amzt.to/{{ movie.Amazon }}">Amazon</a> as a single movie or <a class="card-link" href="https://amzt.to/{{ movie.AmazonBundle }}">bundle</a></p>
-    </div>    
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card-body">
+        <h5 class="card-title">{{ movie.TitleEn }}</h5>
+        <p class="card-text"><small class="text-muted">{{ movie.Year }}</small></p>
+        <p class="card-text">Watch in <a class="card-link" href="https://amzt.to/{{ movie.AmazonPrime }}">Amazon</a>, <a class="card-link" href="https://itunes.apple.com/us/movie/{{ movie.iTunesTitle }}/id{{ movie.iTunesId }}">iTunes</a>, <a class="card-link" href="https://play.google.com/store/movies/details/{{ movie.GoogleTitle }}?id={{ movie.GoogleId }}">Google</a> or buy it in <a class="card-link" href="https://amzt.to/{{ movie.Amazon }}">Amazon</a> as a single movie or <a class="card-link" href="https://amzt.to/{{ movie.AmazonBundle }}">bundle</a></p>
+      </div>
+    </div>
+  </div>
   {% endfor %}
 </div>
