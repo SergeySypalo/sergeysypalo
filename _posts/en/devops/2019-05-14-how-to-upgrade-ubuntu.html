@@ -24,7 +24,7 @@ comments: true
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.6, which contains the following improvements:
+            In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.6.2, which contains the following improvements:
         </p>
         <ul>
             <li>High-performance asynchronous I/O</li>
@@ -111,19 +111,19 @@ comments: true
             sudo shutdown -r now
         </pre>
         <p>
-            To Upgrade Ubuntu kernel to the latest 5.6 build, follow the steps:
+            To Upgrade Ubuntu kernel to the latest 5.6.2 build, follow the steps:
         </p>        
         <pre>
             # Change current directory to /tmp
             cd /tmp/
 
             # Download new kernel
-            # if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6
+            # if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.2
             # and get new ones for your system, typically amd64
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6/linux-headers-5.6.0-050600_5.6.0-050600.202003292333_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6/linux-headers-5.6.0-050600-generic_5.6.0-050600.202003292333_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6/linux-image-unsigned-5.6.0-050600-generic_5.6.0-050600.202003292333_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6/linux-modules-5.6.0-050600-generic_5.6.0-050600.202003292333_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.2/linux-headers-5.6.2-050602_5.6.2-050602.202004020822_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.2/linux-headers-5.6.2-050602-generic_5.6.2-050602.202004020822_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.2/linux-image-unsigned-5.6.2-050602-generic_5.6.2-050602.202004020822_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.2/linux-modules-5.6.2-050602-generic_5.6.2-050602.202004020822_amd64.deb
 
             # Install new kernel
             sudo dpkg -i *.deb
@@ -147,7 +147,7 @@ comments: true
             uname -r
         </pre>
         <p>
-            That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.6 Linux Kernel.
+            That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.6.2 Linux Kernel.
         </p>
     </section>
         
