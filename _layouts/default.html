@@ -4,15 +4,18 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="title" content="{{ site.name }} | {{ page.title }}" />
+        <meta name="title" content="{{ page.title }}" />
         <meta name="description" content="{{ page.description }}" />    
         <meta name="author" content="Sergey Sypalo">
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="og:type" content="{{ page.type }}" />
-        <meta property="og:title" content="{{ site.name }} | {{ page.title }}" />
+        <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:description" content="{{ page.description }}" />
         <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+        <meta property="og:url" content="http://euro-travel-example.com/index.htm">
         <meta name="twitter:card" content="{{ page.description }}">
+        <meta property="og:site_name" content="Sypalo.com">
+        <meta name="twitter:image:alt" content="Sergey and Jane Sypalo">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/css/fonts.css">
         <link rel="canonical" href="https://sypalo.com{{ page.url }}" />
@@ -31,7 +34,7 @@
     </head>
     <body class="mb-0 bg-light">
         <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN6CJZ4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN6CJZ4" height="0" width="0" class="d-none"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <header>
             <nav class="navbar navbar-dark bg-dark p-0 shadow">
@@ -115,21 +118,21 @@
             gtag('config', 'UA-21825981-6');
         </script>
         <!-- Facebook Pixel Code -->
-        <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '2403304246450757');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=2403304246450757&ev=PageView&noscript=1"
-        /></noscript>
+            <script>
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '2403304246450757');
+                fbq('track', 'PageView');
+            </script>
+            <noscript>
+                <img height="1" width="1" class="d-none" src="https://www.facebook.com/tr?id=2403304246450757&ev=PageView&noscript=1"/>
+            </noscript>
         <!-- End Facebook Pixel Code -->
     </body>
 </html>
