@@ -7,7 +7,7 @@ rulink: /павершел
 ---
 
 {% include title.html %}
-{% assign posts = site.posts | where_exp: "post", "post.tags contains 'PowerShell'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'powershell'" | where:"lang", page.lang %}
 {% for post in posts %}  
   {% include post-snippet.html %}
 {% endfor %}
