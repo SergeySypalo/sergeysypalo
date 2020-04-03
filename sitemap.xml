@@ -4,7 +4,7 @@
     <loc>https://sypalo.com</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru"/>
-    <lastmod>2019-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>  
   <url>
@@ -18,7 +18,7 @@
     <loc>https://sypalo.com/how-to-upgrade-ubuntu</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/how-to-upgrade-ubuntu"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/как-обновить-ubuntu"/>    
-    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
@@ -158,28 +158,28 @@
     <loc>https://sypalo.com/cloud</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/cloud"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/облако"/>    
-    <lastmod>2019-05-02T19:52:22+00:00</lastmod>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/containers</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/containers"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/контейнеры"/>    
-    <lastmod>2019-05-02T19:52:22+00:00</lastmod>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/docker</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/docker"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/докер"/>
-    <lastmod>2019-05-02T19:52:22+00:00</lastmod>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/powershell</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/powershell"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/павершелл"/>
-    <lastmod>2019-05-02T19:52:22+00:00</lastmod>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>
