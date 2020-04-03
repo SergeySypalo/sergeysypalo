@@ -1,13 +1,13 @@
 ---
 title: Посты с тегом "Виртуализация"
 description: Посты с тегом "Виртуализация"
-permalink: /virtualization
+permalink: /виртуализация
 enlink: /virtualization
 rulink: /виртуализация
 ---
 
 {% include title.html %}
-{% assign posts = site.posts | where_exp: "post", "post.tags contains 'Виртуализация'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'виртуализация'" | where:"lang", page.lang %}
 {% for post in posts %}  
   {% include post-snippet.html %}
 {% endfor %}
