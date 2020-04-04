@@ -14,13 +14,13 @@ rulink: /дилогии
 {% assign movies=site.data.movies | where:"Type", "Dilogy" %}
 <div class="row">
   {% for movie in movies %}
-  <div class="col-12 col-sm-6">
+  <div class="col-12 col-md-6">
     <div class="card mb-3">
       <div class="row no-gutters">    
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-sm-4">
           <img src="/assets/img/movies/Ant-Man.jpg" class="card-img img-fluid" alt="Ant-Man">
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-sm-8">
           <div class="card-body">
             <h5 class="card-title mb-1">{{ movie.TitleEn }}</h5>          
             <p class="card-text mb-1"><small class="text-muted">{{ movie.Year }}</small></p>
