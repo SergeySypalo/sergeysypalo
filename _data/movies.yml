@@ -1,6 +1,7 @@
 - 
-  TitleEn: A Beautiful Mind
-  TitleRu: Игры Разума
+  Title:
+    en: A Beautiful Mind
+    ru: Игры Разума
   Year: 2001
   Amazon: 2sXiiKk
   AmazonBundle:
@@ -15,8 +16,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Catch Me If You Can
-  TitleRu: Поймай Меня, Если Сможешь
+  Title:
+    en: Catch Me If You Can
+    ru: Поймай Меня, Если Сможешь
   Year: 2002
   Amazon: 2EPDEvO
   AmazonBundle:
@@ -31,8 +33,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: The Shawshank Redemption
-  TitleRu: Побег из Шоушенка
+  Title:
+    en: The Shawshank Redemption
+    ru: Побег из Шоушенка
   Year: 1994
   Amazon: 2ZfJfoG
   AmazonBundle:
@@ -47,8 +50,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Green Mile
-  TitleRu: Зелёная миля
+  Title:
+    en: Green Mile
+    ru: Зелёная миля
   Year: 1999
   Amazon: 34MyThq
   AmazonBundle:
@@ -63,8 +67,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Forrest Gump
-  TitleRu: Форрест Гамп
+  Title:
+    en: Forrest Gump
+    ru: Форрест Гамп
   Year: 1994
   Amazon: 2MpQXHQ
   AmazonBundle: 
@@ -79,8 +84,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Schindler's List
-  TitleRu: Список Шиндлера
+  Title:
+    en: Schindler's List
+    ru: Список Шиндлера
   Year: 1993
   Amazon: 2QfQatR
   AmazonBundle: 
@@ -95,8 +101,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Intouchables
-  TitleRu: 1+1
+  Title:
+    en: Intouchables
+    ru: 1+1
   Year: 2011
   Amazon: 2QazsMJ
   AmazonBundle:
@@ -111,8 +118,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Léon The Professional
-  TitleRu: Леон
+  Title:
+    en: Léon The Professional
+    ru: Леон
   Year: 1994
   Amazon: 2PQJtzJ
   AmazonBundle:
@@ -127,8 +135,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Inception
-  TitleRu: Начало
+  Title:
+    en: Inception
+    ru: Начало
   Year: 2010
   Amazon: 2MnipGd
   AmazonBundle:
@@ -143,8 +152,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: The Prestige
-  TitleRu: Престиж
+  Title:
+    en: The Prestige
+    ru: Престиж
   Year: 2006
   Amazon: 3761i3E
   AmazonBundle:
@@ -159,8 +169,9 @@
   GoogleBundleId:
   Type: Single  
 - 
-  TitleEn: Interstellar
-  TitleRu: Интерстеллар
+  Title:
+    en: Interstellar
+    ru: Интерстеллар
   Year: 2014
   Amazon: 2SuT5lx
   AmazonBundle:
@@ -175,8 +186,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Gladiator
-  TitleRu: Гладиатор
+  Title:
+    en: Gladiator
+    ru: Гладиатор
   Year: 2000
   Amazon: 35Ri2v8
   AmazonBundle:
@@ -191,8 +203,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: The Departed
-  TitleRu: Отступники
+  Title:
+    en: The Departed
+    ru: Отступники
   Year: 2006
   Amazon: 2POBtza
   AmazonBundle:
@@ -207,8 +220,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Shutter Island
-  TitleRu: Остров Проклятых
+  Title:
+    en: Shutter Island
+    ru: Остров Проклятых
   Year: 2009
   Amazon: 2ZgBWNA
   AmazonBundle:
@@ -223,8 +237,9 @@
   GoogleBundleId:
   Type: Single  
 - 
-  TitleEn: One Flew Over the Cuckoo's Nest
-  TitleRu: Пролетая Над Гнездом Кукушки
+  Title:
+    en: One Flew Over the Cuckoo's Nest
+    ru: Пролетая Над Гнездом Кукушки
   Year: 1975
   Amazon: 2SlwjfM
   AmazonBundle:
@@ -239,8 +254,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Death Race
-  TitleRu: Смертельная Гонка
+  Title:
+    en: Death Race
+    ru: Смертельная Гонка
   Year: 2008
   Amazon: 2UehH18
   AmazonBundle:
@@ -255,8 +271,9 @@
   GoogleBundleId:
   Type: Single
 - 
-  TitleEn: Ant-Man
-  TitleRu: Человек-муравей
+  Title:
+    en: Ant-Man
+    ru: Человек-муравей
   Year: 2015
   Amazon: 2vndtvF
   AmazonBundle: 2vZp30m
@@ -271,8 +288,9 @@
   GoogleBundleId: CdOONyQleL8
   Type: Dilogy
 - 
-  TitleEn: Ant-Man and the Wasp
-  TitleRu: Человек-муравей и Оса
+  Title:
+    en: Ant-Man and the Wasp
+    ru: Человек-муравей и Оса
   Year: 2018
   Amazon: 33gluz1
   AmazonBundle: 2vZp30m
@@ -287,8 +305,9 @@
   GoogleBundleId: CdOONyQleL8
   Type: Dilogy
 - 
-  TitleEn: Blade Runner
-  TitleRu: Бегущий по лезвию
+  Title:
+    en: Blade Runner
+    ru: Бегущий по лезвию
   Year: 1982
   Amazon: 33kdcWO
   AmazonBundle: 2vZp30m
@@ -303,8 +322,9 @@
   GoogleBundleId: gf0d3ZxErFs
   Type: Dilogy
 - 
-  TitleEn: Blade Runner 2049
-  TitleRu: Бегущий по лезвию 2049
+  Title:
+    en: Blade Runner 2049
+    ru: Бегущий по лезвию 2049
   Year: 2017
   Amazon: 2wT1KFB
   AmazonBundle: 2vZp30m
@@ -319,8 +339,9 @@
   GoogleBundleId: gf0d3ZxErFs
   Type: Dilogy
 - 
-  TitleEn: Crank
-  TitleRu: Адреналин
+  Title:
+    en: Crank
+    ru: Адреналин
   Year: 2006
   Amazon: 2wZLRwN
   AmazonBundle: 33k7zIj
@@ -335,8 +356,9 @@
   GoogleBundleId: 
   Type: Dilogy
 - 
-  TitleEn: "Crank: High Voltage"
-  TitleRu: "Адреналин 2: Высокое напряжение"
+  Title:
+    en: "Crank: High Voltage"
+    ru: "Адреналин 2: Высокое напряжение"
   Year: 2009
   Amazon: 33k7zIj
   AmazonBundle: 33k7zIj
@@ -351,8 +373,9 @@
   GoogleBundleId: 
   Type: Dilogy
 - 
-  TitleEn: Deadpool
-  TitleRu: Дэдпул
+  Title:
+    en: Deadpool
+    ru: Дэдпул
   Year: 2013
   Amazon: 3aVgm5U
   AmazonBundle: 2QjFiMq
@@ -367,8 +390,9 @@
   GoogleBundleId: l-68Es2RdD8
   Type: Dilogy
 - 
-  TitleEn: Deadpool 2
-  TitleRu: Дэдпул 2
+  Title:
+    en: Deadpool 2
+    ru: Дэдпул 2
   Year: 2018
   Amazon: 2UfsAj4
   AmazonBundle: 2QjFiMq
@@ -383,8 +407,9 @@
   GoogleBundleId: l-68Es2RdD8
   Type: Dilogy
 - 
-  TitleEn: The Equalizer
-  TitleRu: Великий уравнитель
+  Title:
+    en: The Equalizer
+    ru: Великий уравнитель
   Year: 2014
   Amazon: 3dfCkSY
   AmazonBundle: 394FplM
@@ -399,8 +424,9 @@
   GoogleBundleId: 
   Type: Dilogy
 - 
-  TitleEn: The Equalizer 2
-  TitleRu: Великий уравнитель 2
+  Title:
+    en: The Equalizer 2
+    ru: Великий уравнитель 2
   Year: 2018
   Amazon: 2WocCpz
   AmazonBundle: 394FplM
@@ -415,8 +441,9 @@
   GoogleBundleId: bh7CmFMSQ
   Type: Dilogy
 - 
-  TitleEn: Fantastic Beasts and Where to Find Them
-  TitleRu: Фантастические твари и где они обитают
+  Title:
+    en: Fantastic Beasts and Where to Find Them
+    ru: Фантастические твари и где они обитают
   Year: 2016
   Amazon: 3a4op0i
   AmazonBundle: 
@@ -431,8 +458,9 @@
   GoogleBundleId: bh7CmFMSQ
   Type: Dilogy
 - 
-  TitleEn: "Fantastic Beasts: The Crimes of Grindelwald"
-  TitleRu: "Фантастические твари: Преступления Грин-де-Вальда"
+  Title:
+    en: "Fantastic Beasts: The Crimes of Grindelwald"
+    ru: "Фантастические твари: Преступления Грин-де-Вальда"
   Year: 2018
   Amazon: 2U1GOVI
   AmazonBundle: 3aAKG5V
@@ -447,8 +475,9 @@
   GoogleBundleId: RbxDdIsTK0c
   Type: Dilogy
 - 
-  TitleEn: Home Alone
-  TitleRu: Один Дома
+  Title:
+    en: Home Alone
+    ru: Один Дома
   Year: 1990
   Amazon: 34bQrF7
   AmazonBundle: 2UAu2y2
@@ -463,8 +492,9 @@
   GoogleBundleId: FYxwLNY9W1Q
   Type: Dilogy
 - 
-  TitleEn: "Home Alone 2: Lost In New York"
-  TitleRu: "Один дома 2: Затерянный в Нью-Йорке"
+  Title:
+    en: "Home Alone 2: Lost In New York"
+    ru: "Один дома 2: Затерянный в Нью-Йорке"
   Year: 1992
   Amazon: 341YVhZ
   AmazonBundle: 2UAu2y2
@@ -479,8 +509,9 @@
   GoogleBundleId: FYxwLNY9W1Q
   Type: Dilogy
 - 
-  TitleEn: Jurassic World
-  TitleRu: Мир юрского периода
+  Title:
+    en: Jurassic World
+    ru: Мир юрского периода
   Year: 2015
   Amazon: 3bHyhxe
   AmazonBundle: 2WYRTcg
@@ -495,8 +526,9 @@
   GoogleBundleId: KrY087w4Y24
   Type: Dilogy
 - 
-  TitleEn: "Jurassic World: Fallen Kingdom"
-  TitleRu: Мир юрского периода 2
+  Title:
+    en: "Jurassic World: Fallen Kingdom"
+    ru: Мир юрского периода 2
   Year: 2018
   Amazon: 2WZwEa0
   AmazonBundle: 2WYRTcg
@@ -511,8 +543,9 @@
   GoogleBundleId: KrY087w4Y24
   Type: Dilogy
 - 
-  TitleEn: "Kill Bill: Volume 1"
-  TitleRu: Убить Билла. Фильм 1
+  Title:
+    en: "Kill Bill: Volume 1"
+    ru: Убить Билла. Фильм 1
   Year: 2003
   Amazon: 2ysjEQl
   AmazonBundle: 2ypN5lX
@@ -527,8 +560,9 @@
   GoogleBundleId: ROlf69WKdEE
   Type: Dilogy
 - 
-  TitleEn: "Kill Bill: Volume 2"
-  TitleRu: Убить Билла. Фильм 2
+  Title:
+    en: "Kill Bill: Volume 2"
+    ru: Убить Билла. Фильм 2
   Year: 2004
   Amazon: 2wQQaLe
   AmazonBundle: 2ypN5lX
