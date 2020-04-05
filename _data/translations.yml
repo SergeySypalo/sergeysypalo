@@ -20,3 +20,16 @@ aside:
   ru:
     about: "О нас"
     text: "Привет, мы Сергей и Женя, брат и сестра, добро пожаловать на наш сайт. Мы имеем более чем 15-летний опыт работы в DevOps, искусстве и фотографии и хотим поделиться им с вами."
+movies:
+  watch:
+    en: "Watch in"
+    ru: "Смотри в"  
+  buy:
+    en: "or buy it in"
+    ru: "купи в "
+  choice:
+    en: "as a single movie or"
+    ru: "отдельно или в"
+  bundle:
+    en: bundle
+    ru: наборе
