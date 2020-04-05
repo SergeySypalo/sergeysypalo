@@ -26,7 +26,7 @@ movies:
     ru: "Смотри в"  
   buy:
     en: "or buy it in"
-    ru: "купи в "
+    ru: "или купи в "
   choice:
     en: "as a single movie or"
     ru: "отдельно или в"
