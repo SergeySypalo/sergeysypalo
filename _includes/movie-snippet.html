@@ -15,7 +15,7 @@
                     <a href="https://play.google.com/store/movies/details/{{ movie.GoogleTitle }}?id={{ movie.GoogleId }}&PAffiliateId=1100l62546" target="_blank">Google</a>
                     {{ site.data.translations.movies.buy[page.lang] }} 
                     <a href="https://amzn.to/{{ movie.Amazon }}" target="_blank">Amazon</a> 
-                    {% if movie.AmazonBundle != "" %}
+                    {% if movie.Type != "Single" %}
                     {{ site.data.translations.movies.bundle[page.lang] }} 
                     <a href="https://itunes.apple.com/us/movie-collection/{{ movie.iTunesBundleName }}/id{{ movie.iTunesBundleId }}" target="_blank">iTunes</a> 
                     {{ site.data.translations.movies.and[page.lang] }} 
