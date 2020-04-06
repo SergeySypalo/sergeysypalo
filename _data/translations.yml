@@ -15,7 +15,7 @@ readmore:
   ru: "Читать далее"
 aside:
   en: 
-    about: "About us"
+    about: About us
     text: "Hello, we are Sergey and Jane, brother and sister, welcome to our site. We have both 15+ years of real-life experience in DevOps, arts and photography and want to share it with you."
   ru:
     about: "О нас"
@@ -25,11 +25,14 @@ movies:
     en: "Watch on"
     ru: "Смотри на"  
   buy:
-    en: "or buy it in"
-    ru: "или купи в "
-  choice:
-    en: "as a single movie or"
-    ru: "отдельно или в"
+    en: "or buy it on"
+    ru: "или купи на "  
   bundle:
-    en: bundle
-    ru: наборе
+    en: Also available in a bundle to watch on
+    ru: Также доступен в наборе для просмотра на
+  and:
+    en: and
+    ru: или
+  bundlebuy:
+    en: or to buy on
+    ru: или покупки на
