@@ -576,3 +576,37 @@
   GoogleBundleName: The_Tarantino_6_Film_Collection
   GoogleBundleId: ROlf69WKdEE
   Type: Dilogy
+- 
+  Title:
+    en: "Hotel Transylvania"
+    ru: 
+  Year: 
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy  
+- 
+  Title:
+    en: 
+    ru: 
+  Year: 
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: 
