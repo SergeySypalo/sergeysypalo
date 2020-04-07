@@ -577,9 +577,9 @@
   Type: Dilogy
 - 
   Title:
-    en: "Hotel Transylvania"
-    ru: 
-  Year: 
+    en: Back to the Future
+    ru: Назад в будущее
+  Year: 1985
   Amazon: 
   AmazonBundle: 
   AmazonPrime: 
@@ -594,9 +594,9 @@
   Type: Trilogy  
 - 
   Title:
-    en: 
-    ru: 
-  Year: 
+    en: Back to the Future Part II
+    ru: Назад в будущее 2
+  Year: 1989
   Amazon: 
   AmazonBundle: 
   AmazonPrime: 
@@ -608,4 +608,939 @@
   GoogleId: 
   GoogleBundleName:
   GoogleBundleId: 
-  Type: 
+  Type: Trilogy
+- 
+  Title:
+    en: Back to the Future Part III
+    ru: Назад в будущее 3
+  Year: 1990
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Bad Boys
+    ru: Плохие парни
+  Year: 1995
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Bad Boys II
+    ru: Плохие парни 2
+  Year: 2003
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Bad Boys for Life
+    ru: Плохие парни навсегда
+  Year: 2020
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Before Sunrise
+    ru: Перед рассветом
+  Year: 1995
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Before Sunset
+    ru: Перед закатом
+  Year: 2004
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Before Midnight
+    ru: Перед полуночью
+  Year: 2013
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Blade
+    ru: Блэйд
+  Year: 1998
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Blade II
+    ru: Блэйд II
+  Year: 2002
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Blade: Trinity"
+    ru: "Блэйд: Троица"
+  Year: 2004
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: The Butterfly Effect
+    ru: Эффект бабочки
+  Year: 2003
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: The Butterfly Effect 2
+    ru: Эффект бабочки 2
+  Year: 2006
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Butterfly Effect 3: Revelations"
+    ru: "Эффект бабочки 3: Откровения"
+  Year: 2008
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Hobbit: An Unexpected Journey"
+    ru: "Хоббит: Нежданное путешествие"
+  Year: 2012
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Hobbit: The Desolation of Smaug"
+    ru: "Хоббит: Пустошь Смауга"
+  Year: 2013
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Hobbit: The Battle of the Five Armies"
+    ru: "Хоббит: Битва пяти воинств"
+  Year: 2014
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Hotel Transilvania
+    ru: Монстры на каникулах
+  Year: 2012
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Hotel Transilvania 2
+    ru: Монстры на каникулах 2
+  Year: 2015
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Hotel Transylvania 3: Summer Vacation"
+    ru: "Монстры на каникулах 3: Море зовёт"
+  Year: 2018
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: How to Train Your Dragon
+    ru: Как приручить дракона
+  Year: 2010
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: How to Train Your Dragon 2
+    ru: Как приручить дракона 2
+  Year: 2014
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "How to Train Your Dragon: The Hidden World"
+    ru: Как приручить дракона 3
+  Year: 2019
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Iron Man
+    ru: Железный человек
+  Year: 2008
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Iron Man 2
+    ru: Железный человек 2
+  Year: 2010
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Iron Man 3
+    ru: Железный человек 3
+  Year: 2013
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: John Wick
+    ru: Джон Уик
+  Year: 2014
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "John Wick 2: Chapter 2"
+    ru: Джон Уик 2
+  Year: 2017
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "John Wick: Chapter 3 - Parabellum"
+    ru: Джон Уик 3
+  Year: 2019
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Jurassic Park
+    ru: Парк юрского периода
+  Year: 1993
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Lost World: Jurassic Park"
+    ru: "Парк юрского периода: Затерянный мир"
+  Year: 1997
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Jurassic Park III
+    ru: Парк юрского периода III
+  Year: 2001
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Kung Fu Panda
+    ru: Кунг-фу панда
+  Year: 2008
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Kung Fu Panda 2
+    ru: Кунг-фу панда 2
+  Year: 2011
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Kung Fu Panda 3
+    ru: Кунг-фу панда 3
+  Year: 2016
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Lara Croft: Tomb Raider"
+    ru: "Лара Крофт: Расхитительница гробниц"
+  Year: 2001
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Lara Croft Tomb Raider: The Cradle of Life"
+    ru: "Лара Крофт: Расхитительница гробниц 2 - Колыбель жизни"
+  Year: 2003
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Tomb Raider"
+    ru: "Tomb Raider: Лара Крофт"
+  Year: 2018
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Lord of the Rings: The Fellowship of the Ring"
+    ru: "Властелин колец: Братство Кольца"
+  Year: 2001
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Lord of the Rings: The Two Towers"
+    ru: "Властелин колец: Две крепости"
+  Year: 2002
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "The Lord of the Rings: The Return of the King"
+    ru: "Властелин колец: Возвращение короля"
+  Year: 2003
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Madagascar
+    ru: Мадагаскар
+  Year: 2005
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Madagascar: Escape 2 Africa"
+    ru: Мадагаскар 2
+  Year: 2008
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Madagascar 3: Europe's Most Wanted"
+    ru: Мадагаскар 3
+  Year: 2012
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: The Matrix
+    ru: Матрица
+  Year: 1999
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: The Matrix Reloaded
+    ru: "Матрица: Перезагрузка"
+  Year: 2003
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: The Matrix Revolutions
+    ru: "Матрица: Революция"
+  Year: 2003
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Ocean's Eleven"
+    ru: Одиннадцать друзей Оушена
+  Year: 2001
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Ocean's Twelve"
+    ru: Двенадцать друзей Оушена
+  Year: 2004
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Ocean's Thirteen"
+    ru: Тринадцать друзей Оушена
+  Year: 2007
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Rush hour
+    ru: Час пик
+  Year: 1998
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Rush hour 2
+    ru: Час пик 2
+  Year: 2001
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Rush hour 3
+    ru: Час пик 3
+  Year: 2007
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: Thor
+    ru: Тор
+  Year: 2011
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Thor: The Dark World"
+    ru: "Тор 2: Царство тьмы"
+  Year: 2013
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
+- 
+  Title:
+    en: "Thor: Ragnarok"
+    ru: "Тор: Рагнарёк"
+  Year: 2017
+  Amazon: 
+  AmazonBundle: 
+  AmazonPrime: 
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Trilogy
