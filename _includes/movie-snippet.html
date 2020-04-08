@@ -2,7 +2,8 @@
     <div class="card mb-3">
         <div class="row no-gutters">    
             <div class="col-12 col-md-4">
-                <img src="/assets/img/movies/{{ movie.Title.en | replace: ' ', '-' | replace: ':', '' | downcase }}.jpg" class="card-img img-fluid" alt="{{ movie.Title[page.lang] }}">
+                {% assign title=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
+                <img src="/assets/img/movies/{{ title }}.png" class="card-img img-fluid" alt="{{ movie.Title[page.lang] }}">
             </div>
             <div class="col-12 col-md-8">
                 <div class="card-body py-2 px-3">
