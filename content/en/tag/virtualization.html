@@ -1,13 +1,13 @@
 ---
-title: Containers blog posts
-description: Containers blog posts
+title: Virtualization blog posts
+description: Virtualization blog posts
 permalink: /virtualization
 enlink: /virtualization
 rulink: /виртуализация
 ---
 
 {% include title.html %}
-{% assign posts = site.posts | where_exp: "post", "post.tags contains 'Virtualization'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'virtualization'" | where:"lang", page.lang %}
 {% for post in posts %}  
   {% include post-snippet.html %}
 {% endfor %}
