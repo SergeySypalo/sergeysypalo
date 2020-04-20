@@ -19,7 +19,7 @@
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
                 </header>
-                <p class="card-text">{{ post.content | split: 'title.html' | last | strip_html | split: 'Получить кешбек' | first }}</p>
+                <p class="card-text">{{ post.content | split: '</h1><hr /><p>' | last | split: '</p>' | first }}</p>
                 <p class="card-text" itemprop="articleBody">
                     Tags:
                     {% for tag in post.tags %}      
