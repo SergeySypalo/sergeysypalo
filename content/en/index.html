@@ -9,7 +9,7 @@ rulink: /ru
 ---
 
 {% include title.html %}
-{% assign posts=site.pages | where:"lang", page.lang %}
+{% assign posts=site.pages | where:"lang", page.lang | where:"type", "article" %}
 {% for post in posts %}  
   {% include post-snippet.html %}
 {% endfor %}
