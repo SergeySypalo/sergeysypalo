@@ -4,7 +4,7 @@
     <loc>https://sypalo.com</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru"/>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>  
   <url>
@@ -127,24 +127,38 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/dilogies</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/dilogies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/дилогии"/>    
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
+    <loc>https://sypalo.com/best-movies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-movies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-фильмы"/>    
+    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/trilogies</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/trilogies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/трилогии"/>    
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <loc>https://sypalo.com/best-dilogies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-dilogies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-дилогии"/>    
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/quadrologies</loc>    
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/quadrologies"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/квадрологии"/>    
-    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+    <loc>https://sypalo.com/best-trilogies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-trilogies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-трилогии"/>    
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sypalo.com/best-quadrologies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-quadrologies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-квадрологии"/>    
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sypalo.com/best-pentalogies</loc>    
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-pentalogies"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-пенталогии"/>    
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
