@@ -30,7 +30,7 @@ defaults:
     values:      
       type: "article"
       comments: "true"
-    -
+  -
     scope:
       path: "content/en/photo/articles"        
     values:      
@@ -42,3 +42,35 @@ defaults:
     values:      
       type: "article"
       comments: "true"
+  -
+    scope:
+      path: "content/en/photo/portfolio"        
+    values:      
+      type: "ImageGallery"      
+  -
+    scope:
+      path: "content/ru/фото/портфолио"
+    values:      
+      type: "ImageGallery"      
+  -
+    scope:
+      path: "content/en/movies/articles"        
+    values:      
+      type: "article"
+      comments: "true"
+  -
+    scope:
+      path: "content/ru/фильмы/статьи"
+    values:      
+      type: "article"
+      comments: "true"
+  -
+    scope:
+      path: "content/en/tag"        
+    values:      
+      type: "blog"      
+  -
+    scope:
+      path: "content/ru/тег"
+    values:      
+      type: "blog"      
