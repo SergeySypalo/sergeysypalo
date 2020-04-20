@@ -29,16 +29,4 @@ defaults:
       path: "content/ru/девопс/статьи"
     values:      
       type: "article"
-      comments: "true"  
-    -
-    scope:
-      path: "content/en/photo/articles"        
-    values:      
-      type: "article"
       comments: "true"
-  -
-    scope:
-      path: "content/ru/фото/статьи"
-    values:      
-      type: "article"
-      comments: "true"  
