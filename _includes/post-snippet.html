@@ -15,7 +15,8 @@
                     </h2>
                     <p class="card-text">
                         <small class="text-muted"><date itemprop="dateModified">{{ post.modified | date_to_long_string }}</date> | </small>
-                        <a class="badge badge-primary" href="{{ post.category | downcase }}">{{ post.category }}</a>
+                        {% assign category=post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
+                        <a class="badge badge-primary" href="{{ post.category | downcase }}">{{ category }}</a>
                     </p>
                 </header>
                 <p class="card-text">{{ post.content | split: '</header>' | last | strip_html | truncatewords:50 }}</p>

@@ -14,7 +14,7 @@ rulink: /лучшие-трилогии
 <p>
     Save on buying movies and other Internet purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
 </p>
-{% assign movies=site.data.movies | where:"Type", "Trilogy" %}
+{% assign movies = site.data.movies | where:"Type", "Trilogy" %}
 <div class="row">
   {% for movie in movies %}
     {% include trilogy-snippet.html %}

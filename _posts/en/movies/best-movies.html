@@ -14,7 +14,7 @@ rulink: /лучшие-фильмы
 <p>
     Save on online purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
 </p>
-{% assign movies=site.data.movies | where:"Type", "Single" %}
+{% assign movies = site.data.movies | where:"Type", "Single" %}
 <div class="row">
   {% for movie in movies %}
     {% include movie-snippet.html %}
