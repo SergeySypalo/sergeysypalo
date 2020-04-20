@@ -20,13 +20,9 @@ defaults:
       lang: "ru"
   -
     scope:
-      path: "content/en/devops/articles"      
+      path:
+        - "content/en/devops/articles"
+        - "content/ru/девопс/статьи"
     values:      
       type: "article"
-      comments: "true"
-  -
-    scope:
-      path: "content/ru/девопс/статьи"      
-    values:      
-      type: "article"
-      comments: "true"
+      comments: "true"  
