@@ -6,8 +6,4 @@ enlink: /movies
 rulink: /фильмы
 ---
 
-{% include title.html %}
-{% assign posts = site.posts | where_exp: "post", "post.tags contains 'movies'" | where:"lang", page.lang %}
-{% for post in posts %}
-    {{ post.title }}    
-{% endfor %}
+Best movies 2020
