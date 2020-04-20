@@ -27,4 +27,4 @@ defaults:
     scope:
       path: "_posts/ru"      
     values:
-      lang: "ru"
+      lang: "ru"  

@@ -1,6 +1,7 @@
 ---
 title: Фото портфолио, услуги и блогпосты
 description: Фото портфолио Сергея и Евгении Сыпало, услуги и блогпосты
+type: blog
 permalink: /фото
 enlink: /photo
 rulink: /фото
@@ -37,7 +38,7 @@ rulink: /фото
 </div>
 <hr />
 
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'Фото'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'фото'" | where:"lang", page.lang %}
 {% for post in posts %}
     {% include post-snippet.html %}     
 {% endfor %}

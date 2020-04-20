@@ -2071,3 +2071,89 @@
   GoogleBundleName:
   GoogleBundleId: 
   Type: Quadrology
+- 
+  Title:
+    en: First Blood
+    ru: "Рэмбо: Первая кровь"
+  Year: 1982
+  Amazon: 3eClfDC
+  AmazonBundle: 
+  AmazonPrime: 3bjOx7U
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Pentalogy
+- 
+  Title:
+    en: "Rambo: First Blood Part II"
+    ru: "Рэмбо: Первая кровь 2"
+  Year: 1985
+  Amazon: 3apx7W4
+  AmazonBundle: 
+  AmazonPrime: 2KfVkUm
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Pentalogy
+- 
+  Title:
+    en: Rambo III
+    ru: Рэмбо III
+  Year: 1988
+  Amazon: 3bpWWGP
+  AmazonBundle: 
+  AmazonPrime: 2VnU8o5
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Pentalogy
+- 
+  Title:
+    en: Rambo IV
+    ru: Рэмбо IV
+  Year: 2008
+  Amazon: 2yoXSNb
+  AmazonBundle: 
+  AmazonPrime: 2xzMm1C
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Pentalogy  
+- 
+  Title:
+    en: "Rambo: Last Blood"
+    ru: "Рэмбо: Последняя кровь"
+  Year: 2019
+  Amazon: 2RUwb5T
+  AmazonBundle: 
+  AmazonPrime: 2RQojSX
+  iTunesTitle: 
+  iTunesId: 
+  iTunesBundleName: 
+  iTunesBundleId: 
+  GoogleTitle:
+  GoogleId: 
+  GoogleBundleName:
+  GoogleBundleId: 
+  Type: Pentalogy  
+  

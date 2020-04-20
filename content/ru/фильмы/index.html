@@ -7,14 +7,7 @@ rulink: /фильмы
 ---
 
 {% include title.html %}
-<p>Лучшие фильмы, которые я рекомендую посмотреть в 2020, оцененные мной от 9 до 10 баллов из 10, а также <a href="/дилогии">дилогии</a>, <a href="/трилогии">трилогии</a> и <a href="/квадрологии">квадрологии</a> которые стоит посмотреть (оцененные мной от 8 до 9)</p>
-<p class="mb-4">
-    Получить кешбек с покупок в Интернете вы можете с <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
-</p>
-{% assign movies=site.data.movies | where:"Type", "Single" %}
-<div class="row">
-  {% for movie in movies %}
-    {% include movie-snippet.html %}
-  {% endfor %}
-</div>
-<script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '1010l354R']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'фильмы'" | where:"lang", page.lang %}
+{% for post in posts %}
+    {% include post-snippet.html %}    
+{% endfor %}

@@ -1,0 +1,33 @@
+---
+title: Лучшие пенталогии
+description: Лучшие пенталогии, которые я рекомендую посмотреть в 2020, оцененные мной от 8 до 9
+date: 2019-04-20
+modified: 2020-04-20
+tags: [фильмы]
+permalink: /лучшие-пенталогии
+enlink: /best-pentalogies
+rulink: /лучшие-пенталогии
+---
+
+{% include title.html %}
+<p>Лучшие пенталогии (5 частей), которые я рекомендую посмотреть в 2020, оцененные мной от 8 до 9 баллов из 10, а также <a href="/фильмы">лучшие фильмы</a> оценнные мной от 9 до 10, <a href="/дилогии">дилогии</a> и <a href="/квадрологии">квадрологии</a> кототые стоит посмотреть</p>
+<p>
+    Получить кешбек с покупок в Интернете вы можете с <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
+</p>
+{% assign movies=site.data.movies | where:"Type", "Pentalogy" %}
+<div class="row">
+  {% for movie in movies %}
+    {% include trilogy-snippet.html %}
+  {% endfor %}
+</div>
+<script type='text/javascript'>
+  var _merchantSettings=_merchantSettings || [];
+  _merchantSettings.push(['AT', '1010l354R']);
+  (function() {
+    var autolink = document.createElement('script');
+    autolink.type = 'text/javascript';autolink.async=true;
+    autolink.src = ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(autolink, s);
+  })();
+</script>

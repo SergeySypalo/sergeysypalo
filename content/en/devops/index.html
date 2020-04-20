@@ -38,7 +38,7 @@ rulink: /девопс
 </div>
 <hr />
 
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'DevOps'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'devops'" | where:"lang", page.lang %}
 {% for post in posts %}
     {% include post-snippet.html %}    
 {% endfor %}

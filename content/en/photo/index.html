@@ -1,6 +1,7 @@
 ---
 title: Photo portfolio, services and blog posts
 description: Sergey Sypalo and Jane Sypalo photo portfolio, services and blog posts
+type: blog
 permalink: /photo
 enlink: /photo
 rulink: /фото
@@ -37,7 +38,7 @@ rulink: /фото
 </div>
 <hr />
 
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'Photo'" | where:"lang", page.lang %}
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'photo'" | where:"lang", page.lang %}
 {% for post in posts %}
     {% include post-snippet.html %}     
 {% endfor %}
