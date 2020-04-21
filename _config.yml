@@ -43,3 +43,9 @@ defaults:
     values:      
       type: "article"
       comments: "true"
+  -
+    scope:
+      path: "content/en/movies/articles"        
+    values:      
+      type: "article"
+      comments: "true"
