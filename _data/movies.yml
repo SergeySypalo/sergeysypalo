@@ -475,6 +475,40 @@
   Type: Dilogy
 - 
   Title:
+    en: Frozen
+    ru: Холодное сердце
+  Year: 2013
+  Amazon: 2VoStib
+  AmazonBundle: 2XO5G5T
+  AmazonPrime: 34YhdRx
+  iTunesTitle: frozen
+  iTunesId: 741238771
+  iTunesBundleName: frozen-1-and-2-bundle
+  iTunesBundleId: 1497053921
+  GoogleTitle: Frozen_2013
+  GoogleId: XfRY0ASZHuU
+  GoogleBundleName: Frozen_2_Movie_Collection
+  GoogleBundleId: xwLc1fFAIfM
+  Type: Dilogy
+- 
+  Title:
+    en: Frozen II
+    ru: Холодное сердце 2
+  Year: 2013
+  Amazon: 2VJs2To
+  AmazonBundle: 2XO5G5T
+  AmazonPrime: 3eF6lfK
+  iTunesTitle: frozen-ii
+  iTunesId: 1486720024
+  iTunesBundleName: frozen-1-and-2-bundle
+  iTunesBundleId: 1497053921
+  GoogleTitle: Frozen_II
+  GoogleId: fDLjdcASPwk
+  GoogleBundleName: Frozen_2_Movie_Collection
+  GoogleBundleId: xwLc1fFAIfM
+  Type: Dilogy
+- 
+  Title:
     en: Home Alone
     ru: Один Дома
   Year: 1990

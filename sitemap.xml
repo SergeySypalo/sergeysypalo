@@ -123,21 +123,21 @@
     <loc>https://sypalo.com/movies</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/movies"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фильмы"/>    
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/best-movies</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-movies"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-фильмы"/>    
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/best-dilogies</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-dilogies"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-дилогии"/>    
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -151,14 +151,14 @@
     <loc>https://sypalo.com/best-quadrologies</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-quadrologies"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-квадрологии"/>    
-    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://sypalo.com/best-pentalogies</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-pentalogies"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-пенталогии"/>    
-    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>

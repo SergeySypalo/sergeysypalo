@@ -10,5 +10,5 @@ rulink: /фильмы
 {% include title.html %}
 {% assign posts = site.pages | where_exp: "post", "post.tags contains 'фильмы'" | where:"lang", page.lang | where:"type", "article" %}
 {% for post in posts %}
-    {% include post-snippet.html %}    
+    {% include movies-snippet.html %}    
 {% endfor %}
