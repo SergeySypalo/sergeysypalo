@@ -41,36 +41,15 @@ defaults:
       path: "content/ru/фото/статьи"
     values:      
       type: "article"
-      comments: "true"
-  -
-    scope:
-      path: "content/en/photo/portfolio"        
-    values:      
-      type: "ImageGallery"      
-  -
-    scope:
-      path: "content/ru/фото/портфолио"
-    values:      
-      type: "ImageGallery"      
+      comments: "true"       
   -
     scope:
       path: "content/en/movies/articles"        
     values:      
-      type: "article"
+      type: "video.movie"
       comments: "true"
   -
     scope:
       path: "content/ru/фильмы/статьи"
     values:      
-      type: "article"
-      comments: "true"
-  -
-    scope:
-      path: "content/en/tag"        
-    values:      
-      type: "blog"      
-  -
-    scope:
-      path: "content/ru/тег"
-    values:      
-      type: "blog"      
+      comments: "true"  
