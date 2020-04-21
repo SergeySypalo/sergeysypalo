@@ -20,11 +20,7 @@
                     </p>
                 </header>
                 <p class="card-text">
-                    {% assign excerpt = post.content | split: '<hr />' | last | strip_html %}
-                    {% if lang == "en" %}
-                        {% excerpt = excerpt | split: 'Save' | first %}
-                    {% endif %}
-                    {{ excerpt }}
+                    {{ post.content | split: '<hr />' | last | strip_html | split: 'Save' | first }}                    
                 </p>
                 <p class="card-text" itemprop="articleBody">
                     Tags:
