@@ -21,7 +21,9 @@
                 </header>
                 <p class="card-text">
                     {% assign excerpt = post.content | split: '<hr />' | last | strip_html %}
-                    {% if lang == "en" excerpt = excerpt | split: 'Save' | first %}
+                    {% if lang == "en" %}
+                        {% excerpt = excerpt | split: 'Save' | first %}
+                    {% endif %}
                     {{ excerpt }}
                 </p>
                 <p class="card-text" itemprop="articleBody">

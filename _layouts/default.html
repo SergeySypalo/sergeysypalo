@@ -9,7 +9,9 @@
         <meta name="author" content="Sergey Sypalo">
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         {% assign type = "website" %}
-        {% if page.type != "" type = page.type %}
+        {% if page.type != "" %}
+            {% type = page.type %}
+        {% endif %}
         <meta property="og:type" content="{{ type }}" />
         <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:description" content="{{ page.description }}" />
