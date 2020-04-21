@@ -45,6 +45,12 @@ defaults:
       comments: "true"
   -
     scope:
+      path: "content/en/movies/articles"
+    values:      
+      type: "article"
+      comments: "true"
+  -
+    scope:
       path: "content/ru/фильмы/статьи"
     values:      
       type: "article"
