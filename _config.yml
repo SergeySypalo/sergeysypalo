@@ -8,6 +8,7 @@ defaults:
     values:
       layout: "default"
       show: "true"
+      type: "website"
   -
     scope:
       path: "content/en"
