@@ -19,7 +19,7 @@
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
                 </header>
-                <p class="card-text">{{ post.content | split: '<p>' | last | split: '</p>' | first }}</p>
+                <p class="card-text">{{ post.content | split: '<p>' | last }}</p>
                 <p class="card-text" itemprop="articleBody">
                     Tags:
                     {% for tag in post.tags %}      
