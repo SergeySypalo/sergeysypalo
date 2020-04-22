@@ -75,12 +75,9 @@
                             <h3 class="h6">Tags</h3>                            
                             {% assign tags = site.pages | map: "tags" %}
                             <ol class="list-unstyled mb-0">
-                                <li><a href="{{ page.url }}">Url</a></li>
-                                <li><a href="/devops">DevOps</a></li>
-                                <li><a href="/cloud">Cloud</a></li>
-                                <li><a href="/containers">Containers</a></li>
-                                <li><a href="/docker">Docker</a></li>
-                                <li><a href="/powershell">PowerShell</a></li>
+                                {% for tag in tags %}
+                                    <li><a href="/{{ tag }}">tag</a></li>
+                                {% endfor %}
                             </ol>
                         </section>
                     </div>                   
