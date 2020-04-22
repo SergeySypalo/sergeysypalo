@@ -72,8 +72,13 @@
                             <p>{{ site.data.translations.aside[page.lang].text }}</p>
                         </section>                        
                         <section class="col-12">
-                            <h3 class="h6">Tags</h3>                            
-                            {% assign tags = site.pages | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+                            <h3 class="h6">Tags</h3>
+                            {% if page.url == "/" %}
+                                {% assign tags = site.pages | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+                            {% else %}
+                                {% assign category = page.url | split: "/" | last | split: "-" | first %}
+                                {% assign tags = site.pages | where_exp: "post", "post.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+                            {% endif %}
                             <ol class="list-unstyled mb-0">
                                 {% for tag in tags %}
                                     <li><a href="/{{ tag }}">{{ tag }}</a></li>
