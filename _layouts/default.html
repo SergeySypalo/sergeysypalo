@@ -73,7 +73,7 @@
                         </section>                        
                         <section class="col-12">
                             <h3 class="h6">Tags</h3>
-                            {% if page.url == "/" %}
+                            {% if page.url == "/" or page.url == "/contacts" or page.url == "/контакты" %}
                                 {% assign tags = site.pages | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
                             {% else %}
                                 {% assign category = page.url | split: "/" | last | split: "-" | first %}
