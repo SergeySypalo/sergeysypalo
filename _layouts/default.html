@@ -76,7 +76,7 @@
                             {% assign tags = site.pages | map: "tags" %}
                             <ol class="list-unstyled mb-0">
                                 {% for tag in tags %}
-                                    <li><a href="/{{ tag }}">tag</a></li>
+                                    <li><a href="/{{ tag }}">{{ tag }}</a></li>
                                 {% endfor %}
                             </ol>
                         </section>
