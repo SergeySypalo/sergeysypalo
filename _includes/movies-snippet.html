@@ -15,12 +15,12 @@
                     </h2>
                     <p class="card-text">
                         <small class="text-muted"><date itemprop="dateModified">{{ post.modified | date_to_long_string }}</date> | </small>
-                        {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
+                        {% assign category = post.tags | first | capitalize %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
                 </header>
                 <p class="card-text">
-                    {{ page.content | split: '<hr />' | last | strip_html | split: 'Save' | first | split: 'Получить' | first }}                    
+                    {{ post.content | split: '<hr />' | last | strip_html | split: 'Save' | first | split: 'Получить' | first }}                    
                 </p>
                 <p class="card-text" itemprop="articleBody">
                     Tags:
