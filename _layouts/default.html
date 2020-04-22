@@ -80,6 +80,7 @@
                                 {% assign tags = site.pages | where_exp: "page", "page.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
                             {% endif %}
                             <ol class="list-unstyled mb-0">
+                                <li><a href="/{{ category }}">{{ category }}</a></li>
                                 {% for tag in tags %}
                                     <li><a href="/{{ tag }}">{{ tag }}</a></li>
                                 {% endfor %}
