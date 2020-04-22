@@ -77,7 +77,7 @@
                                 {% assign tags = site.pages | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
                             {% else %}
                                 {% assign category = page.url | split: "/" | last | split: "-" | first %}
-                                {% assign tags = site.pages | where_exp: "post", "post.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+                                {% assign tags = site.pages | where_exp: "page", "page.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
                             {% endif %}
                             <ol class="list-unstyled mb-0">
                                 {% for tag in tags %}
