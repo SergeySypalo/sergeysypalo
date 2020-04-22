@@ -20,7 +20,7 @@
                     </p>
                 </header>
                 <p class="card-text">
-                    {{ post.content | split: '<hr />' | last | strip_html | split: 'Save' | first | split: 'Получить' | first | replace: '{% include title.html %} ', '' }}
+                    {{ post.content | split: '<hr />' | last | strip_html | split: 'Save' | first | split: 'Получить' | first }}
                 </p>
                 <p class="card-text" itemprop="articleBody">
                     Tags:
