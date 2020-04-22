@@ -73,7 +73,7 @@
                         </section>                        
                         <section class="col-12">
                             <h3 class="h6">Tags</h3>                            
-                            {% assign tags = site.pages | map: "tags" %}
+                            {% assign tags =  site.pages | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
                             <ol class="list-unstyled mb-0">
                                 {% for tag in tags %}
                                     <li><a href="/{{ tag }}">{{ tag }}</a></li>
