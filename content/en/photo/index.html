@@ -37,7 +37,7 @@ rulink: /фото
 </div>
 <hr />
 
-{% assign posts = site.pages | where_exp: "post", "post.tags contains 'photo'" | where:"lang", page.lang | where:"type", "article" %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'photo'" | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
 {% for post in posts %}
     {% include post-snippet.html %}     
 {% endfor %}
