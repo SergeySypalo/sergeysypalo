@@ -96,7 +96,7 @@
                             <h3 class="h6">Tags</h3>
                             {% if page.url == "/" or page.url == "/ru" or page.url == "/contacts" or page.url == "/контакты" %}
                                 {% assign tags = site.pages | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
-                            {% elsif page.tags == "" %}
+                            {% elsif page.tags %}
                                 {% assign category = page.url | split: "/" | last | split: "-" | first %}
                                 {% assign tags = site.pages | where_exp: "page", "page.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
                             {% else %}
