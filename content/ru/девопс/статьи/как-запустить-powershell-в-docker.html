@@ -10,29 +10,30 @@ rulink: /как-запустить-powershell-в-docker
 ---
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
-    {% include header.html %}
-    <section class="mb-0" itemprop="articleBody">
-        <p>
-            Идея запуска PowerCLI с необходимыми модулями в контейнере Docker у меня назревала уже давно, и, наконец, я решил эту проблему.
-        </p>
-        <p>
-            Одной из причин было то, что PowerShell «сломался» на моем компьютере с Windows 10, точнее, он работает, но команда Get-Credential возвращает ошибку. Вторая причина - просто желание экспериментировать на тему.
-        </p>
-        <p>
-            Оказалось, правда не так просто, подробности ниже. Чтобы запустить PowerShell в контейнере Docker с предварительно загруженными модулями, необходимо выполнить следующие шаги:
-        </p>
-        <ol>
-        <li>Включить поддержку виртуализации в BIOS</li>
-        <li>Установить Hyper-V, вы можете сделать это так:</li>
-        <li><kbd>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</kbd><br />
-            или так so:<br />
-            <kbd>DISM / Online / Enable-Feature / All / FeatureName: Microsoft-Hyper-V</kbd>
-        </li>
-        <li>Установить <a href ="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank">Docker Desktop for Windows</a></li>
-        <li>Создайте пустую папку, скажем D:\powershell-docker</li>
-        <li>Добавьте необходимые модули в подпапку D:\powershell-docker\Modules</li>
-        <li>Создайте Dockerfile в D:\powershell-docker следующего содержания:
-            <pre>
+	{% include header.html %}
+	<section class="mb-0" itemprop="articleBody">
+		<p>
+			Идея запуска PowerCLI с необходимыми модулями в контейнере Docker у меня назревала уже давно, и, наконец, я решил эту проблему.
+		</p>
+		<p>
+			Одной из причин было то, что PowerShell «сломался» на моем компьютере с Windows 10, точнее, он работает, но команда Get-Credential возвращает ошибку. Вторая причина - просто желание экспериментировать на тему.
+		</p>
+		<p>
+			Оказалось, правда не так просто, подробности ниже. Чтобы запустить PowerShell в контейнере Docker с предварительно загруженными модулями, необходимо выполнить следующие шаги:
+		</p>
+		<ol>
+			<li>Включить поддержку виртуализации в BIOS</li>
+			<li>Установить Hyper-V, вы можете сделать это так:</li>
+			<li><kbd>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</kbd><br />
+				или так so:<br />
+				<kbd>DISM / Online / Enable-Feature / All / FeatureName: Microsoft-Hyper-V</kbd>
+			</li>
+			<li>Установить <a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows"
+					target="_blank">Docker Desktop for Windows</a></li>
+			<li>Создайте пустую папку, скажем D:\powershell-docker</li>
+			<li>Добавьте необходимые модули в подпапку D:\powershell-docker\Modules</li>
+			<li>Создайте Dockerfile в D:\powershell-docker следующего содержания:
+				<pre>
                 # Используем существующий Docker образ PowerShell в качестве основы
                 FROM mcr.microsoft.com/powershell
 
@@ -43,26 +44,34 @@ rulink: /как-запустить-powershell-в-docker
                 RUN mkdir -p /root/.config/powershell/
                 RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
             </pre>
-        </li>
-        <li>Откроем CMD или PowerShell и переходим в D:\powershell-docker</li>
-        <li>Собираем контейнер <kbd>docker build -t powershell-docker</kbd></li>
-        <li>Запускаем контейнер: <kbd>docker run -it powershell-docker</kbd></li>
-        </ol>
-        <p>
-            Основная проблема заключалась в том, что когда PowerShell Core запускал контейнер, он создавал новый сеанс и импорт модулей через ENTRYPOINT или CMD ни к чему не приводил, модули были доступны через Get-Module -ListAvailable, но их приходилось импортировать вручную, потому что автозагрузка не работала при использовании команд из доступных, но не импортированных модулей.
-        </p>
-        <p>
-            Другая найденная странность/ошибка заключается в том, что переменная $profile (если вы просто видите значение этой переменной в контейнере с PowerShell Core, указывает на путь /root/.config/powershell/Microsoft.PowerShell_profile.ps1, но этот файл не существует.
-        </p>
-        <p>
-            Как я уже говорил выше, нет смысла переопределять профиль, так как в начале нового сеанса $ profile снова будет указывать на то же самое. Поэтому в качестве опции можно создать этот путь и файл и указать в нем список импортируемых модулей, что было сделано выше в Dockerfile.
-        </p>
-        <p>
-            Я надеюсь, что информация была полезной, если у вас есть какие-либо вопросы, задавайте их в комментариях и отправляйте какие-либо улучшения кода в виде push-запроса на github, где размещен исходный код.
-        </p>
-    </section>
-        
-    <footer>
-        <hr />
-    </footer>
+			</li>
+			<li>Откроем CMD или PowerShell и переходим в D:\powershell-docker</li>
+			<li>Собираем контейнер <kbd>docker build -t powershell-docker</kbd></li>
+			<li>Запускаем контейнер: <kbd>docker run -it powershell-docker</kbd></li>
+		</ol>
+		<p>
+			Основная проблема заключалась в том, что когда PowerShell Core запускал контейнер, он создавал новый сеанс и
+			импорт модулей через ENTRYPOINT или CMD ни к чему не приводил, модули были доступны через Get-Module
+			-ListAvailable, но их приходилось импортировать вручную, потому что автозагрузка не работала при использовании
+			команд из доступных, но не импортированных модулей.
+		</p>
+		<p>
+			Другая найденная странность/ошибка заключается в том, что переменная $profile (если вы просто видите значение
+			этой переменной в контейнере с PowerShell Core, указывает на путь
+			/root/.config/powershell/Microsoft.PowerShell_profile.ps1, но этот файл не существует.
+		</p>
+		<p>
+			Как я уже говорил выше, нет смысла переопределять профиль, так как в начале нового сеанса $ profile снова будет
+			указывать на то же самое. Поэтому в качестве опции можно создать этот путь и файл и указать в нем список
+			импортируемых модулей, что было сделано выше в Dockerfile.
+		</p>
+		<p>
+			Я надеюсь, что информация была полезной, если у вас есть какие-либо вопросы, задавайте их в комментариях и
+			отправляйте какие-либо улучшения кода в виде push-запроса на github, где размещен исходный код.
+		</p>
+	</section>
+
+	<footer>
+		<hr />
+	</footer>
 </article>

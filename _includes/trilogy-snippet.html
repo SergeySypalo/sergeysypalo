@@ -1,20 +1,20 @@
 <div class="col-12 col-sm-6">
-    <div class="card mb-3">
-        <div class="row no-gutters">    
-            <div class="col-12 col-md-4">
-                {% assign title=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
-                <img src="/assets/img/movies/{{ title }}.png" class="card-img img-fluid" alt="{{ movie.Title[page.lang] }}">                
-            </div>
-            <div class="col-12 col-md-8">
-                <div class="card-body py-2 px-3">
-                    <h5 class="card-title mb-1">{{ movie.Title[page.lang] }}</h5>          
-                    <p class="card-text mb-1"><small class="text-muted">{{ movie.Year }}</small></p>                    
-                    <p class="card-text">
-                        {{ site.data.translations.movies.watch[page.lang] }} 
-                        <a href="https://amzn.to/{{ movie.AmazonPrime }}" target="_blank">Amazon</a>                        
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="card mb-3">
+		<div class="row no-gutters">
+			<div class="col-12 col-md-4">
+				{% assign title=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
+				<img src="/assets/img/movies/{{ title }}.png" class="card-img img-fluid" alt="{{ movie.Title[page.lang] }}">
+			</div>
+			<div class="col-12 col-md-8">
+				<div class="card-body py-2 px-3">
+					<h5 class="card-title mb-1">{{ movie.Title[page.lang] }}</h5>
+					<p class="card-text mb-1"><small class="text-muted">{{ movie.Year }}</small></p>
+					<p class="card-text">
+						{{ site.data.translations.movies.watch[page.lang] }}
+						<a href="https://amzn.to/{{ movie.AmazonPrime }}" target="_blank">Amazon</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

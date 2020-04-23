@@ -10,23 +10,23 @@ rulink: /лучшие-дилогии
 ---
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
-  {% include header.html %}
-  <section class="mb-0" itemprop="articleBody">  
-    <p>Best dilogies (2-parts movies) to watch on Amazon, Google or iTunes in 2020, which I rated from 8 to 9, rarely 10 out of 10, but there are <a href="/best-movies">best movies</a> rated 9 or 10 by me, <a href="/best-trilogies">trilogies</a>, <a href="/best-quadrologies">quadrologies</a> and <a href="/best-pentalogies">pentalogies</a> worth to watch</p>
-    <p>
-        Save on buying movies and other Internet purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
-    </p>
-    {% assign movies = site.data.movies | where:"Type", "Dilogy" %}
-    <div class="row">
-      {% for movie in movies %}
-        {% include movie-snippet.html %}
-      {% endfor %}
-    </div>    
-  </section>
-          
-  <footer>
-      <hr />
-  </footer>
+    {% include header.html %}
+    <section class="mb-0" itemprop="articleBody">  
+      <p>Best dilogies (2-parts movies) to watch on Amazon, Google or iTunes in 2020, which I rated from 8 to 9, rarely 10 out of 10, but there are <a href="/best-movies">best movies</a> rated 9 or 10 by me, <a href="/best-trilogies">trilogies</a>, <a href="/best-quadrologies">quadrologies</a> and <a href="/best-pentalogies">pentalogies</a> worth to watch</p>
+      <p>
+          Save on buying movies and other Internet purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
+      </p>
+      {% assign movies = site.data.movies | where:"Type", "Dilogy" %}
+      <div class="row">
+        {% for movie in movies %}
+          {% include movie-snippet.html %}
+        {% endfor %}
+      </div>    
+    </section>
+            
+    <footer>
+        <hr />
+    </footer>
 </article>
 
 <script>
