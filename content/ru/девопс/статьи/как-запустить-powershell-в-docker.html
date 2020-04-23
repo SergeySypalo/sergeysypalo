@@ -9,17 +9,21 @@ enlink: /how-to-run-powershell-core-in-docker
 rulink: /как-запустить-powershell-в-docker
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
+	itemprop="datePublished" content="{{ page.published }}">
 	{% include header.html %}
 	<section class="mb-0" itemprop="articleBody">
 		<p>
-			Идея запуска PowerCLI с необходимыми модулями в контейнере Docker у меня назревала уже давно, и, наконец, я решил эту проблему.
+			Идея запуска PowerCLI с необходимыми модулями в контейнере Docker у меня назревала уже давно, и, наконец, я
+			решил эту проблему.
 		</p>
 		<p>
-			Одной из причин было то, что PowerShell «сломался» на моем компьютере с Windows 10, точнее, он работает, но команда Get-Credential возвращает ошибку. Вторая причина - просто желание экспериментировать на тему.
+			Одной из причин было то, что PowerShell «сломался» на моем компьютере с Windows 10, точнее, он работает, но
+			команда Get-Credential возвращает ошибку. Вторая причина - просто желание экспериментировать на тему.
 		</p>
 		<p>
-			Оказалось, правда не так просто, подробности ниже. Чтобы запустить PowerShell в контейнере Docker с предварительно загруженными модулями, необходимо выполнить следующие шаги:
+			Оказалось, правда не так просто, подробности ниже. Чтобы запустить PowerShell в контейнере Docker с
+			предварительно загруженными модулями, необходимо выполнить следующие шаги:
 		</p>
 		<ol>
 			<li>Включить поддержку виртуализации в BIOS</li>

@@ -10,131 +10,153 @@ rulink: /самсунг-галакси-s20
 js: true
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}" itemprop="dateModified" content="{{ page.modified }}">
-    <header class="mb-2">                    
-        <h1 class="card-title h4 mb-0">
-            {{ page.title }}
-        </h1>
-        <p class="card-text">
-            <small class="text-muted"><date itemprop="dateModified">{{ page.modified | date_to_long_string }}</date> | </small>
-            {% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
-            <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
-        </p>
-    </header>
-    <section class="mb-0" itemprop="articleBody">
-        <p>
-            Samsung introduced the flagship line of Samsung Galaxy S20 camera phones at the Samsung Unpacked 2020 event in Barcelona.
-            It consists of 3 models: the base Galaxy S20, Galaxy S20 + and Galaxy S20 Ultra.
-            The main feature of the series, as befits the flagships, was support for the HDR10 + display, a refresh rate of 120 Hz, shooting at 8K at 30 k / s and support for 5G.
-            The entire line runs on the Android 10 operating system with the updated One UI 2.0 shell.
-            Samsung did not begin to change its tradition and the European versions of phones work on the basis of their Exynos 990 processor, while models based on Qualcomm 865 are available for the US market.
-            And now more about each model.
-        </p>
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
+	itemprop="datePublished" content="{{ page.published }}">
+	{% include header.html %}
+	<section class="mb-0" itemprop="articleBody">
+		<p>
+			Samsung introduced the flagship line of Samsung Galaxy S20 camera phones at the Samsung Unpacked 2020 event in
+			Barcelona.
+			It consists of 3 models: the base Galaxy S20, Galaxy S20 + and Galaxy S20 Ultra.
+			The main feature of the series, as befits the flagships, was support for the HDR10 + display, a refresh rate of
+			120 Hz, shooting at 8K at 30 k / s and support for 5G.
+			The entire line runs on the Android 10 operating system with the updated One UI 2.0 shell.
+			Samsung did not begin to change its tradition and the European versions of phones work on the basis of their
+			Exynos 990 processor, while models based on Qualcomm 865 are available for the US market.
+			And now more about each model.
+		</p>
 
-        <h2 class="h5">Samsung Galaxy S20</h2>
-        <p>The basic model, the smallest in size, if the phone with a diagonal of 6.2 inches can be called small)
-            You can choose from 8 or 12 GB of memory and only one option of internal storage of 128 GB, which is somewhat strange in 2020, the flagships could do 256 GB at least. If 128 GB is not enough, you will have to use a memory card, models up to 1 TB are supported. The battery capacity is 4000 mAh.
-        </p>
-        <div id="s20" class="carousel slide" data-interval="false">
-            <div class="carousel-inner" itemscope itemprop="http://schema.org/ImageGallery">
-                <div class="carousel-item active">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-frontback-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-blue-frontback" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-front-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-blue-front" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-back-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-blue-back" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-side1-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-blue-side1" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-side2-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-blue-side2" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-gray-frontback-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-gray-frontback" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-gray-front-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-gray-front" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-gray-back-desktop.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-gray-back" itemprop="image">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#s20" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#s20" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+		<h2 class="h5">Samsung Galaxy S20</h2>
+		<p>The basic model, the smallest in size, if the phone with a diagonal of 6.2 inches can be called small)
+			You can choose from 8 or 12 GB of memory and only one option of internal storage of 128 GB, which is somewhat
+			strange in 2020, the flagships could do 256 GB at least. If 128 GB is not enough, you will have to use a memory
+			card, models up to 1 TB are supported. The battery capacity is 4000 mAh.
+		</p>
+		<div id="s20" class="carousel slide" data-interval="false">
+			<div class="carousel-inner" itemscope itemprop="http://schema.org/ImageGallery">
+				<div class="carousel-item active">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-frontback-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-blue-frontback" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-front-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-blue-front" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-back-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-blue-back" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-side1-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-blue-side1" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-blue-side2-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-blue-side2" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-gray-frontback-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-gray-frontback" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-gray-front-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-gray-front" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-gray-back-desktop.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-gray-back" itemprop="image">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#s20" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#s20" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 
-        <h2 class="h5">Samsung Galaxy S20+</h2>
-        <p>
-            In this model, the screen is larger and equal to 6.7 inches, the battery is increased to 4000 mAh, and there is also an option with more internal memory, namely, options 8/128 and 12/512 are offered, although I would like to see 8/256 and 8/512 because not everyone may need right now 12 GB of RAM in the phone.
-        </p>
-        <div id="s20plus" class="carousel slide" data-interval="false">
-            <div class="carousel-inner" itemscope itemprop="http://schema.org/ImageGallery">
-                <div class="carousel-item active">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-frontback-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-blue-frontback" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-front-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-front" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-back-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-back" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-side1-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-side1" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-side2-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-side2" itemprop="image">        
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#s20plus" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#s20plus" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        
-        <h2 class="h5">Samsung Galaxy S20 Ultra</h2>
-        <p>
-            The top model with a 108 megapixel camera, a 6.9-inch screen and a 5000 mAh battery. The choice is still the same models 8/128 and 12/512.
-        </p>        
-        <div id="s20ultra" class="carousel slide" data-interval="false">
-            <div class="carousel-inner" itemscope itemprop="http://schema.org/ImageGallery">                
-                <div class="carousel-item active">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-tablet.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-smartphone.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-phone.webp" class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#s20ultra" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#s20ultra" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </section>
+		<h2 class="h5">Samsung Galaxy S20+</h2>
+		<p>
+			In this model, the screen is larger and equal to 6.7 inches, the battery is increased to 4000 mAh, and there is
+			also an option with more internal memory, namely, options 8/128 and 12/512 are offered, although I would like
+			to see 8/256 and 8/512 because not everyone may need right now 12 GB of RAM in the phone.
+		</p>
+		<div id="s20plus" class="carousel slide" data-interval="false">
+			<div class="carousel-inner" itemscope itemprop="http://schema.org/ImageGallery">
+				<div class="carousel-item active">
+					<img
+						src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-frontback-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-blue-frontback" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-front-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-front" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-back-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-back" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-side1-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-side1" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-plus-blue-side2-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-plus-blue-side2" itemprop="image">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#s20plus" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#s20plus" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 
-    <footer>
-        <hr />
-    </footer>
+		<h2 class="h5">Samsung Galaxy S20 Ultra</h2>
+		<p>
+			The top model with a 108 megapixel camera, a 6.9-inch screen and a 5000 mAh battery. The choice is still the
+			same models 8/128 and 12/512.
+		</p>
+		<div id="s20ultra" class="carousel slide" data-interval="false">
+			<div class="carousel-inner" itemscope itemprop="http://schema.org/ImageGallery">
+				<div class="carousel-item active">
+					<img
+						src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-tablet.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-smartphone.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
+				</div>
+				<div class="carousel-item">
+					<img
+						src="/assets/img/articles/2020/02/samsung-galaxy-s20/samsung-galaxy-s20-ultra-black-front-phone.webp"
+						class="mx-auto d-block" alt="samsung-galaxy-s20-ultra-black-front" itemprop="image">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#s20ultra" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#s20ultra" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+
+	<footer>
+		<hr />
+	</footer>
 </article>
