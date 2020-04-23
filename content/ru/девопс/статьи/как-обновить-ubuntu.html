@@ -9,16 +9,8 @@ enlink: /how-to-upgrade-ubuntu
 rulink: /как-обновить-ubuntu
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}" itemprop="dateModified" content="{{ page.modified }}">
-    <header class="mb-2">                    
-        <h1 class="card-title h4 mb-0">
-            {{ page.title }}
-        </h1>
-        <p class="card-text">
-            <small class="text-muted"><date itemprop="dateModified">{{ page.modified | date_to_long_string }}</date> | </small>
-            <a class="badge badge-primary" href="{{ page.category | downcase }}">{{ page.category }}</a>
-        </p>
-    </header>
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
+    {% include header.html %}
     <section class="mb-0" itemprop="articleBody">
         <p>
             В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.6.7, которая содержит следующие улучшения:

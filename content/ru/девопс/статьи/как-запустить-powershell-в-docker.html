@@ -9,16 +9,8 @@ enlink: /how-to-run-powershell-core-in-docker
 rulink: /как-запустить-powershell-в-docker
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}" itemprop="dateModified" content="{{ page.modified }}">
-    <header class="mb-2">                    
-        <h1 class="card-title h4 mb-0">
-            {{ page.title }}
-        </h1>
-        <p class="card-text">
-            <small class="text-muted"><date itemprop="dateModified">{{ page.modified | date_to_long_string }}</date> | </small>
-            <a class="badge badge-primary" href="{{ page.category | downcase }}">{{ page.category }}</a>
-        </p>
-    </header>
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
+    {% include header.html %}
     <section class="mb-0" itemprop="articleBody">
         <p>
             Идея запуска PowerCLI с необходимыми модулями в контейнере Docker у меня назревала уже давно, и, наконец, я решил эту проблему.
