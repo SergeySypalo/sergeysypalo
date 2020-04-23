@@ -96,10 +96,13 @@
                             <h3 class="h6">Tags</h3>
                             {% if page.url == "/" or page.url == "/ru" or page.url == "/contacts" or page.url == "/контакты" %}
                                 {% assign tags = site.pages | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
-                            {% else %}
+                            {% elsif page.tags == "" %}
                                 {% assign category = page.url | split: "/" | last | split: "-" | first %}
                                 {% assign tags = site.pages | where_exp: "page", "page.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
-                            {% endif %}
+                            {% else %}
+                                {% assign category = page.tags | first %}
+                                {% assign tags = site.pages | where_exp: "page", "page.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+                            {% endif %}                            
                             <ol class="list-unstyled mb-0">                                
                                 {% for tag in tags %}
                                     <li><a href="/{{ tag }}">{{ tag }}</a></li>
