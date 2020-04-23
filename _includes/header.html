@@ -1,13 +1,10 @@
 <header class="mb-2">                    
-    <h2 class="card-title h5 mb-0">
-        {% if post.lang == "ru" %}
-        <a class="text-dark text-decoration-none" href="{{ post.rulink }}">{{ post.title }}</a>
-        {% else %}
-        <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
-        {% endif %}                        
-    </h2>
+    <h1 class="card-title h4 mb-0">
+        {{ page.title }}
+    </h1>
     <p class="card-text">
-        <small class="text-muted"><date itemprop="datePublished">{{ post.date | date_to_long_string }}</date> | </small>
-        <a class="badge badge-primary" href="{{ post.category | downcase }}">{{ post.category }}</a>
+        <small class="text-muted"><date itemprop="datePublished">{{ page.modified | date_to_long_string }}</date> | </small>
+        {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
+        <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
     </p>
 </header>

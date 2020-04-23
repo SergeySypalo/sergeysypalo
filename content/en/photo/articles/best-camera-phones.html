@@ -10,15 +10,7 @@ rulink: /лучшие-камерофоны
 ---
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
-    <header class="mb-2">                    
-        <h1 class="card-title h4 mb-0">
-            {{ page.title }}
-        </h1>
-        <p class="card-text">
-            <small class="text-muted"><date itemprop="datePublished">{{ page.modified | date_to_long_string }}</date> | </small>
-            <a class="badge badge-primary" href="{{ page.category | downcase }}">{{ page.category }}</a>
-        </p>
-    </header>
+    {% include header.html %}
     <section class="mb-0" itemprop="articleBody">        
         <p>
             With the release of new phones, processor speed is becoming less and less important and manufacturers are fighting for the quality of cameras in the phone. Now an average phone worth $ 200 is enough for the interface to work smoothly and most games aren’t stupid.
