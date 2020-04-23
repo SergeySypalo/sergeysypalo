@@ -9,40 +9,34 @@ enlink: /best-trilogies
 rulink: /лучшие-трилогии
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
-	itemprop="datePublished" content="{{ page.published }}">
-	{% include header.html %}
-	<section class="mb-0" itemprop="articleBody">
-		<p>Best trilogies (3-parts movies) to watch on Amazon, Google or iTunes in 2020, which I rated from 8 to 9, rarely
-			10 out of 10, but there are <a href="/best-movies">best movies</a> rated 9 or 10 by me, <a
-				href="/best-dilogies">dilogies</a>, <a href="/best-trilogies">trilogies</a>, <a
-				href="/best-quadrologies">quadrologies</a> and <a href="/best-pentalogies">pentalogies</a> worth to watch
-		</p>
-		<p>
-			Save on buying movies and other Internet purchases with <a
-				href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
-		</p>
-		{% assign movies = site.data.movies | where:"Type", "Trilogy" %}
-		<div class="row">
-			{% for movie in movies %}
-			{% include trilogy-snippet.html %}
-			{% endfor %}
-		</div>
-	</section>
-
-	<footer>
-		<hr />
-	</footer>
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
+  {% include header.html %}
+  <section class="mb-0" itemprop="articleBody">  
+    <p>Best trilogies (3-parts movies) to watch on Amazon, Google or iTunes in 2020, which I rated from 8 to 9, rarely 10 out of 10, but there are <a href="/best-movies">best movies</a> rated 9 or 10 by me, <a href="/best-dilogies">dilogies</a>, <a href="/best-trilogies">trilogies</a>, <a href="/best-quadrologies">quadrologies</a> and <a href="/best-pentalogies">pentalogies</a> worth to watch</p>
+    <p>
+        Save on buying movies and other Internet purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
+    </p>
+    {% assign movies = site.data.movies | where:"Type", "Trilogy" %}
+    <div class="row">
+      {% for movie in movies %}
+        {% include trilogy-snippet.html %}
+      {% endfor %}
+    </div>
+  </section>  
+            
+  <footer>
+      <hr />
+  </footer>
 </article>
 
 <script>
-	var _merchantSettings = _merchantSettings || [];
-	_merchantSettings.push(['AT', '1010l354R']);
-	(function () {
-		var autolink = document.createElement('script');
-		autolink.type = 'text/javascript'; autolink.async = true;
-		autolink.src = ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(autolink, s);
-	})();
+  var _merchantSettings=_merchantSettings || [];
+  _merchantSettings.push(['AT', '1010l354R']);
+  (function() {
+  var autolink = document.createElement('script');
+  autolink.type = 'text/javascript';autolink.async=true;
+  autolink.src = ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(autolink, s);
+  })();
 </script>

@@ -9,13 +9,11 @@ enlink: /how-to-upgrade-ubuntu
 rulink: /как-обновить-ubuntu
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting"
-	itemprop="datePublished" content="{{ page.published }}">
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
 	{% include header.html %}
 	<section class="mb-0" itemprop="articleBody">
 		<p>
-			In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10.
-			As a bonus, we will also upgrade the kernel to version 5.6.7, which contains the following improvements:
+			In this article I will show you how to upgrade your Ubuntu 18.04 to 19.10 bypassing the minor upgrade to 18.10. As a bonus, we will also upgrade the kernel to version 5.6.7, which contains the following improvements:
 		</p>
 		<ul>
 			<li>High-performance asynchronous I/O</li>
@@ -25,17 +23,16 @@ rulink: /как-обновить-ubuntu
 			<li>Better protection against Spectre vulnerability variations</li>
 		</ul>
 		<p>
-			And here is a short list of what's new added to Ubuntu 19.10:
+				And here is a short list of what's new added to Ubuntu 19.10:        
 		</p>
-		<ul>
-			<li>Better and faster GNOME 3.32 Desktop</li>
-			<li>New Icons and Visual Tweaks</li>
-			<li>Night Light Improvements</li>
-			<li>Application Permission Controls</li>
-		</ul>
+		<ul>        
+				<li>Better and faster GNOME 3.32 Desktop</li>
+				<li>New Icons and Visual Tweaks</li>
+				<li>Night Light Improvements</li>
+				<li>Application Permission Controls</li>        
+			</ul>
 		<p>
-			It's not possible to upgrade Ubuntu 16.x or older directly to 19.x, you have to upgrade it to the latest
-			available lts release, which is 18.04.
+			It's not possible to upgrade Ubuntu 16.x or older directly to 19.x, you have to upgrade it to the latest available lts release, which is 18.04.    
 			Perform the following steps to upgrade Ubuntu from one lts release to another, for example from 16.04 to 18.04:
 		</p>
 		<pre>
@@ -104,7 +101,7 @@ rulink: /как-обновить-ubuntu
 		</pre>
 		<p>
 			To Upgrade Ubuntu kernel to the latest 5.6.7 build, follow the steps:
-		</p>
+		</p>        
 		<pre>
 			# Change current directory to /tmp
 			cd /tmp/
@@ -139,11 +136,10 @@ rulink: /как-обновить-ubuntu
 			uname -r
 		</pre>
 		<p>
-			That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.6.7 Linux
-			Kernel.
+			That's it, now you should be running on the latest best-looking Ubuntu 19.10 and most secure 5.6.7 Linux Kernel.
 		</p>
 	</section>
-
+		
 	<footer>
 		<hr />
 	</footer>
