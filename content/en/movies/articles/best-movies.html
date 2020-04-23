@@ -12,17 +12,8 @@ rulink: /лучшие-фильмы
 ---
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
-  <header class="mb-2">                    
-      <h1 class="card-title h4 mb-0">
-          {{ page.title }}
-      </h1>
-      <p class="card-text">
-          <small class="text-muted"><date itemprop="datePublished">{{ page.modified | date_to_long_string }}</date> | </small>
-          {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
-          <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
-      </p>
-  </header>
-  <section>
+  {% include header.html %}
+  <section class="mb-0" itemprop="articleBody">  
     <p>Best movies to watch on Amazon, Google or iTunes in 2020, which I rated 9 or even 10 out of 10, but there are <a href="/best-dilogies">dilogies</a>, <a href="/best-trilogies">trilogies</a>, <a href="/best-quadrologies">quadrologies</a> and <a href="/best-pentalogies">pentalogies</a> worth to watch (rated by me from 8 to 9, rarely 10)</p>
     <p>
         Save on online purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
@@ -33,11 +24,13 @@ rulink: /лучшие-фильмы
         {% include movie-snippet.html %}
       {% endfor %}
     </div>
-  </section>
+  </section>  
+          
   <footer>
       <hr />
   </footer>
 </article>
+
 <script>
   var _merchantSettings=_merchantSettings || [];
   _merchantSettings.push(['AT', '1010l354R']);

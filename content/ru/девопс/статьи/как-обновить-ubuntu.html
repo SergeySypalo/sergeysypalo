@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 description: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 published: 2019-05-14
-modified: 2020-04-21
+modified: 2020-04-23
 tags: [линукс, безопасность, апгрейд, девопс]
 permalink: /как-обновить-ubuntu
 enlink: /how-to-upgrade-ubuntu
@@ -21,7 +21,7 @@ rulink: /как-обновить-ubuntu
     </header>
     <section class="mb-0" itemprop="articleBody">
         <p>
-            В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.6.6, которая содержит следующие улучшения:
+            В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.6.7, которая содержит следующие улучшения:
         </p>
         <ul>
             <li>Высокопроизводительный асинхронный ввод/вывод</li>
@@ -106,19 +106,19 @@ rulink: /как-обновить-ubuntu
             sudo shutdown -r now
         </pre>
         <p>
-            Чтобы обновить ядро ​​Ubuntu до последней версии 5.6.6, выполните следующие действия:
+            Чтобы обновить ядро ​​Ubuntu до последней версии 5.6.7, выполните следующие действия:
         </p>        
         <pre>
             # Переходим в директорию /tmp
             cd /tmp/
 
             # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6
+            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.7
             # и получите новые для вашей системы, обычно amd64
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6/linux-headers-5.6.6-050606_5.6.6-050606.202004210831_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6/linux-headers-5.6.6-050606-generic_5.6.6-050606.202004210831_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6/linux-image-unsigned-5.6.6-050606-generic_5.6.6-050606.202004210831_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6/linux-modules-5.6.6-050606-generic_5.6.6-050606.202004210831_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.7/linux-headers-5.6.7-050607_5.6.7-050607.202004230933_all.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.7/linux-headers-5.6.7-050607-generic_5.6.7-050607.202004230933_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.7/linux-image-unsigned-5.6.7-050607-generic_5.6.7-050607.202004230933_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.7/linux-modules-5.6.7-050607-generic_5.6.7-050607.202004230933_amd64.deb
             
             # Устанавливаем новое ядро
             sudo dpkg -i *.deb
@@ -142,7 +142,7 @@ rulink: /как-обновить-ubuntu
             uname -r
         </pre>
         <p>
-            Вот и все, теперь ваша система обновлена до новейшей Ubuntu 19.10 и работает на наиболее защищенном ядре Linux 5.6.6.
+            Вот и все, теперь ваша система обновлена до новейшей Ubuntu 19.10 и работает на наиболее защищенном ядре Linux 5.6.7.
         </p>
     </section>
         
