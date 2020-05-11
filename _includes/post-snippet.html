@@ -13,16 +13,16 @@
                         <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
                         {% endif %}                        
                     </h2>
-                    <p class="card-text">
+                    <div class="card-text">
                         <date itemprop="dateModified"><small class="text-muted">{{ post.modified | date_to_long_string }}</small></date> | 
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
-                    </p>
+                    </div>
                 </header>
-                <p class="card-text">
+                <p class="card-text" itemprop="articleBody">
                     {{ post.content | split: 'articleBody">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
                 </p>
-                <p class="card-text" itemprop="articleBody">
+                <p class="card-text" itemprop="keywords">
                     Tags:
                     {% for tag in post.tags %}      
                         <a class="badge badge-secondary" href="{{ tag | downcase }}">{{ tag }}</a>
