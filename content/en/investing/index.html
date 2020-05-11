@@ -1,0 +1,13 @@
+---
+title: Investing and making money online
+description: Learn how to make money online by affiliate marketing and get passive income by investing in stocks, indexes and ETFs
+permalink: /investing
+enlink: /investing
+rulink: /инвестирование
+---
+
+{% include title.html %}
+{% assign posts = site.pages | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
+{% for post in posts %}  
+  {% include post-snippet.html %}
+{% endfor %}
