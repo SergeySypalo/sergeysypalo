@@ -4,7 +4,7 @@
     </h1>
     <p class="card-text">
         <small class="text-muted">
-            <date itemprop="dateModified">
+            <time datetime="dateModified" itemprop="dateModified">
                 {% assign modified = page.modified | date_to_long_string %}
                 {% if page.lang == "ru" %}
                     {% assign modified = modified | replace: "January", "января" | replace: "February", "февраля" | replace: "March", "марта" | replace: "April", "апреля" | replace: "May", "мая" | replace: "June", "июня" | replace: "July", "июля" | replace: "August", "августа" | replace: "September", "сентября" | replace: "October", "октября" | replace: "November", "ноября" | replace: "December", "декабря" %}
