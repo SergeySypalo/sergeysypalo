@@ -1,4 +1,4 @@
-<article class="card border-0 shadow-sm mb-3">
+<article class="card border-0 shadow-sm mb-3" itemscope itemtype="http://schema.org/Article">
     <figure class="row mb-0">
         <picture class="col-12 col-sm-4 col-lg-3 pr-0 d-none d-sm-block">
             <img class="img-fluid py-3 pl-3 pr-0" src="/assets/img/articles{{ post.enlink }}/title.png" alt="{{ post.title }}" />
@@ -14,7 +14,7 @@
                         {% endif %}                        
                     </h2>
                     <p class="card-text">
-                        <small class="text-muted"><date itemprop="dateModified">{{ post.modified | date_to_long_string }}</date> | </small>
+                        <date itemprop="dateModified"><small class="text-muted">{{ post.modified | date_to_long_string }}</small></date> | 
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
