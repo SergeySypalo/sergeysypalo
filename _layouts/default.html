@@ -6,11 +6,16 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="title" content="{{ page.title }}" />
         <meta name="description" content="{{ page.description }}" />    
-        <meta name="author" content="Sergey Sypalo">
+        <meta name="author" content="Sergey Sypalo">        
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />        
         <meta property="og:type" content="{{ page.type }}" />
         <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:description" content="{{ page.description }}" />
+        {% if page.type == "article" %}
+        <meta property="article:published_time" content="{{ page.title }}" />
+        <meta property="article:modified_time" content="{{ page.title }}" />
+        <meta property="article:tag" content="{{ page.tags }}" />
+        {% endif %}
         <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
         <meta property="og:image:secure_url" content="{{ site.url }}{{ page.image }}" />
         <meta property="og:site_name" content="Sergey Sypalo" />
@@ -59,7 +64,7 @@
             </nav>
         </header>        
         
-        <main class="container-lg my-sm-4 bg-white">
+        <main class="container-lg my-sm-4 bg-white" itemscope itemtype="http://schema.org/Blog">
             <div class="row p-2 pt-4 shadow-sm">
                 <section class="col-12 col-xl-9">                    
                     {{ content }}
@@ -158,9 +163,9 @@
             fbq('init', '2403304246450757');
             fbq('track', 'PageView');
         </script>
-        <noscript><img height="1" width="1"  class="d-none"
-            src="https://www.facebook.com/tr?id=2403304246450757&ev=PageView&noscript=1"
-        /></noscript>
+        <noscript>
+            <img height="1" width="1"  class="d-none" src="https://www.facebook.com/tr?id=2403304246450757&ev=PageView&noscript=1" alt="facebook pixel" />
+        </noscript>
         <!-- End Facebook Pixel Code -->
     </body>
 </html>
