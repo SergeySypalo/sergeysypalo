@@ -21,6 +21,18 @@ defaults:
       lang: "ru"
   -
     scope:
+      path: "content/en/investing/articles"        
+    values:      
+      type: "article"
+      comments: "true"
+  -
+    scope:
+      path: "content/ru/инвестирование/статьи"
+    values:      
+      type: "article"
+      comments: "true"
+  -
+    scope:
       path: "content/en/devops/articles"        
     values:      
       type: "article"
