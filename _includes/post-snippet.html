@@ -12,12 +12,10 @@
                         {% else %}
                         <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
                         {% endif %}                        
-                    </h2>
-                    <div class="card-text">
-                        <date itemprop="dateModified"><small class="text-muted">{{ post.modified | date_to_long_string }}</small></date> | 
-                        {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
-                        <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
-                    </div>
+                    </h2>                    
+                    <date itemprop="dateModified"><small class="text-muted">{{ post.modified | date_to_long_string }}</small></date> | 
+                    {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
+                    <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>                    
                 </header>
                 <p class="card-text" itemprop="articleBody">
                     {{ post.content | split: 'articleBody">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
