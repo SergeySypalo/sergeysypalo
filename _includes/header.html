@@ -1,9 +1,14 @@
 <header class="mb-2">                    
-    <h1 class="card-title h4 mb-0">
+    <h1 class="card-title h4 mb-0" itemprop="headline">
         {{ page.title }}
     </h1>
+    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+		<span class="d-none" itemprop="name">Sergey Sypalo</span>
+	</span>
     <p class="card-text">
+        <img class="d-none" itemprop="image" src="{{ page.image }}" alt="page.title" />
         <small class="text-muted">
+            <span class="d-none" itemprop="datePublished">{{ page.published }}</span>
             <time datetime="{{ page.modified }}" itemprop="dateModified">
                 {% assign modified = page.modified | date_to_long_string %}
                 {% if page.lang == "ru" %}
