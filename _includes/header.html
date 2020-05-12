@@ -4,13 +4,13 @@
     </h1>
     <p class="card-text">
         <small class="text-muted">
-            <time datetime="dateModified" itemprop="dateModified">
+            <time datetime="{{ page.modified }}" itemprop="dateModified">
                 {% assign modified = page.modified | date_to_long_string %}
                 {% if page.lang == "ru" %}
                     {% assign modified = modified | replace: "January", "января" | replace: "February", "февраля" | replace: "March", "марта" | replace: "April", "апреля" | replace: "May", "мая" | replace: "June", "июня" | replace: "July", "июля" | replace: "August", "августа" | replace: "September", "сентября" | replace: "October", "октября" | replace: "November", "ноября" | replace: "December", "декабря" %}
                 {% endif %}
                 {{ modified }}
-            </date> | 
+            </time> | 
         </small>
         {% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>

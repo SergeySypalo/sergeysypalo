@@ -15,26 +15,31 @@ rulink: /как-обновить-ubuntu
     {% include header.html %}
     <section class="mb-0" itemprop="articleBody">
         <p>
-            В этой статье я покажу вам, как обновить Ubuntu 18.04 до 19.10, минуя незначительное обновление до 18.10. В качестве бонуса мы также обновим ядро ​​до версии 5.6.11, которая содержит следующие улучшения:
+            В этой статье я покажу вам, как обновить ваш Ubuntu 20.04. В качестве бонуса мы также обновим ядро ​​до версии 5.6.11, которая содержит следующие улучшения:
         </p>
         <ul>
-            <li>Высокопроизводительный асинхронный ввод/вывод</li>
-            <li>Использование постоянной памяти в качестве ОЗУ</li>
-            <li>Живые исправления: поддержка кумулятивных исправлени</li>
-            <li>Поддержка Intel HDCP 2.2</li>
-            <li>Лучшая защита от вариаций уязвимости Spectre</li>
+            <li>WireGuard Support</li>
+            <li>New CPU idle cooling driver</li>            
+            <li>USB4 Support</li>
+            <li>Amazon Echo Support</li>            
+            <li>Improved Hardware Support</li>
+            <li>VirtualBox Folder Sharing</li>
+            <li>F2FS Data Compression Using LZO/LZ4</li>
         </ul>
         <p>
-            И вот краткий список того, что нового добавлено в Ubuntu 19.10:
+            И вот краткий список того, что нового добавлено в Ubuntu 20.04:
         </p>
         <ul>        
-            <li>Лучший и быстрый рабочий стол GNOME 3.32</li>
-            <li>Новые иконки и визуальные настройки</li>
-            <li>Улучшения ночного света</li>
-            <li>Контроль разрешений приложений</li>        
+            <li>Лучший и быстрый рабочий стол GNOME 3.36 с поддержкой темной темы</li>
+            <li>Улучшена поддержка 4K мониторов и масштабирования</li>
+            <li>Новые темы и визуальные настройки</li>
+            <li>Faster install, faster boot</li>    
+            <li>Global Do Not Disturb</li>
+            <li>Better Thunderbolt support</li>
+            <li>Better nVidia graphic cards support</li>
         </ul>
         <p>
-            Так как невозможно обновить Ubuntu 16.x или более ранней версии непосредственно до 19.x, необходимо обновить его до последней доступной версии lts, ​​а именно 18.04. Выполните следующие шаги для обновления Ubuntu с одного выпуска lts на другой, например, с 16.04 по 18.04:
+            Для обновления Ubuntu до последнего стабильного релиза 20.04 выполните следующие действия:
         </p>
         <pre>
             # Обновляем список пакетов
@@ -53,7 +58,7 @@ rulink: /как-обновить-ubuntu
             sudo do-release-upgrade
         </pre>
         <p>
-            Чтобы обновить Ubuntu до версии, отличной от lts (например, 19.10 или 19.10), необходимо выполнить несколько дополнительных шагов:
+            Чтобы обновить Ubuntu до версии, отличной от lts (например с 18.04 до 19.10), выполните следующие действия:
         </p>
         <pre>
             # Обновляем список пакетов
@@ -113,7 +118,26 @@ rulink: /как-обновить-ubuntu
 			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-headers-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
 			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-image-unsigned-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
 			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-modules-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
-            
+        </pre>
+        <p>
+            А если же вы хотите быть на последней ветке обеовлений и хотите обновить ядро ​​Ubuntu до последней версии 5.7-rc5, выполните следующие действия:
+        </p>        
+        <pre>
+            # Переходим в директорию /tmp
+            cd /tmp/
+
+            # Скачиваем новое ядро
+            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5
+            # и получите новые для вашей системы, обычно amd64
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5_5.7.0-050700rc5.202005101931_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-image-unsigned-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-modules-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+        </pre>
+        <p>
+            Далее шаги будут одинаковыми вне зависимости от ветки ядра на которую вы обновляетесь, стабильную или последнюю:
+        </p>        
+        <pre>
             # Устанавливаем новое ядро
             sudo dpkg -i *.deb
 
