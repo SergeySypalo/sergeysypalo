@@ -4,6 +4,9 @@
     </h1>
     <span itemprop="author" itemscope itemtype="https://schema.org/Person">
 		<span class="d-none" itemprop="name">Sergey Sypalo</span>
+    </span>
+    <span itemprop="publusher" itemscope itemtype="https://schema.org/Person">
+		<span class="d-none" itemprop="name">Sergey Sypalo</span>
 	</span>
     <p class="card-text">
         <img class="d-none" itemprop="image" src="{{ page.image }}" alt="page.title" />
@@ -20,4 +23,5 @@
         {% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
     </p>
+    <a class="d-none" itemprop="mainEntityOfPage" href="{{ page.url }}"></a>
 </header>
