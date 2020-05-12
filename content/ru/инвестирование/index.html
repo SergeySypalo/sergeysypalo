@@ -7,7 +7,7 @@ rulink: /инвестирование
 ---
 
 {% include title.html %}
-{% assign posts = site.pages | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
-{% for post in posts %}  
-  {% include post-snippet.html %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'инвестирование'" | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
+{% for post in posts %}
+    {% include post-snippet.html %}    
 {% endfor %}
