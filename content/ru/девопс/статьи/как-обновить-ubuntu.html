@@ -13,7 +13,7 @@ rulink: /как-обновить-ubuntu
 
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="http://schema.org/BlogPosting" itemprop="datePublished" content="{{ page.published }}">
     {% include header.html %}
-    <section class="mb-0" itemprop="articleBody">
+    <div class="mb-0" itemprop="articleBody">
         <p>
             В этой статье я покажу вам, как обновить ваш Ubuntu 20.04. В качестве бонуса мы также обновим ядро ​​до 
             последней стабильной версии 5.6.11 или 5.7-rc5 на ваш выбор, которая содержит следующие улучшения:
@@ -116,9 +116,9 @@ rulink: /как-обновить-ubuntu
             # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11
             # и получите новые для вашей системы, обычно amd64
             wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-headers-5.6.11-050611_5.6.11-050611.202005061022_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-headers-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-image-unsigned-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-modules-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-headers-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-image-unsigned-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.11/linux-modules-5.6.11-050611-generic_5.6.11-050611.202005061022_amd64.deb
         </pre>
         <p>
             А если же вы хотите быть на последней ветке обеовлений и хотите обновить ядро ​​Ubuntu до последней версии 5.7-rc5, выполните следующие действия:
@@ -131,9 +131,9 @@ rulink: /как-обновить-ubuntu
             # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5
             # и получите новые для вашей системы, обычно amd64
             wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5_5.7.0-050700rc5.202005101931_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-image-unsigned-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-modules-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-image-unsigned-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-modules-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
         </pre>
         <p>
             Далее шаги будут одинаковыми вне зависимости от ветки ядра на которую вы обновляетесь, стабильную или последнюю:
@@ -163,7 +163,7 @@ rulink: /как-обновить-ubuntu
         <p>
             Вот и все, теперь ваша система обновлена до новейшей Ubuntu 19.10 и работает на наиболее защищенном ядре Linux 5.6.11.
         </p>
-    </section>
+    </div>
         
     <footer>
         <hr />
