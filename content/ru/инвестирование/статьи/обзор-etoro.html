@@ -11,8 +11,14 @@ enlink: /etoro-review
 rulink: /обзор-etoro
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/Recommendation">
-	{% include header.html %}
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/Review">
+	{% include header.html %}	
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+		<span class="d-none" itemprop="name">Sergey Sypalo</span>
+	</span>
+	<span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+		<span class="d-none" itemprop="name">eToro</span>
+	</span>	
 	<div class="mb-0" itemprop="reviewBody">
 		<p>
 			Хотите узнать как можно заработать на трейдинге, но для вас это дело кажеться слишком сложным и запутанным? Или может уже пытались, но слили депозит на одной из Forex-кухонь? Советую не отказываться от этой идеи, т.к. компания eToro сделала процесс инвестирования максимально доступным для каждого, при этом от вас не требуется постоянно сидеть возле компьютера. Хотите узнать как же заработать и/или приумножить свои деньги, тогда погнали!
