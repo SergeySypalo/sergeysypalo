@@ -1,20 +1,23 @@
 <article class="card border-0 shadow-sm mb-3" itemscope itemtype="http://schema.org/Article">
     <figure class="row mb-0">
         <picture class="col-12 col-sm-4 col-lg-3 pr-0 d-none d-sm-block">
-            <img class="img-fluid py-3 pl-3 pr-0" src="/assets/img/articles{{ post.enlink }}/title.png" alt="{{ post.title }}" />
+            <img class="img-fluid py-3 pl-3 pr-0" src="/assets/img/articles{{ post.enlink }}/title.png"
+                alt="{{ post.title }}" />
         </picture>
         <figcaption class="col-12 col-sm-8 col-lg-9 pl-sm-0">
             <div class="card-body">
-                <header class="mb-2">                    
+                <header class="mb-2">
                     <h2 class="card-title h5 mb-0">
                         {% if post.lang == "ru" %}
                         <a class="text-dark text-decoration-none" href="{{ post.rulink }}">{{ post.title }}</a>
                         {% else %}
                         <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
-                        {% endif %}                        
+                        {% endif %}
                     </h2>
-                    <p class="card-text">                        
-                        <small class="text-muted"><time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | </small>
+                    <p class="card-text">
+                        <small class="text-muted"><time itemprop="dateModified"
+                                datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> |
+                        </small>
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
@@ -24,11 +27,12 @@
                 </p>
                 <p class="card-text" itemprop="keywords">
                     Tags:
-                    {% for tag in post.tags %}      
-                        <a class="badge badge-secondary" href="{{ tag | downcase }}">{{ tag }}</a>
-                    {% endfor %}        
+                    {% for tag in post.tags %}
+                    <a class="badge badge-secondary" href="{{ tag | downcase }}">{{ tag }}</a>
+                    {% endfor %}
                 </p>
-                <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="url">{{ site.data.translations.readmore[page.lang] }}</a>
+                <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true"
+                    itemprop="url">{{ site.data.translations.readmore[page.lang] }}</a>
             </div>
         </figcaption>
     </figure>
