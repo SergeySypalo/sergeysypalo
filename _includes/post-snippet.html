@@ -14,6 +14,12 @@
                         <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
                         {% endif %}
                     </h2>
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                    </span>
+                    <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                    </span>
                     <p class="card-text">                        
                         <img class="d-none" itemprop="image" src="{{ post.image }}" alt="post.title" />
                         <span class="d-none" itemprop="datePublished">{{ post.published }}</span>
@@ -21,10 +27,7 @@
                             <time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | 
                         </small>
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
-                        <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
-                        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                            <span class="d-none" itemprop="name">Sergey Sypalo</span>
-                        </span>                       
+                        <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>                                               
                     </p>                    
                 </header>
                 <p class="card-text" itemprop="articleBody">
