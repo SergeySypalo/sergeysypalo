@@ -23,8 +23,12 @@
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
-                    <span class="d-none" itemprop="author">Sergey Sypalo</span>
-                    <span class="d-none" itemprop="publisher">Sergey Sypalo</span>
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                    </span>
+                    <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                    </span>
                     <a class="d-none" itemprop="mainEntityOfPage" href="{{ post.url }}"></a>
                 </header>
                 <p class="card-text" itemprop="articleBody">
