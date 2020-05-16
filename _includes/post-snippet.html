@@ -14,14 +14,22 @@
                         <a class="text-dark text-decoration-none" href="{{ post.enlink }}">{{ post.title }}</a>
                         {% endif %}
                     </h2>
-                    <p class="card-text">
-                        <small class="text-muted"><time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | </small>
+                    <p class="card-text">                        
+                        <img class="d-none" itemprop="image" src="{{ page.image }}" alt="page.title" />
+                        <span class="d-none" itemprop="datePublished">{{ page.published }}</span>
+                        <small class="text-muted">                            
+                            <time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | 
+                        </small>
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
                     <span itemprop="author" itemscope itemtype="https://schema.org/Person">
                         <span class="d-none" itemprop="name">Sergey Sypalo</span>
-                    </span>                    
+                    </span>
+                    <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                    </span>
+                    <a class="d-none" itemprop="mainEntityOfPage" href="{{ page.url }}"></a>
                 </header>
                 <p class="card-text" itemprop="articleBody">
                     {{ post.content | split: 'Body">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}

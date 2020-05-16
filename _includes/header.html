@@ -10,8 +10,8 @@
 	</span>
     <p class="card-text">
         <img class="d-none" itemprop="image" src="{{ page.image }}" alt="page.title" />
-        <small class="text-muted">
-            <span class="d-none" itemprop="datePublished">{{ page.published }}</span>
+        <span class="d-none" itemprop="datePublished">{{ page.published }}</span>
+        <small class="text-muted">            
             <time datetime="{{ page.modified }}" itemprop="dateModified">
                 {% assign modified = page.modified | date_to_long_string %}
                 {% if page.lang == "ru" %}
