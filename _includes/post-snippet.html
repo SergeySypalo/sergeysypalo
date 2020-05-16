@@ -22,14 +22,13 @@
                         </small>
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
                         <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
-                    </p>
-                    <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
-                    </span>
-                    <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
-                        <span class="d-none" itemprop="name">Sergey Sypalo</span>
-                    </span>
-                    <a class="d-none" itemprop="mainEntityOfPage" href="{{ post.url }}"></a>
+                        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                        </span>
+                        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+                            <span class="d-none" itemprop="name">Sergey Sypalo</span>
+                        </span>                        
+                    </p>                    
                 </header>
                 <p class="card-text" itemprop="articleBody">
                     {{ post.content | split: 'Body">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
@@ -40,8 +39,7 @@
                     <a class="badge badge-secondary" href="{{ tag | downcase }}">{{ tag }}</a>
                     {% endfor %}
                 </p>
-                <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true"
-                    itemprop="url">{{ site.data.translations.readmore[page.lang] }}</a>
+                <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="mainEntityOfPage">{{ site.data.translations.readmore[page.lang] }}</a>
             </div>
         </figcaption>
     </figure>
