@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 published: 2019-05-14
-modified: 2020-05-12
+modified: 2020-05-17
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -16,7 +16,7 @@ rulink: /как-обновить-ubuntu
 	<div class="mb-0" itemprop="articleBody">
 		<p>
 			In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel
-			to the latest stable version 5.6.13 or 5.7-rc5 of your choice, which contains the following improvements:
+			to the latest stable version 5.6.13 or 5.7-rc6 of your choice, which contains the following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -122,19 +122,19 @@ rulink: /как-обновить-ubuntu
 		</pre>
 		<p>
 			And if you want to be on the last branch of the update and want to upgrade the Ubuntu kernel to the latest
-			version 5.7-rc5, follow these steps:
+			version 5.7-rc6, follow these steps:
 		</p>
 		<pre>
 			# Go to the /tmp directory
 			cd /tmp/
 
 			# Download the new kernel
-			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5
+			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6
 			# and get new ones for your system, usually amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5_5.7.0-050700rc5.202005101931_all.deb			
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-image-unsigned-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-modules-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb        
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-headers-5.7.0-050700rc6_5.7.0-050700rc6.202005172030_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-headers-5.7.0-050700rc6-generic_5.7.0-050700rc6.202005172030_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-image-unsigned-5.7.0-050700rc6-generic_5.7.0-050700rc6.202005172030_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-modules-5.7.0-050700rc6-generic_5.7.0-050700rc6.202005172030_amd64.deb
 		</pre>
 		<p>
 			Next, the steps will be the same regardless of the kernel branch to which you are updating, stable or the last:

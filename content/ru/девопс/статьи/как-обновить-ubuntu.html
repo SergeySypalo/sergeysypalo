@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 description: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 published: 2019-05-14
-modified: 2020-05-12
+modified: 2020-05-17
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -16,7 +16,7 @@ rulink: /как-обновить-ubuntu
 	<div class="mb-0" itemprop="articleBody">
 		<p>
 			В этой статье я покажу вам, как обновить ваш Ubuntu 20.04. В качестве бонуса мы также обновим ядро ​​до
-			последней стабильной версии 5.6.13 или 5.7-rc5 на ваш выбор, которая содержит следующие улучшения:
+			последней стабильной версии 5.6.13 или 5.7-rc6 на ваш выбор, которая содержит следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -122,19 +122,19 @@ rulink: /как-обновить-ubuntu
         </pre>
 		<p>
 			А если же вы хотите быть на последней ветке обеовлений и хотите обновить ядро ​​Ubuntu до последней версии
-			5.7-rc5, выполните следующие действия:
+			5.7-rc6, выполните следующие действия:
 		</p>
 		<pre>
             # Переходим в директорию /tmp
             cd /tmp/
 
             # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5
+            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6
             # и получите новые для вашей системы, обычно amd64
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5_5.7.0-050700rc5.202005101931_all.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-headers-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-image-unsigned-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc5/linux-modules-5.7.0-050700rc5-generic_5.7.0-050700rc5.202005101931_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-headers-5.7.0-050700rc6_5.7.0-050700rc6.202005172030_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-headers-5.7.0-050700rc6-generic_5.7.0-050700rc6.202005172030_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-image-unsigned-5.7.0-050700rc6-generic_5.7.0-050700rc6.202005172030_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc6/linux-modules-5.7.0-050700rc6-generic_5.7.0-050700rc6.202005172030_amd64.deb
         </pre>
 		<p>
 			Далее шаги будут одинаковыми вне зависимости от ветки ядра на которую вы обновляетесь, стабильную или
