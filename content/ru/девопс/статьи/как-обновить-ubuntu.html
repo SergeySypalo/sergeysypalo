@@ -16,7 +16,7 @@ rulink: /как-обновить-ubuntu
 	<div class="mb-0" itemprop="articleBody">
 		<p>
 			В этой статье я покажу вам, как обновить ваш Ubuntu 20.04. В качестве бонуса мы также обновим ядро ​​до
-			последней стабильной версии 5.6.13 или 5.7-rc6 на ваш выбор, которая содержит следующие улучшения:
+			последней стабильной версии 5.6.14 или 5.7-rc6 на ваш выбор, которая содержит следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -106,19 +106,19 @@ rulink: /как-обновить-ubuntu
             sudo shutdown -r now
         </pre>
 		<p>
-			Чтобы обновить ядро ​​Ubuntu до последней версии 5.6.13, выполните следующие действия:
+			Чтобы обновить ядро ​​Ubuntu до последней версии 5.6.14, выполните следующие действия:
 		</p>
 		<pre>
             # Переходим в директорию /tmp
             cd /tmp/
 
             # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.13
+            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.14
             # и получите новые для вашей системы, обычно amd64
-            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.13/linux-headers-5.6.13-050613_5.6.13-050613.202005141310_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.13/linux-headers-5.6.13-050613-generic_5.6.13-050613.202005141310_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.13/linux-image-unsigned-5.6.13-050613-generic_5.6.13-050613.202005141310_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.13/linux-modules-5.6.13-050613-generic_5.6.13-050613.202005141310_amd64.deb
+            wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.14/linux-headers-5.6.14-050614_5.6.14-050614.202005200733_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.14/linux-headers-5.6.14-050614-generic_5.6.14-050614.202005200733_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.14/linux-image-unsigned-5.6.14-050614-generic_5.6.14-050614.202005200733_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.14/linux-modules-5.6.14-050614-generic_5.6.14-050614.202005200733_amd64.deb
         </pre>
 		<p>
 			А если же вы хотите быть на последней ветке обеовлений и хотите обновить ядро ​​Ubuntu до последней версии
