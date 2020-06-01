@@ -16,7 +16,7 @@ rulink: /как-обновить-ubuntu
 	<div class="mb-0" itemprop="articleBody">
 		<p>
 			In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel
-			to the latest stable version 5.6.15 or 5.7-rc7 of your choice, which contains the following improvements:
+			to the latest stable version 5.6.15 or mainline 5.7 of your choice, which contains the following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -129,12 +129,12 @@ rulink: /как-обновить-ubuntu
 			cd /tmp/
 
 			# Download the new kernel
-			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc7
+			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7
 			# and get new ones for your system, usually amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc7/linux-headers-5.7.0-050700rc7_5.7.0-050700rc7.202005242331_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc7/linux-headers-5.7.0-050700rc7-generic_5.7.0-050700rc7.202005242331_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc7/linux-image-unsigned-5.7.0-050700rc7-generic_5.7.0-050700rc7.202005242331_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7-rc7/linux-modules-5.7.0-050700rc7-generic_5.7.0-050700rc7.202005242331_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7/linux-headers-5.7.0-050700_5.7.0-050700.202005312130_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7/linux-headers-5.7.0-050700-generic_5.7.0-050700.202005312130_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7/linux-image-unsigned-5.7.0-050700-generic_5.7.0-050700.202005312130_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7/linux-modules-5.7.0-050700-generic_5.7.0-050700.202005312130_amd64.deb
 		</pre>
 		<p>
 			Next, the steps will be the same regardless of the kernel branch to which you are updating, stable or the last:
