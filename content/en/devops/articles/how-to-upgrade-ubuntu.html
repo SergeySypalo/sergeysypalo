@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 published: 2019-05-14
-modified: 2020-05-29
+modified: 2020-06-03
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -16,7 +16,7 @@ rulink: /как-обновить-ubuntu
 	<div class="mb-0" itemprop="articleBody">
 		<p>
 			In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel
-			to the latest stable version 5.6.15 or mainline 5.7 of your choice, which contains the following improvements:
+			to the latest stable version 5.6.16 or mainline 5.7 of your choice, which contains the following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -106,19 +106,19 @@ rulink: /как-обновить-ubuntu
 			sudo shutdown -r now
 		</pre>
 		<p>
-			To Upgrade Ubuntu kernel to the latest 5.6.15 build, follow the steps:
+			To Upgrade Ubuntu kernel to the latest 5.6.16 build, follow the steps:
 		</p>
 		<pre>
 			# Change current directory to /tmp
 			cd /tmp/
 
 			# Download new kernel
-			# if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.15
+			# if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.16
 			# and get new ones for your system, typically amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.15/linux-headers-5.6.15-050615_5.6.15-050615.202005271638_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.15/linux-headers-5.6.15-050615-generic_5.6.15-050615.202005271638_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.15/linux-image-unsigned-5.6.15-050615-generic_5.6.15-050615.202005271638_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.15/linux-modules-5.6.15-050615-generic_5.6.15-050615.202005271638_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.16/linux-headers-5.6.16-050616_5.6.16-050616.202006030730_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.16/linux-headers-5.6.16-050616-generic_5.6.16-050616.202006030730_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.16/linux-image-unsigned-5.6.16-050616-generic_5.6.16-050616.202006030730_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.16/linux-modules-5.6.16-050616-generic_5.6.16-050616.202006030730_amd64.deb
 		</pre>
 		<p>
 			And if you want to be on the last branch of the update and want to upgrade the Ubuntu kernel to the latest
