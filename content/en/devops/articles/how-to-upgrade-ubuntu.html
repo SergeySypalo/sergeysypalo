@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 published: 2019-05-14
-modified: 2020-06-12
+modified: 2020-06-17
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -14,10 +14,7 @@ rulink: /как-обновить-ubuntu
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/TechArticle">
 	{% include header.html %}
 	<div class="mb-0" itemprop="articleBody">
-		<p>
-			In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel
-			to the latest stable 5.7.1, which contains the following improvements:
-		</p>
+		<p>In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel to the latest stable version 5.6.18/5.7.2 or mainline 5.8-rc1 of your choice, which contains the following improvements:</p>
 		<ul>
 			<li>WireGuard Support</li>
 			<li>New processor cooling driver</li>
@@ -27,9 +24,7 @@ rulink: /как-обновить-ubuntu
 			<li>VirtualBox Folder Sharing</li>
 			<li>F2FS data compression using LZO/LZ4</li>
 		</ul>
-		<p>
-			And here is a short list of what's new in Ubuntu 20.04:
-		</p>
+		<p>And here is a short list of what's new in Ubuntu 20.04:</p>
 		<ul>
 			<li>Best and fastest GNOME 3.36 desktop with dark theme support</li>
 			<li>Improved support for 4K monitors and zoom</li>
@@ -39,9 +34,7 @@ rulink: /как-обновить-ubuntu
 			<li>Best Thunderbolt Support</li>
 			<li>Best support for nVidia graphics cards</li>
 		</ul>
-		<p>
-			To upgrade Ubuntu to the latest stable release 20.04, follow these steps:
-		</p>
+		<p>To upgrade Ubuntu to the latest stable release 20.04, follow these steps:</p>
 		<pre>
 			# Update packages list            
 			sudo apt-get update
@@ -58,9 +51,7 @@ rulink: /как-обновить-ubuntu
 			# Update Ubuntu
 			sudo do-release-upgrade	   
 		</pre>
-		<p>
-			To upgrade Ubuntu to non-lts release (e.g. from 18.04 to 19.10), follow these steps:
-		</p>
+		<p>To upgrade Ubuntu to non-lts release (e.g. from 18.04 to 19.10), follow these steps:</p>
 		<pre>
 			# Update packages list            
 			sudo apt-get update
@@ -105,21 +96,47 @@ rulink: /как-обновить-ubuntu
 			# Reboot the system
 			sudo shutdown -r now
 		</pre>
-		<p>
-			To Upgrade Ubuntu kernel to the latest 5.7.1 build, follow the steps:
-		</p>		
+		<p>To Upgrade Ubuntu kernel to the latest stable 5.7.2 build, follow the steps:</p>		
 		<pre>
 			# Change current directory to /tmp
 			cd /tmp/
 
 			# Download the new kernel
-			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.1
+			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.2
 			# and get new ones for your system, usually amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.1/linux-headers-5.7.1-050701_5.7.1-050701.202006071230_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.1/linux-headers-5.7.1-050701-generic_5.7.1-050701.202006071230_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.1/linux-image-unsigned-5.7.1-050701-generic_5.7.1-050701.202006071230_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.1/linux-modules-5.7.1-050701-generic_5.7.1-050701.202006071230_amd64.deb
-		
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.2/amd64/linux-headers-5.7.2-050702_5.7.2-050702.202006101934_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.2/amd64/linux-headers-5.7.2-050702-generic_5.7.2-050702.202006101934_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.2/amd64/linux-image-unsigned-5.7.2-050702-generic_5.7.2-050702.202006101934_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.2/amd64/linux-modules-5.7.2-050702-generic_5.7.2-050702.202006101934_amd64.deb
+		</pre>
+		<p>If you aren't ready for a latest greatest or due to any reason need or want to stay on 5.6.x branch, follow these steps:</p>			
+		<pre>
+			# Change current directory to /tmp
+			cd /tmp/
+
+			# Download new kernel
+			# if links below won't work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.18
+			# and get new ones for your system, typically amd64
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.18/amd64/linux-headers-5.6.18-050618_5.6.18-050618.202006101539_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.18/amd64/linux-headers-5.6.18-050618-generic_5.6.18-050618.202006101539_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.18/amd64/linux-image-unsigned-5.6.18-050618-generic_5.6.18-050618.202006101539_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.18/amd64/linux-modules-5.6.18-050618-lowlatency_5.6.18-050618.202006101539_amd64.deb
+		</pre>
+		<p>And if you want to be on the last branch of the update and want to upgrade the Ubuntu kernel to the latest version 5.8-rc1, follow these steps:</p>				
+		<pre>
+			# Change current directory to /tmp
+			cd /tmp/
+
+			# Download the new kernel
+			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1
+			# and get new ones for your system, usually amd64
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-headers-5.8.0-050800_5.8.0-050800.202006142031_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-headers-5.8.0-050800-generic_5.8.0-050800.202006142031_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-image-unsigned-5.8.0-050800-generic_5.8.0-050800.202006142031_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-modules-5.8.0-050800-generic_5.8.0-050800.202006142031_amd64.deb
+		</pre>
+		<p>Next, the steps will be the same regardless of the kernel branch to which you are updating, stable or mainline:</p>
+		<pre>
 			# Install new kernel
 			sudo dpkg -i *.deb
 
