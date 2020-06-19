@@ -1,3 +1,4 @@
+{% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
 <header class="mb-2">    
     <nav aria-label="breadcrumb">
         <ul class="list-inline" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -6,9 +7,7 @@
                     <span itemprop="name">{{ site.data.translations.home[page.lang] }}</span>
                 </a>
                 <meta itemprop="position" content="1" />
-            </li>
-            ›
-            {% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
+            </li>›
             <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="{{ page.url }}">
                     <span itemprop="name">{{ category }}</span>
@@ -36,9 +35,8 @@
                     {% assign modified = modified | replace: "January", "января" | replace: "February", "февраля" | replace: "March", "марта" | replace: "April", "апреля" | replace: "May", "мая" | replace: "June", "июня" | replace: "July", "июля" | replace: "August", "августа" | replace: "September", "сентября" | replace: "October", "октября" | replace: "November", "ноября" | replace: "December", "декабря" %}
                 {% endif %}
                 {{ modified }}
-            </time> | 
+            </time>
         </small>        
-        <a class="badge badge-primary" href="{{ category | downcase }}">{{ category }}</a>
     </p>
     <a class="d-none" itemprop="mainEntityOfPage" href="{{ page.url }}"></a>
 </header>
