@@ -1,22 +1,5 @@
-{% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
 <header class="mb-2">    
-    <nav aria-label="breadcrumb">
-        <ol class="list-inline" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/">
-                    <span itemprop="name">{{ site.data.translations.home[page.lang] }}</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>›
-            <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="{{ page.url }}">
-                    <span itemprop="name">{{ category }}</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>            
-        </ol>
-    </nav>                
-    <h1 class="card-title h4 mb-0" itemscope itemtype="https://schema.org/Article" itemprop="headline">
+    <h1 class="card-title h4 mb-0" itemprop="headline">
         {{ page.title }}
     </h1>
     <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
