@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 published: 2019-05-14
-modified: 2020-06-18
+modified: 2020-06-19
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -14,7 +14,7 @@ rulink: /как-обновить-ubuntu
 <article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/TechArticle">
 	{% include header.html %}
 	<div class="mb-0" itemprop="articleBody">
-		<p>In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel to the latest stable version 5.6.19/5.7.3 or mainline 5.8-rc1 of your choice, which contains the following improvements:</p>
+		<p>In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will also update the kernel to the latest stable version 5.6.19/5.7.4 or mainline 5.8-rc1 of your choice, which contains the following improvements:</p>
 		<ul>
 			<li>WireGuard Support</li>
 			<li>New processor cooling driver</li>
@@ -96,18 +96,18 @@ rulink: /как-обновить-ubuntu
 			# Reboot the system
 			sudo shutdown -r now
 		</pre>
-		<p>To Upgrade Ubuntu kernel to the latest stable 5.7.3 build, follow the steps:</p>		
+		<p>To Upgrade Ubuntu kernel to the latest stable 5.7.4 build, follow the steps:</p>		
 		<pre>
 			# Change current directory to /tmp
 			cd /tmp/
 
 			# Download the new kernel
-			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.3
+			# if the links below do not work, go to https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4
 			# and get new ones for your system, usually amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.3/amd64/linux-headers-5.7.3-050703_5.7.3-050703.202006171531_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.3/amd64/linux-headers-5.7.3-050703-generic_5.7.3-050703.202006171531_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.3/amd64/linux-image-unsigned-5.7.3-050703-generic_5.7.3-050703.202006171531_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.3/amd64/linux-modules-5.7.3-050703-generic_5.7.3-050703.202006171531_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704_5.7.4-050704.202006181331_all.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-image-unsigned-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb
+			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-modules-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb
 		</pre>
 		<p>If you aren't ready for a latest greatest or due to any reason need or want to stay on 5.6.x branch, follow these steps:</p>			
 		<pre>
