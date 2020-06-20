@@ -30,7 +30,8 @@ rulink: /как-обновить-ubuntu
 </nav>
 <article itemscope itemtype="https://schema.org/Article">
 	{% include header.html %}	
-	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
+	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">		
+		<span class="d-none" itemprop="name">{{ page.titile }}</span>
 		<p itemprop="description">In this article, I will show you how to upgrade your Ubuntu 20.04. As a bonus, we will
 			also update the kernel to the latest stable version 5.6.19/5.7.4 or mainline 5.8-rc1 of your choice, which
 			contains the following improvements:</p>
@@ -59,7 +60,7 @@ rulink: /как-обновить-ubuntu
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Update packages list</div>				
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
-					<div itemprop="text"><kbd>sudo apt-get update</kbd></div>
+					<kbd itemprop="text">sudo apt-get update</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
@@ -71,7 +72,7 @@ rulink: /как-обновить-ubuntu
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Install update-manager-core package</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo apt-get install update-manager-core</kbd></div>
+					<kbd itemprop="text">sudo apt-get install update-manager-core</kbd>
 				</div>
 			</div>
 		</div>
@@ -80,13 +81,13 @@ rulink: /как-обновить-ubuntu
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Upgrade distro</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo apt-get dist-upgrade</kbd></div>
+					<kbd itemprop="text">sudo apt-get dist-upgrade</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Upgrade Ubuntu</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo do-release-upgrade</kbd></div>
+					<kbd itemprop="text">sudo do-release-upgrade</kbd>
 				</div>				
 			</div>
 		</div>
@@ -95,15 +96,14 @@ rulink: /как-обновить-ubuntu
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Change current directory to /tmp</div>				
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>cd /tmp</kbd></div>
+					<kbd itemprop="text">cd /tmp</kbd>
 				</div>				
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Download new kernel</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />					
-					<div itemprop="text">
-						<ul>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<pre itemprop="text">
+						<ol class="list-unstyled">
 							<li>
 								<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704_5.7.4-050704.202006181331_all.deb</kbd>
 							</li>
@@ -116,20 +116,20 @@ rulink: /как-обновить-ubuntu
 							<li>
 								<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-modules-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
 							</li>
-						</ul>	
-					</div>
+						</ol>
+					</pre>					
 				</div>				
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Install new kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo dpkg -i *.deb</kbd></div>
+					<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
 				</div>				
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Reboot the system</div>				
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo shutdown -r now</kbd></div>
+					<kbd itemprop="text">sudo shutdown -r now</kbd>
 				</div>				
 			</div>
 		</div>
@@ -138,31 +138,31 @@ rulink: /как-обновить-ubuntu
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Update packages list</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
-					<div itemprop="text"><kbd>sudo apt-get update</kbd></div>
+					<kbd itemprop="text">sudo apt-get update</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Upgrade packages</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo apt-get upgrade</kbd></div>
+					<kbd itemprop="text">sudo apt-get upgrade</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Reboot the system if needed</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>sudo shutdown -r now</kbd></div>
+					<kbd itemprop="text">sudo shutdown -r now</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Check the OS distro</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>lsb_release -a</kbd></div>
+					<kbd itemprop="text">lsb_release -a</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<div itemprop="name">Check the kernel version</div>				
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<div itemprop="text"><kbd>uname -r</kbd></div>
+					<kbd itemprop="text">uname -r</kbd>
 				</div>
 			</div>
 		</div>
