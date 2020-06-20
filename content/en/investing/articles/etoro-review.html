@@ -11,287 +11,306 @@ enlink: /etoro-review
 rulink: /обзор-etoro
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/Review">
+{% assign category = page.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
+<nav aria-label="breadcrumb">
+	<ol class="list-inline" itemscope itemtype="https://schema.org/BreadcrumbList">
+		 <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+			  <a itemprop="item" href="/">
+					<span itemprop="name">{{ site.data.translations.home[page.lang] }}</span>
+			  </a>
+			  <meta itemprop="position" content="1" />
+		 </li>›
+		 <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+			  <a itemprop="item" href="{{ page.url }}">
+					<span itemprop="name">{{ category }}</span>
+			  </a>
+			  <meta itemprop="position" content="2" />
+		 </li>            
+	</ol>
+</nav>
+<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/Article">
 	{% include header.html %}
 	<span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
 		<span class="d-none" itemprop="name">eToro</span>
 	</span>
-	<div class="mb-0" itemprop="reviewBody">
-		<p>
-			Want to know how you can make money on trading, but for you this business seems too complicated and confusing?
-			Or maybe they have already tried, but leaked a deposit in one of the Forex kitchens? I advise you not to
-			abandon this idea, because eToro has made the investment process as accessible as possible for everyone, and
-			you are not required to constantly sit by the computer. If you want to know how to earn and / or increase your
-			money, then we’ve driven!
-		</p>
-		<section>
-			<h2 class="h5">Why eToro?</h2>
+	<div class="mb-0" itemprop="articleBody">
+		<div itemscope itemtype="https://schema.org/Review">
 			<p>
-				Intuitive user-friendly interface that is understandable even for beginners. The ability to invest in stocks of
-				global companies such as Apple, Microsoft, Google and many others. Having a demo account on which you need to
-				practice before investing real money. Customer support through online chat and personal manager. The main
-				feature of social trading is the ability to copy deals of successful investors in auto mode, you just need to
-				choose the right traders for you and that’s all. In the traders section there are ready-made lists, such as
-				“With the largest number of copyists”, “Best investors”, “Editors' Choice”. The customer’s safety is first of
-				all for the company, therefore the system will not allow investing more than 40% of the deposit in one, even a
-				very successful trader. The company itself is positioning itself as a social network for traders /
-				investors,where users can not only earn, but also communicate with each other.
+				Want to know how you can make money on trading, but for you this business seems too complicated and confusing?
+				Or maybe they have already tried, but leaked a deposit in one of the Forex kitchens? I advise you not to
+				abandon this idea, because eToro has made the investment process as accessible as possible for everyone, and
+				you are not required to constantly sit by the computer. If you want to know how to earn and / or increase your
+				money, then we’ve driven!
 			</p>
-		</section>
-		<section>
-			<h2 class="h5">EToro story</h2>
-			<p>
-				The eToro brokerage company was registered back in 2007, and from that moment it has been constantly
-				developing. Currently, the number of active traders and investors has exceeded 10 million people from all over
-				the world, and this number is growing from year to year. The main reason for the success of the company is
-				their unique platform combining a social network and a trading terminal, which allows successful investors to
-				copy transactions. But let's talk about everything in order. To get started, let's go through the key points in
-				the development of the company:
-			</p>
-			<ul>
-				<li>2007 - foundation of the company</li>
-				<li>2009 - opening of WebTrader (access to the trading terminal via a website from anywhere in the world)</li>
-				<li>2011 - creation of OpenBook (social trading system / copying transactions)</li>
-				<li>2012 - access to the stock market (investments in stocks for greater diversification of investments)</li>
-				<li>2013 - release of mobile applications for iPhone and Android</li>
-				<li>2015 - website design update (made it more understandable for customers)</li>
-				<li>2016 - the advent of CopyPortfolios (the ability to invest not in indices or individual stocks, but in
-					their collections, for example CopyPortfolio “BigTech” contains shares of large technology companies)</li>
-				<li>2017 - the use of artificial intelligence and machine learning from Microsoft to compile CopyPortfolios (it
-					gave greater benefits to investors in CopyPortfolios, because AI chooses more promising stocks)</li>
-				<li>2018 - entry into the cryptocurrency market (the opportunity to invest in crypto assets)</li>
-				<li>2019 - eToro Wallet is launched and 35 fiat pairs are added to the platform (the ability to buy and sell
-					Bitcoin, Ethereum and other popular currencies from a credit card)</li>
-				<li>2020 - addition of 185 shares available for investment on the platform</li>
-			</ul>
-		</section>
-		<section>
-			<h2 class="h5">
-				Registration
-			</h2>
-			<p>
-				To register at eToro click the <a href="http://partners.etoro.com/B12993_A83946_TClick.aspx">link</a> or image below<br />
-				As soon as we entered the site, we change the language to English at the top and fill out the registration form
-				<a href="http://partners.etoro.com/B12993_A83946_TClick.aspx">
-					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/registration.png" alt="Registration" />
-				</a>			
-			</p>
-		</section>
-		<section>
-			<h2 class="h5">
-				Account Creation
-			</h2>
-			<ul class="list-unstyled">
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">As soon as we entered the site, click the complete profile button in the upper left corner</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/complete-profile.png" alt="Complete profile" />				
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">We indicate the name, surname, gender and date of birth, all as in the passport</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/base-info.png" alt="Name, Surname, Gender and date of birth" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Next, indicate the address of registration</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/address.png" alt="Address of registration" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">and your trading experience. Note that if you specify the first or third option, copying transactions may not be available to you</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-experience.png" alt="Trading experience" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">At this step we indicate your trading knowledge, I recommend choosing the last option “took courses” and really read/see about investing in Google/YouTube</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-knowledge.png" alt="Trading knowledge" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Now you will be asked to go through a small questionnaire</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-knowledge-assessment.png" alt="Trading knowledge assessment" />
-						A little hint, the first answer is the right one, but you should know this yourself ;)
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Indicate the areas in which you will invest, I invest in stocks and indices</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/planned-investments.png" alt="Planned investments" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">As well as how long you invest, I am not a fan of round-the-clock market monitoring, and on my own tests and
-						experience I have been convinced that long-term investment is more profitable than short-term trading,
-						especially for long periods of several years</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-strategy.png" alt="Trading strategy" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">What are your plans for making money?)</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/purpose-of-trading.png" alt="Purpose of trading" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">What is your attitude to risk? How reckless are you?</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/attitude-to-risk.png" alt="attitude-to-risk" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Your professional status</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/professional-status.png" alt="Professional status" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Your financial situation</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/financial-status.png" alt="Financial status" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Phone verification</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/phone-verification.png" alt="Phone verification" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Passport scan upload</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/documents-upload.png" alt="Documents upload" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Checking your address</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/address-verification.png" alt="Address verification" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Adding a tax ID</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/tax-id.png" alt="Tax ID" />
-					</figure>
-				</li>
-				<li>
-					<figure class="figure">
-						<figcaption class="mb-2">Pending verification</figcaption>
-						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/pending-verification.png" alt="Pending verification" />
-					</figure>
-				</li>
-			</ul>
-			<p>I advise you to monitor the mail, if there is a lack of any documents, then a notification will come to it</p>			
-			<figure class="figure">
-				<figcaption class="mb-2">In the meantime, we can switch to a demo account and practice on it</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/demo-account.png" alt="Demo-account" />
-			</figure>			
-		</section>
-		<section>
-			<h2 class="h5">
-				Deposit
-			</h2>
-			<p>As soon as the account has passed verification (if all the documents are in order, it takes a day or two), replenishment of the account becomes available. To do this, click on the corresponding button in the lower left corner</p>
-			<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/deposit.png" alt="Deposit">
-			<p>
-				Enter the card details and click send, as a rule, money is credited instantly
-			</p>
-			<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/card-details.png" alt="Card details">
-			<p>
-				The following payment systems are available for replenishment:
-			</p>
-			<ul>
-				<li>Credit card</li>
-				<li>Bank Transfer</li>
-				<li>Yandex money</li>
-				<li>Webmoney</li>
-				<li>Paypal</li>
-				<li>Skrill</li>
-				<li>Unionpay</li>
-				<li>NETELLER</li>
-			</ul>			
-		</section>
-		<section>		
-			<h2 class="h5">
-				Investing in eToro
-			</h2>		
-			<p>
-				I arranged available eToro investment options by decreasing risk (investing in indices is the least risky)). Briefly about each of the items):
-			</p>
-			<dl class="row">
-				<dt class="col-12">Indices</dt>
-				<dd class="col-12">Indices represent a set of stocks, usually of a country</dd>
-				<dt class="col-12">ETFs (Exchange traded funds)</dt>
-				<dd class="col-12">Exchange-traded funds are collections of stocks for specific industries or regions</dd>
-				<dt class="col-12">CopyPortfodtos</dt>
-				<dd class="col-12">CopyPortfolios is an eToro product resembling stock funds, only stocks in CopyPortfolios are selected by experts from eToro</dd>
-				<dt class="col-12">Stocks</dt>
-				<dd class="col-12">Shares are part of a company</dd>
-				<dt class="col-12">Commodities</dt>
-				<dd class="col-12">Commodity markets are investments in oil, gold, sugar, etc.</dd>
-				<dt class="col-12">Forex</dt>
-				<dd class="col-12">The word Forex is strongly associated with foreign exchange markets, as they trade on fluctuations in the exchange rate of one currency to another, for example, the euro against the dollar</dd>
-				<dt class="col-12">Traders</dt>
-				<dd class="col-12">Well, the ability to copy trades of successful traders is the main feature of eToro</dd>
-			</dl>
-			<p>It is better to start investing with the least risky assets, such as the SP500 index or blue chips (shares of multibillion-dollar corporations such as Apple, Microsoft, Google)</p>
-			<figure class="figure">
-				<figcaption class="mb-2">In order to buy shares of Apple or any other company, enter the name in the search bar at the top of the screen and click Trade</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/select-instrument.png" alt="Select instrument">
-			</figure>
-			<figure class="figure">				
-				<figcaption class="mb-2">
-					In the window that opens, we can change the following transaction parameters:
-					<ul>
-						<li>
-							Price - it can be either according to the market, or you can specify your own, for example, buy Apple shares when the price drops to $ 305. I do not recommend setting the price well below the market, as the price may not go down to it
-						</li>
-						<li>
-							Amount - you can indicate how much to buy shares (which is more convenient), or how much. I recommend using no more than 2% of the deposit per transaction
-						</li>
-						<li>
-							Leverage - controls the degree of profitability and risk of the transaction. When buying a 1st stock and 1X leverage, raising the stock price by $ 1 will bring you the same $ 1. If the price falls, you will accordingly be $ 1 in the red. With a 2X shoulder, everything is respectively multiplied by 2. With a five-fold shoulder - similarly
-						</li>
-						<li>
-							Stop Loss - allows you to limit your losses, i.e. the transaction will be automatically closed at a drawdown of 50% (the default value). If, when opening a transaction without use, everything is calculated simply, then with a leverage of 2X the transaction will be closed as soon as the price drops a quarter of the price of the transaction, and with a leverage of 5X it will only be 10% down and the transaction will be closed. So I really do not recommend using 5X.
-						</li>
-						<li>
-							Take profit - allows you to take profits, a convenient thing, when the price, say, jumped sharply by 20%, your transaction closed after reaching the take profit price, and then the price went down and invested
-						</li>
-					</ul>
-					After setting all the necessary parameters, click Confirm Deal
-				</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/deal-parameters.png" alt="Deal parameters">				
-			</figure>
-			<p>We figured out investing in stocks, now let's move on to the most interesting part of the eToro platform - copying deals</p>
-			<figure class="figure">
-				<figcaption class="mb-2">First, we need to select successful traders whose deals we want to copy, for this, click Traders on the right menu. On this page you see lists of traders, broken down by various parameters, such as risk, popularity, number of copiers, etc. I advise you to start with the most copied ones, as this list contains traders trusted by the community and who manage millions of dollars, i.e. they are very motivated not to lose their reputation and trade in plus</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/traders.png" alt="Traders">
-			</figure>
-			<figure class="figure">
-				<figcaption class="mb-2">Next, we will need to select traders suitable for our parameters, the main of which is stability, because how stable a trader is to make a profit in the long run. For example, consider the profile of the most traded trader at the time of writing. On the Feed page, you can read his posts, but we are more interested in statistics</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/most-copied-traders.png" alt="Most copied traders">
-			</figure>
-			<figure class="figure">
-				<figcaption class="mb-2">On the statistics page we can see the monthly yield in percent for the current and previous months, the risk level, drawdown, number of copyists and the approximate amount of investments of all investors copying this trader</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/general-statistics.png" alt="General statistics">
-			</figure>
-			<figure class="figure">
-				<figcaption class="mb-2">If you scroll a little lower, we will see the total number of transactions, the percentage of profitable ones, as well as detailed statistics on what instruments the selected trader is trading and how successful his transactions are for the three most traded instruments. At the very bottom, in the Additional section, information on the average number of transactions per week, average transaction duration, date of commencement of trading and percentage of profitable weeks is indicated</figcaption>
-				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/detailed-statistics.png" alt="Detailed statistics">
-			</figure>
-			<p>				
-				In order to preserve investor funds and for better diversification, eToro limits the percentage of investments in one trader to 40% of the amount of your capital. The standard formula for diversification is breaking up the entire amount of money into 10 parts and investing them in 10 different traders.
-				Also the standard formula is 80/20, i.e. if you are for stability, then invest 80% of the money in traders with a low level of risk and 20% with an average. If you are willing to take risks, you can try your luck and invest 80% in mid-risk traders and 20% in high-risk ones, then be prepared to lose all the money invested in high-risk ones, because over a long period of time, no one has managed to get a high stable income above the market, i.e. higher than the yield of the SP500 index. That's all for me, and successful investment!
-			</p>			
-		</section>
+			<section>
+				<h2 class="h5">Why eToro?</h2>
+				<p>
+					Intuitive user-friendly interface that is understandable even for beginners. The ability to invest in stocks of
+					global companies such as Apple, Microsoft, Google and many others. Having a demo account on which you need to
+					practice before investing real money. Customer support through online chat and personal manager. The main
+					feature of social trading is the ability to copy deals of successful investors in auto mode, you just need to
+					choose the right traders for you and that’s all. In the traders section there are ready-made lists, such as
+					“With the largest number of copyists”, “Best investors”, “Editors' Choice”. The customer’s safety is first of
+					all for the company, therefore the system will not allow investing more than 40% of the deposit in one, even a
+					very successful trader. The company itself is positioning itself as a social network for traders /
+					investors,where users can not only earn, but also communicate with each other.
+				</p>
+			</section>
+			<section>
+				<h2 class="h5">EToro story</h2>
+				<p>
+					The eToro brokerage company was registered back in 2007, and from that moment it has been constantly
+					developing. Currently, the number of active traders and investors has exceeded 10 million people from all over
+					the world, and this number is growing from year to year. The main reason for the success of the company is
+					their unique platform combining a social network and a trading terminal, which allows successful investors to
+					copy transactions. But let's talk about everything in order. To get started, let's go through the key points in
+					the development of the company:
+				</p>
+				<ul>
+					<li>2007 - foundation of the company</li>
+					<li>2009 - opening of WebTrader (access to the trading terminal via a website from anywhere in the world)</li>
+					<li>2011 - creation of OpenBook (social trading system / copying transactions)</li>
+					<li>2012 - access to the stock market (investments in stocks for greater diversification of investments)</li>
+					<li>2013 - release of mobile applications for iPhone and Android</li>
+					<li>2015 - website design update (made it more understandable for customers)</li>
+					<li>2016 - the advent of CopyPortfolios (the ability to invest not in indices or individual stocks, but in
+						their collections, for example CopyPortfolio “BigTech” contains shares of large technology companies)</li>
+					<li>2017 - the use of artificial intelligence and machine learning from Microsoft to compile CopyPortfolios (it
+						gave greater benefits to investors in CopyPortfolios, because AI chooses more promising stocks)</li>
+					<li>2018 - entry into the cryptocurrency market (the opportunity to invest in crypto assets)</li>
+					<li>2019 - eToro Wallet is launched and 35 fiat pairs are added to the platform (the ability to buy and sell
+						Bitcoin, Ethereum and other popular currencies from a credit card)</li>
+					<li>2020 - addition of 185 shares available for investment on the platform</li>
+				</ul>
+			</section>
+			<section>
+				<h2 class="h5">
+					Registration
+				</h2>
+				<p>
+					To register at eToro click the <a href="http://partners.etoro.com/B12993_A83946_TClick.aspx">link</a> or image below<br />
+					As soon as we entered the site, we change the language to English at the top and fill out the registration form
+					<a href="http://partners.etoro.com/B12993_A83946_TClick.aspx">
+						<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/registration.png" alt="Registration" />
+					</a>			
+				</p>
+			</section>
+			<section>
+				<h2 class="h5">
+					Account Creation
+				</h2>
+				<ul class="list-unstyled">
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">As soon as we entered the site, click the complete profile button in the upper left corner</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/complete-profile.png" alt="Complete profile" />				
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">We indicate the name, surname, gender and date of birth, all as in the passport</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/base-info.png" alt="Name, Surname, Gender and date of birth" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Next, indicate the address of registration</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/address.png" alt="Address of registration" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">and your trading experience. Note that if you specify the first or third option, copying transactions may not be available to you</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-experience.png" alt="Trading experience" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">At this step we indicate your trading knowledge, I recommend choosing the last option “took courses” and really read/see about investing in Google/YouTube</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-knowledge.png" alt="Trading knowledge" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Now you will be asked to go through a small questionnaire</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-knowledge-assessment.png" alt="Trading knowledge assessment" />
+							A little hint, the first answer is the right one, but you should know this yourself ;)
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Indicate the areas in which you will invest, I invest in stocks and indices</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/planned-investments.png" alt="Planned investments" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">As well as how long you invest, I am not a fan of round-the-clock market monitoring, and on my own tests and
+							experience I have been convinced that long-term investment is more profitable than short-term trading,
+							especially for long periods of several years</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/trading-strategy.png" alt="Trading strategy" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">What are your plans for making money?)</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/purpose-of-trading.png" alt="Purpose of trading" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">What is your attitude to risk? How reckless are you?</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/attitude-to-risk.png" alt="attitude-to-risk" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Your professional status</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/professional-status.png" alt="Professional status" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Your financial situation</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/financial-status.png" alt="Financial status" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Phone verification</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/phone-verification.png" alt="Phone verification" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Passport scan upload</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/documents-upload.png" alt="Documents upload" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Checking your address</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/address-verification.png" alt="Address verification" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Adding a tax ID</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/tax-id.png" alt="Tax ID" />
+						</figure>
+					</li>
+					<li>
+						<figure class="figure">
+							<figcaption class="mb-2">Pending verification</figcaption>
+							<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/pending-verification.png" alt="Pending verification" />
+						</figure>
+					</li>
+				</ul>
+				<p>I advise you to monitor the mail, if there is a lack of any documents, then a notification will come to it</p>			
+				<figure class="figure">
+					<figcaption class="mb-2">In the meantime, we can switch to a demo account and practice on it</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/demo-account.png" alt="Demo-account" />
+				</figure>			
+			</section>
+			<section>
+				<h2 class="h5">
+					Deposit
+				</h2>
+				<p>As soon as the account has passed verification (if all the documents are in order, it takes a day or two), replenishment of the account becomes available. To do this, click on the corresponding button in the lower left corner</p>
+				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/deposit.png" alt="Deposit">
+				<p>
+					Enter the card details and click send, as a rule, money is credited instantly
+				</p>
+				<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/card-details.png" alt="Card details">
+				<p>
+					The following payment systems are available for replenishment:
+				</p>
+				<ul>
+					<li>Credit card</li>
+					<li>Bank Transfer</li>
+					<li>Yandex money</li>
+					<li>Webmoney</li>
+					<li>Paypal</li>
+					<li>Skrill</li>
+					<li>Unionpay</li>
+					<li>NETELLER</li>
+				</ul>			
+			</section>
+			<section>		
+				<h2 class="h5">
+					Investing in eToro
+				</h2>		
+				<p>
+					I arranged available eToro investment options by decreasing risk (investing in indices is the least risky)). Briefly about each of the items):
+				</p>
+				<dl class="row">
+					<dt class="col-12">Indices</dt>
+					<dd class="col-12">Indices represent a set of stocks, usually of a country</dd>
+					<dt class="col-12">ETFs (Exchange traded funds)</dt>
+					<dd class="col-12">Exchange-traded funds are collections of stocks for specific industries or regions</dd>
+					<dt class="col-12">CopyPortfodtos</dt>
+					<dd class="col-12">CopyPortfolios is an eToro product resembling stock funds, only stocks in CopyPortfolios are selected by experts from eToro</dd>
+					<dt class="col-12">Stocks</dt>
+					<dd class="col-12">Shares are part of a company</dd>
+					<dt class="col-12">Commodities</dt>
+					<dd class="col-12">Commodity markets are investments in oil, gold, sugar, etc.</dd>
+					<dt class="col-12">Forex</dt>
+					<dd class="col-12">The word Forex is strongly associated with foreign exchange markets, as they trade on fluctuations in the exchange rate of one currency to another, for example, the euro against the dollar</dd>
+					<dt class="col-12">Traders</dt>
+					<dd class="col-12">Well, the ability to copy trades of successful traders is the main feature of eToro</dd>
+				</dl>
+				<p>It is better to start investing with the least risky assets, such as the SP500 index or blue chips (shares of multibillion-dollar corporations such as Apple, Microsoft, Google)</p>
+				<figure class="figure">
+					<figcaption class="mb-2">In order to buy shares of Apple or any other company, enter the name in the search bar at the top of the screen and click Trade</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/select-instrument.png" alt="Select instrument">
+				</figure>
+				<figure class="figure">				
+					<figcaption class="mb-2">
+						In the window that opens, we can change the following transaction parameters:
+						<ul>
+							<li>
+								Price - it can be either according to the market, or you can specify your own, for example, buy Apple shares when the price drops to $ 305. I do not recommend setting the price well below the market, as the price may not go down to it
+							</li>
+							<li>
+								Amount - you can indicate how much to buy shares (which is more convenient), or how much. I recommend using no more than 2% of the deposit per transaction
+							</li>
+							<li>
+								Leverage - controls the degree of profitability and risk of the transaction. When buying a 1st stock and 1X leverage, raising the stock price by $ 1 will bring you the same $ 1. If the price falls, you will accordingly be $ 1 in the red. With a 2X shoulder, everything is respectively multiplied by 2. With a five-fold shoulder - similarly
+							</li>
+							<li>
+								Stop Loss - allows you to limit your losses, i.e. the transaction will be automatically closed at a drawdown of 50% (the default value). If, when opening a transaction without use, everything is calculated simply, then with a leverage of 2X the transaction will be closed as soon as the price drops a quarter of the price of the transaction, and with a leverage of 5X it will only be 10% down and the transaction will be closed. So I really do not recommend using 5X.
+							</li>
+							<li>
+								Take profit - allows you to take profits, a convenient thing, when the price, say, jumped sharply by 20%, your transaction closed after reaching the take profit price, and then the price went down and invested
+							</li>
+						</ul>
+						After setting all the necessary parameters, click Confirm Deal
+					</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/deal-parameters.png" alt="Deal parameters">				
+				</figure>
+				<p>We figured out investing in stocks, now let's move on to the most interesting part of the eToro platform - copying deals</p>
+				<figure class="figure">
+					<figcaption class="mb-2">First, we need to select successful traders whose deals we want to copy, for this, click Traders on the right menu. On this page you see lists of traders, broken down by various parameters, such as risk, popularity, number of copiers, etc. I advise you to start with the most copied ones, as this list contains traders trusted by the community and who manage millions of dollars, i.e. they are very motivated not to lose their reputation and trade in plus</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/traders.png" alt="Traders">
+				</figure>
+				<figure class="figure">
+					<figcaption class="mb-2">Next, we will need to select traders suitable for our parameters, the main of which is stability, because how stable a trader is to make a profit in the long run. For example, consider the profile of the most traded trader at the time of writing. On the Feed page, you can read his posts, but we are more interested in statistics</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/most-copied-traders.png" alt="Most copied traders">
+				</figure>
+				<figure class="figure">
+					<figcaption class="mb-2">On the statistics page we can see the monthly yield in percent for the current and previous months, the risk level, drawdown, number of copyists and the approximate amount of investments of all investors copying this trader</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/general-statistics.png" alt="General statistics">
+				</figure>
+				<figure class="figure">
+					<figcaption class="mb-2">If you scroll a little lower, we will see the total number of transactions, the percentage of profitable ones, as well as detailed statistics on what instruments the selected trader is trading and how successful his transactions are for the three most traded instruments. At the very bottom, in the Additional section, information on the average number of transactions per week, average transaction duration, date of commencement of trading and percentage of profitable weeks is indicated</figcaption>
+					<img class="figure-img img-fluid img-thumbnail" src="/assets/img/articles/etoro-review/detailed-statistics.png" alt="Detailed statistics">
+				</figure>
+				<p>				
+					In order to preserve investor funds and for better diversification, eToro limits the percentage of investments in one trader to 40% of the amount of your capital. The standard formula for diversification is breaking up the entire amount of money into 10 parts and investing them in 10 different traders.
+					Also the standard formula is 80/20, i.e. if you are for stability, then invest 80% of the money in traders with a low level of risk and 20% with an average. If you are willing to take risks, you can try your luck and invest 80% in mid-risk traders and 20% in high-risk ones, then be prepared to lose all the money invested in high-risk ones, because over a long period of time, no one has managed to get a high stable income above the market, i.e. higher than the yield of the SP500 index. That's all for me, and successful investment!
+				</p>			
+			</section>
+		</div>
 	</div>
 
 	<footer>
