@@ -32,14 +32,17 @@ rulink: /обзор-etoro
 	{% include header.html %}	
 	<div class="mb-0" itemscope itemtype="https://schema.org/Product">		
 		<span class="d-none" itemprop="name">eToro</span>
+		<link itemprop="image" href="{{ page.image }}" />
 		<div itemprop="brand" itemtype="http://schema.org/Brand" itemscope>
 			<meta itemprop="name" content="eToro" />
 		 </div>
 		 <meta itemprop="description" content="eToro social trading platform" />
 		 <div itemprop="offers" itemtype="http://schema.org/Offer" itemscope>
 			<link itemprop="url" href="http://partners.etoro.com/B12993_A83946_TClick.aspx" />
-			<meta itemprop="priceCurrency" content="USD" />
+			<meta itemprop="availability" content="https://schema.org/InStock" />			
 			<meta itemprop="price" content="200" />
+			<meta itemprop="priceCurrency" content="USD" />
+			<meta itemprop="priceValidUntil" content="2020-07-01" />
 			<div itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
 			  <meta itemprop="name" content="eToro" />
 			</div>
