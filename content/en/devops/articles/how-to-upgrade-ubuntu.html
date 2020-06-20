@@ -55,176 +55,113 @@ rulink: /как-обновить-ubuntu
 		</ul>
 		<p>To upgrade Ubuntu to the latest stable release 20.04, follow these steps:</p>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
-			<div itemprop="name">Preparation</div>
-			<meta itemprop="position" content="1" />
+			<div itemprop="name">Preparation</div>			
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="1" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Update packages list</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Update packages list</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
 					<div itemprop="text"><kbd>sudo apt-get update</kbd></div>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="2" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Upgrade packages</div>
-				</div>
+				<div itemprop="name">Upgrade packages</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
-					<div itemprop="text"><kbd>sudo apt-get upgrade</kbd></div>
+					<kbd itemprop="text">sudo apt-get upgrade</kbd>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="3" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Install update-manager-core package</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Install update-manager-core package</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo apt-get install update-manager-core</kbd></div>
 				</div>
 			</div>
 		</div>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<div itemprop="name">Upgrade Ubuntu</div>
-			<meta itemprop="position" content="2" />
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="1" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Upgrade distro</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />					
+				<div itemprop="name">Upgrade distro</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo apt-get dist-upgrade</kbd></div>
-				</div>				
+				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="2" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Upgrade Ubuntu</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />					
+				<div itemprop="name">Upgrade Ubuntu</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo do-release-upgrade</kbd></div>
 				</div>				
 			</div>
 		</div>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<div itemprop="name">Upgrade kernel</div>
-			<meta itemprop="position" content="3" />
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="1" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Change current directory to /tmp</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />					
+				<div itemprop="name">Change current directory to /tmp</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>cd /tmp</kbd></div>
 				</div>				
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="2" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Download new kernel</div>
-				</div>
+				<div itemprop="name">Download new kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 					<meta itemprop="position" content="2" />					
-					<div itemprop="text">						
-						<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704_5.7.4-050704.202006181331_all.deb</kbd>
-						<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
-						<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-image-unsigned-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
-						<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-modules-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
+					<div itemprop="text">
+						<ul>
+							<li>
+								<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704_5.7.4-050704.202006181331_all.deb</kbd>
+							</li>
+							<li>
+								<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
+							</li>
+							<li>
+								<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-image-unsigned-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
+							</li>
+							<li>
+								<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-modules-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb</kbd>
+							</li>
+						</ul>	
 					</div>
 				</div>				
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="3" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Install new kernel</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />					
+				<div itemprop="name">Install new kernel</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo dpkg -i *.deb</kbd></div>
 				</div>				
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="4" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Reboot the system</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />					
+				<div itemprop="name">Reboot the system</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo shutdown -r now</kbd></div>
 				</div>				
 			</div>
 		</div>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<div itemprop="name">Finishing up</div>
-			<meta itemprop="position" content="4" />
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="1" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Update packages list</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Update packages list</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
 					<div itemprop="text"><kbd>sudo apt-get update</kbd></div>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="2" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Upgrade packages</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Upgrade packages</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo apt-get upgrade</kbd></div>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="3" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Reboot the system if needed</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Reboot the system if needed</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>sudo shutdown -r now</kbd></div>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="4" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Check the OS distro</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Check the OS distro</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>lsb_release -a</kbd></div>
 				</div>
 			</div>
 			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="position" content="5" />
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToTip">
-					<meta itemprop="position" content="1" />
-					<div itemprop="text">Check the kernel version</div>
-				</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<meta itemprop="position" content="2" />
+				<div itemprop="name">Check the kernel version</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<div itemprop="text"><kbd>uname -r</kbd></div>
 				</div>
 			</div>
