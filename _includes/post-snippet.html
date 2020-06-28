@@ -30,7 +30,7 @@
                             <time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | 
                         </small>
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
-                        <a href="{{ category | downcase }}"><span class="badge bg-primary">{{ category }}</span></a>                        
+                        <a class="badge bg-primary text-white text-decoration-none" href="{{ category | downcase }}">{{ category }}</a>
                     </p>                    
                 </header>
                 <p class="card-text" itemprop="articleBody">
