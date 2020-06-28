@@ -42,9 +42,11 @@
                     <a href="{{ category | downcase }}"><span class="badge bg-secondary">{{ catetaggory }}</span></a>
                     {% endfor %}
                 </p>
-                <a class="text-decoration-none" href="{{ post.url }}" itemprop="mainEntityOfPage">
-                    <button type="button" class="btn btn-primary btn-sm">{{ site.data.translations.readmore[page.lang] }}</button>
-                </a>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <a class="text-decoration-none" href="{{ post.url }}" itemprop="mainEntityOfPage">
+                        {{ site.data.translations.readmore[page.lang] }}
+                    </a>
+                </button>
             </div>
         </figcaption>
     </figure>
