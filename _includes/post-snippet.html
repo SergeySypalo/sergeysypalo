@@ -39,13 +39,11 @@
                 <p class="card-text" itemprop="keywords">
                     Tags:
                     {% for tag in post.tags %}
-                    <a href="{{ category | downcase }}"><span class="badge bg-secondary">{{ catetaggory }}</span></a>
+                    <a href="{{ category | downcase }}"><span class="badge bg-secondary">{{ tag }}</span></a>                    
                     {% endfor %}
-                </p>
+                </p>                
                 <button type="button" class="btn btn-primary btn-sm">
-                    <a class="text-decoration-none" href="{{ post.url }}" itemprop="mainEntityOfPage">
-                        {{ site.data.translations.readmore[page.lang] }}
-                    </a>
+                    <a class="text-decoration-none" href="{{ post.url }}" itemprop="mainEntityOfPage">{{ site.data.translations.readmore[page.lang] }}</a>
                 </button>
             </div>
         </figcaption>
