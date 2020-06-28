@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 description: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 published: 2019-05-14
-modified: 2020-06-19
+modified: 2020-06-28
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -11,10 +11,13 @@ enlink: /how-to-upgrade-ubuntu
 rulink: /как-обновить-ubuntu
 ---
 
-<article itemid="{{ site.url }}{{ page.url }}" itemscope itemtype="https://schema.org/TechArticle">
+{% include breadcrumbs.html %}
+<article itemscope itemtype="https://schema.org/HowTo">
 	{% include header.html %}
-	<div class="mb-0" itemprop="articleBody">
-		<p>В этой статье я покажу вам, как обновить ваш Ubuntu 20.04. В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.7.4, которая содержит следующие улучшения:</p>
+	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
+        <span class="d-none" itemprop="name">{{ page.title }}</span>
+		<span class="d-none" itemprop="totalTime" content="PT2H">2 часа</span>
+		<p itemprop="description">В этой статье я покажу вам, как обновить ваш Ubuntu 20.04. В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.7.6, которая содержит следующие улучшения:</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
 			<li>Новый драйвер охлаждения процессора</li>
@@ -35,129 +38,121 @@ rulink: /как-обновить-ubuntu
 			<li>Лучшая поддержка графических карт nVidia</li>
 		</ul>
 		<p>Для обновления Ubuntu до последнего стабильного релиза 20.04 выполните следующие действия:</p>
-		<pre>
-            # Обновляем список пакетов
-            sudo apt-get update
-            
-            # Обновляем сами пакеты
-            sudo apt-get upgrade
-
-            # Установливаем пакет update-manager-core
-            sudo apt-get install update-manager-core
-
-            # Обновляем дистрибутив
-            sudo apt-get dist-upgrade
-
-            # Обновляем Ubuntu
-            sudo do-release-upgrade
-        </pre>
-		<p>Чтобы обновить Ubuntu до версии, отличной от lts (например с 18.04 до 19.10), выполните следующие действия:</p>
-		<pre>
-            # Обновляем список пакетов
-            sudo apt-get update
-            
-            # Обновляем сами пакеты
-            sudo apt-get upgrade
-
-            # Установливаем пакет update-manager-core
-            sudo apt-get install update-manager-core
-
-            # Обновляем дистрибутив
-            sudo apt-get dist-upgrade
-
-            # Меняем ветку обновлений с lts (по умолчанию) на normal
-            sudo sed -i 's/lts/normal/g' /etc/update-manager/release-upgrades            
-            
-            # Меняем дистрибутив по умолчанию с текущего
-            # 18.04 - bionic            
-            # на
-            # 19.04 - disco
-            # 19.10 - eoan
-            # В приведенном ниже примере мы обновляем Ubuntu 18.04 (bionic) до 19.10 (eoan)
-            sudo sed -i 's/bionic/eoan/g' /etc/apt/sources.list            
-
-            # Обновляем список пакетов
-            sudo apt-get update
-            
-            # Обновляем сами пакеты
-            sudo apt-get upgrade
-            
-            # Обновляем дистрибутив
-            sudo apt-get dist-upgrade
-
-            # В случае ошибок еще раз выполняем
-            sudo apt-get update 
-            sudo apt-get dist-upgrade
-
-            # Чистим пакеты
-            sudo apt-get autoremove 
-            sudo apt-get clean
-           
-            # Перезагружаем систему
-            sudo shutdown -r now
-        </pre>
-		<p>Чтобы обновить ядро ​​Ubuntu до последней версии 5.7.4, выполните следующие действия:</p>
-		<pre>            
-            # Переходим в директорию /tmp
-            cd /tmp/
-
-            # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4
-            # и получите новые для вашей системы, обычно amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704_5.7.4-050704.202006181331_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-headers-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-image-unsigned-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.4/amd64/linux-modules-5.7.4-050704-generic_5.7.4-050704.202006181331_amd64.deb
-        </pre>
-		<p>Если вы не готовы к самой последней или по какой-либо причине необходимости или хотите остаться на ветке 5.6.x, выполните следующие действия:</p>
-		<pre>
-			# Переходим в директорию /tmp
-			cd /tmp/
-
-            # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.19
-            # и получите новые для вашей системы, обычно amd64
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.19/amd64/linux-headers-5.6.19-050619_5.6.19-050619.202006171132_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.19/amd64/linux-headers-5.6.19-050619-generic_5.6.19-050619.202006171132_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.19/amd64/linux-image-unsigned-5.6.19-050619-generic_5.6.19-050619.202006171132_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.19/amd64/linux-modules-5.6.19-050619-generic_5.6.19-050619.202006171132_amd64.deb
-		</pre>
-		<p>И если вы хотите быть в последней ветке обновления и хотите обновить ядро Ubuntu до последней версии 5.8-rc1, выполните следующие действия:</p>
-		<pre>
-			# Переходим в директорию /tmp
-			cd /tmp/
-
-            # Скачиваем новое ядро
-            # если ссылки ниже не будут работать, перейдите на https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1
-            # и получите новые для вашей системы, обычно amd64			
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-headers-5.8.0-050800_5.8.0-050800.202006142031_all.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-headers-5.8.0-050800-generic_5.8.0-050800.202006142031_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-image-unsigned-5.8.0-050800-generic_5.8.0-050800.202006142031_amd64.deb
-			wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc1/amd64/linux-modules-5.8.0-050800-generic_5.8.0-050800.202006142031_amd64.deb
-		</pre>
-        <p>Далее шаги будут одинаковыми вне зависимости от ветки ядра на которую вы обновляетесь, стабильную или последнюю:</p>
-		<pre>
-            # Устанавливаем новое ядро
-            sudo dpkg -i *.deb
-
-            # Перезагружаем систему
-            sudo shutdown -r now
-
-            # Обновляем список пакетов
-            sudo apt-get update
-            
-            # Обновляем сами пакеты
-            sudo apt-get upgrade
-
-            # Перезагружаем систему еще раз если необходимо
-            sudo shutdown -r now
-
-            # Проверяем ОС дистрибутива
-            lsb_release -a
-
-            # Проверяем версию ядра
-            uname -r
-        </pre>
+		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
+			<h2 class="h5 mt-4" itemprop="name">Preparation</h2>			
+			<div id="update-packages-list" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#update-packages-list" />
+				<div itemprop="name">Обновляем список пакетов</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
+					<kbd itemprop="text">sudo apt-get update</kbd>
+				</div>
+			</div>
+			<div id="upgrade-packages" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#upgrade-packages" />
+				<div itemprop="name">Обновляем сами пакеты</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+					<kbd itemprop="text">sudo apt-get upgrade</kbd>
+				</div>
+			</div>
+			<div id="install-update-manager-core-package" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#install-update-manager-core-package" />
+				<div itemprop="name">Установливаем пакет update-manager-core package</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo apt-get install update-manager-core</kbd>
+				</div>
+			</div>
+		</div>
+		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
+			<h2 class="h5 mt-4" itemprop="name">Обновляем Ubuntu</h2>
+			<div id="upgrade-distro" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#upgrade-distro" />
+				<div itemprop="name">Обновляем дистрибутив</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo apt-get dist-upgrade</kbd>
+				</div>
+			</div>
+			<div id="upgrade-ubuntu" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#upgrade-ubuntu" />
+				<div itemprop="name">Обновляем Ubuntu</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo do-release-upgrade</kbd>
+				</div>				
+			</div>
+		</div>
+		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
+			<h2 class="h5 mt-4" itemprop="name">Обновляем ядро</h2>
+			<div id="change-current-directory-to-tmp" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#change-current-directory-to-tmp" />
+				<div itemprop="name">Переходим в директорию /tmp</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">cd /tmp</kbd>
+				</div>				
+			</div>
+			<div id="download-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#download-new-kernel" />
+				<div itemprop="name">Скачиваем новое ядро</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<pre itemprop="text">						
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.6/amd64/linux-headers-5.7.6-050706_5.7.6-050706.202006241631_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.6/amd64/linux-headers-5.7.6-050706-generic_5.7.6-050706.202006241631_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.6/amd64/linux-image-unsigned-5.7.6-050706-generic_5.7.6-050706.202006241631_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.6/amd64/linux-modules-5.7.6-050706-generic_5.7.6-050706.202006241631_amd64.deb</kbd>
+					</pre>
+				</div>				
+			</div>
+			<div id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#install-new-kernel" />
+				<div itemprop="name">Устанавливаем новое ядро</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
+				</div>				
+			</div>
+			<div id="reboot-the-system" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#reboot-the-system" />
+				<div itemprop="name">Перезагружаем систему</div>				
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo shutdown -r now</kbd>
+				</div>				
+			</div>
+		</div>
+		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
+			<h2 class="h5 mt-4" itemprop="name">Последние шаги</h2>
+			<div id="update-packages-list-after-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#update-packages-list-after-upgrade" />
+				<div itemprop="name">Обновляем список пакетов</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
+					<kbd itemprop="text">sudo apt-get update</kbd>
+				</div>
+			</div>
+			<div id="upgrade-packages-after-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#upgrade-packages-after-upgrade" />
+				<div itemprop="name">Обновляем сами пакеты</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo apt-get upgrade</kbd>
+				</div>
+			</div>
+			<div id="reboot-the-system-if-needed" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#reboot-the-system-if-needed" />
+				<div itemprop="name">Перезагружаем систему еще раз если необходимо</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">sudo shutdown -r now</kbd>
+				</div>
+			</div>
+			<div id="check-os-distro" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#check-os-distro" />
+				<div itemprop="name">Проверяем ОС дистрибутива</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">lsb_release -a</kbd>
+				</div>
+			</div>
+			<div id="check-kernel-version" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<link itemprop="url" href="https://sypalo.com/как-обновить-ubuntu#check-kernel-version" />
+				<div itemprop="name">Проверяем версию ядра</div>
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<kbd itemprop="text">uname -r</kbd>
+				</div>
+			</div>
+		</div>
 		<p>Вот и все, теперь ваша система обновлена до новейшей Ubuntu 20.04 и работает на наиболее защищенном ядре Linux.</p>
 	</div>
 
