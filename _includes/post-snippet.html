@@ -39,7 +39,7 @@
                 <p class="card-text" itemprop="keywords">
                     Tags:
                     {% for tag in post.tags %}
-                    <a class="badge bg-secondary text-white text-decoration-none" href="{{ category | downcase }}">{{ tag }}</a>
+                    <a class="badge bg-secondary text-white text-decoration-none" href="{{ tag }}">{{ tag }}</a>
                     {% endfor %}
                 </p>                
                 <button type="button" class="btn btn-primary btn-sm">
