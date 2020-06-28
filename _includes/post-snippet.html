@@ -30,7 +30,7 @@
                             <time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | 
                         </small>
                         {% assign category = post.tags | first | capitalize | replace: "devops", "DevOps" | replace: "девопс", "ДевОпс" %}
-                        <a class="badge bg-primary" href="{{ category | downcase }}">{{ category }}</a>                                               
+                        <a class="badge bg-primary text-decoration-none" href="{{ category | downcase }}">{{ category }}</a>                                               
                     </p>                    
                 </header>
                 <p class="card-text" itemprop="articleBody">
@@ -39,7 +39,7 @@
                 <p class="card-text" itemprop="keywords">
                     Tags:
                     {% for tag in post.tags %}
-                    <a class="badge bg-secondary" href="{{ tag | downcase }}">{{ tag }}</a>
+                    <a class="badge bg-secondary text-decoration-none" href="{{ tag | downcase }}">{{ tag }}</a>
                     {% endfor %}
                 </p>
                 <a class="btn btn-primary btn-sm active" href="{{ post.url }}" role="button" aria-pressed="true" itemprop="mainEntityOfPage">{{ site.data.translations.readmore[page.lang] }}</a>
