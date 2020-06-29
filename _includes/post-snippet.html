@@ -34,7 +34,7 @@
                     </p>                    
                 </header>
                 <p class="card-text" itemprop="articleBody">
-                    {{ post.content | split: 'Body">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
+                    {{ post.content | split: '"description">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
                 </p>
                 <p class="card-text" itemprop="keywords">
                     Tags:
