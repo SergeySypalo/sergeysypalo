@@ -37,6 +37,7 @@ defaults:
     values:      
       type: "article"
       comments: "true"
+      affiliate: "affiliate-banners-650x1200-en-v3.jpg"
   -
     scope:
       path: "content/ru/девопс/статьи"
