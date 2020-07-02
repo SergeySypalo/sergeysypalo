@@ -18,20 +18,20 @@
                         <span class="d-none" itemprop="name">Sergey Sypalo</span>
                     </span>
                     <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                        <span class="d-none" itemprop="name">Sypalo.com</span>                        
+                        <span class="d-none" itemprop="name">Sypalo.com</span>
                         <span class="d-none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
                             <img class="d-none" itemprop="url" src="/assets/img/sergey-and-jane-sypalo.jpg" alt="Sergey Sypalo and Jane Sypalo" />
                         </span>
-                    </span>                    
-                    <p class="card-text">                        
+                    </span>
+                    <p class="card-text">
                         <img class="d-none" itemprop="image" src="{{ post.image }}" alt="post.title" />
                         <span class="d-none" itemprop="datePublished">{{ post.published }}</span>
-                        <small class="text-muted">                            
+                        <small class="text-muted">
                             <time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | 
                         </small>
                         {% assign category = post.tags | first | capitalize | replace: "Devops", "DevOps" | replace: "Девопс", "ДевОпс" %}
                         <a class="badge bg-primary text-white text-decoration-none" href="{{ category | downcase }}">{{ category }}</a>
-                    </p>                    
+                    </p>
                 </header>
                 <p class="card-text" itemprop="articleBody">
                     {{ post.content | split: '"description">' | last | split: 'Body">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
@@ -41,10 +41,10 @@
                     {% for tag in post.tags %}
                     <a class="badge bg-secondary text-white text-decoration-none" href="{{ tag }}">{{ tag }}</a>
                     {% endfor %}
-                </p>                
-                <button type="button" class="btn btn-primary btn-sm">
-                    <a class="text-white text-decoration-none" href="{{ post.url }}" itemprop="mainEntityOfPage">{{ site.data.translations.readmore[page.lang] }}</a>
-                </button>
+                </p>
+                <a class="btn btn-primary btn-sm text-white text-decoration-none" href="{{ post.url }}" type="button" itemprop="mainEntityOfPage">
+                    {{ site.data.translations.readmore[page.lang] }}
+                </a>
             </div>
         </figcaption>
     </figure>
