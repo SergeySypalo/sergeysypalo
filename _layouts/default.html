@@ -34,24 +34,6 @@
 	<link rel="alternate" href="https://sypalo.com{{ page.rulink }}" hreflang="ru" />
 	<link rel="icon" href="/favicon.ico" />
 	<title>{{ page.title }}</title>	
-	<script>
-		/**
-		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-		var disqus_config = function () {
-			this.page.url = '{{ site.url }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-			this.page.identifier = '{{ site.url }}{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-			this.language = "{{ page.lang }}";
-		};
-
-		(function LoadComments() { // DON'T EDIT BELOW THIS LINE
-			var d = document, s = d.createElement('script');
-			s.src = 'https://sypalo.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-	</script>
 	<!-- Google Tag Manager -->
 	<script>
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
@@ -96,7 +78,7 @@
 			<div class="col-12 col-xl-9">
 				{{ content }}
 				{% if page.comments %}
-				<div id="disqus_thread" onclick="LoadComments()"></div>				
+					<div id="disqus_thread"></div>				
 				{% endif %}
 			</div><!-- /.blog-main -->
 			<aside class="col-12 col-xl-3 mb-3 pl-lg-0">
@@ -164,6 +146,24 @@
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'UA-21825981-6');
+	</script>
+	<script>
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+		var disqus_config = function () {
+			this.page.url = '{{ site.url }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = '{{ site.url }}{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			this.language = "{{ page.lang }}";
+		};
+
+		(function LoadComments() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://sypalo.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
 	</script>
 	<!-- Facebook Pixel Code -->
 	<script>
