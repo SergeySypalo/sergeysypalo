@@ -114,6 +114,20 @@
 						<img class="img-fluid" src="/assets/img/affiliate/{{ page.affiliate.banner }}" alt="{{ page.affiliate.text }}">
 					</a>
 					{% endif %}
+					{% if page.tags contains 'investing' %}
+					<div id="markets_widget"></div>
+					<script>
+						window[`etoro_markets_widget_settings`]={
+							culture: `1`, // 1 - EN, 2 - AE, 3 - DE, 4 - ES, 5 - FR, 6 - RU, 7 - IT,8 - ZH
+							size:`wide`, // `narrow`,`medium`, `wide`
+							page_name:`test_page_name`,
+							etoro_url: `https://partners.etoro.com/B9271_A83946_TClick_ADVTrue.aspx`,
+							container:`markets_widget`, // Container
+							isCryptocurrency:true // true or false ==> true shows cryptocurrency, false shows the rest of the instruments
+						}
+					</script>
+					<script src="https://pages.etoro.com/widgets/markets/js/iframe-creator.js?v=1"></script>
+					{% endif %}
 				</div>
 			</aside><!-- /.blog-sidebar -->
 		</div><!-- /.row -->
