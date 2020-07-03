@@ -25,6 +25,10 @@ defaults:
     values:      
       type: "article"
       comments: "true"
+      affiliate:
+        link: "https://partners.etoro.com/B12184_A83946_TClick.aspx"
+        banner: "300x600-passion.gif"
+        text: "eToro banner"
   -
     scope:
       path: "content/ru/инвестирование/статьи"
@@ -40,7 +44,7 @@ defaults:
       affiliate:
         link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
         banner: "affiliate-banners-650x1200-en-v3.jpg"
-        text: "NordVPN - fastest in the world"
+        text: "NordVPN banner"
   -
     scope:
       path: "content/ru/девопс/статьи"
@@ -50,7 +54,7 @@ defaults:
     affiliate:
         link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
         banner: "affiliate-banners-650x1200-en-v3.jpg"
-        text: "NordVPN - самый быстрый в мире"
+        text: "NordVPN баннер"
   -
     scope:
       path: "content/en/photo/articles"        
