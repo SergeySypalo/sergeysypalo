@@ -27,7 +27,7 @@ defaults:
       comments: "true"
       affiliate:
         link: "https://partners.etoro.com/B12184_A83946_TClick.aspx"
-        banner: "300x600-passion.gif"
+        banner: "etoro-banner.gif"
         text: "eToro banner"
   -
     scope:
