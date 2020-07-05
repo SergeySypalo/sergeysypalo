@@ -33,7 +33,7 @@
                         <a class="badge bg-primary text-white text-decoration-none" href="{{ category | downcase }}">{{ category }}</a>
                     </p>
                 </header>
-                <p class="card-text" itemprop="articleBody">
+                <p class="card-text mb-2" itemprop="articleBody">
                     {{ post.content | split: '"description">' | last | split: 'Body">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
                 </p>
                 <p class="card-text" itemprop="keywords">
@@ -42,7 +42,7 @@
                     <a class="badge bg-secondary text-white text-decoration-none" href="{{ tag }}">{{ tag }}</a>
                     {% endfor %}
                 </p>
-                <a class="btn btn-primary btn-sm text-white text-decoration-none" href="{{ post.url }}" type="button" itemprop="mainEntityOfPage">
+                <a class="btn btn-primary btn-sm text-white text-decoration-none" href="{{ post.url }}" itemprop="mainEntityOfPage">
                     {{ site.data.translations.readmore[page.lang] }}
                 </a>
             </div>
