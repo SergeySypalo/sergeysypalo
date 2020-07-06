@@ -48,21 +48,13 @@ defaults:
       path: "content/en/photo/articles"        
     values:      
       type: "article"
-      comments: "true"
-      affiliate:
-        link: "https://www.jdoqocy.com/click-100158048-13228405"
-        banner: "movavi.jpg"
-        text: "Movavi - universal photo and video editor"
+      comments: "true"      
   -
     scope:
       path: "content/ru/фото/статьи"
     values:      
       type: "article"
-      comments: "true"
-      affiliate:
-        link: "https://www.jdoqocy.com/click-100158048-13228405"
-        banner: "movavi.jpg"
-        text: "Movavi - универсальный фото-видео редактор"
+      comments: "true"      
   -
     scope:
       path: "content/en/movies/articles"
