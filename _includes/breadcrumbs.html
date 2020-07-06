@@ -2,19 +2,13 @@
 <nav aria-label="breadcrumb">
 	<ol class="list-inline" itemscope itemtype="https://schema.org/BreadcrumbList">
 		<li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-			<a class="text-decoration-none" itemprop="item" href="/">
-				<span itemprop="name">{{ site.data.translations.home[page.lang] }}</span>
-			</a>
+			<a class="text-decoration-none" itemprop="item" href="/"><span itemprop="name">{{ site.data.translations.home[page.lang] }}</span></a>
 			<meta itemprop="position" content="1" />
 		</li>
+		<li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">›<meta itemprop="position" content="2" /></li>
 		<li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-		 	›
+			<a class="text-decoration-none" itemprop="item" href="{{ category | downcase }}"><span itemprop="name">{{ category }}</span></a>
+			<meta itemprop="position" content="3" />
 		</li>
-		 <li class="list-inline-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-			  <a class="text-decoration-none" itemprop="item" href="{{ category | downcase }}">
-					<span itemprop="name">{{ category }}</span>
-			  </a>
-			  <meta itemprop="position" content="2" />
-		 </li>            
 	</ol>
 </nav>
