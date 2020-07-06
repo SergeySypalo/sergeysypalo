@@ -30,15 +30,7 @@ defaults:
       path: "content/ru/инвестирование/статьи"
     values:      
       type: "article"
-      comments: "true"      
-  -
-    scope:
-      path: "content/en/devops/*"
-    values:      
-      affiliate:
-        link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
-        banner: "affiliate-banners-650x1200-en-v3.jpg"
-        text: "NordVPN баннер"
+      comments: "true"  
   -
     scope:
       path: "content/en/devops/articles"        
