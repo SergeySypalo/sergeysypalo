@@ -5,14 +5,10 @@ image: /assets/img/sergey-and-jane-sypalo.jpg
 permalink: /ru
 enlink: /
 rulink: /ru
-affiliate:
-	link: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902
-	banner: affiliate-banners-650x1200-en-v3.jpg
-	text: NordVPN баннер
 ---
 
 {% include title.html %}
 {% assign posts = site.pages | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
 {% for post in posts %}  
-	{% include post-snippet.html %}
+  {% include post-snippet.html %}
 {% endfor %}

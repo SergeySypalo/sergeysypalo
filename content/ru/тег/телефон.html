@@ -4,14 +4,10 @@ description: Посты с тегом Телефон
 permalink: /телефон
 enlink: /phone
 rulink: /телефон
-affiliate:
-	link: https://www.jdoqocy.com/click-100158048-13228405
-	banner: movavi.jpg
-	text: Movavi - universal photo video editor
 ---
 
 {% include title.html %}
 {% assign posts = site.pages | where_exp: "post", "post.tags contains 'телефон'" | where:"lang", page.lang %}
 {% for post in posts %}  
-	{% include post-snippet.html %}
+  {% include post-snippet.html %}
 {% endfor %}
