@@ -50,9 +50,9 @@ defaults:
       type: "article"
       comments: "true"
       affiliate:
-          link: "https://www.jdoqocy.com/click-100158048-13228405"
-          banner: "movavi.jpg"
-          text: "Movavi - universal photo and video editor"
+        link: "https://www.jdoqocy.com/click-100158048-13228405"
+        banner: "movavi.jpg"
+        text: "Movavi - universal photo and video editor"
   -
     scope:
       path: "content/ru/фото/статьи"
@@ -60,9 +60,9 @@ defaults:
       type: "article"
       comments: "true"
       affiliate:
-          link: "https://www.jdoqocy.com/click-100158048-13228405"
-          banner: "movavi.jpg"
-          text: "Movavi - универсальный фото-видео редактор"
+        link: "https://www.jdoqocy.com/click-100158048-13228405"
+        banner: "movavi.jpg"
+        text: "Movavi - универсальный фото-видео редактор"
   -
     scope:
       path: "content/en/movies/articles"
