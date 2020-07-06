@@ -144,6 +144,7 @@
     <loc>https://sypalo.com/best-movies</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-movies"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-фильмы"/>    
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B5-%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B"/>    
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
