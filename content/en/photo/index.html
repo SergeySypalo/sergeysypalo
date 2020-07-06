@@ -5,43 +5,43 @@ permalink: /photo
 enlink: /photo
 rulink: /фото
 affiliate:
-    link: https://www.jdoqocy.com/click-100158048-13228405
-    banner: movavi.jpg
-    text: Movavi - универсальный фото-видео редактор
+link: https://www.jdoqocy.com/click-100158048-13228405
+  banner: movavi.jpg
+  text: Movavi - универсальный фото-видео редактор
 ---
 
 {% include title.html %}  
 <div class="row">
-    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
-        <div class="card h-100">
-            <section class="card-body">
-                <header>
-                    <h2 class="h5">Photo Portfolio</h2>
-                </header>
-                <p class="card-text mb-auto">If you are interested in projects I've done before, then just check...</p>
-                <footer>
-                    <a href="/photo-portfolio" class="btn btn-primary mt-3">My portfolio</a>
-                </footer>
-            </section>
-        </div>
-    </div>
-    <div class="col-12 col-sm-6">
-        <div class="card h-100">
-            <section class="card-body">
-                <header>
-                    <h2 class="h5">Photo Services</h2>
-                </header>
-                <p class="card-text mb-auto">If you want to memorize one good day in your life, then just check...</p>
-                <footer>
-                    <a href="/photo-services" class="btn btn-success mt-3">Services I offer</a>
-                </footer>
-            </section>
-        </div>
-    </div>
+	<div class="col-12 col-sm-6 mb-2 mb-sm-0">
+		<div class="card h-100">
+			<section class="card-body">
+				<header>
+					<h2 class="h5">Photo Portfolio</h2>
+				</header>
+				<p class="card-text mb-auto">If you are interested in projects I've done before, then just check...</p>
+				<footer>
+					<a href="/photo-portfolio" class="btn btn-primary mt-3">My portfolio</a>
+				</footer>
+			</section>
+		</div>
+	</div>
+	<div class="col-12 col-sm-6">
+		<div class="card h-100">
+			<section class="card-body">
+				<header>
+					<h2 class="h5">Photo Services</h2>
+				</header>
+				<p class="card-text mb-auto">If you want to memorize one good day in your life, then just check...</p>
+				<footer>
+					<a href="/photo-services" class="btn btn-success mt-3">Services I offer</a>
+				</footer>
+			</section>
+		</div>
+	</div>
 </div>
 <hr />
 
 {% assign posts = site.pages | where_exp: "post", "post.tags contains 'photo'" | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
 {% for post in posts %}
-    {% include post-snippet.html %}     
+	{% include post-snippet.html %}     
 {% endfor %}
