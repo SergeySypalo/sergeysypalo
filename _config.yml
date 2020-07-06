@@ -24,37 +24,33 @@ defaults:
       path: "content/en/investing/articles"        
     values:      
       type: "article"
-      comments: "true"
-      affiliate:
-        link: "https://partners.etoro.com/B12184_A83946_TClick.aspx"
-        banner: "etoro-banner.gif"
-        text: "eToro banner"
+      comments: "true"      
   -
     scope:
       path: "content/ru/инвестирование/статьи"
     values:      
       type: "article"
-      comments: "true"
+      comments: "true"      
+  -
+    scope:
+      path: "content/en/devops/*"
+    values:      
+      affiliate:
+          link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
+          banner: "affiliate-banners-650x1200-en-v3.jpg"
+          text: "NordVPN баннер"
   -
     scope:
       path: "content/en/devops/articles"        
     values:      
       type: "article"
-      comments: "true"
-      affiliate:
-        link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
-        banner: "affiliate-banners-650x1200-en-v3.jpg"
-        text: "NordVPN banner"
+      comments: "true"      
   -
     scope:
       path: "content/ru/девопс/статьи"
     values:      
       type: "article"
       comments: "true"
-      affiliate:
-          link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
-          banner: "affiliate-banners-650x1200-en-v3.jpg"
-          text: "NordVPN баннер"
   -
     scope:
       path: "content/en/photo/articles"        
