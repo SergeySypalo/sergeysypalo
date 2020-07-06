@@ -51,30 +51,30 @@ defaults:
     values:      
       type: "article"
       comments: "true"
-    affiliate:
-        link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
-        banner: "affiliate-banners-650x1200-en-v3.jpg"
-        text: "NordVPN баннер"
+      affiliate:
+          link: "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902"
+          banner: "affiliate-banners-650x1200-en-v3.jpg"
+          text: "NordVPN баннер"
   -
     scope:
       path: "content/en/photo/articles"        
     values:      
       type: "article"
       comments: "true"
-    affiliate:
-        link: "https://www.jdoqocy.com/click-100158048-13228405"
-        banner: "movavi.jpg"
-        text: "Movavi - universal photo and video editor"
+      affiliate:
+          link: "https://www.jdoqocy.com/click-100158048-13228405"
+          banner: "movavi.jpg"
+          text: "Movavi - universal photo and video editor"
   -
     scope:
       path: "content/ru/фото/статьи"
     values:      
       type: "article"
       comments: "true"
-    affiliate:
-        link: "https://www.jdoqocy.com/click-100158048-13228405"
-        banner: "movavi.jpg"
-        text: "Movavi - универсальный фото-видео редактор"
+      affiliate:
+          link: "https://www.jdoqocy.com/click-100158048-13228405"
+          banner: "movavi.jpg"
+          text: "Movavi - универсальный фото-видео редактор"
   -
     scope:
       path: "content/en/movies/articles"
