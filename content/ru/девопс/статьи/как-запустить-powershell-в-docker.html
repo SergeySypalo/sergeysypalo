@@ -40,17 +40,17 @@ affiliate:
 			<li>Создайте пустую папку, скажем D:\powershell-docker</li>
 			<li>Добавьте необходимые модули в подпапку D:\powershell-docker\Modules</li>
 			<li>Создайте Dockerfile в D:\powershell-docker следующего содержания:
-				<pre>
-                # Используем существующий Docker образ PowerShell в качестве основы
-                FROM mcr.microsoft.com/powershell
+<pre>
+# Используем существующий Docker образ PowerShell в качестве основы
+FROM mcr.microsoft.com/powershell
 
-                # Копировать инструменты управления Cisco UCS в стандартное расположение модулей
-                COPY ./Modules ./usr/local/share/powershell/Modules
+# Копировать инструменты управления Cisco UCS в стандартное расположение модулей
+COPY ./Modules ./usr/local/share/powershell/Modules
 
-                # Создаем всю структуру каталогов, после чего добавляем путь к модулям в сам файл конфигурации
-                RUN mkdir -p /root/.config/powershell/
-                RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
-            </pre>
+# Создаем всю структуру каталогов, после чего добавляем путь к модулям в сам файл конфигурации
+RUN mkdir -p /root/.config/powershell/
+RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
+</pre>
 			</li>
 			<li>Откроем CMD или PowerShell и переходим в D:\powershell-docker</li>
 			<li>Собираем контейнер <kbd>docker build -t powershell-docker</kbd></li>

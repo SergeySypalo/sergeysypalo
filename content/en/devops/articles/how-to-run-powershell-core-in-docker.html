@@ -34,23 +34,23 @@ affiliate:
 		<li>Install Hyper-V, you can do it like this:</li>
 		<li><kbd>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</kbd><br />
 				or so:<br />
-				<kbd>DISM / Online / Enable-Feature / All / FeatureName: Microsoft-Hyper-V</kbd>
+				<kbd>DISM /Online /Enable-Feature /All /FeatureName: Microsoft-Hyper-V</kbd>
 		</li>
 		<li>Install <a href ="https://hub.docker.com/editions/community/docker-ce-desktop-windows" target="_blank">Docker Desktop for Windows</a></li>
 		<li>Create an empty folder, say D:\powershell-docker</li>
 		<li>Add the required modules to the subfolder D:\powershell-docker\Modules</li>
 		<li>Create a Dockerfile in D:\powershell-docker as follows
-				<pre>
-						# Use an existing docker image as a base
-						FROM mcr.microsoft.com/powershell
+<pre>
+# Use an existing docker image as a base
+FROM mcr.microsoft.com/powershell
 
-						# Copy Cisco UCS Power Tools to the standard modules location
-						COPY ./Modules ./usr/local/share/powershell/Modules
+# Copy Cisco UCS Power Tools to the standard modules location
+COPY ./Modules ./usr/local/share/powershell/Modules
 
-						# Create a path in advance, then add required path to the file
-						RUN mkdir -p /root/.config/powershell/
-						RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
-				</pre>
+# Create a path in advance, then add required path to the file
+RUN mkdir -p /root/.config/powershell/
+RUN echo "Import-Module Cisco.UCSManager"> /root/.config/powershell/Microsoft.PowerShell_profile.ps1
+</pre>
 		</li>
 		<li>Open CMD or PowerShell and go to D:\powershell-docker</li>
 		<li>Run the <kbd>docker build -t powershell-docker</kbd> command</li>
