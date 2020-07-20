@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 published: 2019-05-14
-modified: 2020-07-13
+modified: 2020-07-20
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -22,7 +22,7 @@ affiliate:
 		<span class="d-none" itemprop="name">{{ page.title }}</span>
 		<span class="d-none" itemprop="totalTime" content="PT2H">2 hours</span>
 		<p itemprop="description">In this article, I will show you how to upgrade your Ubuntu 20.04.
-			As a bonus, we will also update kernel to the latest stable version 5.7.8 or mainline 5.8-rc5, which contains the following improvements:
+			As a bonus, we will also update kernel to the latest stable version 5.7.9 or mainline 5.8-rc6, which contains the following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -117,10 +117,10 @@ affiliate:
 				<div itemprop="name">Download latest stable kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-headers-5.7.8-050708_5.7.8-050708.202007090835_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-headers-5.7.8-050708-generic_5.7.8-050708.202007090835_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-image-unsigned-5.7.8-050708-generic_5.7.8-050708.202007090835_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-modules-5.7.8-050708-generic_5.7.8-050708.202007090835_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-headers-5.7.9-050709_5.7.9-050709.202007160732_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-headers-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-image-unsigned-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-modules-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
 					</pre>
 				</div>				
 			</div>
@@ -129,10 +129,10 @@ affiliate:
 				<div itemprop="name">Or download latest mainline kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-headers-5.8.0-050800_5.8.0-050800.202007122030_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-headers-5.8.0-050800-generic_5.8.0-050800.202007122030_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-image-unsigned-5.8.0-050800-generic_5.8.0-050800.202007122030_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-modules-5.8.0-050800-generic_5.8.0-050800.202007122030_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-headers-5.8.0-050800rc6_5.8.0-050800rc6.202007192331_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-headers-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-image-unsigned-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-modules-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
 					</pre>
 				</div>				
 			</div>

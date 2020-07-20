@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 description: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 published: 2019-05-14
-modified: 2020-07-10
+modified: 2020-07-20
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -22,7 +22,7 @@ affiliate:
 		<span class="d-none" itemprop="name">{{ page.title }}</span>
 		<span class="d-none" itemprop="totalTime" content="PT2H">2 часа</span>
 		<p itemprop="description">В этой статье я покажу вам, как обновить ваш Ubuntu 20.04.
-			В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.7.8 или релиз-кандидата 5.8-rc5, которые содержит следующие улучшения:
+			В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.7.9 или релиз-кандидата 5.8-rc6, которые содержит следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -117,10 +117,10 @@ affiliate:
 				<div itemprop="name">Скачиваем последнее стабильное ядро</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-headers-5.7.8-050708_5.7.8-050708.202007090835_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-headers-5.7.8-050708-generic_5.7.8-050708.202007090835_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-image-unsigned-5.7.8-050708-generic_5.7.8-050708.202007090835_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.8/amd64/linux-modules-5.7.8-050708-generic_5.7.8-050708.202007090835_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-headers-5.7.9-050709_5.7.9-050709.202007160732_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-headers-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-image-unsigned-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-modules-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
 					</pre>
 				</div>				
 			</div>
@@ -129,10 +129,10 @@ affiliate:
 				<div itemprop="name">Или же скачиваем последнее тестовое ядро</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-headers-5.8.0-050800_5.8.0-050800.202007122030_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-headers-5.8.0-050800-generic_5.8.0-050800.202007122030_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-image-unsigned-5.8.0-050800-generic_5.8.0-050800.202007122030_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc5/amd64/linux-modules-5.8.0-050800-generic_5.8.0-050800.202007122030_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-headers-5.8.0-050800rc6_5.8.0-050800rc6.202007192331_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-headers-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-image-unsigned-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-modules-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
 					</pre>
 				</div>				
 			</div>
