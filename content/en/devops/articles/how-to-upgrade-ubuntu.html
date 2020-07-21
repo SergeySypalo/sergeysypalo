@@ -109,51 +109,53 @@ affiliate:
 				</svg>
 				Upgrade kernel
 			</h2>
-			<li id="change-current-directory-to-tmp" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#change-current-directory-to-tmp">
-				<div itemprop="name">Change current directory to /tmp</div>				
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<kbd itemprop="text">cd /tmp</kbd>
-				</div>				
-			</li>
-			<li id="download-new-stable-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-new-stable-kernel">
-				<div itemprop="name">Download latest stable kernel</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<pre itemprop="text">
+			<ul class="list-unstyled">
+				<li id="change-current-directory-to-tmp" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#change-current-directory-to-tmp">
+					<div itemprop="name">Change current directory to /tmp</div>				
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<kbd itemprop="text">cd /tmp</kbd>
+					</div>				
+				</li>
+				<li id="download-new-stable-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-new-stable-kernel">
+					<div itemprop="name">Download latest stable kernel</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<pre itemprop="text">
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-headers-5.7.9-050709_5.7.9-050709.202007160732_all.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-headers-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-image-unsigned-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-modules-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
-					</pre>
-				</div>				
-			</li>
-			<li id="download-new-mainline-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-new-mainline-kernel">
-				<div itemprop="name">Or download latest mainline kernel</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<pre itemprop="text">
+						</pre>
+					</div>				
+				</li>
+				<li id="download-new-mainline-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-new-mainline-kernel">
+					<div itemprop="name">Or download latest mainline kernel</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<pre itemprop="text">
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-headers-5.8.0-050800rc6_5.8.0-050800rc6.202007192331_all.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-headers-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-image-unsigned-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-modules-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
-					</pre>
-				</div>				
-			</li>
-			<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
-				<div itemprop="name">Install new kernel</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
-				</div>				
-			</li>
-			<li id="reboot-the-system" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system">
-				<div itemprop="name">Reboot the system</div>				
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<kbd itemprop="text">sudo shutdown -r now</kbd>
-				</div>				
-			</li>
+						</pre>
+					</div>				
+				</li>
+				<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
+					<div itemprop="name">Install new kernel</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
+					</div>				
+				</li>
+				<li id="reboot-the-system" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system">
+					<div itemprop="name">Reboot the system</div>				
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<kbd itemprop="text">sudo shutdown -r now</kbd>
+					</div>				
+				</li>
+			</ul>
 		</div>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<h2 class="h5 mt-4" itemprop="name">
