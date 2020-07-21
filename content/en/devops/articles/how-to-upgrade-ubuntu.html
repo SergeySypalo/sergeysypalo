@@ -52,27 +52,29 @@ affiliate:
 				</svg>
 				Preparation				
 			</h2>
-			<div id="update-packages-list" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#update-packages-list">
-				<div itemprop="name">Update packages list</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
-					<kbd itemprop="text">sudo apt-get update</kbd>
-				</div>
-			</div>
-			<div id="upgrade-packages" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-packages">
-				<div itemprop="name">Upgrade packages</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-					<kbd itemprop="text">sudo apt-get upgrade</kbd>
-				</div>
-			</div>
-			<div id="install-update-manager-core-package" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#install-update-manager-core-package">
-				<div itemprop="name">Install update-manager-core package</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<kbd itemprop="text">sudo apt-get install update-manager-core</kbd>
-				</div>
-			</div>
+			<ul class="list-unstyled">
+				<li id="update-packages-list" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#update-packages-list">
+					<div itemprop="name">Update packages list</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
+						<kbd itemprop="text">sudo apt-get update</kbd>
+					</div>
+				</li>
+				<li id="upgrade-packages" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-packages">
+					<div itemprop="name">Upgrade packages</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+						<kbd itemprop="text">sudo apt-get upgrade</kbd>
+					</div>
+				</li>
+				<li id="install-update-manager-core-package" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-update-manager-core-package">
+					<div itemprop="name">Install update-manager-core package</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<kbd itemprop="text">sudo apt-get install update-manager-core</kbd>
+					</div>
+				</li>
+			</ul>
 		</div>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<h2 class="h5 mt-4" itemprop="name">
@@ -82,21 +84,23 @@ affiliate:
 				</svg>
 				Upgrade Ubuntu
 			</h2>
-			<div id="upgrade-distro" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-distro">
-				<div itemprop="name">Upgrade distro</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<kbd itemprop="text">sudo apt-get dist-upgrade</kbd>
-				</div>
-			</div>
-			<div id="upgrade-ubuntu" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-ubuntu">
-				<div itemprop="name">Upgrade Ubuntu</div>
-				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
-					<kbd itemprop="text">sudo do-release-upgrade</kbd>
-				</div>				
-			</div>
-		</div>
+			<ul class="list-unstyled">
+				<li id="upgrade-distro" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-distro">
+					<div itemprop="name">Upgrade distro</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<kbd itemprop="text">sudo apt-get dist-upgrade</kbd>
+					</div>
+				</li>
+				<li id="upgrade-ubuntu" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-ubuntu">
+					<div itemprop="name">Upgrade Ubuntu</div>
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+						<kbd itemprop="text">sudo do-release-upgrade</kbd>
+					</div>				
+				</li>
+			</ul>
+		</div>		
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<h2 class="h5 mt-4" itemprop="name">
 				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-tools text-info" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -105,15 +109,15 @@ affiliate:
 				</svg>
 				Upgrade kernel
 			</h2>
-			<div id="change-current-directory-to-tmp" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#change-current-directory-to-tmp">
+			<li id="change-current-directory-to-tmp" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#change-current-directory-to-tmp">
 				<div itemprop="name">Change current directory to /tmp</div>				
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">cd /tmp</kbd>
 				</div>				
-			</div>
-			<div id="download-new-stable-kernel" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#download-new-stable-kernel">
+			</li>
+			<li id="download-new-stable-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-new-stable-kernel">
 				<div itemprop="name">Download latest stable kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<pre itemprop="text">
@@ -123,9 +127,9 @@ affiliate:
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.9/amd64/linux-modules-5.7.9-050709-generic_5.7.9-050709.202007160732_amd64.deb</kbd>
 					</pre>
 				</div>				
-			</div>
-			<div id="download-new-mainline-kernel" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#download-new-mainline-kernel">
+			</li>
+			<li id="download-new-mainline-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-new-mainline-kernel">
 				<div itemprop="name">Or download latest mainline kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<pre itemprop="text">
@@ -135,21 +139,21 @@ affiliate:
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8-rc6/amd64/linux-modules-5.8.0-050800rc6-generic_5.8.0-050800rc6.202007192331_amd64.deb</kbd>
 					</pre>
 				</div>				
-			</div>
-			<div id="install-new-kernel" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
+			</li>
+			<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
 				<div itemprop="name">Install new kernel</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
 				</div>				
 			</div>
-			<div id="reboot-the-system" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system">
+			<li id="reboot-the-system" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system">
 				<div itemprop="name">Reboot the system</div>				
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">sudo shutdown -r now</kbd>
 				</div>				
-			</div>
+			</li>
 		</div>
 		<div itemprop="step" itemscope itemtype="http://schema.org/HowToSection">
 			<h2 class="h5 mt-4" itemprop="name">
@@ -159,37 +163,37 @@ affiliate:
 				</svg>
 				Finishing up
 			</h2>
-			<ul class="list-unstyled" itemprop="itemListElement">
+			<ul class="list-unstyled">
 				<li id="update-packages-list-after-upgrade" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#update-packages-list-after-upgrade">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#update-packages-list-after-upgrade">
 					<div itemprop="name">Update packages list</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
 						<kbd itemprop="text">sudo apt-get update</kbd>
 					</div>
 				</li>
 				<li id="upgrade-packages-after-upgrade" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-packages-after-upgrade">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-packages-after-upgrade">
 					<div itemprop="name">Upgrade packages</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo apt-get upgrade</kbd>
 					</div>
 				</li>
 				<li id="reboot-the-system-if-needed" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system-if-needed">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system-if-needed">
 					<div itemprop="name">Reboot the system if needed</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo shutdown -r now</kbd>
 					</div>
 				</li>
 				<li id="check-os-distro" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#check-os-distro">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#check-os-distro">
 					<div itemprop="name">Check the OS distro</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">lsb_release -a</kbd>
 					</div>
 				</li>
 				<li id="check-kernel-version" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#check-kernel-version">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#check-kernel-version">
 					<div itemprop="name">Check kernel version</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">uname -r</kbd>
