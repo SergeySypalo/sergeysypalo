@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu including kernel to the latest stable release
 description: How to upgrade Ubuntu including kernel to the latest stable release
 published: 2019-05-14
-modified: 2020-07-20
+modified: 2020-07-21
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -52,7 +52,7 @@ affiliate:
 				</svg>
 				Preparation				
 			</h2>
-			<div id="update-packages-list" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+			<div id="update-packages-list" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#update-packages-list">
 				<div itemprop="name">Update packages list</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
@@ -159,36 +159,36 @@ affiliate:
 				</svg>
 				Finishing up
 			</h2>
-			<ul class="list-unstyled">
-				<li id="update-packages-list-after-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+			<ul class="list-unstyled" itemprop="itemListElement">
+				<li id="update-packages-list-after-upgrade" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#update-packages-list-after-upgrade">
 					<div itemprop="name">Update packages list</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
 						<kbd itemprop="text">sudo apt-get update</kbd>
 					</div>
 				</li>
-				<li id="upgrade-packages-after-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<li id="upgrade-packages-after-upgrade" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#upgrade-packages-after-upgrade">
 					<div itemprop="name">Upgrade packages</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo apt-get upgrade</kbd>
 					</div>
 				</li>
-				<li id="reboot-the-system-if-needed" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<li id="reboot-the-system-if-needed" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system-if-needed">
 					<div itemprop="name">Reboot the system if needed</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo shutdown -r now</kbd>
 					</div>
 				</li>
-				<li id="check-os-distro" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<li id="check-os-distro" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#check-os-distro">
 					<div itemprop="name">Check the OS distro</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">lsb_release -a</kbd>
 					</div>
 				</li>
-				<li id="check-kernel-version" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<li id="check-kernel-version" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" href="https://sypalo.com/how-to-upgrade-ubuntu#check-kernel-version">
 					<div itemprop="name">Check kernel version</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
