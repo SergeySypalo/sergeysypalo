@@ -9,9 +9,10 @@
             <div class="col-12 col-md-8">
                 <div class="card-body pl-md-0 py-2">
                     <meta itemprop="url" content="{{ page.url }}#{{ poster }}">
-                    <h5 class="card-title mb-1" itemprop="name">{{ movie.Title[page.lang] }}</h5>                                        
-                    <p class="card-text mb-1">{{ site.data.translations.movies.director[page.lang] }}: <small class="text-muted" itemprop="director">{{ movie.Director[page.lang] }}</small></p>
-                    <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ movie.Year }}</small></p>
+                    <h5 class="card-title mb-1" itemprop="name">{{ movie.Title[page.lang] }}</h5>             
+                    <h6 class="card-subtitle mb-1 text-muted">
+                        <span itemprop="dateCreated">{{ movie.Year }}</span> | <span itemprop="director">{{ site.data.translations.movies.director[page.lang] }}</span>
+                    </h6>                    
                     <p class="card-text">
                         {{ site.data.translations.movies.watch[page.lang] }} 
                         <a href="https://amzn.to/{{ movie.AmazonPrime }}" target="_blank">Amazon</a>, 
