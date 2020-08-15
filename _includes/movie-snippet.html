@@ -1,5 +1,5 @@
 {% assign poster=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
-<div id="{{ movie }}" class="col-12 col-sm-6">
+<div id="{{ poster }}" class="col-12 col-sm-6">
     <div class="card mb-3">
         <div class="row no-gutters" itemprop="item" itemscope itemtype="https://schema.org/Movie">    
             <div class="col-12 col-md-4">                
@@ -10,7 +10,7 @@
                 <div class="card-body py-2 px-3">
                     <meta itemprop="url" content="{{ page.url }}#{{ poster }}">
                     <h5 class="card-title mb-1" itemprop="name">{{ movie.Title[page.lang] }}</h5>                                        
-                    <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ site.data.translations.movies.director[page.lang] }} {{ movie.Director }}</small></p>
+                    <p class="card-text mb-1"><small class="text-muted" itemprop="director">{{ site.data.translations.movies.director[page.lang] }} {{ movie.Director }}</small></p>
                     <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ movie.Year }}</small></p>
                     <p class="card-text">
                         {{ site.data.translations.movies.watch[page.lang] }} 
