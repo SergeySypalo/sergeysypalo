@@ -1,14 +1,14 @@
-{% assign movie=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
+{% assign poster=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
 <div id="{{ movie }}" class="col-12 col-sm-6">
     <div class="card mb-3">
         <div class="row no-gutters" itemprop="item" itemscope itemtype="https://schema.org/Movie">    
             <div class="col-12 col-md-4">                
-                <meta itemprop="image" content="/assets/img/movies/{{ movie }}.png">
-                <img class="card-img img-fluid"  src="/assets/img/movies/{{ movie }}.png" alt="{{ movie.Title[page.lang] }}">
+                <meta itemprop="image" content="/assets/img/movies/{{ poster }}.png">
+                <img class="card-img img-fluid"  src="/assets/img/movies/{{ poster }}.png" alt="{{ movie.Title[page.lang] }}">
             </div>
             <div class="col-12 col-md-8">
                 <div class="card-body py-2 px-3">
-                    <meta itemprop="url" content="{{ page.url }}#{{ movie }}">
+                    <meta itemprop="url" content="{{ page.url }}#{{ poster }}">
                     <h5 class="card-title mb-1" itemprop="name">{{ movie.Title[page.lang] }}</h5>                                        
                     <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ site.data.translations.movies.director[page.lang] }} {{ movie.Director }}</small></p>
                     <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ movie.Year }}</small></p>
