@@ -10,7 +10,7 @@
                 <div class="card-body py-2 px-3">
                     <meta itemprop="url" content="{{ page.url }}#{{ movie }}">
                     <h5 class="card-title mb-1" itemprop="name">{{ movie.Title[page.lang] }}</h5>                                        
-                    <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ site.data.translations.movies.director[page.lang] }}: {{ movie.director }}</small></p>
+                    <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ site.data.translations.movies.director[page.lang] }} {{ movie.director }}</small></p>
                     <p class="card-text mb-1"><small class="text-muted" itemprop="dateCreated">{{ movie.Year }}</small></p>
                     <p class="card-text">
                         {{ site.data.translations.movies.watch[page.lang] }} 
