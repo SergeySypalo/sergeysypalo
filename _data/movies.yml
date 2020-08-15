@@ -321,6 +321,9 @@
   Title:
     en: Ant-Man
     ru: Человек-муравей
+  Director:
+    en: Peyton Reed
+    ru: Пейтон Рид
   Year: 2015
   Amazon: 2vndtvF
   AmazonBundle: 2vZp30m
@@ -338,6 +341,9 @@
   Title:
     en: Ant-Man and the Wasp
     ru: Человек-муравей и Оса
+  Director:
+    en: Peyton Reed
+    ru: Пейтон Рид
   Year: 2018
   Amazon: 33gluz1
   AmazonBundle: 2vZp30m
@@ -355,6 +361,9 @@
   Title:
     en: Blade Runner
     ru: Бегущий по лезвию
+  Director:
+    en: Ridley Scott
+    ru: Ридли Скотт
   Year: 1982
   Amazon: 33kdcWO
   AmazonBundle: 2vZp30m
@@ -372,6 +381,9 @@
   Title:
     en: Blade Runner 2049
     ru: Бегущий по лезвию 2049
+  Director:
+    en: Denis Villeneuve
+    ru: Дени Вильнёв
   Year: 2017
   Amazon: 2wT1KFB
   AmazonBundle: 2vZp30m
@@ -389,6 +401,9 @@
   Title:
     en: Crank
     ru: Адреналин
+  Director:
+    en: Mark Neveldine, Brian Taylor
+    ru: Марк Невелдайн, Брайан Тейлор    
   Year: 2006
   Amazon: 2wZLRwN
   AmazonBundle: 33k7zIj
@@ -406,6 +421,9 @@
   Title:
     en: "Crank: High Voltage"
     ru: "Адреналин 2: Высокое напряжение"
+  Director:
+    en: Mark Neveldine, Brian Taylor
+    ru: Марк Невелдайн, Брайан Тейлор
   Year: 2009
   Amazon: 33k7zIj
   AmazonBundle: 33k7zIj
@@ -423,6 +441,9 @@
   Title:
     en: Deadpool
     ru: Дэдпул
+  Director:
+    en: Tim Miller
+    ru: Тим Миллер
   Year: 2013
   Amazon: 3aVgm5U
   AmazonBundle: 2QjFiMq
@@ -440,6 +461,9 @@
   Title:
     en: Deadpool 2
     ru: Дэдпул 2
+  Director:
+    en: David Leitch
+    ru: Дэвид Литч
   Year: 2018
   Amazon: 2UfsAj4
   AmazonBundle: 2QjFiMq
@@ -457,6 +481,9 @@
   Title:
     en: The Equalizer
     ru: Великий уравнитель
+  Director:
+    en: Antoine Fuqua
+    ru: Антуан Фукуа
   Year: 2014
   Amazon: 3dfCkSY
   AmazonBundle: 394FplM
@@ -474,6 +501,9 @@
   Title:
     en: The Equalizer 2
     ru: Великий уравнитель 2
+  Director:
+    en: Antoine Fuqua
+    ru: Антуан Фукуа
   Year: 2018
   Amazon: 2WocCpz
   AmazonBundle: 394FplM
@@ -491,6 +521,9 @@
   Title:
     en: Fantastic Beasts and Where to Find Them
     ru: Фантастические твари и где они обитают
+  Director:
+    en: David Yates
+    ru: Дэвид Йейтс
   Year: 2016
   Amazon: 3a4op0i
   AmazonBundle: 
@@ -508,6 +541,9 @@
   Title:
     en: "Fantastic Beasts: The Crimes of Grindelwald"
     ru: "Фантастические твари: Преступления Грин-де-Вальда"
+  Director:
+    en: David Yates
+    ru: Дэвид Йейтс
   Year: 2018
   Amazon: 2U1GOVI
   AmazonBundle: 3aAKG5V
@@ -525,6 +561,9 @@
   Title:
     en: Frozen
     ru: Холодное сердце
+  Director:
+    en: Jennifer Lee, Chris Buck
+    ru: Дженнифер Ли, Крис Бак
   Year: 2013
   Amazon: 2VoStib
   AmazonBundle: 2XO5G5T
@@ -542,6 +581,9 @@
   Title:
     en: Frozen II
     ru: Холодное сердце 2
+  Director:
+    en: Jennifer Lee, Chris Buck
+    ru: Дженнифер Ли, Крис Бак
   Year: 2013
   Amazon: 2VJs2To
   AmazonBundle: 2XO5G5T
@@ -559,6 +601,9 @@
   Title:
     en: Home Alone
     ru: Один Дома
+  Director:
+    en: Chris Columbus
+    ru: Крис Коламбус
   Year: 1990
   Amazon: 34bQrF7
   AmazonBundle: 2UAu2y2
@@ -576,6 +621,9 @@
   Title:
     en: "Home Alone 2: Lost In New York"
     ru: "Один дома 2: Затерянный в Нью-Йорке"
+  Director:
+    en: Chris Columbus
+    ru: Крис Коламбус
   Year: 1992
   Amazon: 341YVhZ
   AmazonBundle: 2UAu2y2
@@ -593,6 +641,9 @@
   Title:
     en: Jurassic World
     ru: Мир юрского периода
+  Director:
+    en: Colin Trevorrow
+    ru: Колин Треворроу
   Year: 2015
   Amazon: 3bHyhxe
   AmazonBundle: 2RjOr8b
@@ -610,6 +661,9 @@
   Title:
     en: "Jurassic World: Fallen Kingdom"
     ru: Мир юрского периода 2
+  Director:
+    en: Juan Antonio Bayona
+    ru: Хуан Антонио Байона
   Year: 2018
   Amazon: 2WZwEa0
   AmazonBundle: 2RjOr8b
@@ -627,6 +681,9 @@
   Title:
     en: "Kill Bill: Volume 1"
     ru: Убить Билла. Фильм 1
+  Director:
+    en: Quentin Tarantino
+    ru: Квентин Тарантино
   Year: 2003
   Amazon: 2ysjEQl
   AmazonBundle: 2ypN5lX
@@ -644,6 +701,9 @@
   Title:
     en: "Kill Bill: Volume 2"
     ru: Убить Билла. Фильм 2
+  Director:
+    en: Quentin Tarantino
+    ru: Квентин Тарантино
   Year: 2004
   Amazon: 2wQQaLe
   AmazonBundle: 2ypN5lX
@@ -661,6 +721,9 @@
   Title:
     en: Back to the Future
     ru: Назад в будущее
+  Director:
+    en: Robert Zemeckis
+    ru: Роберт Земекис
   Year: 1985
   Amazon: 2US2HHE
   AmazonBundle: 2JOatMa
@@ -678,6 +741,9 @@
   Title:
     en: Back to the Future Part II
     ru: Назад в будущее 2
+  Director:
+    en: Robert Zemeckis
+    ru: Роберт Земекис
   Year: 1989
   Amazon: 3c1qOcA
   AmazonBundle: 2JOatMa
@@ -695,6 +761,9 @@
   Title:
     en: Back to the Future Part III
     ru: Назад в будущее 3
+  Director:
+    en: Robert Zemeckis
+    ru: Роберт Земекис
   Year: 1990
   Amazon: 2Ve9Hxr
   AmazonBundle: 2JOatMa
@@ -712,6 +781,9 @@
   Title:
     en: Bad Boys
     ru: Плохие парни
+  Director:
+    en: Michael Bay
+    ru: Майкл Бэй
   Year: 1995
   Amazon: 2RnYWrg
   AmazonBundle: 2xiYgwm
@@ -729,6 +801,9 @@
   Title:
     en: Bad Boys II
     ru: Плохие парни 2
+  Director:
+    en: Michael Bay
+    ru: Майкл Бэй
   Year: 2003
   Amazon: 2xXH2oq
   AmazonBundle: 2xiYgwm
@@ -746,6 +821,9 @@
   Title:
     en: Bad Boys for Life
     ru: Плохие парни навсегда
+  Director:
+    en: Bilall Fallah, Adil El Arbi
+    ru: Билал Фалла, Адиль Эль Арби
   Year: 2020
   Amazon: 39WQjKP
   AmazonBundle: 
