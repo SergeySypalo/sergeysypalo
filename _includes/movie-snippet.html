@@ -7,7 +7,7 @@
                 <img class="card-img img-fluid"  src="/assets/img/movies/{{ poster }}.png" alt="{{ movie.Title[page.lang] }}">
             </div>
             <div class="col-12 col-md-8">
-                <div class="card-body py-2 px-3">
+                <div class="card-body py-2">
                     <meta itemprop="url" content="{{ page.url }}#{{ poster }}">
                     <h5 class="card-title mb-1" itemprop="name">{{ movie.Title[page.lang] }}</h5>                                        
                     <p class="card-text mb-1"><small class="text-muted" itemprop="director">{{ site.data.translations.movies.director[page.lang] }} {{ movie.Director[page.lang] }}</small></p>
