@@ -2,7 +2,7 @@
 title: Best movies 
 description: Best movies to watch on Amazon, Google or iTunes in 2020
 published: 2019-06-01
-modified: 2020-04-20
+modified: 2020-08-15
 image: /assets/img/movies/the-shawshank-redemption.jpg
 preview: /assets/img/movies/the-shawshank-redemption.png
 tags: [movies]
@@ -20,7 +20,7 @@ rulink: /лучшие-фильмы
         Save on online purchases with <a href="https://letyshops.com/ua/soc/sh-1?r=1736737">LetyShops</a>
     </p>
     {% assign movies = site.data.movies | where:"Type", "Single" %}
-    <div class="row">
+    <div class="row" itemprop="itemListElement" itemscope itemtype="https://schema.org/ItemList">
       {% for movie in movies %}
         {% include movie-snippet.html %}
       {% endfor %}
