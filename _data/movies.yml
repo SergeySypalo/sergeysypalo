@@ -1,9 +1,12 @@
 - 
   Title:
     en: A Beautiful Mind
-    ru: Игры Разума
+    ru: Игры Разума  
+  Director:
+    en: Ron Howard
+    ru: Рон Ховард
   Year: 2001
-  Amazon: 2sXiiKk  
+  Amazon: 2sXiiKk
   AmazonPrime: 35OnQFC
   iTunesTitle: a-beautiful-mind
   iTunesId: 324270794
@@ -17,7 +20,10 @@
 - 
   Title:
     en: Catch Me If You Can
-    ru: Поймай Меня, Если Сможешь
+    ru: Поймай Меня, Если Сможешь  
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 2002
   Amazon: 2EPDEvO
   AmazonBundle:
@@ -34,7 +40,10 @@
 - 
   Title:
     en: The Shawshank Redemption
-    ru: Побег из Шоушенка
+    ru: Побег из Шоушенка  
+  Director:
+    en: Frank Darabont
+    ru: Фрэнк Дарабонт
   Year: 1994
   Amazon: 2ZfJfoG
   AmazonBundle:
@@ -52,6 +61,9 @@
   Title:
     en: The Green Mile
     ru: Зелёная миля
+  Director:
+    en: Frank Darabont
+    ru: Фрэнк Дарабонт
   Year: 1999
   Amazon: 34MyThq
   AmazonBundle:
@@ -69,6 +81,9 @@
   Title:
     en: Forrest Gump
     ru: Форрест Гамп
+  Director:
+    en: Robert Zemeckis
+    ru: Роберт Земекис
   Year: 1994
   Amazon: 2MpQXHQ
   AmazonBundle: 
@@ -86,6 +101,9 @@
   Title:
     en: Schindler's List
     ru: Список Шиндлера
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 1993
   Amazon: 2QfQatR
   AmazonBundle: 
@@ -103,6 +121,9 @@
   Title:
     en: Intouchables
     ru: 1+1
+  Director:
+    en: Olivier Nakache, Éric Toledano
+    ru: Оливье Накаш, Эрик Толедано
   Year: 2011
   Amazon: 2QazsMJ
   AmazonBundle:
@@ -120,6 +141,9 @@
   Title:
     en: Leon The Professional
     ru: Леон
+  Director:
+    en: Luc Besson
+    ru: Люк Бессон
   Year: 1994
   Amazon: 2PQJtzJ
   AmazonBundle:
@@ -137,6 +161,9 @@
   Title:
     en: Inception
     ru: Начало
+  Director:
+    en: Christopher Nolan
+    ru: Кристофер Нолан
   Year: 2010
   Amazon: 2MnipGd
   AmazonBundle:
@@ -154,6 +181,9 @@
   Title:
     en: The Prestige
     ru: Престиж
+  Director:
+    en: Christopher Nolan
+    ru: Кристофер Нолан
   Year: 2006
   Amazon: 3761i3E
   AmazonBundle:
@@ -171,6 +201,9 @@
   Title:
     en: Interstellar
     ru: Интерстеллар
+  Director:
+    en: Christopher Nolan
+    ru: Кристофер Нолан
   Year: 2014
   Amazon: 2SuT5lx
   AmazonBundle:
@@ -188,6 +221,9 @@
   Title:
     en: Gladiator
     ru: Гладиатор
+  Director:
+    en: Ridley Scott
+    ru: Ридли Скотт
   Year: 2000
   Amazon: 35Ri2v8
   AmazonBundle:
@@ -205,6 +241,9 @@
   Title:
     en: The Departed
     ru: Отступники
+  Director:
+    en: Martin Scorsese
+    ru: Мартин Скорсезе
   Year: 2006
   Amazon: 2POBtza
   AmazonBundle:
@@ -222,6 +261,9 @@
   Title:
     en: Shutter Island
     ru: Остров Проклятых
+  Director:
+    en: Martin Scorsese
+    ru: Мартин Скорсезе
   Year: 2009
   Amazon: 2ZgBWNA
   AmazonBundle:
@@ -239,6 +281,9 @@
   Title:
     en: One Flew Over the Cuckoo's Nest
     ru: Пролетая Над Гнездом Кукушки
+  Director:
+    en: Miloš Forman
+    ru: Милош Форман
   Year: 1975
   Amazon: 2SlwjfM
   AmazonBundle:
@@ -256,6 +301,9 @@
   Title:
     en: Death Race
     ru: Смертельная Гонка
+  Director:
+    en: Paul W. S. Anderson
+    ru: Пол Уильям Скотт Андерсон
   Year: 2008
   Amazon: 2UehH18
   AmazonBundle:
