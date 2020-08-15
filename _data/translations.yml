@@ -29,8 +29,8 @@ aside:
     imgalt: "Женя и Сергей Сыпало"
 movies:
   director:
-    ru: "режиссер"
-    en: "director"
+    ru: "Режиссер"
+    en: "Director"
   watch:
     en: "Watch on"
     ru: "Смотри на"  
