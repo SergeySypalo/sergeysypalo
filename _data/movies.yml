@@ -841,6 +841,9 @@
   Title:
     en: Before Sunrise
     ru: Перед рассветом
+  Director:
+    en: Richard Linklater
+    ru: Ричард Линклейтер
   Year: 1995
   Amazon: 2REyAl9
   AmazonBundle: 3c7x9Dx
@@ -858,6 +861,9 @@
   Title:
     en: Before Sunset
     ru: Перед закатом
+  Director:
+    en: Richard Linklater
+    ru: Ричард Линклейтер
   Year: 2004
   Amazon: 39XeIjj
   AmazonBundle: 3c7x9Dx
@@ -875,6 +881,9 @@
   Title:
     en: Before Midnight
     ru: Перед полуночью
+  Director:
+    en: Richard Linklater
+    ru: Ричард Линклейтер
   Year: 2013
   Amazon: 34penF6
   AmazonBundle: 3c7x9Dx
@@ -892,6 +901,9 @@
   Title:
     en: Blade
     ru: Блэйд
+  Director:
+    en: Stephen Norrington
+    ru: Стивен Норрингтон
   Year: 1998
   Amazon: 2Rj5uYf
   AmazonBundle: 2Vg2SeU
@@ -909,6 +921,9 @@
   Title:
     en: Blade II
     ru: Блэйд II
+  Director:
+    en: Guillermo del Toro
+    ru: Гильермо дель Торо
   Year: 2002
   Amazon: 2UW4Nq3
   AmazonBundle: 2Vg2SeU
@@ -926,6 +941,9 @@
   Title:
     en: "Blade: Trinity"
     ru: "Блэйд: Троица"
+  Director:
+    en: David Goyer
+    ru: Дэвид Гойер
   Year: 2004
   Amazon: 3aUP7bX
   AmazonBundle: 2Vg2SeU
@@ -943,6 +961,9 @@
   Title:
     en: The Butterfly Effect
     ru: Эффект бабочки
+  Director:
+    en: Eric Bress, J. Mackye Gruber
+    ru: Эрик Бресс, Джей Меки Грубер
   Year: 2003
   Amazon: 39VQ6Hu
   AmazonBundle: 2RoTqot
@@ -960,6 +981,9 @@
   Title:
     en: The Butterfly Effect 2
     ru: Эффект бабочки 2
+  Director:
+    en: John R. Leonetti
+    ru: Джон Р. Леонетти
   Year: 2006
   Amazon: 2wpMEr2
   AmazonBundle: 2RoTqot
@@ -977,6 +1001,9 @@
   Title:
     en: "The Butterfly Effect 3: Revelations"
     ru: "Эффект бабочки 3: Откровения"
+  Director:
+    en: Seth Grossman
+    ru: Сет Гроссман
   Year: 2008
   Amazon: 34nNBwv
   AmazonBundle: 2RoTqot
@@ -994,6 +1021,9 @@
   Title:
     en: "The Hobbit: An Unexpected Journey"
     ru: "Хоббит: Нежданное путешествие"
+  Director:
+    en: Peter Jackson
+    ru: Питер Джексон
   Year: 2012
   Amazon: 3e9QnKw
   AmazonBundle: 3aUiZoU
@@ -1011,6 +1041,9 @@
   Title:
     en: "The Hobbit: The Desolation of Smaug"
     ru: "Хоббит: Пустошь Смауга"
+  Director:
+    en: Peter Jackson
+    ru: Питер Джексон
   Year: 2013
   Amazon: 2Veev67
   AmazonBundle: 3aUiZoU
@@ -1028,6 +1061,9 @@
   Title:
     en: "The Hobbit: The Battle of the Five Armies"
     ru: "Хоббит: Битва пяти воинств"
+  Director:
+    en: Peter Jackson
+    ru: Питер Джексон
   Year: 2014
   Amazon: 39ZL5xD
   AmazonBundle: 3aUiZoU
@@ -1045,6 +1081,9 @@
   Title:
     en: Hotel Transylvania
     ru: Монстры на каникулах
+  Director:
+    en: Genndy Tartakovsky
+    ru: Геннди Тартаковски
   Year: 2012
   Amazon: 2x9da8J
   AmazonBundle: 2xcf08w
@@ -1062,6 +1101,9 @@
   Title:
     en: Hotel Transylvania 2
     ru: Монстры на каникулах 2
+  Director:
+    en: Genndy Tartakovsky
+    ru: Геннди Тартаковски
   Year: 2015
   Amazon: 2yPjt1z
   AmazonBundle: 2xcf08w
@@ -1079,6 +1121,9 @@
   Title:
     en: "Hotel Transylvania 3: Summer Vacation"
     ru: "Монстры на каникулах 3: Море зовёт"
+  Director:
+    en: Genndy Tartakovsky
+    ru: Геннди Тартаковски
   Year: 2018
   Amazon: 2UZbEz4
   AmazonBundle: 2xcf08w
@@ -1096,7 +1141,10 @@
   Title:
     en: How to Train Your Dragon
     ru: Как приручить дракона
-  Year: 2010
+  Director:
+    en: Chris Sanders, Dean DeBlois
+    ru: Крис Сандерс, Дин Деблуа
+  Year: 2010   
   Amazon: 2Vb56w8
   AmazonBundle: 3ce6bu3
   AmazonPrime: 3aWmACO
@@ -1113,6 +1161,9 @@
   Title:
     en: How to Train Your Dragon 2
     ru: Как приручить дракона 2
+  Director:
+    en: Dean DeBlois
+    ru: Дин Деблуа
   Year: 2014
   Amazon: 2UUa4yo
   AmazonBundle: 3ce6bu3
@@ -1130,6 +1181,9 @@
   Title:
     en: "How to Train Your Dragon: The Hidden World"
     ru: Как приручить дракона 3
+  Director:
+    en: Dean DeBlois
+    ru: Дин Деблуа
   Year: 2019
   Amazon: 2Xk3bI9
   AmazonBundle: 3ce6bu3 
@@ -1147,6 +1201,9 @@
   Title:
     en: Iron Man
     ru: Железный человек
+  Director:
+    en: Jon Favreau
+    ru: Джон Фавро
   Year: 2008
   Amazon: 34o13As
   AmazonBundle: 2VcjynB
@@ -1164,6 +1221,9 @@
   Title:
     en: Iron Man 2
     ru: Железный человек 2
+  Director:
+    en: Jon Favreau
+    ru: Джон Фавро
   Year: 2010
   Amazon: 2JS0FAR
   AmazonBundle: 2VcjynB
@@ -1181,6 +1241,9 @@
   Title:
     en: Iron Man 3
     ru: Железный человек 3
+  Director:
+    en: Shane Black
+    ru: Шейн Блэк
   Year: 2013
   Amazon: 2Xg2K1A
   AmazonBundle: 2VcjynB
@@ -1197,7 +1260,10 @@
 - 
   Title:
     en: John Wick
-    ru: Джон Уик
+    ru: Джон Уик  
+  Director:
+    en: Chad Stahelski
+    ru: Чад Стахелски
   Year: 2014
   Amazon: 2JUl34E
   AmazonBundle: 2XnGUsY
@@ -1215,6 +1281,9 @@
   Title:
     en: "John Wick: Chapter 2"
     ru: Джон Уик 2
+  Director:
+    en: Chad Stahelski
+    ru: Чад Стахелски
   Year: 2017
   Amazon: 2V0u8PL
   AmazonBundle: 2XnGUsY
@@ -1232,6 +1301,9 @@
   Title:
     en: "John Wick: Chapter 3 - Parabellum"
     ru: Джон Уик 3
+  Director:
+    en: Chad Stahelski
+    ru: Чад Стахелски
   Year: 2019
   Amazon: 2Rqz9ic
   AmazonBundle: 2XnGUsY
@@ -1249,6 +1321,9 @@
   Title:
     en: Jurassic Park
     ru: Парк юрского периода
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 1993
   Amazon: 2XntVrb
   AmazonBundle: 2RjOr8b
@@ -1266,6 +1341,9 @@
   Title:
     en: "The Lost World: Jurassic Park"
     ru: "Парк юрского периода: Затерянный мир"
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 1997
   Amazon: 2JQ1eeJ
   AmazonBundle: 2RjOr8b
@@ -1283,6 +1361,9 @@
   Title:
     en: Jurassic Park III
     ru: Парк юрского периода III
+  Director:
+    en: Joe Johnston
+    ru: Джо Джонстон
   Year: 2001
   Amazon: 2RqzPEg
   AmazonBundle: 2RjOr8b
@@ -1300,6 +1381,9 @@
   Title:
     en: Kung Fu Panda
     ru: Кунг-фу панда
+  Director:
+    en: Mark Osborne, John Stevenson
+    ru: Марк Осборн, Джон Уэйн Стивенсон
   Year: 2008
   Amazon: 2Rn1Tby
   AmazonBundle: 34kDl8m
@@ -1317,6 +1401,9 @@
   Title:
     en: Kung Fu Panda 2
     ru: Кунг-фу панда 2
+  Director:
+    en: Jennifer Yuh Nelson
+    ru: Дженнифер Ю Нельсон
   Year: 2011
   Amazon: 2XpJkqY
   AmazonBundle: 34kDl8m
@@ -1334,6 +1421,9 @@
   Title:
     en: Kung Fu Panda 3
     ru: Кунг-фу панда 3
+  Director:
+    en: Jennifer Yuh Nelson, Alessandro Carloni
+    ru: Дженнифер Ю Нельсон, Алессандро Карлони
   Year: 2016
   Amazon: 3e7VmeB
   AmazonBundle: 34kDl8m
@@ -1351,6 +1441,9 @@
   Title:
     en: "Lara Croft: Tomb Raider"
     ru: "Лара Крофт: Расхитительница гробниц"
+  Director:
+    en: Simon West
+    ru: Саймон Уэст
   Year: 2001
   Amazon: 2RqpYOB
   AmazonBundle: 2wtJYZF
@@ -1368,6 +1461,9 @@
   Title:
     en: "Lara Croft Tomb Raider: The Cradle of Life"
     ru: "Лара Крофт: Расхитительница гробниц 2 - Колыбель жизни"
+  Director:
+    en: Jan de Bont
+    ru: Ян де Бонт
   Year: 2003
   Amazon: 2JUyFg0
   AmazonBundle: 2wtJYZF
@@ -1383,8 +1479,11 @@
   Type: Trilogy
 - 
   Title:
-    en: "Tomb Raider"
+    en: Tomb Raider
     ru: "Tomb Raider: Лара Крофт"
+  Director:
+    en: Roar Uthaug
+    ru: Роар Утхауг
   Year: 2018
   Amazon: 3e5Js4X
   AmazonBundle: 
@@ -1402,6 +1501,9 @@
   Title:
     en: "The Lord of the Rings: The Fellowship of the Ring"
     ru: "Властелин колец: Братство Кольца"
+  Director:
+    en: Peter Jackson
+    ru: Питер Джексон
   Year: 2001
   Amazon: 2VeDxBW
   AmazonBundle: 2y3DXmY
@@ -1419,6 +1521,9 @@
   Title:
     en: "The Lord of the Rings: The Two Towers"
     ru: "Властелин колец: Две крепости"
+  Director:
+    en: Peter Jackson
+    ru: Питер Джексон
   Year: 2002
   Amazon: 2xhHu0N
   AmazonBundle: 2y3DXmY
@@ -1436,6 +1541,9 @@
   Title:
     en: "The Lord of the Rings: The Return of the King"
     ru: "Властелин колец: Возвращение короля"
+  Director:
+    en: Peter Jackson
+    ru: Питер Джексон
   Year: 2003
   Amazon: 3aYXwv8
   AmazonBundle: 2y3DXmY
@@ -1453,6 +1561,9 @@
   Title:
     en: Madagascar
     ru: Мадагаскар
+  Director:
+    en: Tom McGrath, Eric Darnell
+    ru: Том Макграт, Эрик Дарнелл
   Year: 2005
   Amazon: 2XqM5rZ
   AmazonBundle: 2Xm0Fkw
@@ -1470,6 +1581,9 @@
   Title:
     en: "Madagascar: Escape 2 Africa"
     ru: Мадагаскар 2
+  Director:
+    en: Tom McGrath, Eric Darnell
+    ru: Том Макграт, Эрик Дарнелл
   Year: 2008
   Amazon: 2y57k86
   AmazonBundle: 2Xm0Fkw
@@ -1487,6 +1601,9 @@
   Title:
     en: "Madagascar 3: Europe's Most Wanted"
     ru: Мадагаскар 3
+  Director:
+    en: Tom McGrath, Eric Darnell, Conrad Vernon
+    ru: Том Макграт, Эрик Дарнелл, Конрад Вернон
   Year: 2012
   Amazon: 3c0uTOa
   AmazonBundle: 2Xm0Fkw
@@ -1504,6 +1621,9 @@
   Title:
     en: The Matrix
     ru: Матрица
+  Director:
+    en: Lana Wachowski, Lilly Wachowski
+    ru: Лана Вачовски, Лилли Вачовски
   Year: 1999
   Amazon: 34oNOzu
   AmazonBundle: 2JSN7VL
@@ -1521,6 +1641,9 @@
   Title:
     en: The Matrix Reloaded
     ru: "Матрица: Перезагрузка"
+  Director:
+    en: Lana Wachowski, Lilly Wachowski
+    ru: Лана Вачовски, Лилли Вачовски
   Year: 2003
   Amazon: 2UV408G
   AmazonBundle: 2JSN7VL
@@ -1538,6 +1661,9 @@
   Title:
     en: The Matrix Revolutions
     ru: "Матрица: Революция"
+  Director:
+    en: Lana Wachowski, Lilly Wachowski
+    ru: Лана Вачовски, Лилли Вачовски
   Year: 2003
   Amazon: 2Vi3pwI
   AmazonBundle: 2JSN7VL
@@ -1555,6 +1681,9 @@
   Title:
     en: "Ocean's Eleven"
     ru: Одиннадцать друзей Оушена
+  Director:
+    en: Steven Soderbergh
+    ru: Стивен Содерберг
   Year: 2001
   Amazon: 2XnSSTq
   AmazonBundle: 2XnTuIG
@@ -1572,6 +1701,9 @@
   Title:
     en: "Ocean's Twelve"
     ru: Двенадцать друзей Оушена
+  Director:
+    en: Steven Soderbergh
+    ru: Стивен Содерберг
   Year: 2004
   Amazon: 2Vhbsdh
   AmazonBundle: 2XnTuIG
@@ -1589,6 +1721,9 @@
   Title:
     en: "Ocean's Thirteen"
     ru: Тринадцать друзей Оушена
+  Director:
+    en: Steven Soderbergh
+    ru: Стивен Содерберг
   Year: 2007
   Amazon: 3ccDgGJ
   AmazonBundle: 2XnTuIG
@@ -1606,6 +1741,9 @@
   Title:
     en: Rush hour
     ru: Час пик
+  Director:
+    en: Brett Ratner
+    ru: Бретт Ратнер
   Year: 1998
   Amazon: 3c86q9S
   AmazonBundle: 3aX7Aoe
@@ -1623,6 +1761,9 @@
   Title:
     en: Rush hour 2
     ru: Час пик 2
+  Director:
+    en: Brett Ratner
+    ru: Бретт Ратнер
   Year: 2001
   Amazon: 2x9se6h
   AmazonBundle: 3aX7Aoe
@@ -1640,6 +1781,9 @@
   Title:
     en: Rush hour 3
     ru: Час пик 3
+  Director:
+    en: Brett Ratner
+    ru: Бретт Ратнер
   Year: 2007
   Amazon: 3ebWG0b
   AmazonBundle: 3aX7Aoe
@@ -1657,6 +1801,9 @@
   Title:
     en: Thor
     ru: Тор
+  Director:
+    en: Kenneth Branagh
+    ru: Кеннет Брана
   Year: 2011
   Amazon: 2yMII4t
   AmazonBundle: 2US1EYi
@@ -1674,6 +1821,9 @@
   Title:
     en: "Thor: The Dark World"
     ru: "Тор 2: Царство тьмы"
+  Director:
+    en: Alan Taylor
+    ru: Алан Тейлор
   Year: 2013
   Amazon: 2XpfqmX
   AmazonBundle: 2US1EYi
@@ -1691,6 +1841,9 @@
   Title:
     en: "Thor: Ragnarok"
     ru: "Тор: Рагнарёк"
+  Director:
+    en: Taika Waititi
+    ru: Тайка Вайтити
   Year: 2017
   Amazon: 3ca2cP5
   AmazonBundle: 2US1EYi
@@ -1708,6 +1861,9 @@
   Title:
     en: Despicable Me
     ru: Гадкий я
+  Director:
+    en: Pierre Coffin, Chris Renaud
+    ru: Пьер Коффин, Крис Рено
   Year: 2010
   Amazon: 2y3INAE
   AmazonBundle: 3eh16Tw
@@ -1725,6 +1881,9 @@
   Title:
     en: Despicable Me 2
     ru: Гадкий я 2
+  Director:
+    en: Pierre Coffin, Chris Renaud
+    ru: Пьер Коффин, Крис Рено
   Year: 2013
   Amazon: 3c0JGZe
   AmazonBundle: 3eh16Tw
@@ -1742,6 +1901,9 @@
   Title:
     en: Despicable Me 3
     ru: Гадкий я 3
+  Director:
+    en: Pierre Coffin, Kyle Balda
+    ru: Пьер Коффин, Кайл Балда
   Year: 2017
   Amazon: 2y2kMcS
   AmazonBundle: 3eh16Tw
@@ -1759,6 +1921,9 @@
   Title:
     en: The Avengers
     ru: Мстители
+  Director:
+    en: Joss Whedon
+    ru: Джосс Уидон
   Year: 2012
   Amazon: 2JQdPi1
   AmazonBundle: 2RopFnK
@@ -1776,6 +1941,9 @@
   Title:
     en: "Avengers: Age of Ultron"
     ru: "Мстители: Эра Альтрона"
+  Director:
+    en: Joss Whedon
+    ru: Джосс Уидон
   Year: 2015
   Amazon: 3aYQKWg
   AmazonBundle: 2RopFnK
@@ -1793,6 +1961,9 @@
   Title:
     en: "Avengers: Infinity War"
     ru: "Мстители: Война бесконечности"
+  Director:
+    en: Joseph Russo, Anthony Russo
+    ru: Джо Руссо, Энтони Руссо
   Year: 2018
   Amazon: 2UW3bwf
   AmazonBundle: 2RopFnK
@@ -1810,6 +1981,9 @@
   Title:
     en: "Avengers: Endgame"
     ru: "Мстители: Финал"
+  Director:
+    en: Joseph Russo, Anthony Russo
+    ru: Джо Руссо, Энтони Руссо
   Year: 2019
   Amazon: 2y6A94o
   AmazonBundle: 2RopFnK
@@ -1827,6 +2001,9 @@
   Title:
     en: The Hunger Games
     ru: Голодные игры
+  Director:
+    en: Gary Ross
+    ru: Гэри Росс
   Year: 2012
   Amazon: 2RqO8IZ
   AmazonBundle: 34nN7qe
@@ -1844,6 +2021,9 @@
   Title:
     en: "The Hunger Games: Catching Fire"
     ru: "Голодные игры: И вспыхнет пламя"
+  Director:
+    en: Francis Lawrence
+    ru: Фрэнсис Лоуренс
   Year: 2013
   Amazon: 39Z7D1N
   AmazonBundle: 34nN7qe
@@ -1861,6 +2041,9 @@
   Title:
     en: "The Hunger Games: Mockingjay - Part 1"
     ru: "Голодные игры: Сойка-пересмешница. Часть 1"
+  Director:
+    en: Francis Lawrence
+    ru: Фрэнсис Лоуренс
   Year: 2014
   Amazon: 2VlxRq1
   AmazonBundle: 34nN7qe
@@ -1878,6 +2061,9 @@
   Title:
     en: "The Hunger Games: Mockingjay - Part 2"
     ru: "Голодные игры: Сойка-пересмешница. Часть 2"
+  Director:
+    en: Francis Lawrence
+    ru: Фрэнсис Лоуренс
   Year: 2015
   Amazon: 3ec3LOg
   AmazonBundle: 34nN7qe
@@ -1895,6 +2081,9 @@
   Title:
     en: Indiana Jones and the Raiders of the Lost Ark
     ru: "Индиана Джонс: В поисках утраченного ковчега"
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 1981
   Amazon: 2xhUd3y
   AmazonBundle: 2JVjO5a
@@ -1912,6 +2101,9 @@
   Title:
     en: Indiana Jones and the Temple of Doom
     ru: Индиана Джонс и храм судьбы
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 1984
   Amazon: 2Vgwfhd
   AmazonBundle: 2JVjO5a
@@ -1929,6 +2121,9 @@
   Title:
     en: Indiana Jones and the Last Crusade
     ru: Индиана Джонс и последний крестовый поход
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 1989
   Amazon: 34rJFuE
   AmazonBundle: 2JVjO5a
@@ -1946,6 +2141,9 @@
   Title:
     en: Indiana Jones and the Kingdom of the Crystal Skull
     ru: Индиана Джонс и Королевство хрустального черепа
+  Director:
+    en: Steven Spielberg
+    ru: Стивен Спилберг
   Year: 2008
   Amazon: 3b9Kyeh
   AmazonBundle: 2JVjO5a
@@ -1963,6 +2161,9 @@
   Title:
     en: Lethal Weapon
     ru: Смертельное оружие
+  Director:
+    en: Richard Donner
+    ru: Ричард Доннер
   Year: 1987
   Amazon: 2VikiaD
   AmazonBundle: 2UYlhOr
@@ -1980,6 +2181,9 @@
   Title:
     en: Lethal Weapon 2
     ru: Смертельное оружие 2
+  Director:
+    en: Richard Donner
+    ru: Ричард Доннер
   Year: 1989
   Amazon: 3c7rMUJ
   AmazonBundle: 2UYlhOr
@@ -1997,6 +2201,9 @@
   Title:
     en: Lethal Weapon 3
     ru: Смертельное оружие 3
+  Director:
+    en: Richard Donner
+    ru: Ричард Доннер
   Year: 1992
   Amazon: 2RrbsGG
   AmazonBundle: 2UYlhOr
@@ -2014,6 +2221,9 @@
   Title:
     en: Lethal Weapon 4
     ru: Смертельное оружие 4
+  Director:
+    en: Richard Donner
+    ru: Ричард Доннер
   Year: 1998
   Amazon: 3b1lpSE
   AmazonBundle: 2UYlhOr
@@ -2031,6 +2241,9 @@
   Title:
     en: Men in Black
     ru: Люди в чёрном
+  Director:
+    en: Barry Sonnenfeld
+    ru: Барри Зонненфельд
   Year: 1997
   Amazon: 2JUNOhm
   AmazonBundle: 2yPRkHF
@@ -2048,6 +2261,9 @@
   Title:
     en: Men in Black II
     ru: Люди в чёрном 2
+  Director:
+    en: Barry Sonnenfeld
+    ru: Барри Зонненфельд
   Year: 2002
   Amazon: 34qiZKU
   AmazonBundle: 2yPRkHF
@@ -2065,6 +2281,9 @@
   Title:
     en: Men in Black 3
     ru: Люди в чёрном 3
+  Director:
+    en: Barry Sonnenfeld
+    ru: Барри Зонненфельд
   Year: 2012
   Amazon: 39UPuSv
   AmazonBundle: 2yPRkHF
@@ -2082,6 +2301,9 @@
   Title:
     en: Men in Black International
     ru: "Люди в чёрном: Интернэшнл"
+  Director:
+    en: Felix Gary Gray
+    ru: Феликс Гэри Грей
   Year: 2019
   Amazon: 2XozOV9
   AmazonBundle: 
@@ -2099,6 +2321,9 @@
   Title:
     en: Toy Story
     ru: История игрушек
+  Director:
+    en: John Lasseter
+    ru: Джон Лассетер
   Year: 1995
   Amazon: 2yS5J6l
   AmazonBundle: 3bYSKOm
@@ -2116,6 +2341,9 @@
   Title:
     en: Toy Story 2
     ru: История игрушек 2
+  Director:
+    en: John Lasseter
+    ru: Джон Лассетер
   Year: 1999
   Amazon: 3ecvQVp
   AmazonBundle: 3bYSKOm
@@ -2133,6 +2361,9 @@
   Title:
     en: Toy Story 3
     ru: История игрушек 3
+  Director:
+    en: Lee Unkrich
+    ru: Ли Анкрич
   Year: 2010
   Amazon: 34qYn5k
   AmazonBundle: 3bYSKOm
@@ -2150,6 +2381,9 @@
   Title:
     en: Toy Story 4
     ru: История игрушек 4
+  Director:
+    en: Josh Cooley
+    ru: Джош Кули
   Year: 2019
   Amazon: 2UVnxWE
   AmazonBundle: 3bYSKOm
@@ -2167,6 +2401,9 @@
   Title:
     en: Undisputed
     ru: Неоспоримый
+  Director:
+    en: Walter Hill
+    ru: Уолтер Хилл
   Year: 2002
   Amazon: 3c5M8xB
   AmazonBundle: 
@@ -2184,6 +2421,9 @@
   Title:
     en: "Undisputed II: Last Man Standing"
     ru: Неоспоримый 2
+  Director:
+    en: Isaac Florentine
+    ru: Айзек Флорентайн
   Year: 2005
   Amazon: 3c7KYSs
   AmazonBundle: 
@@ -2201,6 +2441,9 @@
   Title:
     en: "Undisputed III: Redemption"
     ru: Неоспоримый 3
+  Director:
+    en: Isaac Florentine
+    ru: Айзек Флорентайн
   Year: 2010
   Amazon: 2Xprbti
   AmazonBundle: 
@@ -2218,6 +2461,9 @@
   Title:
     en: "Boyka: Undisputed IV"
     ru: Неоспоримый 4
+  Director:
+    en: Todor Chapkanov
+    ru: Тодор Чапканов
   Year: 2016
   Amazon: 2Rp1s0m
   AmazonBundle: 
@@ -2235,6 +2481,9 @@
   Title:
     en: First Blood
     ru: "Рэмбо: Первая кровь"
+  Director:
+    en: Ted Kotcheff
+    ru: Тед Котчефф
   Year: 1982
   Amazon: 3eClfDC
   AmazonBundle: 
@@ -2252,6 +2501,9 @@
   Title:
     en: "Rambo: First Blood Part II"
     ru: "Рэмбо: Первая кровь 2"
+  Director:
+    en: George Cosmatos
+    ru: Джордж Косматос
   Year: 1985
   Amazon: 3apx7W4
   AmazonBundle: 
@@ -2269,6 +2521,9 @@
   Title:
     en: Rambo III
     ru: Рэмбо III
+  Director:
+    en: Peter MacDonald
+    ru: Питер Макдональд
   Year: 1988
   Amazon: 3bpWWGP
   AmazonBundle: 
@@ -2286,6 +2541,9 @@
   Title:
     en: Rambo IV
     ru: Рэмбо IV
+  Director:
+    en: Sylvester Stallone
+    ru: Сильвестр Сталлоне
   Year: 2008
   Amazon: 2yoXSNb
   AmazonBundle: 
@@ -2303,6 +2561,9 @@
   Title:
     en: "Rambo: Last Blood"
     ru: "Рэмбо: Последняя кровь"
+  Director:
+    en: Adrian Grünberg
+    ru: Адриан Грюнберг
   Year: 2019
   Amazon: 2RUwb5T
   AmazonBundle: 
