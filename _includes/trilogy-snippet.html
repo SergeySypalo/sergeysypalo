@@ -1,4 +1,4 @@
-{% assign title=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
+{% assign poster=movie.Title.en | replace: ' ', '-' | replace: '---', '-' | remove: ':' | remove: "'" | downcase %}
 <div id="{{ poster }}" class="col-12 col-sm-6">
 	<div class="card mb-3">
 		<div class="row no-gutters" itemprop="item" itemscope itemtype="https://schema.org/Movie">
