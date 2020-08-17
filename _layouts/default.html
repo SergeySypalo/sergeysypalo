@@ -5,6 +5,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MT5L6MS');
+	</script>
+	<!-- End Google Tag Manager -->
 	<meta name="title" content="{{ page.title }}" />
 	<meta name="description" content="{{ page.description }}" />
 	<meta name="author" content="Sergey Sypalo">
@@ -20,30 +25,21 @@
 	<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
 	<meta property="og:image:secure_url" content="{{ site.url }}{{ page.image }}" />
 	<meta property="og:site_name" content="Sergey Sypalo" />
-	<meta name="twitter:card" content="{{ page.description }}">	
+	<meta name="twitter:card" content="{{ page.description }}">
 	<meta name="twitter:site" content="@SergeySypalo">
 	<meta name="twitter:creator" content="@SergeySypalo">
 	<meta name="twitter:title" content="{{ page.title }}">
-	<meta name="twitter:description" content="{{ page.description }}">	
+	<meta name="twitter:description" content="{{ page.description }}">
 	<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
 	<meta name="twitter:image:alt" content="{{ site.data.translations.aside[page.lang].imgalt }}">
 	<meta name="p:domain_verify" content="edcf03c5094df3b56f80acbb7cbf9604" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+		integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 	<link rel="canonical" href="https://sypalo.com{{ page.url }}" />
 	<link rel="alternate" href="https://sypalo.com{{ page.enlink }}" hreflang="en" />
 	<link rel="alternate" href="https://sypalo.com{{ page.rulink }}" hreflang="ru" />
 	<link rel="icon" href="/favicon.ico" />
-	<title>{{ page.title }}</title>	
-	<!-- Google Tag Manager -->
-	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-			var f=d.getElementsByTagName(s)[0],	j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-			j.async=true;
-			j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-			f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-MT5L6MS');
-	</script>
-	<!-- End Google Tag Manager -->
+	<title>{{ page.title }}</title>
 </head>
 
 <body class="mb-0 bg-light">
@@ -103,7 +99,8 @@
 				<div class="row m-0 p-0 py-2 shadow-sm">
 					<h3 class="h5 col-12">{{ site.data.translations.aside[page.lang].about }}</h3>
 					<div class="col-12 col-sm-5 col-md-5 col-lg-12 mb-2">
-						<img class="img-fluid" src="/assets/img/sergey-and-jane-sypalo.jpg" alt="Sergey Sypalo and Jane Sypalo">
+						<img class="img-fluid" src="/assets/img/sergey-and-jane-sypalo.jpg"
+							alt="Sergey Sypalo and Jane Sypalo">
 					</div>
 					<div class="col-12 col-sm-7 col-md-7 col-lg-12">
 						<p>{{ site.data.translations.aside[page.lang].text }}</p>
@@ -121,15 +118,16 @@
 						{% endif %}
 						<ol class="list-unstyled mb-0">
 							{% for tag in tags %}
-								{% if tag != '' %}
-								<li>#<a class="text-decoration-none" href="/{{ tag }}">{{ tag }}</a></li>
-								{% endif %}
+							{% if tag != '' %}
+							<li>#<a class="text-decoration-none" href="/{{ tag }}">{{ tag }}</a></li>
+							{% endif %}
 							{% endfor %}
 						</ol>
 					</section>
 					{% if page.affiliate.link %}
 					<a class="mt-3" href="{{ page.affiliate.link }}">
-						<img class="img-fluid" src="/assets/img/affiliate/{{ page.affiliate.banner }}" alt="{{ page.affiliate.text }}">
+						<img class="img-fluid" src="/assets/img/affiliate/{{ page.affiliate.banner }}"
+							alt="{{ page.affiliate.text }}">
 					</a>
 					{% endif %}
 				</div>
@@ -142,8 +140,12 @@
 	</footer>
 
 	{% if page.url contains "photo" or page.url contains "фото" or page.js == true %}
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
 	{% endif %}
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21825981-6"></script>
 	<script type="application/ld+json">
@@ -170,7 +172,7 @@
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
 				n.callMethod ?
-				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			};
 			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
 			n.queue = []; t = b.createElement(e); t.async = !0;
@@ -186,7 +188,7 @@
 			src="https://www.facebook.com/tr?id=2403304246450757&ev=PageView&noscript=1" alt="facebook pixel" />
 	</noscript>
 	<!-- End Facebook Pixel Code -->
-	
+
 </body>
 
 </html>
