@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 description: Как обновить Ubuntu включая ядро до последнего стабильного релиза
 published: 2019-05-14
-modified: 2020-08-11
+modified: 2020-08-17
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -60,16 +60,16 @@ affiliate:
 						<kbd itemprop="text">sudo apt-get update</kbd>
 					</div>
 				</li>
-				<li id="upgrade-packages" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#upgrade-packages">
+				<li id="обновляем-пакеты" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#обновляем-пакеты">
 					<div itemprop="name">Обновляем сами пакеты</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<kbd itemprop="text">sudo apt-get upgrade</kbd>
 					</div>
 				</li>
-				<li id="install-update-manager-core-package" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#install-update-manager-core-package">
-					<div itemprop="name">Установливаем пакет update-manager-core package</div>
+				<li id="установливаем-пакет-update-manager-core" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#установливаем-пакет-update-manager-core">
+					<div itemprop="name">Установливаем пакет update-manager-core</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo apt-get install update-manager-core</kbd>
 					</div>
@@ -85,15 +85,15 @@ affiliate:
 				Обновляем Ubuntu
 			</h2>
 			<ul class="list-unstyled">
-				<li id="upgrade-distro" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#upgrade-distro">
+				<li id="обновляем-дистрибутив" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#обновляем-дистрибутив">
 					<div itemprop="name">Обновляем дистрибутив</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo apt-get dist-upgrade</kbd>
 					</div>
 				</li>
-				<li id="upgrade-ubuntu" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#upgrade-ubuntu">
+				<li id="обновляем-ubuntu" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#обновляем-ubuntu">
 					<div itemprop="name">Обновляем Ubuntu</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo do-release-upgrade</kbd>
@@ -110,15 +110,15 @@ affiliate:
 				Обновляем ядро
 			</h2>
 			<ul class="list-unstyled">
-				<li id="change-current-directory-to-tmp" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#change-current-directory-to-tmp">
+				<li id="переходим-в-директорию-tmp" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#переходим-в-директорию-tmp">
 					<div itemprop="name">Переходим в директорию /tmp</div>				
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">cd /tmp</kbd>
 					</div>				
 				</li>
-				<li id="download-new-stable-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#download-new-stable-kernel">
+				<li id="скачиваем-ядро-из-ветки-5-7" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-7">
 					<div itemprop="name">Скачиваем последнее стабильное ядро из ветки 5.7.x</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
@@ -129,8 +129,8 @@ affiliate:
 						</pre>
 					</div>				
 				</li>
-				<li id="download-new-mainline-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#download-new-mainline-kernel">
+				<li id="скачиваем-ядро-из-ветки-5-8" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-8">
 					<div itemprop="name">Или 5.8.x</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
@@ -141,8 +141,8 @@ affiliate:
 						</pre>
 					</div>
 				</li>
-				<li id="download-new-mainline-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#download-new-mainline-kernel">
+				<li id="скачиваем-ядро-из-ветки-5-9" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-9">
 					<div itemprop="name">Или, если вы хотите обновиться до последнего релиз-кандидата 5.9-rc1</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
@@ -153,15 +153,15 @@ affiliate:
 						</pre>
 					</div>				
 				</li>
-				<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#install-new-kernel">
+				<li id="устанавливаем-новое-ядро" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#устанавливаем-новое-ядро">
 					<div itemprop="name">Устанавливаем новое ядро</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
 					</div>				
 				</li>
-				<li id="reboot-the-system" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#reboot-the-system">
+				<li id="перезагружаем-систему" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#перезагружаем-систему">
 					<div itemprop="name">Перезагружаем систему</div>				
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo shutdown -r now</kbd>
@@ -177,36 +177,36 @@ affiliate:
 				</svg>
 				Последние шаги
 			</h2>
-			<li id="update-packages-list-after-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#update-packages-list-after-upgrade">
+			<li id="обновляем-список-пакетов-после-обновления" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#обновляем-список-пакетов-после-обновления">
 				<div itemprop="name">Обновляем список пакетов</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">				
 					<kbd itemprop="text">sudo apt-get update</kbd>
 				</div>
 			</li>
-			<li id="upgrade-packages-after-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#upgrade-packages-after-upgrade">
+			<li id="обновляем-пакеты-после-обновления" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#обновляем-пакеты-после-обновления">
 				<div itemprop="name">Обновляем сами пакеты</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">sudo apt-get upgrade</kbd>
 				</div>
 			</li>
-			<li id="reboot-the-system-if-needed" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+			<li id="перезагружаем-систему-при-необходимости" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#reboot-the-system-if-needed">
 				<div itemprop="name">Перезагружаем систему еще раз если необходимо</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">sudo shutdown -r now</kbd>
 				</div>
 			</li>
-			<li id="check-os-distro" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#check-os-distro">
-				<div itemprop="name">Проверяем ОС дистрибутива</div>
+			<li id="проверяем-версию-ос-дистрибутива" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#проверяем-версию-ос-дистрибутива">
+				<div itemprop="name">Проверяем версию ОС дистрибутива</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">lsb_release -a</kbd>
 				</div>
 			</li>
-			<li id="check-kernel-version" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#check-kernel-version">
+			<li id="проверяем-версию-ядра" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#проверяем-версию-ядра">
 				<div itemprop="name">Проверяем версию ядра</div>
 				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 					<kbd itemprop="text">uname -r</kbd>
