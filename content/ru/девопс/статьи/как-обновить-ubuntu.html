@@ -22,7 +22,7 @@ affiliate:
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">В этой статье я покажу вам, как обновить Ubuntu до 20.04.
-			В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.7.15 или 5.8.1, или последнего релиз-кандидата 5.9-rc1, которые содержит следующие улучшения:
+			В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.7.19 или 5.8.5, или последнего релиз-кандидата 5.9-rc2, которые содержит следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -119,37 +119,37 @@ affiliate:
 				</li>
 				<li id="скачиваем-ядро-из-ветки-5-7" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-7">
-					<div itemprop="name">Скачиваем последнее стабильное ядро из ветки 5.7.x</div>
+					<div itemprop="name">Скачиваем последнее стабильное ядро из ветки 5.7.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.15/amd64/linux-headers-5.7.15-050715_5.7.15-050715.202008111432_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.15/amd64/linux-headers-5.7.15-050715-generic_5.7.15-050715.202008111432_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.15/amd64/linux-image-unsigned-5.7.15-050715-generic_5.7.15-050715.202008111432_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.15/amd64/linux-modules-5.7.15-050715-generic_5.7.15-050715.202008111432_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.19/amd64/linux-headers-5.7.19-050719_5.7.19-050719.202008270830_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.19/amd64/linux-headers-5.7.19-050719-generic_5.7.19-050719.202008270830_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.19/amd64/linux-image-unsigned-5.7.19-050719-generic_5.7.19-050719.202008270830_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.7.19/amd64/linux-modules-5.7.19-050719-generic_5.7.19-050719.202008270830_amd64.deb</kbd>
 						</pre>
 					</div>				
 				</li>
 				<li id="скачиваем-ядро-из-ветки-5-8" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-8">
-					<div itemprop="name">Или 5.8.x</div>
+					<div itemprop="name">Или ветки 5.8.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.1/amd64/linux-headers-5.8.1-050801_5.8.1-050801.202008111432_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.1/amd64/linux-headers-5.8.1-050801-generic_5.8.1-050801.202008111432_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.1/amd64/linux-image-unsigned-5.8.1-050801-generic_5.8.1-050801.202008111432_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.1/amd64/linux-modules-5.8.1-050801-generic_5.8.1-050801.202008111432_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.5/amd64/linux-headers-5.8.5-050805_5.8.5-050805.202008270831_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.5/amd64/linux-headers-5.8.5-050805-generic_5.8.5-050805.202008270831_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.5/amd64/linux-image-unsigned-5.8.5-050805-generic_5.8.5-050805.202008270831_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.5/amd64/linux-modules-5.8.5-050805-generic_5.8.5-050805.202008270831_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
 				<li id="скачиваем-ядро-из-ветки-5-9" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-9">
-					<div itemprop="name">Или, если вы хотите обновиться до последнего релиз-кандидата 5.9-rc1</div>
+					<div itemprop="name">Или ветки 5.9.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc1/amd64/linux-headers-5.9.0-050900rc1_5.9.0-050900rc1.202008162130_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc1/amd64/linux-headers-5.9.0-050900rc1-generic_5.9.0-050900rc1.202008162130_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc1/amd64/linux-image-unsigned-5.9.0-050900rc1-generic_5.9.0-050900rc1.202008162130_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc1/amd64/linux-modules-5.9.0-050900rc1-generic_5.9.0-050900rc1.202008162130_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc2/amd64/linux-headers-5.9.0-050900rc2_5.9.0-050900rc2.202008232232_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc2/amd64/linux-headers-5.9.0-050900rc2-generic_5.9.0-050900rc2.202008232232_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc2/amd64/linux-image-unsigned-5.9.0-050900rc2-generic_5.9.0-050900rc2.202008232232_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9-rc2/amd64/linux-modules-5.9.0-050900rc2-generic_5.9.0-050900rc2.202008232232_amd64.deb</kbd>
 						</pre>
 					</div>				
 				</li>
