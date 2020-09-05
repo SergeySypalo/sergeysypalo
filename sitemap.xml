@@ -4,7 +4,7 @@
     <loc>https://sypalo.com</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru"/>
-    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -32,14 +32,14 @@
     <loc>https://sypalo.com/devops</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/devops"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/девопс"/>    
-    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
     <loc>https://sypalo.com/how-to-upgrade-ubuntu</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/how-to-upgrade-ubuntu"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/как-обновить-ubuntu"/>    
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-05T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
