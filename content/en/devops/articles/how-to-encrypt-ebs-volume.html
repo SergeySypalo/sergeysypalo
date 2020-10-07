@@ -32,8 +32,15 @@ affiliate:
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Stop instance" />
 				</figure>                
-			</li>			
-			<li>Expand the bottom pane and switch to the «Storage» tab, so you see a link to the instance's volume at the bottom of the page</li>
+			</li>		
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						Expand the bottom pane and switch to the «Storage» tab, so you see a link to the instance's volume at the bottom of the page
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png" alt="Get attached volume id" />
+				</figure>                
+			</li>
 			<li>Click on it and you will notice that volume isn't encrypted, so you have to right-click and select «Create snapshot»</li>
 			<li>Provide a name and a description to easily find the snapshot and click «Create Snapshot»</li>
 			<li>Navigate to snapshots, right-click on that one we created and select «Create Volume», notice that snapshot is not encrypted</li>
