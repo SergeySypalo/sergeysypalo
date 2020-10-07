@@ -1,0 +1,101 @@
+---
+title: Как зашифровать EBS том
+description: Пошаговое руководство о том, как зашифровать EBS том с помощью веб-интерфейса или PowerShell
+published: 2019-10-05
+modified: 2020-10-07
+image: /assets/img/articles/how-to-encrypt-ebs-volume/title.png
+preview: /assets/img/articles/how-to-encrypt-ebs-volume/title.png
+tags: [девопс, амазон, облако, безопасность]
+permalink: /как-зашифровать-ebs-том
+enlink: /how-to-encrypt-ebs-volume
+rulink: /как-зашифровать-ebs-том
+affiliate:
+  link: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902
+  banner: affiliate-banners-650x1200-en-v3.jpg
+  text: NordVPN - самый быстрый VPN в мире
+---
+
+{% include breadcrumbs.html %}
+<article itemscope itemtype="https://schema.org/Article">
+	{% include header.html %}	
+	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
+		<meta itemprop="name" content="{{ page.title }}">
+		<meta itemprop="totalTime" content="PT1H">
+		<p itemprop="description">         
+		 In this article, I will show you how to encrypt EBS volume
+		 <ul class="list-unstyled">             
+			<li>Go to <a href="https://console.aws.amazon.com/ec2" target="_blank">https://console.aws.amazon.com/ec2</a> and navigate to instances</li>
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						Stop instance which volume you want to encrypt
+					</figcaption>
+					<img class="img-fluid" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Stop instance" />
+				</figure>                
+			</li>			
+			<li>Разверните нижнюю панель и перейдите на вкладку "Storage", чтобы увидеть ссылку на том экземпляра внизу страницы</li>
+			<li>Нажмите на него, и вы заметите, что том не зашифрован, поэтому вам нужно щелкнуть правой кнопкой мыши и выбрать «Создать снимок»</li>
+			<li>Введите имя и описание, чтобы легко найти снимок, и нажмите "Create snapshot"</li>
+			<li>Перейдите к снимкам, щелкните правой кнопкой мыши созданный нами и выберите «Создать том». Обратите внимание, что снимок не зашифрован</li>
+			<li>Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, установите соответствующий флажок и нажмите «Создать том»</li>
+			<li>После создания тома вернитесь в раздел экземпляров EC2 и найдите свой экземпляр</li>
+			<li>Запишите информацию о текущем имени устройства, для экземпляров Linux, обычно это / dev / xvda</li>
+			<li>Переключитесь на вкладку "Storage", щелкните подключенный в данный момент том, чтобы вас снова отправили в раздел томов, но с фильтрацией, чтобы показать вам только один том, чтобы вы не щелкнули мышью и не отключили том от другого экземпляра</li>
+			<li>Щелкните том правой кнопкой мыши и выберите "Detach Volume"</li>
+			<li>Щелкните зашифрованный том правой кнопкой мыши и выберите "Присоединить том". Обратите внимание, что он зашифрован</li>
+			<li>Укажите идентификатор экземпляра, к которому вы подключаете том, и имя устройства (вы отметили на шаге 15) и нажмите "Присоединить"</li>
+			</ul>
+			Вот и все, позже можно будет удалить незашифрованный том и снимок
+<pre><code>
+Set-AWSCredential -AccessKey access_key_id -SecretKey secret_key -StoreAs aws_creds
+
+$name = Read-Host "VM name"
+$region = "eu-central-1"
+
+$vm = (Get-EC2Instance -Region $region -ProfileName aws_creds).Instances | ? { ($_.tags | ? Key -eq Name).Value -eq $name }   
+
+Write-Host "Останавливаем $name"
+Stop-EC2Instance $vm -Region $region -ProfileName aws_creds
+while ((Get-EC2Instance $vm -Region $region -ProfileName aws_creds).Instances.State.Name.Value -ne "stopped") {
+	Start-Sleep -s 10
+}
+
+Write-Host "Создаем снимок $name"
+$vol = Get-EC2Volume -Region $region -ProfileName aws_creds | ? { $_.Attachments.InstanceId -eq $vm.InstanceId }
+$snapshot = New-EC2Snapshot $vol.VolumeId $name -Region $region -ProfileName aws_creds
+while ((Get-EC2Snapshot -Region $region -ProfileName aws_creds | ? Description -eq $name).State -ne "completed") {
+	Start-Sleep -s 10
+}
+
+Write-Host "Создаем зашифрованный том $name"
+$tag = @{ Key="Name"; Value=$name }
+$tagspec = new-object Amazon.EC2.Model.TagSpecification
+$tagspec.ResourceType = "volume"
+$tagspec.Tags.Add($tag)
+$newvol = New-EC2Volume $snapshot.SnapshotId -Encrypted $true -TagSpecification $tagspec -AvailabilityZone $vol.AvailabilityZone -Region $region -ProfileName aws_creds   
+	
+Write-Host "Ждем пока том станет доступен для подключения"
+while ((Get-EC2Volume -VolumeId $newvol.VolumeId -Region $region -ProfileName aws_creds).State -ne "available") {
+	Start-Sleep -s 15
+}
+	
+Write-Host "Отключаем незашифрованный том от $name"
+Dismount-EC2Volume -VolumeId $vol.VolumeId -Region $region -ProfileName aws_creds
+Write-Host "Подключаем зашифрованный том к $name"
+while ((Get-EC2Volume -VolumeId $vol.VolumeId -Region $region -ProfileName aws_creds).State -ne "available") {
+	Start-Sleep -s 15
+}
+Add-EC2Volume -InstanceId $vm.InstanceId -VolumeId $newvol.VolumeId -Device $vm.RootDeviceName -Region $region -ProfileName aws_creds
+	
+Start-EC2Instance $vm -Region $region -ProfileName aws_creds
+
+Write-Host "Удаляем незашифрованный том $name"
+Remove-EC2Volume $vol -Region $region -ProfileName aws_creds
+</code></pre>
+	  </p>		
+	</div>
+
+	<footer>
+		<hr>
+	</footer>
+</article>

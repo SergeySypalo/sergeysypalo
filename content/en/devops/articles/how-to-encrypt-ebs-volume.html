@@ -2,7 +2,7 @@
 title: How to encrypt EBS volume
 description: Step-by-step guide about how to encrypt EBS volume using web interface or PowerShell
 published: 2019-10-05
-modified: 2020-10-06
+modified: 2020-10-07
 image: /assets/img/articles/how-to-encrypt-ebs-volume/title.png
 preview: /assets/img/articles/how-to-encrypt-ebs-volume/title.png
 tags: [devops, aws, cloud, security]
@@ -24,25 +24,25 @@ affiliate:
 		<p itemprop="description">         
 		 In this article, I will show you how to encrypt EBS volume
 		 <ul class="list-unstyled">             
-			<li>Go to https://console.aws.amazon.com/ec2 and navigate to instances</li>
+			<li>Go to <a href="https://console.aws.amazon.com/ec2" target="_blank">https://console.aws.amazon.com/ec2</a> and navigate to instances</li>
 			<li>
-				<figure class="figure">
+				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Stop instance which volume you want to encrypt
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance-700.jpg" alt="Stop instance" />
+					<img class="img-fluid" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Stop instance" />
 				</figure>                
 			</li>			
-			<li>Expand the bottom pane and switch to the Storage tab, so you see a link to the instance's volume at the bottom of the page</li>
+			<li>Expand the bottom pane and switch to the "Storage" tab, so you see a link to the instance's volume at the bottom of the page</li>
 			<li>Click on it and you will notice that volume isn't encrypted, so you have to right-click and select Create snapshot</li>
 			<li>Provide a name and a description to easily find the snapshot and click Create Snapshot</li>
-			<li>Navigate to snapshots, right-click on that one we created and select Create Volume, notice that snapshot is not encrypted</li>
+			<li>Navigate to snapshots, right-click on that one we created and select "Create Volume", notice that snapshot is not encrypted</li>
 			<li>To create encrypted volume from an unencrypted snapshot, select the same availability zone and checkmark the appropriate checkbox and click Create Volume</li>
 			<li>Once we have a volume created, go back to EC2 instances section and locate your instance</li>
 			<li>Write down current Device name attachement info, for Linux instances, it's usually /dev/xvda</li>
 			<li>Switch to the Storage tab, click on the currently attached volume, so you will be sent to the volumes section again, but filtered out to show you only one volume, so you won't misclick and disconnect a volume from another instance</li>
-			<li>Right-click on the volume and click Detach Volume</li>
-			<li>Right-click on encrypted volume and select Attach Volume, notice it's encrypted</li>
+			<li>Right-click on the volume and click "Detach Volume"</li>
+			<li>Right-click on encrypted volume and select "Attach Volume", notice it's encrypted</li>
 			<li>Provide instance id you are attaching the volume to and the device name (you noted on step 15) and click attach</li>
 		 </ul>
 		 That's it, later you can remove unencrypted volume and snapshot
