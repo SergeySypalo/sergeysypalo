@@ -30,7 +30,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Stop instance which volume you want to encrypt
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Stop instance" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Останавливаем инстанс" />
 				</figure>                
 			</li>
 			<li>
@@ -46,7 +46,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Нажмите на него, и вы заметите, что том не зашифрован, поэтому вам нужно щелкнуть правой кнопкой мыши и выбрать «Create snapshot»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png" alt="Создать снимок" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png" alt="Создаем снимок" />
 				</figure>
 			</li>
 			<li>
@@ -54,7 +54,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Введите имя и описание, чтобы легко найти снимок, и нажмите «Create snapshot»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/fill-snapshot-details.png" alt="Имя и описание снимка" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png" alt="Вводим имя и описание снимка" />
 				</figure>
 			</li>
 			<li>
@@ -62,10 +62,17 @@ affiliate:
 					<figcaption class="mb-2">
 						Перейдите к снимкам, щелкните правой кнопкой мыши созданный нами и выберите «Create volume». Обратите внимание, что снимок не зашифрован
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-snapshot-id.png" alt="Находим снимок" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-encrypted-volume.png" alt="Создаем зашифрованный том" />
 				</figure>
-			</li>			
-			<li>Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, установите соответствующий флажок и нажмите «Create volume»</li>
+			</li>
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, в которой работает ваш инстанс, установите соответствующий флажок напротив «Encrypt Volume» и нажмите «Create volume»
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png" alt="Вводим детали зашифрованного тома" />
+				</figure>
+			</li>				
 			<li>После создания тома вернитесь в раздел экземпляров EC2 и найдите свой экземпляр</li>
 			<li>Запишите информацию о текущем имени устройства, для экземпляров Linux, обычно это / dev / xvda</li>
 			<li>Переключитесь на вкладку «Storage», щелкните подключенный в данный момент том, чтобы вас снова отправили в раздел томов, но с фильтрацией, чтобы показать вам только один том, чтобы вы не щелкнули мышью и не отключили том от другого экземпляра</li>

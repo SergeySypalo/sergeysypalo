@@ -30,7 +30,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Stop instance which volume you want to encrypt
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Stop instance" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Stopping the instance" />
 				</figure>
 			</li>		
 			<li>
@@ -38,7 +38,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Expand the bottom pane and switch to the «Storage» tab, so you see a link to the instance's volume at the bottom of the page
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png" alt="Get attached volume id" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png" alt="Getting attached volume" />
 				</figure>
 			</li>			
 			<li>
@@ -46,7 +46,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Click on it and you will notice that volume isn't encrypted, so you have to right-click and select «Create snapshot»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png" alt="Create snapshot" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png" alt="Creating snapshot" />
 				</figure>
 			</li>
 			<li>
@@ -54,7 +54,7 @@ affiliate:
 					<figcaption class="mb-2">
 						Provide a name and a description to easily find the snapshot and click «Create Snapshot»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/fill-snapshot-details.png" alt="Provide snapshot details" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png" alt="Providing snapshot details" />
 				</figure>
 			</li>
 			<li>
@@ -62,10 +62,17 @@ affiliate:
 					<figcaption class="mb-2">
 						Navigate to snapshots, right-click on that one we created and select «Create Volume», notice that snapshot is not encrypted
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-snapshot-id.png" alt="Get snapshot id" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-encrypted-volume.png" alt="Create encrypted volume" />
 				</figure>
 			</li>
-			<li>To create encrypted volume from an unencrypted snapshot, select the same availability zone and checkmark the appropriate checkbox and click «Create Volume»</li>
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						To create encrypted volume from an unencrypted snapshot, select the same availability zone and checkmark the appropriate checkbox and click «Create Volume»
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png" alt="Provide encrypted volume details" />
+				</figure>
+			</li>			
 			<li>Once we have a volume created, go back to EC2 instances section and locate your instance</li>
 			<li>Write down current Device name attachement info, for Linux instances, it's usually /dev/xvda</li>
 			<li>Switch to the Storage tab, click on the currently attached volume, so you will be sent to the volumes section again, but filtered out to show you only one volume, so you won't misclick and disconnect a volume from another instance</li>
