@@ -70,14 +70,28 @@ affiliate:
 					<figcaption class="mb-2">
 						Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, в которой работает ваш инстанс, установите соответствующий флажок напротив «Encrypt Volume» и нажмите «Create volume»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details2.png" alt="Вводим детали зашифрованного тома" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png" alt="Вводим детали зашифрованного тома" />
 				</figure>
 			</li>				
 			<li>После создания тома вернитесь в раздел экземпляров EC2 и найдите свой экземпляр</li>
 			<li>Запишите информацию о текущем имени устройства, для экземпляров Linux, обычно это / dev / xvda</li>
-			<li>Переключитесь на вкладку «Storage», щелкните подключенный в данный момент том, чтобы вас снова отправили в раздел томов, но с фильтрацией, чтобы показать вам только один том, чтобы вы не щелкнули мышью и не отключили том от другого экземпляра</li>
-			<li>Щелкните том правой кнопкой мыши и выберите «Detach Volume»</li>
-			<li>Щелкните зашифрованный том правой кнопкой мыши и выберите «Attach volume». Обратите внимание, что он зашифрован</li>
+			<li>Переключитесь на вкладку «Storage», щелкните подключенный в данный момент том, чтобы вас снова отправили в раздел томов, но с фильтрацией, чтобы показать вам только один том, чтобы вы не щелкнули мышью и не отключили том от другого экземпляра</li>			
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						Щелкните том правой кнопкой мыши и выберите «Detach Volume»
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/detach-volume.png" alt="Отключаем незашифрованный том" />
+				</figure>
+			</li>
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						Щелкните зашифрованный том правой кнопкой мыши и выберите «Attach volume». Обратите внимание, что он зашифрован
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/attach-volume.png" alt="Подключаем зашифрованный том" />
+				</figure>
+			</li>
 			<li>Укажите идентификатор экземпляра, к которому вы подключаете том, и имя устройства (вы отметили на шаге 15) и нажмите «Attach»</li>
 			</ul>
 			Вот и все, позже можно будет удалить незашифрованный том и снимок
