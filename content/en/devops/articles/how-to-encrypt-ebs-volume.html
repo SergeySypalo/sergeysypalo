@@ -28,8 +28,8 @@ affiliate:
 			<li>Go to <a href="https://console.aws.amazon.com/ec2" target="_blank">https://console.aws.amazon.com/ec2</a> and navigate to instances</li>
 			<li id="stop-instance" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#stop-instance">
-				<meta itemprop="name">Stop instance</meta>
-				<meta itemprop="image">https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png</meta>
+				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Stop instance which volume you want to encrypt
@@ -39,7 +39,7 @@ affiliate:
 			</li>		
 			<li id="get-attached-volume-id" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#get-attached-volume-id">
-				<meta itemprop="name">Get attached volume id</meta>
+				<meta itemprop="name" content="Get attached volume id">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Expand the bottom pane and switch to the «Storage» tab, so you see a link to the instance's volume at the bottom of the page
@@ -49,7 +49,7 @@ affiliate:
 			</li>			
 			<li id="create-snapshot" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#create-snapshot">
-				<meta itemprop="name">Create snapshot</meta>
+				<meta itemprop="name" content="Create snapshot">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Click on it and you will notice that volume isn't encrypted, so you have to right-click and select «Create snapshot»
@@ -59,7 +59,7 @@ affiliate:
 			</li>
 			<li id="provide-snapshot-details" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#provide-snapshot-details">
-				<meta itemprop="name">Create snapshot</meta>
+				<meta itemprop="name" content="Create snapshot">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Provide a name and a description to easily find the snapshot and click «Create Snapshot»
@@ -69,7 +69,7 @@ affiliate:
 			</li>
 			<li id="create-encrypted-volume" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#create-encrypted-volume">
-				<meta itemprop="name">Create encrypted volume</meta>
+				<meta itemprop="name" content="Create encrypted volume">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Navigate to snapshots, right-click on that one we created and select «Create Volume», notice that snapshot is not encrypted
@@ -79,7 +79,7 @@ affiliate:
 			</li>
 			<li id="provide-encrypted-volume-details" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#provide-encrypted-volume-details">
-				<meta itemprop="name">Provide encrypted volume details</meta>
+				<meta itemprop="name" content="Provide encrypted volume details">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						To create encrypted volume from an unencrypted snapshot, select the same availability zone and checkmark the appropriate checkbox and click «Create Volume»
@@ -92,7 +92,7 @@ affiliate:
 			<li>Click on the currently attached volume, so you will be sent to the volumes section again, but filtered out to show you only one volume, so you won't misclick and disconnect a volume from another instance</li>
 			<li id="detach-unencrypted-volume" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#detach-unencrypted-volume">
-				<meta itemprop="name">Detach volume</meta>
+				<meta itemprop="name" content="Detach volume">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Right-click on the volume and click «Detach Volume»
@@ -102,7 +102,7 @@ affiliate:
 			</li>			
 			<li id="attach-encrypted-volume" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#attach-encrypted-volume">
-				<meta itemprop="name">Attach encrypted volume</meta>
+				<meta itemprop="name" content="Attach encrypted volume">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Right-click on encrypted volume and select «Attach Volume», notice it's encrypted
@@ -112,7 +112,7 @@ affiliate:
 			</li>
 			<li id="provide-instance-details" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#provide-instance-details">
-				<meta itemprop="name">Provide instance details</meta>
+				<meta itemprop="name" content="Provide instance details">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Provide instance id you are attaching the volume to and the device name (you noted on step 15) and click attach
