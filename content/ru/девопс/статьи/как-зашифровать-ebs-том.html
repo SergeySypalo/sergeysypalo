@@ -54,10 +54,17 @@ affiliate:
 					<figcaption class="mb-2">
 						Введите имя и описание, чтобы легко найти снимок, и нажмите «Create snapshot»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/fill-snapshot-details.png" alt="Create snapshot" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/fill-snapshot-details.png" alt="Имя и описание снимка" />
+				</figure>
+			</li>
+			<li>
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2">
+						Перейдите к снимкам, щелкните правой кнопкой мыши созданный нами и выберите «Create volume». Обратите внимание, что снимок не зашифрован
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-snapshot-id.png" alt="Находим снимок" />
 				</figure>
 			</li>			
-			<li>Перейдите к снимкам, щелкните правой кнопкой мыши созданный нами и выберите «Create volume». Обратите внимание, что снимок не зашифрован</li>
 			<li>Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, установите соответствующий флажок и нажмите «Create volume»</li>
 			<li>После создания тома вернитесь в раздел экземпляров EC2 и найдите свой экземпляр</li>
 			<li>Запишите информацию о текущем имени устройства, для экземпляров Linux, обычно это / dev / xvda</li>
