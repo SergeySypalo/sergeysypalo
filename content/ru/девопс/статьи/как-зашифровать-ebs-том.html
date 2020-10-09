@@ -2,7 +2,7 @@
 title: Как зашифровать EBS том
 description: Пошаговое руководство о том, как зашифровать EBS том с помощью веб-интерфейса или PowerShell
 published: 2019-10-05
-modified: 2020-10-08
+modified: 2020-10-09
 image: /assets/img/articles/how-to-encrypt-ebs-volume/title.png
 preview: /assets/img/articles/how-to-encrypt-ebs-volume/title.png
 tags: [девопс, амазон, облако, безопасность]
@@ -21,27 +21,37 @@ affiliate:
 	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT1H">
-		<p itemprop="description">         
-		 In this article, I will show you how to encrypt EBS volume
-		 <ul class="list-unstyled">             
-			<li>Go to <a href="https://console.aws.amazon.com/ec2" target="_blank">https://console.aws.amazon.com/ec2</a> and navigate to instances</li>
-			<li>
+		<p itemprop="description">
+			В этой статье я расскажу как зашифровать существующий EBS том через AWS веб-портал или с помощью PowerShell		 
+		</p>
+		<ul class="list-unstyled">             
+			<li>Идем в <a href="https://console.aws.amazon.com/ec2" target="_blank">https://console.aws.amazon.com/ec2</a> и переходи в раздел instances</li>
+			<li id="останавливаем-инстанс" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#останавливаем-инстанс">
+				<meta itemprop="name" content="Останавливаем инстанс">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
-						Stop instance which volume you want to encrypt
+						Останавливаем инстанс, том которого хотим зашифровать
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Останавливаем инстанс" />
-				</figure>                
+				</figure>
 			</li>
-			<li>
+			<li id="находим-подключенный-том" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#находим-подключенный-том">
+				<meta itemprop="name" content="Находим подключенный том">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Разверните нижнюю панель и перейдите на вкладку «Storage», чтобы увидеть ссылку на том экземпляра внизу страницы
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png" alt="Находим подключенный том" />
-				</figure>                
+				</figure>
 			</li>
-			<li>
+			<li id="создаем-снимок" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#создаем-снимок">
+				<meta itemprop="name" content="Создаем снимок">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Нажмите на него, и вы заметите, что том не зашифрован, поэтому вам нужно щелкнуть правой кнопкой мыши и выбрать «Create snapshot»
@@ -49,15 +59,21 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png" alt="Создаем снимок" />
 				</figure>
 			</li>
-			<li>
+			<li id="вводим-параметры-снимка" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#вводим-параметры-снимка">
+				<meta itemprop="name" content="Вводим параметры снимка">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Введите имя и описание, чтобы легко найти снимок, и нажмите «Create snapshot»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png" alt="Вводим имя и описание снимка" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png" alt="Вводим параметры снимка" />
 				</figure>
 			</li>
-			<li>
+			<li id="создаем-зашифрованный-том" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#создаем-зашифрованный-том">
+				<meta itemprop="name" content="Создаем зашифрованный том">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/create-encrypted-volume.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Перейдите к снимкам, щелкните правой кнопкой мыши созданный нами и выберите «Create volume». Обратите внимание, что снимок не зашифрован
@@ -65,18 +81,24 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-encrypted-volume.png" alt="Создаем зашифрованный том" />
 				</figure>
 			</li>
-			<li>
+			<li id="вводим-параметры-зашифрованного-тома" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#вводим-параметры-зашифрованного-тома">
+				<meta itemprop="name" content="Вводим параметры зашифрованного тома">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, в которой работает ваш инстанс, установите соответствующий флажок напротив «Encrypt Volume» и нажмите «Create volume»
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png" alt="Вводим детали зашифрованного тома" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png" alt="Вводим параметры зашифрованного тома" />
 				</figure>
 			</li>				
 			<li>После создания тома вернитесь в раздел экземпляров EC2 и найдите свой экземпляр</li>
 			<li>Запишите информацию о текущем имени устройства, для экземпляров Linux, обычно это / dev / xvda</li>
 			<li>Переключитесь на вкладку «Storage», щелкните подключенный в данный момент том, чтобы вас снова отправили в раздел томов, но с фильтрацией, чтобы показать вам только один том, чтобы вы не щелкнули мышью и не отключили том от другого экземпляра</li>			
-			<li>
+			<li id="отключаем-незашифрованный-том" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#отключаем-незашифрованный-том">
+				<meta itemprop="name" content="Отключаем незашифрованный том">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/detach-volume.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Щелкните том правой кнопкой мыши и выберите «Detach Volume»
@@ -84,7 +106,10 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/detach-volume.png" alt="Отключаем незашифрованный том" />
 				</figure>
 			</li>
-			<li>
+			<li id="подключаем-зашифрованный-том" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#подключаем-зашифрованный-том">
+				<meta itemprop="name" content="Подключаем зашифрованный том">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/attach-volume.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Щелкните зашифрованный том правой кнопкой мыши и выберите «Attach volume». Обратите внимание, что он зашифрован
@@ -92,7 +117,10 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/attach-volume.png" alt="Подключаем зашифрованный том" />
 				</figure>
 			</li>
-			<li>
+			<li id="указыавем-идентификатор-экземпляра" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-encrypt-ebs-volume#указыавем-идентификатор-экземпляра">
+				<meta itemprop="name" content="Указыавем идентификатор экземпляра">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/provide-instance-details.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2">
 						Укажите идентификатор экземпляра, к которому вы подключаете том, и имя устройства (вы отметили на шаге 15) и нажмите «Attach»
@@ -100,8 +128,11 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-instance-details.png" alt="Указыавем идентификатор экземпляра" />
 				</figure>
 			</li>
-			</ul>
+		</ul>
+		<p>
 			Вот и все, позже можно будет удалить незашифрованный том и снимок
+		</p>
+		<h2 class="h5">Шифруем существующий EBS том с помощью PowerShell</h2>
 <pre><code>
 Set-AWSCredential -AccessKey access_key_id -SecretKey secret_key -StoreAs aws_creds
 
