@@ -32,7 +32,7 @@ affiliate:
 				<meta itemprop="name" content="Останавливаем инстанс">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Останавливаем инстанс, том которого хотим зашифровать
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/stop-instance.png" alt="Останавливаем инстанс" />
@@ -43,7 +43,7 @@ affiliate:
 				<meta itemprop="name" content="Находим подключенный том">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Разверните нижнюю панель и перейдите на вкладку «Storage», чтобы увидеть ссылку на том экземпляра внизу страницы
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/get-attached-volume-id.png" alt="Находим подключенный том" />
@@ -54,7 +54,7 @@ affiliate:
 				<meta itemprop="name" content="Создаем снимок">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Нажмите на него, и вы заметите, что том не зашифрован, поэтому вам нужно щелкнуть правой кнопкой мыши и выбрать «Create snapshot»
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-snapshot.png" alt="Создаем снимок" />
@@ -65,7 +65,7 @@ affiliate:
 				<meta itemprop="name" content="Вводим параметры снимка">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Введите имя и описание, чтобы легко найти снимок, и нажмите «Create snapshot»
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-snapshot-details.png" alt="Вводим параметры снимка" />
@@ -76,7 +76,7 @@ affiliate:
 				<meta itemprop="name" content="Создаем зашифрованный том">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/create-encrypted-volume.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Перейдите к снимкам, щелкните правой кнопкой мыши созданный нами и выберите «Create volume». Обратите внимание, что снимок не зашифрован
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/create-encrypted-volume.png" alt="Создаем зашифрованный том" />
@@ -87,7 +87,7 @@ affiliate:
 				<meta itemprop="name" content="Вводим параметры зашифрованного тома">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Чтобы создать зашифрованный том из незашифрованного снимка, выберите ту же зону доступности, в которой работает ваш инстанс, установите соответствующий флажок напротив «Encrypt Volume» и нажмите «Create volume»
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-encrypted-volume-details.png" alt="Вводим параметры зашифрованного тома" />
@@ -101,7 +101,7 @@ affiliate:
 				<meta itemprop="name" content="Отключаем незашифрованный том">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/detach-volume.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Щелкните том правой кнопкой мыши и выберите «Detach Volume»
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/detach-volume.png" alt="Отключаем незашифрованный том" />
@@ -112,7 +112,7 @@ affiliate:
 				<meta itemprop="name" content="Подключаем зашифрованный том">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/attach-volume.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Щелкните зашифрованный том правой кнопкой мыши и выберите «Attach volume». Обратите внимание, что он зашифрован
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/attach-volume.png" alt="Подключаем зашифрованный том" />
@@ -123,7 +123,7 @@ affiliate:
 				<meta itemprop="name" content="Указыавем идентификатор экземпляра">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-encrypt-ebs-volume/provide-instance-details.png">
 				<figure class="figure mx-auto d-block">
-					<figcaption class="mb-2">
+					<figcaption class="mb-2" itemprop="text">
 						Укажите идентификатор экземпляра, к которому вы подключаете том, и имя устройства (вы отметили на шаге 15) и нажмите «Attach»
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-encrypt-ebs-volume/provide-instance-details.png" alt="Указыавем идентификатор экземпляра" />
