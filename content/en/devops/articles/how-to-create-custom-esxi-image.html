@@ -1,0 +1,82 @@
+---
+title: How to create custom ESXi image
+description: Create your own ESXi image with latest or specific build and custom drivers using GUI or PowerShell
+published: 2020-10-10
+modified: 2020-10-10
+image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
+preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
+tags: [devops, scripting, automation, powershell, vmware, esxi]
+permalink: /how-to-create-custom-esxi-image-with-powershell
+enlink: /how-to-create-custom-esxi-image-with-powershell
+rulink: /как-создать-собственную-сборку-esxi
+affiliate:
+  link: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902
+  banner: affiliate-banners-650x1200-en-v3.jpg
+  text: NordVPN - fastest in the world
+---
+
+{% include breadcrumbs.html %}
+<article itemscope itemtype="https://schema.org/Article">
+	{% include header.html %}	
+	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
+		<meta itemprop="name" content="{{ page.title }}">
+		<meta itemprop="totalTime" content="PT15m">		
+		<p itemprop="description">
+			In this article, I will show you how to create a custom esxi image with PowerShell
+		</p>
+<pre><code>
+$vcenter = Read-Host "Provide vCenter name"
+$esxi_build = Read-Host "Provide ESXi build number you want to download"
+$handle = Connect-VIServer $vcenter
+$version = $handle.Version.Substring(0,3)
+
+# Import downloaded ESXi Cisco Custom image, latest ESXi image, Cisco enic drivers and NetApp VAAI driver from the folder below
+Get-EsxSoftwareDepot | Remove-EsxSoftwareDepot
+Add-EsxSoftwareDepot (Get-ChildItem "c:\packages\$version" *.zip).FullName
+
+$profilename = "ESXi-$version-$esxi_build"
+Write-Host "Checking if already downloaded build matches target one"
+if ((Get-EsxSoftwarePackage -Newest | ? name -eq esx-base).Version.Split('.')[-1] -ne $esxi_build) {
+	Get-EsxSoftwareDepot | Remove-EsxSoftwareDepot
+		
+	Write-Host "New build $profilename wasn't found locally, adding online depot to download it"
+	Add-EsxSoftwareDepot "https://hostupdate.vmware.com/software/VUM/PRODUCTION/main/vmw-depot-index.xml"
+
+	Write-Host "Looking for a build to download"
+	$ver = "ESXi-"  + $handle.Version + "-202"	
+	Get-EsxImageProfile | ? Name -like *$ver*standard* | sort Name -Descending | % {
+		if (($_.VibList | ? name -eq esx-base).Version.Split('.')[-1] -eq $esxi_build) {
+			$profilename = $_.Name
+			Write-Host "Found correct build in profile $profilename, downloading it"
+			Export-EsxImageProfile $profilename -ExportToBundle c:\packages\$version\$profilename.zip
+			break 
+		}	
+	}
+}
+else {
+	Write-Host "Correct build is already downloaded"
+	$profilename = "ESXi-$version-$esxi_build"
+}
+
+# Import downloaded ESXi Cisco Custom image, latest ESXi image, Cisco enic drivers and NetApp VAAI driver from the folder below
+Get-EsxSoftwareDepot | Remove-EsxSoftwareDepot
+Add-EsxSoftwareDepot (Get-ChildItem "c:\packages\$version" *.zip).FullName
+
+Write-Host "Creating custom stateless ESXi image without tools"
+if (!(Test-Path c:\packages\$profilename-no-tools.zip)) {
+	New-EsxImageProfile -NewProfile -Name $profilename-no-tools -SoftwarePackage (Get-EsxSoftwarePackage -Newest | ? name -ne tools-light) -Vendor DevOps -AcceptanceLevel PartnerSupported
+	Export-EsxImageProfile $profilename-no-tools -ExportToBundle c:\packages\$profilename-no-tools.zip
+}
+
+Write-Host "Creating custom stateful ESXi image with tools"
+if (!(Test-Path c:\packages\$profilename-standard.zip)) {
+	New-EsxImageProfile -NewProfile -Name $profilename-standard -SoftwarePackage (Get-EsxSoftwarePackage -Newest) -Vendor DevOps -AcceptanceLevel PartnerSupported
+	Export-EsxImageProfile $profilename-standard -ExportToBundle c:\packages\$profilename-standard.zip
+}
+</code></pre>
+	</div>
+
+	<footer>
+		<hr>
+	</footer>
+</article>
