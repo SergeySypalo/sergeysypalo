@@ -2,7 +2,7 @@
 title: How to create custom ESXi image with PowerShell
 description: Create your own ESXi image with latest or specific build and custom drivers
 published: 2020-10-10
-modified: 2020-10-10
+modified: 2020-10-14
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, scripting, automation, powershell, vmware, esxi]
@@ -20,10 +20,11 @@ affiliate:
 	{% include header.html %}	
 	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
 		<meta itemprop="name" content="{{ page.title }}">
-		<meta itemprop="totalTime" content="PT15m">		
+		<meta itemprop="totalTime" content="PT15M">		
 		<p itemprop="description">
 			В этой статье я покажу вам, как создать собственный образ esxi с помощью PowerShell
 		</p>
+		<p>Вам понадобится <span itemprop="supply" itemtype="https://schema.org/HowToSupply">15 минут</span>, чтобы <span itemprop="tool" itemtype="https://schema.org/HowToTool">выполнить следующие действия</span>:</p>
 <pre><code>
 $vcenter = Read-Host "Provide vCenter name"
 $esxi_build = Read-Host "Provide ESXi build number you want to download"
