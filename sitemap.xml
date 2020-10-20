@@ -39,13 +39,13 @@
     <loc>https://sypalo.com/how-to-upgrade-ubuntu</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/how-to-upgrade-ubuntu"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/как-обновить-ubuntu"/>    
-    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://sypalo.com/how-to-create-custom-esxi-image-with-powershell</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/how-to-create-custom-esxi-image-with-powershell"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/как-зашифровать-ebs-том"/>
+    <loc>https://sypalo.com/how-to-create-custom-esxi-image</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/how-to-create-custom-esxi-image"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/как-создать-кастомный-esxi-образ"/>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
