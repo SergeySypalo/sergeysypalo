@@ -2,7 +2,7 @@
 title: How to create custom ESXi image
 description: Create your own ESXi image with latest or specific build and custom drivers using GUI or PowerShell
 published: 2020-10-10
-modified: 2020-10-14
+modified: 2020-10-22
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, scripting, automation, powershell, vmware, esxi]
@@ -26,6 +26,41 @@ affiliate:
 			In this article, I will show you how to create a custom esxi image with PowerShell
 		</p>
 		<p>You will need <span itemprop="supply" itemtype="https://schema.org/HowToSupply">15 minutes</span> to <span itemprop="tool" itemtype="https://schema.org/HowToTool">follow these steps</span>:</p>
+		<ol class="list-unstyled">             
+			<li id="download-vendor-customized-image" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-vendor-customized-image">
+				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-customized-image.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Go to <a href="https://https://my.vmware.com/web/vmware/downloads/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/7_0#custom_iso" target="_blank">VMWare downloads</a> and download your vendor-specific image
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-customized-image.png" alt="Download vendor customized image" />
+				</figure>
+			</li>		
+			<li id="download-vmware-drivers" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-vmware-drivers">
+				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-vmware-drivers.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Swtich to <a href="https://my.vmware.com/web/vmware/downloads/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/7_0#drivers_tools" target="_blank">Drivers</a> tab and download your vendor-specific image
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-vmware-drivers.png" alt="Download vmware drivers" />
+				</figure>
+			</li>			
+			<li id="download-latest-esxi-build" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-latest-esxi-build">
+				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-latest-esxi-build.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Go to <a href="https://my.vmware.com/group/vmware/patch#search" target="_blank">VMWare patches</a> and download latest ESXi build
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-latest-esxi-build.png" alt="Download latest esxi build" />
+				</figure>
+			</li>
+		</ol>
 <pre><code>
 $vcenter = Read-Host "Provide vCenter name"
 $esxi_build = Read-Host "Provide ESXi build number you want to download"
