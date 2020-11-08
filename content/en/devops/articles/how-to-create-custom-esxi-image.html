@@ -60,6 +60,28 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-latest-esxi-build.png" alt="Download latest esxi build" />
 				</figure>
 			</li>
+			<li id="download-vendor-drivers" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-vendor-drivers">
+				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-drivers.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Go to your server's vendor drivers download page, in my case <a href="https://my.vmware.com/group/vmware/patch#search" target="_blank">Cisco drivers</a> and download latest drivers for your ESXi version
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-drivers.png" alt="Download vendor drivers" />
+				</figure>
+			</li>
+			<li id="import-vendor-customized-image" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#import-vendor-customized-image">
+				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Go to your vCenter's AutoDeploy menu sectoin, click Import link on the top right, locate vendor-customized image and provide a name (I used same as filename)
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image.png" alt="Import vendor-customized image" />
+				</figure>
+			</li>
 		</ol>
 <pre><code>
 $vcenter = Read-Host "Provide vCenter name"
