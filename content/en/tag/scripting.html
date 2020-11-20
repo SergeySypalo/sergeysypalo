@@ -1,0 +1,13 @@
+---
+title: Scripting blog posts
+description: Scripting blog posts
+permalink: /scripting
+enlink: /scripting
+rulink: /скрипты
+---
+
+{% include title.html %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'scripting'" | where:"lang", page.lang %}
+{% for post in posts %}  
+  {% include post-snippet.html %}
+{% endfor %}

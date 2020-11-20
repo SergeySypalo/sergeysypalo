@@ -1,0 +1,13 @@
+---
+title: VMWare blog posts
+description: VMWare blog posts
+permalink: /vmware
+enlink: /vmware
+rulink: /вмваря
+---
+
+{% include title.html %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'vmware'" | where:"lang", page.lang %}
+{% for post in posts %}  
+  {% include post-snippet.html %}
+{% endfor %}

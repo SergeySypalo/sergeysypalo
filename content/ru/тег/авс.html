@@ -1,0 +1,13 @@
+---
+title: Посты с тегом АВС
+description: Посты с тегом АВС
+permalink: /авс
+enlink: /aws
+rulink: /авс
+---
+
+{% include title.html %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'авс'" | where:"lang", page.lang %}
+{% for post in posts %}  
+  {% include post-snippet.html %}
+{% endfor %}

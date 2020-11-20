@@ -1,0 +1,13 @@
+---
+title: Посты с тегом ЕСИКСАй
+description: Посты с тегом ЕСИКСАй
+permalink: /есиксай
+enlink: /esxi
+rulink: /есиксай
+---
+
+{% include title.html %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'есиксай'" | where:"lang", page.lang %}
+{% for post in posts %}  
+  {% include post-snippet.html %}
+{% endfor %}

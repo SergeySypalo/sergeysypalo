@@ -1,0 +1,13 @@
+---
+title: Automation blog posts
+description: Automation blog posts
+permalink: /automation
+enlink: /automation
+rulink: /автоматизация
+---
+
+{% include title.html %}
+{% assign posts = site.pages | where_exp: "post", "post.tags contains 'automation'" | where:"lang", page.lang %}
+{% for post in posts %}  
+  {% include post-snippet.html %}
+{% endfor %}
