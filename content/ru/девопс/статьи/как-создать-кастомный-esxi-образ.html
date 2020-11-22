@@ -1,18 +1,18 @@
 ---
-title: How to create custom ESXi image with PowerShell
-description: Create your own ESXi image with latest or specific build and custom drivers
+title: Как создать собственный ESXi образ
+description: Создайте свой собственный ESXi образ с последней или специальной сборкой и настраиваемыми драйверами с помощью графического интерфейса или PowerShell
 published: 2020-10-10
-modified: 2020-10-14
-image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
-preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
-tags: [devops, scripting, automation, powershell, vmware, esxi]
+modified: 2020-11-22
+image: /assets/img/articles/how-to-create-custom-esxi-image/title.png
+preview: /assets/img/articles/how-to-create-custom-esxi-image/title.png
+tags: [девопс, скрипты, автоматизация, павершелл, вмваря, есиксай]
 permalink: /как-создать-кастомный-esxi-образ
 enlink: /how-to-create-custom-esxi-image
 rulink: /как-создать-кастомный-esxi-образ
 affiliate:
   link: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902
   banner: affiliate-banners-650x1200-en-v3.jpg
-  text: NordVPN - fastest in the world
+  text: NordVPN - самый быстрый VPN в мире
 ---
 
 {% include breadcrumbs.html %}
@@ -20,11 +20,125 @@ affiliate:
 	{% include header.html %}	
 	<div class="mb-0" itemscope itemtype="https://schema.org/HowTo">
 		<meta itemprop="name" content="{{ page.title }}">
-		<meta itemprop="totalTime" content="PT15M">		
+		<meta itemprop="totalTime" content="PT30M">		
 		<p itemprop="description">
-			В этой статье я покажу вам, как создать собственный образ esxi с помощью PowerShell
+			В этой статье я покажу вам, как создать собственный образ ESXi с помощью PowerShell
 		</p>
-		<p>Вам понадобится <span itemprop="supply" itemtype="https://schema.org/HowToSupply">15 минут</span>, чтобы <span itemprop="tool" itemtype="https://schema.org/HowToTool">выполнить следующие действия</span>:</p>
+		<p>Вам понадобится <span itemprop="supply" itemtype="https://schema.org/HowToSupply">30 минут</span> чтобы <span itemprop="tool" itemtype="https://schema.org/HowToTool">выполнить следующие шаги:</span>:</p>
+		<ol class="list-unstyled">             
+			<li id="загружаем-esxi-образ-для-производителя-вашего-сервера" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#загружаем-esxi-образ-для-производителя-вашего-сервера">
+				<meta itemprop="name" content="Загружаем ESXi образ для производителя вашего сервера">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-esxi-образ-для-производителя-вашего-сервера.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Идём в <a href="https://https://my.vmware.com/web/vmware/downloads/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/7_0#custom_iso" target="_blank">VMWare downloads</a> и загружаем ESXi образ для производителя вашего сервера
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-esxi-образ-для-производителя-вашего-сервера.png" alt="Загружаем ESXi образ для производителя вашего сервера" />
+				</figure>
+			</li>		
+			<li id="загружаем-драйвера-с-vmware" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#загружаем-драйвера-с-vmware">
+				<meta itemprop="name" content="Загружаем драйвера с VMWare">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-драйвера-с-vmware.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Переключаемся на вкладку <a href="https://my.vmware.com/web/vmware/downloads/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/7_0#drivers_tools" target="_blank">драйвера</a> и скачиваем необходимые/дополнительные/обновленные драйвера, если необходимо
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-драйвера-с-vmware.png" alt="Загружаем драйвера с VMWare" />
+				</figure>
+			</li>			
+			<li id="загружаем-последнюю-сборку-esxi" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#загружаем-последнюю-сборку-esxi">
+				<meta itemprop="name" content="Загружаем последнюю сборку ESXi">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-последнюю-сборку-esxi.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Идём в <a href="https://my.vmware.com/group/vmware/patch#search" target="_blank">VMWare patches</a> и загружаем последнюю сборку ESXi
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-последнюю-сборку-esxi.png" alt="Загружаем последнюю сборку ESXi" />
+				</figure>
+			</li>
+			<li id="загружаем-драйверы-от-производителя-сервера" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#загружаем-драйверы-от-производителя-сервера">
+				<meta itemprop="name" content="Загружаем драйверы от производителя сервера">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-драйверы-от-производителя-сервера.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Идём на страницу загрузки драйверов производителя вашего сервера, в моем случае <a href="https://my.vmware.com/group/vmware/patch#search" target="_blank">Cisco</a> и загружаем последние драйвера для вашей версии ESXi
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/загружаем-драйверы-от-производителя-сервера.png" alt="Загружаем драйверы от производителя сервера" />
+				</figure>
+			</li>
+			<li id="импортируем-esxi-образ-производителя-вашего-сервера" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#импортируем-esxi-образ-производителя-вашего-сервера">
+				<meta itemprop="name" content="Импортируем ESXi образ производителя вашего сервера">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/импортируем-esxi-образ-для-вашего-производителя-сервера.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Идём в раздел меню vCenter AutoDeploy, щелкните ссылку Import в правом верхнем углу, укажите путь к ESXi образу производителя вашего сервера на локальном диске, а также имя
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/импортируем-esxi-образ-производителя-вашего-сервера.png" alt="Импортируем ESXi образ производителя вашего сервера" />
+				</figure>
+			</li>
+			<li id="импортиртируем-оставшиеся-вибы" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#импортиртируем-оставшиеся-вибы">
+				<meta itemprop="name" content="Импортиртируем оставшиеся вибы">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/импортиртируем-оставшиеся-вибы.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Повторите предыдущий шаг и импортируйте последнюю сборку ESXi и драйверы
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/импортиртируем-оставшиеся-вибы.png" alt="Импортиртируем оставшиеся вибы" />
+				</figure>
+			</li>
+			<li id="добавляем-собственный-depot" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#добавляем-собственный-depot">
+				<meta itemprop="name" content="Добавляем собственный depot">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/добавляем-собственный-depot.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Добавляем собственный depot
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/добавляем-собственный-depot.png" alt="Добавляем собственный depot" />
+				</figure>
+			</li>
+			<li id="добавляем-новый-профиль-образа" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#добавляем-новый-профиль-образа">
+				<meta itemprop="name" content="Добавляем новый профиль образа">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/добавляем-новый-профиль-образа.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">						
+						Щелкните ссылку «Новый профиль изображения» и укажите имя и подробности. <br />
+						Обычно я использую следующее соглашение об именах: ESXi-[основная_версия].[Второстепенная_версия]-[сборка]-[standard/no-tools]. Последняя часть зависит от того, включаю ли я VMTools или нет.
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/добавляем-новый-профиль-образа.png" alt="Добавляем новый профиль образа" />
+				</figure>
+			</li>
+			<li id="выбираем-пакеты" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#выбираем-пакеты">
+				<meta itemprop="name" content="Выбираем пакеты">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/выбираем-пакеты.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Выбираем только последние пакеты, так как по умолчанию мастер показывает вам список со всеми доступными вибами со всех источников
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/выбираем-пакеты.png" alt="Выбираем пакеты" />
+				</figure>
+			</li>
+			<li id="создаем-собственный-esxi-образ" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/как-создать-кастомный-esxi-образ#создаем-собственный-esxi-образ">
+				<meta itemprop="name" content="Создаем собственный ESXi образ">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/как-создать-кастомный-esxi-образ/создаем-собственный-esxi-образ.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Пользовательский ESXi образ был создан, и теперь вы можете использовать его в автоматическом развертывании или экспортировать в zip или ISO, нажав кнопку «Экспорт»
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/как-создать-кастомный-esxi-образ/создаем-собственный-esxi-образ.png" alt="Создаем собственный ESXi образ" />
+				</figure>
+			</li>
+		</ol>
+		<p class="mt-2 mb-0">Или вы можете использовать следующий PowerShell скрипт, который делает описанные выше шаги</p>
 <pre><code>
 $vcenter = Read-Host "Provide vCenter name"
 $esxi_build = Read-Host "Provide ESXi build number you want to download"
@@ -75,6 +189,7 @@ if (!(Test-Path c:\packages\$profilename-standard.zip)) {
 	Export-EsxImageProfile $profilename-standard -ExportToBundle c:\packages\$profilename-standard.zip
 }
 </code></pre>
+		<p>Вот и все, мы создали нужный нам образ ESXi с указанными драйверами</p>
 	</div>
 
 	<footer>
