@@ -3,8 +3,8 @@ title: How to create custom ESXi image
 description: Create your own ESXi image with latest or specific build and custom drivers using GUI or PowerShell
 published: 2020-10-10
 modified: 2020-11-22
-image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
-preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
+image: /assets/img/articles/how-to-create-custom-esxi-image/title.png
+preview: /assets/img/articles/how-to-create-custom-esxi-image/title.png
 tags: [devops, scripting, automation, powershell, vmware, esxi]
 permalink: /how-to-create-custom-esxi-image
 enlink: /how-to-create-custom-esxi-image
@@ -74,12 +74,12 @@ affiliate:
 			<li id="import-vendor-customized-image" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#import-vendor-customized-image">
 				<meta itemprop="name" content="Import vendor-customized image">
-				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image.png">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image2.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
 						Go to your vCenter's AutoDeploy menu sectoin, click Import link on the top right, locate vendor-customized image and provide a name (I used same as filename)
 					</figcaption>
-					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image.png" alt="Import vendor-customized image" />
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image2.png" alt="Import vendor-customized image" />
 				</figure>
 			</li>
 			<li id="import-remaining-vibs" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
@@ -110,10 +110,21 @@ affiliate:
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/add-new-image-profile.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
-						Click on a link "Add new image profile" and provide name and details. <br />
+						Click on a link "New image profile" and provide name and details. <br />
 						I usually use the following naming convention: ESXi-[major_version].[minor_version]-[build]-[standard/no-tools]. The last part depends on whenever I include VMTools or no.
 					</figcaption>
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/add-new-image-profile.png" alt="Add new image profile" />
+				</figure>
+			</li>
+			<li id="select-software-packages" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#select-software-packages">
+				<meta itemprop="name" content="Select software packages">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/select-software-packages.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Select only latest packages as by default wizard shows you a list with all available vibs from all depots
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/select-software-packages.png" alt="Add new image profile" />
 				</figure>
 			</li>
 		</ol>
