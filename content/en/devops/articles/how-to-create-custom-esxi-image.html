@@ -2,7 +2,7 @@
 title: How to create custom ESXi image
 description: Create your own ESXi image with latest or specific build and custom drivers using GUI or PowerShell
 published: 2020-10-10
-modified: 2020-11-09
+modified: 2020-11-22
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, scripting, automation, powershell, vmware, esxi]
@@ -29,7 +29,7 @@ affiliate:
 		<ol class="list-unstyled">             
 			<li id="download-vendor-customized-image" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
 				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-vendor-customized-image">
-				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="name" content="Download vendor customized image">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-customized-image.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
@@ -40,7 +40,7 @@ affiliate:
 			</li>		
 			<li id="download-vmware-drivers" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
 				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-vmware-drivers">
-				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="name" content="Download VMWare drivers">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-vmware-drivers.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
@@ -51,7 +51,7 @@ affiliate:
 			</li>			
 			<li id="download-latest-esxi-build" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
 				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-latest-esxi-build">
-				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="name" content="Download latest ESXii build">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-latest-esxi-build.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
@@ -60,9 +60,9 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-latest-esxi-build.png" alt="Download latest esxi build" />
 				</figure>
 			</li>
-			<li id="download-vendor-drivers" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+			<li id="download-vendor-drivers" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#download-vendor-drivers">
-				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="name" content="Download vendor drivers">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-drivers.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
@@ -71,9 +71,9 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/download-vendor-drivers.png" alt="Download vendor drivers" />
 				</figure>
 			</li>
-			<li id="import-vendor-customized-image" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">			
+			<li id="import-vendor-customized-image" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
 				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#import-vendor-customized-image">
-				<meta itemprop="name" content="Stop instance">
+				<meta itemprop="name" content="Import vendor-customized image">
 				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image.png">
 				<figure class="figure mx-auto d-block">
 					<figcaption class="mb-2" itemprop="text">
@@ -82,7 +82,42 @@ affiliate:
 					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/import-vendor-customized-image.png" alt="Import vendor-customized image" />
 				</figure>
 			</li>
+			<li id="import-remaining-vibs" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#import-remaining-vibs">
+				<meta itemprop="name" content="Import remaining vibs">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/import-remaining-vibs.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Repeat previous step and import the latest ESXi build and drivers
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/import-remaining-vibs.png" alt="Import remaining vibs" />
+				</figure>
+			</li>
+			<li id="add-custom-depot" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#add-custom-depot">
+				<meta itemprop="name" content="Add custom depot">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/add-custom-depot.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Add custom depot
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/add-custom-depot.png" alt="Add custom depot" />
+				</figure>
+			</li>
+			<li id="add-new-image-profile" itemprop="step" itemscope itemtype="http://schema.org/HowToStep">
+				<meta itemprop="url" content="https://sypalo.com/how-to-create-custom-esxi-image#add-new-image-profile">
+				<meta itemprop="name" content="Add new image profile">
+				<meta itemprop="image" content="https://sypalo.com/assets/img/articles/how-to-create-custom-esxi-image/add-new-image-profile.png">
+				<figure class="figure mx-auto d-block">
+					<figcaption class="mb-2" itemprop="text">
+						Click on a link "Add new image profile" and provide name and details. <br />
+						I usually use the following naming convention: ESXi-[major_version].[minor_version]-[build]-[standard/no-tools]. The last part depends on whenever I include VMTools or no.
+					</figcaption>
+					<img class="img-fluid mx-auto d-block" src="/assets/img/articles/how-to-create-custom-esxi-image/add-new-image-profile.png" alt="Add new image profile" />
+				</figure>
+			</li>
 		</ol>
+		<p>Or you can use the following PowerShell script to do this for you</p>
 <pre><code>
 $vcenter = Read-Host "Provide vCenter name"
 $esxi_build = Read-Host "Provide ESXi build number you want to download"
