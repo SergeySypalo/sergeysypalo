@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu to 20.10 and kernel to 5.9
 description: Upgrade Ubuntu to 20.10 or 20.04 and kernel to mainline 5.10 or latest stable version 5.9 or older 5.8 using this guide
 published: 2019-05-14
-modified: 2020-11-25
+modified: 2020-11-29
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -195,50 +195,50 @@ affiliate:
 					<div itemprop="name">Change current directory to /tmp</div>				
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">cd /tmp</kbd>
-					</div>				
+					</div>
 				</li>				
 				<li id="download-5-10-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-5-10-branch-kernel">
 					<div itemprop="name">Download latest mainline kernel from 5.10.x branch</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-headers-5.10.0-051000rc5_5.10.0-051000rc5.202011221956_all.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-headers-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-image-unsigned-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-modules-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-headers-5.10.0-051000rc5_5.10.0-051000rc5.202011221956_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-headers-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-image-unsigned-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-modules-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
 						</pre>
-					</div>				
+					</div>
 				</li>
 				<li id="download-5-9-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-5-9-branch-kernel">
 					<div itemprop="name">or latest stable kernel from 5.9.x branch</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-headers-5.9.10-050910_5.9.10-050910.202011221708_all.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-headers-5.9.10-050910-generic_5.9.10-050910.202011221708_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-image-unsigned-5.9.10-050910-generic_5.9.10-050910.202011221708_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-modules-5.9.10-050910-generic_5.9.10-050910.202011221708_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-headers-5.9.10-050910_5.9.10-050910.202011221708_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-headers-5.9.10-050910-generic_5.9.10-050910.202011221708_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-image-unsigned-5.9.10-050910-generic_5.9.10-050910.202011221708_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.10/amd64/linux-modules-5.9.10-050910-generic_5.9.10-050910.202011221708_amd64.deb</kbd>
 						</pre>
-					</div>				
+					</div>
 				</li>
 				<li id="download-5-8-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-5-8-branch-kernel">
 					<div itemprop="name">or older stable kernel from 5.8.x branch</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-headers-5.8.18-050818_5.8.18-050818.202011011237_all.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-headers-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-image-unsigned-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-modules-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</kbd>
+<kbd>wget -c <span class="text-decoration-none">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-headers-5.8.18-050818_5.8.18-050818.202011011237_all.deb</span></kbd>
+<kbd>wget -c <span class="text-decoration-none">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-headers-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</span></kbd>
+<kbd>wget -c <span class="text-decoration-none">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-image-unsigned-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</span></kbd>
+<kbd>wget -c <span class="text-decoration-none">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-modules-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</span></kbd>
 						</pre>
-					</div>				
-				</li>				
+					</div>
+				</li>
 				<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
 					<div itemprop="name">Install new kernel</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
-					</div>				
+					</div>
 				</li>
 				<li id="reboot-the-system-after-kernel-upgrade" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#reboot-the-system-after-kernel-upgrade">
