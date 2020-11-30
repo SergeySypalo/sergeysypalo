@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu до 20.10 и ядро до 5.9
 description: Обнови Ubuntu до 20.10 или 20.04 и ядро до релиз-кандидата 5.10 или последней стабильной версии 5.9 или более старой 5.8 используя эту инструкцию
 published: 2019-05-14
-modified: 2020-11-25
+modified: 2020-11-30
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -23,7 +23,7 @@ affiliate:
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">В этой статье я покажу вам, как обновить Ubuntu до 20.04 (с долгосрочной поддержкой) или новейшей 20.10.
-			В качестве бонуса мы также обновим ядро ​​до последнего релиз-кандидата 5.10-rc5 или последней стабильной версии 5.9.10 или более старой 5.8.18, которые содержат следующие улучшения:
+			В качестве бонуса мы также обновим ядро ​​до последнего релиз-кандидата 5.10-rc6 или последней стабильной версии 5.9.10 или более старой 5.8.18, которые содержат следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -198,10 +198,10 @@ affiliate:
 					<div itemprop="name">Скачиваем последний релиз-кандидат ядра из ветки 5.10.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<pre itemprop="text">
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-headers-5.10.0-051000rc5_5.10.0-051000rc5.202011221956_all.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-headers-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-image-unsigned-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
-<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc5/amd64/linux-modules-5.10.0-051000rc5-generic_5.10.0-051000rc5.202011221956_amd64.deb</kbd>
+<kbd>wget -c <a class="text-decoration-none" href="https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-headers-5.10.0-051000rc6_5.10.0-051000rc6.202011291930_all.deb">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-headers-5.10.0-051000rc6_5.10.0-051000rc6.202011291930_all.deb</a></kbd>
+<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-headers-5.10.0-051000rc6-generic_5.10.0-051000rc6.202011291930_amd64.deb</kbd>
+<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-image-unsigned-5.10.0-051000rc6-generic_5.10.0-051000rc6.202011291930_amd64.deb</kbd>
+<kbd class="text-decoration-none">wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-modules-5.10.0-051000rc6-generic_5.10.0-051000rc6.202011291930_amd64.deb</kbd>
 						</pre>
 					</div>				
 				</li>
