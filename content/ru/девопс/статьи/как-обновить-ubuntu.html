@@ -1,8 +1,8 @@
 ---
 title: Как обновить Ubuntu до 20.10 и ядро до 5.9
-description: Обнови Ubuntu до 20.10 или 20.04 и ядро до релиз-кандидата 5.10 или последней стабильной версии 5.9 или более старой 5.8 используя эту инструкцию
+description: Обнови Ubuntu до 20.10 или 20.04 и ядро до последней версии 5.10 или последней стабильной версии 5.9 используя эту инструкцию
 published: 2019-05-14
-modified: 2020-12-03
+modified: 2020-12-14
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -23,7 +23,7 @@ affiliate:
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">В этой статье я покажу вам, как обновить Ubuntu до 20.04 (с долгосрочной поддержкой) или новейшей 20.10.
-			В качестве бонуса мы также обновим ядро ​​до последнего релиз-кандидата 5.10-rc6 или последней стабильной версии 5.9.12 или более старой 5.8.18, которые содержат следующие улучшения:
+			В качестве бонуса мы также обновим ядро ​​до последней версии 5.10 или последней стабильной версии 5.9.12, которые содержат следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -195,13 +195,13 @@ affiliate:
 				</li>
 				<li id="скачиваем-ядро-из-ветки-5-10" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-10">
-					<div itemprop="name">Скачиваем последний релиз-кандидат ядра из ветки 5.10.х</div>
+					<div itemprop="name">Скачиваем последнюю версию ядра из ветки 5.10.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-headers-5.10.0-051000rc6_5.10.0-051000rc6.202011291930_all.deb">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-headers-5.10.0-051000rc6_5.10.0-051000rc6.202011291930_all.deb</a></kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-headers-5.10.0-051000rc6-generic_5.10.0-051000rc6.202011291930_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-image-unsigned-5.10.0-051000rc6-generic_5.10.0-051000rc6.202011291930_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10-rc6/amd64/linux-modules-5.10.0-051000rc6-generic_5.10.0-051000rc6.202011291930_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-headers-5.10.0-051000_5.10.0-051000.202012132330_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-headers-5.10.0-051000-generic_5.10.0-051000.202012132330_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-image-unsigned-5.10.0-051000-generic_5.10.0-051000.202012132330_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-modules-5.10.0-051000-generic_5.10.0-051000.202012132330_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
@@ -216,19 +216,7 @@ affiliate:
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.12/amd64/linux-modules-5.9.12-050912-generic_5.9.12-050912.202012020835_amd64.deb</kbd>
 						</pre>
 					</div>
-				</li>
-				<li id="скачиваем-ядро-из-ветки-5-8" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-8">
-					<div itemprop="name">Или более старое стабильное ядро из ветки 5.8.х</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-headers-5.8.18-050818_5.8.18-050818.202011011237_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-headers-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-image-unsigned-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.8.18/amd64/linux-modules-5.8.18-050818-generic_5.8.18-050818.202011011237_amd64.deb</kbd>
-						</pre>
-					</div>
-				</li>
+				</li>				
 				<li id="устанавливаем-новое-ядро" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#устанавливаем-новое-ядро">
 					<div itemprop="name">Устанавливаем новое ядро</div>
