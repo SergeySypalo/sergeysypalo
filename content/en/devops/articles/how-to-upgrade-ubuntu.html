@@ -1,8 +1,8 @@
 ---
-title: How to upgrade Ubuntu to 20.10 and kernel to 5.9
-description: Upgrade Ubuntu to 20.10 or 20.04 and kernel to mainline 5.10 or latest stable version 5.9 using this guide
+title: How to upgrade Ubuntu to 20.10 and kernel to 5.10
+description: Upgrade Ubuntu to 20.10 or 20.04 and kernel to latest version 5.10 or stable 5.9 using this guide
 published: 2019-05-14
-modified: 2020-12-14
+modified: 2020-12-15
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -27,7 +27,7 @@ affiliate:
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">
 			In this article, I will show you how to upgrade Ubuntu to 20.04 (LTS) or 20.10 (latest).
-			As a bonus, we will also update the kernel to the latest mainline 5.10 or stable version 5.9.12, which contain the following improvements:
+			As a bonus, we will also update the kernel to the latest 5.10.1 or stable version 5.9.12, which contain the following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -199,13 +199,13 @@ affiliate:
 				</li>				
 				<li id="download-5-10-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-5-10-branch-kernel">
-					<div itemprop="name">Download latest mainline kernel from 5.10.x branch</div>
+					<div itemprop="name">Download latest kernel from 5.10.x branch</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-headers-5.10.0-051000_5.10.0-051000.202012132330_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-headers-5.10.0-051000-generic_5.10.0-051000.202012132330_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-image-unsigned-5.10.0-051000-generic_5.10.0-051000.202012132330_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10/amd64/linux-modules-5.10.0-051000-generic_5.10.0-051000.202012132330_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-headers-5.10.1-051001_5.10.1-051001.202012142031_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-headers-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-image-unsigned-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-modules-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
@@ -220,7 +220,8 @@ affiliate:
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.12/amd64/linux-modules-5.9.12-050912-generic_5.9.12-050912.202012020835_amd64.deb</kbd>
 						</pre>
 					</div>
-				</li>				
+				</li>
+				
 				<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
 					<div itemprop="name">Install new kernel</div>
