@@ -1,8 +1,8 @@
 ---
 title: Как обновить Ubuntu до 20.10 и ядро до 5.10
-description: Обнови Ubuntu до 20.10 или 20.04 и ядро до последней версии 5.10 или стабильной версии 5.9 используя эту инструкцию
+description: Обнови Ubuntu до 20.10 или 20.04 и ядро до последней стабильной версии 5.10 или более старой 5.9 используя эту инструкцию
 published: 2019-05-14
-modified: 2020-12-16
+modified: 2020-12-21
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -23,7 +23,7 @@ affiliate:
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">В этой статье я покажу вам, как обновить Ubuntu до 20.04 (с долгосрочной поддержкой) или новейшей 20.10.
-			В качестве бонуса мы также обновим ядро ​​до последней версии 5.10.1 или последней стабильной версии 5.9.15, которые содержат следующие улучшения:
+			В качестве бонуса мы также обновим ядро ​​до последней стабильной версии 5.10.2 или 5.9.16, которые содержат следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -193,63 +193,41 @@ affiliate:
 						<kbd itemprop="text">cd /tmp</kbd>
 					</div>				
 				</li>
-				<li id="скачиваем-x64-ядро-из-ветки-5-10" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-x64-ядро-из-ветки-5-10">
-					<div itemprop="name">Скачиваем последнюю версию ядра из ветки 5.10.х для 64-битных систем на Интел или АМД</div>
+				<li id="скачиваем-ядро-из-ветки-5-10" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-10">
+					<div itemprop="name">Скачиваем последнее стабильное ядро из ветки 5.10.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-headers-5.10.1-051001_5.10.1-051001.202012142031_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-headers-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-image-unsigned-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-modules-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-headers-5.10.2-051002_5.10.2-051002.202012210832_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-headers-5.10.2-051002-generic_5.10.2-051002.202012210832_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-image-unsigned-5.10.2-051002-generic_5.10.2-051002.202012210832_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-modules-5.10.2-051002-generic_5.10.2-051002.202012210832_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
-				<li id="скачиваем-арм-ядро-из-ветки-5-10" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-арм-ядро-из-ветки-5-10">
-					<div itemprop="name">или из ветки 5.10.х для 64-битных систем на АРМ</div>
+				<li id="скачиваем-ядро-из-ветки-5-9" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-ядро-из-ветки-5-9">
+					<div itemprop="name">Или, объявленное устаревшим, из ветки 5.9.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/arm64/linux-headers-5.10.1-051001-generic_5.10.1-051001.202012142031_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/arm64/linux-image-5.10.1-051001-generic_5.10.1-051001.202012142031_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/arm64/linux-modules-5.10.1-051001-generic_5.10.1-051001.202012142031_arm64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-headers-5.9.16-050916_5.9.16-050916.202012211331_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-headers-5.9.16-050916-generic_5.9.16-050916.202012211331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-image-unsigned-5.9.16-050916-generic_5.9.16-050916.202012211331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-modules-5.9.16-050916-generic_5.9.16-050916.202012211331_amd64.deb</kbd>
 						</pre>
 					</div>
-				</li>
-				<li id="скачиваем-x64-ядро-из-ветки-5-9" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-x64-ядро-из-ветки-5-9">
-					<div itemprop="name">Или последнее стабильное ядро из ветки 5.9.х для 64-битных систем на Интел или АМД</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-headers-5.9.15-050915_5.9.15-050915.202012160632_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-headers-5.9.15-050915-generic_5.9.15-050915.202012160632_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-image-unsigned-5.9.15-050915-generic_5.9.15-050915.202012160632_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-modules-5.9.15-050915-generic_5.9.15-050915.202012160632_amd64.deb</kbd>
-						</pre>
-					</div>
-				</li>
-				<li id="скачиваем-арм-ядро-из-ветки-5-9" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#скачиваем-арм-ядро-из-ветки-5-9">
-					<div itemprop="name">Или из ветки 5.9.х для 64-битных систем для АРМ</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/arm64/linux-headers-5.9.15-050915-generic_5.9.15-050915.202012160632_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/arm64/linux-image-5.9.15-050915-generic_5.9.15-050915.202012160632_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/arm64/linux-modules-5.9.15-050915-generic_5.9.15-050915.202012160632_arm64.deb</kbd>
-						</pre>
-					</div>
-				</li>
+				</li>				
 				<li id="устанавливаем-новое-ядро" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#устанавливаем-новое-ядро">
 					<div itemprop="name">Устанавливаем новое ядро</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<kbd itemprop="text">sudo dpkg -i *.deb</kbd>
-					</div>
+					</div>				
 				</li>
 				<li id="перезагружаем-систему-после-обновления-ядра" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/как-обновить-ubuntu#перезагружаем-систему-после-обновления-ядра">
-					<div itemprop="name">Перезагружаем систему</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
+					<div itemprop="name">Перезагружаем систему</div>				
+					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">					
 						<kbd itemprop="text">sudo shutdown -r now</kbd>
 					</div>				
 				</li>

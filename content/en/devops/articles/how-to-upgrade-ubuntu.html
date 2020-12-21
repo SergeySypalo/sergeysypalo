@@ -1,8 +1,8 @@
 ---
 title: How to upgrade Ubuntu to 20.10 and kernel to 5.10
-description: Upgrade Ubuntu to 20.10 or 20.04 and kernel to latest version 5.10 or stable 5.9 using this guide
+description: Upgrade Ubuntu to 20.10 or 20.04 and kernel to latest stable version 5.10 or older 5.9 using this guide
 published: 2019-05-14
-modified: 2020-12-15
+modified: 2020-12-21
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -26,8 +26,8 @@ affiliate:
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">
-			In this article, I will show you how to upgrade Ubuntu to 20.04 (LTS) or 20.10 (latest).
-			As a bonus, we will also update the kernel to the latest 5.10.1 or stable version 5.9.15, which contain the following improvements:
+			In this article, I will show you how to upgrade Ubuntu to 20.10 (latest) or 20.04 (LTS).
+			As a bonus, we will also update the kernel to the latest 5.10.2 or 5.9.16 (EOL), which contains following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -125,7 +125,8 @@ affiliate:
 						19.10 - eoan<br />
 						20.04 - focal<br />
 						20.10 - groovy<br />
-            		in the example below, we are upgrading from ubuntu 18.04 (bionic) to 20.10 (groovy)
+						21.04 - hirsute (dev branch)<br />
+            		in the example below, we are upgrading from Ubuntu 18.04 (bionic) to 20.10 (groovy)
 					</p>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<kbd itemprop="text">sudo sed -i 's/bionic/groovy/g' /etc/apt/sources.list</kbd>
@@ -197,52 +198,31 @@ affiliate:
 						<kbd itemprop="text">cd /tmp</kbd>
 					</div>
 				</li>				
-				<li id="download-x64-5-10-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-x64-5-10-branch-kernel">
-					<div itemprop="name">Download latest kernel from 5.10.x branch for Intel or AMD systems</div>
+				<li id="download-5-10-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-5-10-branch-kernel">
+					<div itemprop="name">Download the latest stable kernel from 5.10.x branch</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-headers-5.10.1-051001_5.10.1-051001.202012142031_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-headers-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-image-unsigned-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/amd64/linux-modules-5.10.1-051001-generic_5.10.1-051001.202012142031_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-headers-5.10.2-051002_5.10.2-051002.202012210832_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-headers-5.10.2-051002-generic_5.10.2-051002.202012210832_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-image-unsigned-5.10.2-051002-generic_5.10.2-051002.202012210832_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.2/amd64/linux-modules-5.10.2-051002-generic_5.10.2-051002.202012210832_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
-				<li id="download-arm-5-10-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-arm-5-10-branch-kernel">
-					<div itemprop="name">Or from 5.10.x branch for ARM systems</div>
+				<li id="download-5-9-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
+					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-5-9-branch-kernel">
+					<div itemprop="name">or older, announced EOL, from 5.9.x branch</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/arm64/linux-headers-5.10.1-051001-generic_5.10.1-051001.202012142031_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/arm64/linux-image-5.10.1-051001-generic_5.10.1-051001.202012142031_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.1/arm64/linux-modules-5.10.1-051001-generic_5.10.1-051001.202012142031_arm64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-headers-5.9.16-050916_5.9.16-050916.202012211331_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-headers-5.9.16-050916-generic_5.9.16-050916.202012211331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-image-unsigned-5.9.16-050916-generic_5.9.16-050916.202012211331_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.16/amd64/linux-modules-5.9.16-050916-generic_5.9.16-050916.202012211331_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
-				<li id="download-x64-5-9-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-x64-5-9-branch-kernel">
-					<div itemprop="name">or latest stable kernel from 5.9.x branch for Intel or AMD systems</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-headers-5.9.15-050915_5.9.15-050915.202012160632_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-headers-5.9.15-050915-generic_5.9.15-050915.202012160632_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-image-unsigned-5.9.15-050915-generic_5.9.15-050915.202012160632_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/amd64/linux-modules-5.9.15-050915-generic_5.9.15-050915.202012160632_amd64.deb</kbd>
-						</pre>
-					</div>
-				</li>
-				<li id="download-arm-5-9-branch-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
-					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#download-arm-5-9-branch-kernel">
-					<div itemprop="name">or from 5.9.x branch for ARM systems</div>
-					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
-						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/arm64/linux-headers-5.9.15-050915-generic_5.9.15-050915.202012160632_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/arm64/linux-image-5.9.15-050915-generic_5.9.15-050915.202012160632_arm64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.9.15/arm64/linux-modules-5.9.15-050915-generic_5.9.15-050915.202012160632_arm64.deb</kbd>
-						</pre>
-					</div>
-				</li>	
+				
 				<li id="install-new-kernel" itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToStep">
 					<meta itemprop="url" content="https://sypalo.com/how-to-upgrade-ubuntu#install-new-kernel">
 					<div itemprop="name">Install new kernel</div>
