@@ -4,7 +4,7 @@
     <loc>https://sypalo.com</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/ru"/>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -81,14 +81,14 @@
     <loc>https://sypalo.com/photo</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/photo"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/фото"/>    
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>  
   <url>
     <loc>https://sypalo.com/best-camera-phones</loc>    
     <xhtml:link rel="alternate" hreflang="en" href="https://sypalo.com/best-camera-phones"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://sypalo.com/лучшие-камерофоны"/>
-    <lastmod>2020-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-24T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
