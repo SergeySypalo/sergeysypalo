@@ -18,37 +18,31 @@ affiliate:
 {% include breadcrumbs.html %}
 <article itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 	{% include header.html %}	
-	<ul li>
-		<li>
-			<div class="mb-0">
-				<!-- TradingView Widget BEGIN -->
-				<div class="tradingview-widget-container">
-					<div class="tradingview-widget-container__widget"></div>
-					<div class="tradingview-widget-copyright">
-						<a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank">
-						<p>Apple is a biggest company in the world and probably the best recognized brand, producing iPhone, iPad, iMac and other accessories.
-							After successful launch of Apple TV they continue to diversify their business from hardware-only to services company, thus growing 
-							in terms of returns and becoming even more stable and resistant against any economic crashes.
-						</p>
-					</div>
-					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-						{
-							"symbol": "NASDAQ:AAPL",
-							"width": "100%",
-							"height": "100%",
-							"locale": "en",
-							"dateRange": "12M",
-							"colorTheme": "light",
-							"trendLineColor": "#37a6ef",
-							"underLineColor": "#e3f2fd",
-							"isTransparent": false,
-							"autosize": true,
-							"largeChartUrl": ""
-						}
-					</script>
-				</div>
-				<!-- TradingView Widget END -->
-			</div>		
+	<ul class="list-unstyled">
+		<li class="tradingview-widget-container">			
+			<div class="tradingview-widget-container__widget"></div>
+			<div class="tradingview-widget-copyright">
+				<a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank">
+				<p>Apple is a biggest company in the world and probably the best recognized brand, producing iPhone, iPad, iMac and other accessories.
+					After successful launch of Apple TV they continue to diversify their business from hardware-only to services company, thus growing 
+					in terms of returns and becoming even more stable and resistant against any economic crashes.
+				</p>
+			</div>
+			<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+				{
+					"symbol": "NASDAQ:AAPL",
+					"width": "100%",
+					"height": "100%",
+					"locale": "en",
+					"dateRange": "12M",
+					"colorTheme": "light",
+					"trendLineColor": "#37a6ef",
+					"underLineColor": "#e3f2fd",
+					"isTransparent": false,
+					"autosize": true,
+					"largeChartUrl": ""
+				}
+			</script>			
 		</li>
 		<li>
 			<div class="mb-0">
