@@ -20,43 +20,56 @@ affiliate:
 	{% include header.html %}	
 	<ul class="list-unstyled">
 		<li class="tradingview-widget-container">
-			<div class="tradingview-widget-container__widget"></div>
-			<script src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-				{
-					"symbol": "NASDAQ:AAPL",
-					"width": "100%",
-					"height": "100%",
-					"locale": "en",
-					"dateRange": "60M",
-					"colorTheme": "light",
-					"trendLineColor": "#37a6ef",
-					"underLineColor": "#e3f2fd",
-					"isTransparent": false,
-					"autosize": true,
-					"largeChartUrl": ""
-				}
-			</script>
-			<p>Apple is a biggest company in the world and probably the best recognized brand, producing iPhone, iPad, iMac and other accessories.
-				After successful launch of Apple TV they continue to diversify their business from hardware-only to services company, thus growing 
-				in terms of returns and becoming even more stable and resistant against any economic crashes.
-			</p>
+			<figure class="row mb-0">
+				<picture class="col-12 col-sm-4 col-lg-3 pr-0 d-none d-sm-block">
+					<div class="tradingview-widget-container__widget"></div>
+					<script src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+						{
+							"symbol": "NASDAQ:AAPL",
+							"width": "100%",
+							"height": "100%",
+							"locale": "en",
+							"dateRange": "60M",
+							"colorTheme": "light",
+							"trendLineColor": "#37a6ef",
+							"underLineColor": "#e3f2fd",
+							"isTransparent": false,
+							"autosize": true,
+							"largeChartUrl": ""
+						}
+					</script>	
+			  </picture>				
+				<figcaption class="col-12 col-sm-8 col-lg-9 pl-sm-0">
+					Apple is a biggest company in the world and probably the best recognized brand, producing iPhone, iPad, iMac and other accessories.
+					After successful launch of Apple TV they continue to diversify their business from hardware-only to services company, thus growing 
+					in terms of returns and becoming even more stable and resistant against any economic crashes.					
+				</figcaption>
+		  </figure>			
 		</li>
-		<li class="tradingview-widget-container">		
-			<div class="tradingview-widget-container__widget"></div>				
-			<script src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>				
-				"symbol": "NASDAQ:TSLA",
-				"width": "100%",
-				"height": "100%",
-				"locale": "en",
-				"dateRange": "60M",
-				"colorTheme": "light",
-				"trendLineColor": "#37a6ef",
-				"underLineColor": "#e3f2fd",
-				"isTransparent": false,
-				"autosize": true,
-				"largeChartUrl": "";				
-			</script>				
-			<p>Amazon is the biggest online shop and cloud provider in the world, so there is no doubts about future growth of this company.</p>
+		<li class="tradingview-widget-container">
+			<figure class="row mb-0">
+				<picture class="col-12 col-sm-4 col-lg-3 pr-0 d-none d-sm-block">					
+					<div class="tradingview-widget-container__widget"></div>
+					<script src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+					{
+						"symbol": "NASDAQ:TSLA",
+						"width": "100%",
+						"height": "100%",
+						"locale": "en",
+						"dateRange": "60M",
+						"colorTheme": "light",
+						"trendLineColor": "#37a6ef",
+						"underLineColor": "#e3f2fd",
+						"isTransparent": false,
+						"autosize": true,
+						"largeChartUrl": ""
+					}
+					</script>		
+			  </picture>
+				<figcaption class="col-12 col-sm-8 col-lg-9 pl-sm-0">
+					Amazon is the biggest online shop and cloud provider in the world, so there is no doubts about future growth of this company.
+				</figcaption>
+		  </figure>			
 		</li>
 	</ul>
 	
