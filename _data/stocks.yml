@@ -1,0 +1,524 @@
+- 
+  Exchange: NASDAQ
+  Ticker: AAPL
+  Title: Apple
+  Description:
+    en: Apple is the biggest company in the world and probably the best-recognized brand, producing iPhone, iPad, iMac, and other accessories. After the successful launch of Apple TV, they continue to diversify their business from hardware-only to a services company, thus growing in terms of returns and becoming even more stable and resistant against any economic crashes.
+    ru: Apple - крупнейшая компания в мире и, вероятно, самый узнаваемый бренд, производящий iPhone, iPad, iMac и другие аксессуары. После успешного запуска Apple TV они продолжают диверсифицировать свой бизнес - от продажи оборудования до компании услуг, тем самым обеспечивая более стабильный рост и лучшую устойчивость к любым экономическим кризисам.
+  Category:
+    - Best
+    - Hardware
+    - Entertainment  
+- 
+  Exchange: NASDAQ
+  Ticker: ABNB
+  Title: AirBnB
+  Description:
+    en: 
+    ru: 
+  Category:    
+    - Travel
+    - IPO
+- 
+  Exchange: NASDAQ
+  Ticker: ADBE
+  Title: Adobe
+  Description:
+    en: 
+    ru:
+  Category:
+    - Best
+    - Software
+- 
+  Exchange: NASDAQ
+  Ticker: ADS
+  Title: Adidas
+  Description:
+    en: 
+    ru:
+  Category:
+    - Best
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: ADSK
+  Title: Autodesk
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Software
+- 
+  Exchange: NASDAQ
+  Ticker: AMD
+  Title: Advanced Micro Devices
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Hardware
+- 
+  Exchange: NASDAQ
+  Ticker: AMZN
+  Title: Amazon
+  Description:
+    en: Amazon is the biggest online shop and cloud provider in the world, so there are no doubts about the future growth of this company.
+    ru: Amazon - крупнейший интернет-магазин и поставщик облачных услуг в мире, поэтому нет никаких сомнений в будущем росте этой компании.
+  Category:
+    - Best
+    - Shopping
+    - Entertainment
+    - Cloud
+- 
+  Exchange: NYSE
+  Ticker: BABA
+  Title: Alibaba
+  Description:
+    en: 
+    ru:
+  Category:
+    - Best
+    - Shopping
+    - Cloud
+- 
+  Exchange: NYSE
+  Ticker: BBY
+  Title: Best Buy
+  Description:
+    en: 
+    ru:
+  Category:
+    - Best
+    - Shopping    
+- 
+  Exchange: NASDAQ
+  Ticker: CRWD
+  Title: CrowdStrike
+  Description:
+    en: 
+    ru:  
+  Category:
+    - Security
+    - IPO
+- 
+  Exchange: NYSE
+  Ticker: DIS
+  Title: Disney
+  Description:
+    en: 
+    ru:  
+  Category:
+    - Best
+    - Entertainment
+- 
+  Exchange: NASDAQ
+  Ticker: EA
+  Title: Electronic Arts
+  Description:
+    en: 
+    ru:  
+  Category:
+    - Entertainment
+    - Games
+- 
+  Exchange: NASDAQ
+  Ticker: EBAY
+  Title: eBay
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: ETSY
+  Title: Etsy
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: FB
+  Title: Facebook
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Social
+- 
+  Exchange: NYSE
+  Ticker: FSLY
+  Title: Fastly
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Cloud
+    - IPO
+- 
+  Exchange: NYSE
+  Ticker: FTCH
+  Title: Farfetch
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+    - IPO
+- 
+  Exchange: NYSE
+  Ticker: FVRR
+  Title: Fiverr
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best    
+    - Cloud
+    - IPO
+- 
+  Exchange: NASDAQ
+  Ticker: HAS
+  Title: Hasbro
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+    - Entertainment
+- 
+  Exchange: NYSE
+  Ticker: JBL
+  Title: Jabil
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Hardware
+- 
+  Exchange: NASDAQ
+  Ticker: JD
+  Title: JD.com
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: JNJ
+  Title: Johnson & Johnson
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: NYSE
+  Ticker: LMND
+  Title: Lemonade
+  Description:
+    en: 
+    ru: 
+  Category:
+    - IPO
+    - Cloud
+- 
+  Exchange: SIX
+  Ticker: LOGN
+  Title: Logitech
+  Description:
+    en: 
+    ru: 
+  Category:
+  - Best
+  - Hardware   
+- 
+  Exchange: NYSE
+  Ticker: MA
+  Title: Mastercard
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best 
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: MRVL
+  Title: Marvell
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Hardware
+- 
+  Exchange: NASDAQ
+  Ticker: MSFT
+  Title: Microsoft
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Software
+- 
+  Exchange: NYSE
+  Ticker: NET
+  Title: CloudFlare
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+    - IPO
+- 
+  Exchange: NASDAQ
+  Ticker: NFLX
+  Title: Netflix
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Entertainment
+- 
+  Exchange: NYSE
+  Ticker: NIO
+  Title: NIO
+  Description:
+    en: 
+    ru: 
+  Category:
+    - PureEnergy
+    - IPO
+- 
+  Exchange: NYSE
+  Ticker: NKE
+  Title: Nike
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Shopping
+- 
+  Exchange: NYSE
+  Ticker: NOW
+  Title: ServiceNow
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Software
+- 
+  Exchange: NYSE
+  Ticker: PINS
+  Title: Pinterest
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Social
+- 
+  Exchange: NASDAQ
+  Ticker: PYPL
+  Title: PayPal
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best 
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: QCOM
+  Title: Qualcomm
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Best
+    - Hardware
+- 
+  Exchange: NYSE
+  Ticker: RNG
+  Title: RingCentral
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+- 
+  Exchange: NASDAQ
+  Ticker: ROKU
+  Title: Roku
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Software
+- 
+  Exchange: NYSE
+  Ticker: SHOP
+  Title: Shopify
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+    - Cloud
+- 
+  Exchange: NYSE
+  Ticker: SNOW
+  Title: Snowflake
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+    - IPO
+- 
+  Exchange: NYSE
+  Ticker: SQ
+  Title: Square
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+    - IPO
+- 
+  Exchange: NASDAQ
+  Ticker: STNE
+  Title: StoneCo
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+- 
+  Exchange: NYSE
+  Ticker: TGT
+  Title: Target
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: TSLA
+  Title: Tesla
+  Description:
+    en: 
+    ru: 
+  Category:
+    - PureEnergy
+- 
+  Exchange: NYSE
+  Ticker: TWLO
+  Title: Twilio
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+- 
+  Exchange: NYSE
+  Ticker: U
+  Title: Unity
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Software    
+- 
+  Exchange: NYSE
+  Ticker: V
+  Title: Visa
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: VRSN
+  Title: Verisign
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+- 
+  Exchange: NYSE
+  Ticker: W
+  Title: Wayfair
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: NYSE
+  Ticker: W
+  Title: Wayfair
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: NASDAQ
+  Ticker: WIX
+  Title: Wix.com
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud    
+- 
+  Exchange: NYSE
+  Ticker: WMT
+  Title: Walmart
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Shopping
+- 
+  Exchange: HKEX
+  Ticker: 1810
+  Title: Xiaomi
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Hardware
+- 
+  Exchange: NYSE
+  Ticker: ZEN
+  Title: Zendesk
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
+- 
+  Exchange: NASDAQ
+  Ticker: ZS
+  Title: Zscaler
+  Description:
+    en: 
+    ru: 
+  Category:
+    - Cloud
