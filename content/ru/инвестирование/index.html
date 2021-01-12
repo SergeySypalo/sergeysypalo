@@ -2,7 +2,7 @@
 title: Инвестирование и заработок онлайн
 description: Узнайте, как зарабатывать деньги в Интернете с помощью партнерского маркетинга и получать пассивный доход, инвестируя в акции, индексы и ETF
 published: 2020-05-01
-modified: 2020-05-17
+modified: 2021-01-12
 image: /assets/img/articles/etoro-review/title.png
 preview: /assets/img/articles/etoro-review/title.png
 permalink: /инвестирование
@@ -17,5 +17,5 @@ affiliate:
 {% include title.html %}
 {% assign posts = site.pages | where_exp: "post", "post.tags contains 'инвестирование'" | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
 {% for post in posts %}
-    {% include post-snippet.html %}    
+  {% include investing-post-snippet-ru.html %}    
 {% endfor %}

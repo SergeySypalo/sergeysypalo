@@ -22,10 +22,10 @@ affiliate:
 		<meta itemprop="name" content="What are the best stocks to buy in 2021?">
 		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 			{% assign stocks=site.data.stocks | where:"Category", "Best" %}
-			<ul class="list-unstyled" itemprop="text">				
+			<ul class="list-unstyled" itemprop="text">
 				{% for stock in stocks %}
-					{% include stock-snippet.html %}     
-				{% endfor %}				
+					{% include stock-snippet.html %}
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
