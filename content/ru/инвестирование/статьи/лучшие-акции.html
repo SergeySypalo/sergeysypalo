@@ -21,7 +21,8 @@ affiliate:
 	<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 		<meta itemprop="name" content="Какие акции лучше всего покупать в 2021 году?">
 		<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-			{% assign stocks=site.data.stocks | where:"Category", "Best" %}
+			<p>В этой статье я отобрал список самых перспектиных акций компаний для покупки в 2021 году</p>
+			{% assign stocks=site.data.stocks | where:"Category", "Best" %}			
 			<ul class="list-unstyled" itemprop="text">
 				{% for stock in stocks %}
 					{% include stock-snippet.html %}
