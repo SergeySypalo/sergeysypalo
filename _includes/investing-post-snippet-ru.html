@@ -33,7 +33,7 @@
                     </p>
                 </header>
                 <p class="card-text mb-2" itemprop="articleBody">
-                    {{ post.content | strip_html | truncatewords:50 }}
+                    {{ page.content | truncatewords:150 }}
                 </p>
                 <p class="card-text" itemprop="keywords">
                     Tags:
