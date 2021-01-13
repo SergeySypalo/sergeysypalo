@@ -17,5 +17,5 @@ affiliate:
 {% include title.html %}
 {% assign posts = site.pages | where_exp: "post", "post.tags contains 'инвестирование'" | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
 {% for post in posts %}
-  {% include investing-post-snippet-ru.html %}    
+  {% include post-snippet.html %}    
 {% endfor %}
