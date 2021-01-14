@@ -2,7 +2,7 @@
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 	<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 		<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-			<a class="text-decoration-none" itemprop="item" href='/{{ page.lang | replace "en", "" }}'>
+			<a class="text-decoration-none" itemprop="item" href="/{{ page.lang | replace 'en', '' }}">
 				<span itemprop="name">{{ site.data.translations.home[page.lang] }}</span>
 			</a>
 			<meta itemprop="position" content="1" />
