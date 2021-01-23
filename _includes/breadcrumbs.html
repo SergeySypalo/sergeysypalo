@@ -13,5 +13,13 @@
 			</a>
 			<meta itemprop="position" content="2" />
 		</li>
+		{% if page.url contains "-photo" or page.url contains  "-фото" %}
+		<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+			<a class="text-decoration-none" itemprop="item" href="{{ (page.title | split: ' ')[1] }}">
+				<span itemprop="name">{{ (page.title | split: ' ')[1] }}</span>
+			</a>
+			<meta itemprop="position" content="3" />
+		</li>
+		{% endif %}
 	</ol>
 </nav>
