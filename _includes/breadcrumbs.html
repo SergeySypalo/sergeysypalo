@@ -13,7 +13,7 @@
 			</a>
 			<meta itemprop="position" content="2" />
 		</li>
-		{% if page.url contains "-photo" or page.url contains "фото-" and page.url != "фото-портфолио" and page.url != "фото-услуги" %}
+		{% if page.url contains "-photo" or page.url contains "фото-" and page.url != "/фото-портфолио" and page.url != "/фото-услуги" %}
 			<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 				<a class="text-decoration-none" itemprop="item" href="/{{ page.url | split: '-' | last }}-{{ site.data.translations.photo.portfolio[page.lang] }}">
 					<span itemprop="name"> {{ site.data.translations.photo.portfolio[page.lang] | capitalize }}</span>
