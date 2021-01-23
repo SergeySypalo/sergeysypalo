@@ -6,6 +6,7 @@
 			</a>
 			<meta itemprop="position" content="1" />
 		</li>		
+		{% assign category = page.tags | first | capitalize | replace: "Devops", "DevOps" | replace: "Девопс", "ДевОпс" %}
 		<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 			<a class="text-decoration-none" itemprop="item" href="{{ category | downcase }}">
 				<span itemprop="name">{{ category }}</span>
