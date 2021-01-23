@@ -15,10 +15,10 @@
 		</li>
 		{% if page.url contains "-photo" or page.url contains  "-фото" %}
 			{% if page.lang == "en" %}
-			{% portfolio = "photo-portfolio" %}
+				{% portfolio = "photo-portfolio" %}
 			{% else %}
-			{% portfolio = "фото-портфолио" %}
-			{% endif%}
+				{% portfolio = "фото-портфолио" %}
+			{% endif %}
 			<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 				<a class="text-decoration-none" itemprop="item" href="/{{ portfolio }}">
 					<span itemprop="name">{{ portfolio | split: "-" | last | capitalize }}</span>
