@@ -15,10 +15,7 @@
 		</li>
 		{% if page.url contains "-photo" or page.url contains  "-фото" %}
 			{% if page.lang == "en" %}
-			{% link = "/photo-portfolio" %}
-			{% else %}
-			{% link = "/фото-портфолио" %}
-			{% endif %}
+			{% link = page.description | split: " " | last %}
 			<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 				<a class="text-decoration-none" itemprop="item" href="{{ page.title | split: ' | ' | first | replace: ' ', '-' | downcase }}">
 					<span itemprop="name">{{ page.title | replace: 'Photo ', '' | replace: 'Фото ', ''| | split: ' ' | first }}</span>
