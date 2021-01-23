@@ -13,12 +13,9 @@
 			</a>
 			<meta itemprop="position" content="2" />
 		</li>
-		{% if page.url contains "-photo" or page.url contains "-фото" %}
-			{% if page.lang == "en" %}
-				{% portfolio = "photo-portfolio" %}
-			{% endif %}
+		{% if page.url contains "-photo" or page.url contains "-фото" %}			
 			<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-				<a class="text-decoration-none" itemprop="item" href="/photo-portfolio">
+				<a class="text-decoration-none" itemprop="item" href="/{{ page.url | split: '-' | last }}-portfolio">
 					<span itemprop="name">Portfolio</span>
 				</a>
 				<meta itemprop="position" content="3" />
