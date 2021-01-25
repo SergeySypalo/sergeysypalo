@@ -26,7 +26,11 @@
                         <img class="d-none" itemprop="image" src="{{ post.image }}" alt="post.title" />
                         <span class="d-none" itemprop="datePublished">{{ post.published }}</span>
                         <small class="text-muted">
-                            <time itemprop="dateModified" datetime="{{ post.modified }}">{{ post.modified | date_to_long_string }}</time> | 
+                            {% assign modified = page.modified | date_to_long_string %}
+                            {% if page.lang == "ru" %}
+                                {% assign modified = modified | replace: "January", "января" | replace: "February", "февраля" | replace: "March", "марта" | replace: "April", "апреля" | replace: "May", "мая" | replace: "June", "июня" | replace: "July", "июля" | replace: "August", "августа" | replace: "September", "сентября" | replace: "October", "октября" | replace: "November", "ноября" | replace: "December", "декабря" %}
+                            {% endif %}                            
+                            <time itemprop="dateModified" datetime="{{ post.modified }}">{{ modified }}</time> | 
                         </small>
                         {% assign category = post.tags | first | capitalize | replace: "Devops", "DevOps" | replace: "Девопс", "ДевОпс" %}
                         <a class="badge bg-primary text-white text-decoration-none" href="{{ category | downcase }}">{{ category }}</a>
