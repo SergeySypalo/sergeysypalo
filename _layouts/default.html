@@ -115,7 +115,7 @@
 						{% assign category = page.url | split: "/" | last | split: "-" | first %}
 						{% assign tags = site.pages | where_exp: "page", "page.tags contains category" | where:"lang", page.lang | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
 						{% endif %}
-						<ol class="list-unstyled mb-0">
+						<ol class="list-unstyled mb-1">
 							{% for tag in tags %}
 							{% if tag != '' %}
 							<li>#<a class="text-decoration-none" href="/{{ tag }}">{{ tag }}</a></li>
