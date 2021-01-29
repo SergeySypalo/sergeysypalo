@@ -37,7 +37,7 @@
 					</p>
 				</header>
 				<p class="card-text mb-2" itemprop="articleBody">
-					{{ post.content | split: '"description">' | last | split: 'Body">' | last | split: 'Answer">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:50 }}
+					{{ post.content | split: '"description">' | last | split: 'Body">' | last | split: 'Answer">' | last | split: 'Save' | first | split: 'Получить' | first | strip_html | truncatewords:75 }}
 				</p>
 				<p class="card-text" itemprop="keywords">
 					Tags:
