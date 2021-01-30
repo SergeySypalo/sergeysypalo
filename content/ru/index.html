@@ -14,7 +14,26 @@ affiliate:
 ---
 
 {% include title.html %}
-{% assign posts = site.pages | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
+{% assign posts = paginator.posts %}
 {% for post in posts %}  
   {% include post-snippet.html %}
 {% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
