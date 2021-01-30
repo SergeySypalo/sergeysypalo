@@ -2,9 +2,11 @@
 title: Блог об инвестициях, DevOps и фото
 description: Блог об инвестициях, DevOps, фотографии, путешествиях, здоровье и многом другом
 image: /assets/img/sergey-and-jane-sypalo.jpg
+permalink: /ru
 enlink: /
 rulink: /ru
 paginate: 5
+paginate_path: "/content/ru/page:num/"
 affiliate:
   link: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=42754&url_id=902
   banner: affiliate-banners-650x1200-en-v3.jpg
@@ -12,26 +14,7 @@ affiliate:
 ---
 
 {% include title.html %}
-{% assign posts = paginator.posts %}
+{% assign posts = site.pages | where:"lang", page.lang | where:"type", "article" | sort: "modified" | reverse %}
 {% for post in posts %}  
   {% include post-snippet.html %}
 {% endfor %}
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
