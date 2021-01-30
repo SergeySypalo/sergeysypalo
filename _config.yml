@@ -3,6 +3,7 @@ url: https://sypalo.com
 type: website
 plugins:
   - jekyll-redirect-from
+  - jekyll-paginate
 defaults:
   -
     scope:
