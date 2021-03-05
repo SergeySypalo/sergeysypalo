@@ -2,7 +2,7 @@
 title: How to upgrade Ubuntu to 20.10 and kernel to 5.11
 description: Upgrade Ubuntu to 20.10 or 20.04 and kernel to the latest mainline 5.11 or stable 5.10 using this guide
 published: 2019-05-14
-modified: 2021-03-04
+modified: 2021-03-06
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [devops, linux, security, upgrade]
@@ -27,7 +27,7 @@ affiliate:
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">
 			In this article, I will show you how to upgrade Ubuntu to 20.10 (latest) or 20.04 (LTS).
-			As a bonus, we will also update the kernel to the latest mainline 5.11.2 or stable 5.10.19, which contains following improvements:
+			As a bonus, we will also update the kernel to the latest mainline 5.11.3 or stable 5.10.20, which contains following improvements:
 		</p>
 		<ul>
 			<li>WireGuard Support</li>
@@ -203,10 +203,10 @@ affiliate:
 					<div itemprop="name">Download the latest mainline kernel from 5.11.x branch</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.2/amd64/linux-headers-5.11.2-051102_5.11.2-051102.202103030902_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.2/amd64/linux-headers-5.11.2-051102-generic_5.11.2-051102.202103030902_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.2/amd64/linux-image-unsigned-5.11.2-051102-generic_5.11.2-051102.202103030902_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.2/amd64/linux-modules-5.11.2-051102-generic_5.11.2-051102.202103030902_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.3/amd64/linux-headers-5.11.3-051103_5.11.3-051103.202103041231_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.3/amd64/linux-headers-5.11.3-051103-generic_5.11.3-051103.202103041231_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.3/amd64/linux-image-unsigned-5.11.3-051103-generic_5.11.3-051103.202103041231_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.3/amd64/linux-modules-5.11.3-051103-generic_5.11.3-051103.202103041231_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
@@ -215,10 +215,10 @@ affiliate:
 					<div itemprop="name">Download the latest stable kernel from 5.10.x branch</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.19/amd64/linux-headers-5.10.19-051019_5.10.19-051019.202103031329_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.19/amd64/linux-headers-5.10.19-051019-generic_5.10.19-051019.202103031329_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.19/amd64/linux-image-unsigned-5.10.19-051019-generic_5.10.19-051019.202103031329_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.19/amd64/linux-modules-5.10.19-051019-generic_5.10.19-051019.202103031329_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.20/amd64/linux-headers-5.10.20-051020_5.10.20-051020.202103040635_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.20/amd64/linux-headers-5.10.20-051020-generic_5.10.20-051020.202103040635_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.20/amd64/linux-image-unsigned-5.10.20-051020-generic_5.10.20-051020.202103040635_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.20/amd64/linux-modules-5.10.20-051020-generic_5.10.20-051020.202103040635_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>				
