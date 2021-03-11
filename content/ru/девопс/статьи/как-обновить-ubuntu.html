@@ -2,7 +2,7 @@
 title: Как обновить Ubuntu до 20.10 и ядро до 5.11
 description: Обнови Ubuntu до 20.10 или 20.04 и ядро ​​до последнего релиз-кандидата 5.11 или стабильной версии 5.10 используя эту инструкцию
 published: 2019-05-14
-modified: 2021-03-09
+modified: 2021-03-11
 image: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 preview: /assets/img/articles/how-to-upgrade-ubuntu/title.png
 tags: [девопс, линукс, безопасность, апгрейд]
@@ -23,7 +23,7 @@ affiliate:
 		<meta itemprop="name" content="{{ page.title }}">
 		<meta itemprop="totalTime" content="PT2H">
 		<p itemprop="description">В этой статье я покажу вам, как обновить Ubuntu до 20.10 (новейшая) или 20.04 (с долгосрочной поддержкой).
-			В качестве бонуса мы также обновим ядро ​​до последнего рели-кандидата 5.12-rc2 или последней стабильной версии 5.11.5 или последней версии c долгосрочной поддержкой 5.10.22, которые содержат следующие улучшения:
+			В качестве бонуса мы также обновим ядро ​​до последнего рели-кандидата 5.12-rc2 или последней стабильной версии 5.11.6 или последней версии c долгосрочной поддержкой 5.10.23, которые содержат следующие улучшения:
 		</p>
 		<ul>
 			<li>Поддержка WireGuard</li>
@@ -199,7 +199,7 @@ affiliate:
 					<div itemprop="name">Скачиваем последнее ядро (релиз-кандидат) из ветки 5.12.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.12-rc2/amd64/linux-headers-5.12.0-051200rc2_5.12.0-051200rc2.202103052202_all.deb</kbd>
+<kbd>wget -c <span class="text-decoration-none">https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.12-rc2/amd64/linux-headers-5.12.0-051200rc2_5.12.0-051200rc2.202103052202_all.deb</span></kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.12-rc2/amd64/linux-headers-5.12.0-051200rc2-generic_5.12.0-051200rc2.202103052202_amd64.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.12-rc2/amd64/linux-image-unsigned-5.12.0-051200rc2-generic_5.12.0-051200rc2.202103052202_amd64.deb</kbd>
 <kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.12-rc2/amd64/linux-modules-5.12.0-051200rc2-generic_5.12.0-051200rc2.202103052202_amd64.deb</kbd>
@@ -211,10 +211,10 @@ affiliate:
 					<div itemprop="name">Скачиваем последнее ядро (релиз-кандидат) из ветки 5.11.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.5/amd64/linux-headers-5.11.5-051105_5.11.5-051105.202103091130_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.5/amd64/linux-headers-5.11.5-051105-generic_5.11.5-051105.202103091130_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.5/amd64/linux-image-unsigned-5.11.5-051105-generic_5.11.5-051105.202103091130_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.5/amd64/linux-modules-5.11.5-051105-generic_5.11.5-051105.202103091130_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.6/amd64/linux-headers-5.11.6-051106_5.11.6-051106.202103111435_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.6/amd64/linux-headers-5.11.6-051106-generic_5.11.6-051106.202103111435_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.6/amd64/linux-image-unsigned-5.11.6-051106-generic_5.11.6-051106.202103111435_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11.6/amd64/linux-modules-5.11.6-051106-generic_5.11.6-051106.202103111435_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>
@@ -223,10 +223,10 @@ affiliate:
 					<div itemprop="name">Скачиваем последнее стабильное ядро из ветки 5.10.х</div>
 					<div itemprop="itemListElement" itemscope itemtype="http://schema.org/HowToDirection">
 						<pre itemprop="text">
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.22/amd64/linux-headers-5.10.22-051022_5.10.22-051022.202103090631_all.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.22/amd64/linux-headers-5.10.22-051022-generic_5.10.22-051022.202103090631_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.22/amd64/linux-image-unsigned-5.10.22-051022-generic_5.10.22-051022.202103090631_amd64.deb</kbd>
-<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.22/amd64/linux-modules-5.10.22-051022-generic_5.10.22-051022.202103090631_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.23/amd64/linux-headers-5.10.23-051023_5.10.23-051023.202103110936_all.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.23/amd64/linux-headers-5.10.23-051023-generic_5.10.23-051023.202103110936_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.23/amd64/linux-image-unsigned-5.10.23-051023-generic_5.10.23-051023.202103110936_amd64.deb</kbd>
+<kbd>wget -c https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.10.23/amd64/linux-modules-5.10.23-051023-generic_5.10.23-051023.202103110936_amd64.deb</kbd>
 						</pre>
 					</div>
 				</li>			
